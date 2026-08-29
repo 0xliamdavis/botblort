@@ -11,7 +11,6 @@ function calculateRiskMetrics(tokenData, isVeryNew) {
   const txns24h = (tokenData.txns24h?.buys || 0) + (tokenData.txns24h?.sells || 0);
 
   if (isVeryNew && liquidity === 0 && volume24h === 0) {
-    // Brand new launch, no market data yet
     return {
       safetyScore: 35,
       status: "CAUTION",
@@ -123,7 +122,6 @@ async function fetchDexScreenerData(addresses) {
       }
     } catch (e) {}
 
-    // small delay between chunks
     if (i + chunkSize < addresses.length) {
       await new Promise(function(r) { setTimeout(r, 300); });
     }
@@ -220,13 +218,10 @@ function generateWhaleRadar(tokens) {
 }
 
 async function main() {
-  console.log("🚀 [BLORT BOT] Starting BankrBot Base Telemetry Engine v2.2...");
+  console.log("🚀 [BLORT BOT] Starting BankrBot Base Telemetry Engine v2.3...");
 
   try {
     const launches = await fetchBankrLaunches();
-    if (launches.length === 0) {
-      console.log("⚠️ No launches found, writing empty payload");
-    }
 
     const addresses = launches.map(function(l) {
       return l.tokenAddress.toLowerCase();
@@ -240,11 +235,27 @@ async function main() {
       return buildToken(launch, index + 1, pair);
     });
 
-    // Sort: tokens with market data first, then by volume
+    // ============================================
+    // FILTER:
+    // - Token baru (< 6 jam) → wajib volume >= $500
+    // - Token lama (≥ 6 jam) → tetap muncul
+    // ============================================
+    const SIX_HOURS = 6 * 60 * 60 * 1000;
+    const now = Date.now();
+
+    processedTokens = processedTokens.filter(function(t) {
+      const isNew = t.launchTimestamp && (now - t.launchTimestamp) < SIX_HOURS;
+
+      if (isNew) {
+        return (t.volume24h || 0) >= 500;
+      }
+
+      return true; // token lama tetap ditampilkan
+    });
+
+    // Sort by volume (tertinggi di atas)
     processedTokens.sort(function(a, b) {
-      if (a.volume24h !== b.volume24h) return b.volume24h - a.volume24h;
-      if (a.liquidityUsd !== b.liquidityUsd) return b.liquidityUsd - a.liquidityUsd;
-      return (b.launchTimestamp || 0) - (a.launchTimestamp || 0);
+      return (b.volume24h || 0) - (a.volume24h || 0);
     });
 
     processedTokens = processedTokens.slice(0, 30);
@@ -254,7 +265,7 @@ async function main() {
 
     const payload = {
       meta: {
-        engine: "BlortBot Bankr Telemetry Terminal v2.2",
+        engine: "BlortBot Bankr Telemetry Terminal v2.3",
         targetOrigin: "Bankr API + DexScreener",
         updatedAt: new Date().toISOString(),
         builder: "@0xliamdavis",
