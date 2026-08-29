@@ -54,7 +54,7 @@ function calculateRiskMetrics(tokenData, isVeryNew) {
 }
 
 async function fetchBankrLaunches() {
-  console.log("⚡ [BLORT BOT] Fetching BankrBot launches...");
+  console.log("[BLORT BOT] Fetching BankrBot launches...");
 
   try {
     const response = await fetch("https://api.bankr.bot/token-launches");
@@ -65,10 +65,10 @@ async function fetchBankrLaunches() {
       return l.chain === "base" && l.status === "deployed" && l.tokenAddress;
     });
 
-    console.log("📦 Found " + launches.length + " deployed Bankr tokens on Base");
+    console.log("Found " + launches.length + " deployed Bankr tokens on Base");
     return launches;
   } catch (err) {
-    console.error("❌ Bankr API failed:", err.message);
+    console.error("Bankr API failed:", err.message);
     return [];
   }
 }
@@ -82,7 +82,6 @@ async function fetchDexScreenerData(addresses) {
   for (let i = 0; i < addresses.length; i += chunkSize) {
     const chunk = addresses.slice(i, i + chunkSize);
 
-    // Method 1: newer endpoint
     try {
       const url1 = "https://api.dexscreener.com/tokens/v1/base/" + chunk.join(",");
       const res1 = await fetch(url1);
@@ -102,7 +101,6 @@ async function fetchDexScreenerData(addresses) {
       }
     } catch (e) {}
 
-    // Method 2: classic multi-token
     try {
       const url2 = "https://api.dexscreener.com/latest/dex/tokens/" + chunk.join(",");
       const res2 = await fetch(url2);
@@ -127,7 +125,7 @@ async function fetchDexScreenerData(addresses) {
     }
   }
 
-  console.log("🔍 DexScreener found market data for " + pairMap.size + " tokens");
+  console.log("DexScreener found market data for " + pairMap.size + " tokens");
   return pairMap;
 }
 
@@ -135,7 +133,7 @@ function buildToken(launch, rank, pair) {
   const isVeryNew = !pair;
   const now = Date.now();
   const launchAge = launch.timestamp ? (now - launch.timestamp) : null;
-  const isFresh = launchAge !== null && launchAge < 1000 * 60 * 60 * 6; // < 6 hours
+  const isFresh = launchAge !== null && launchAge < 1000 * 60 * 60 * 6;
 
   let volume24h = 0;
   let liquidityUsd = 0;
@@ -218,7 +216,7 @@ function generateWhaleRadar(tokens) {
 }
 
 async function main() {
-  console.log("🚀 [BLORT BOT] Starting BankrBot Base Telemetry Engine v2.3...");
+  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.3...");
 
   try {
     const launches = await fetchBankrLaunches();
@@ -235,11 +233,9 @@ async function main() {
       return buildToken(launch, index + 1, pair);
     });
 
-    // ============================================
-    // FILTER:
-    // - Token baru (< 6 jam) → wajib volume >= $500
-    // - Token lama (≥ 6 jam) → tetap muncul
-    // ============================================
+    // Filter rules:
+    // - New tokens (< 6 hours) must have volume >= $500
+    // - Older tokens are always included
     const SIX_HOURS = 6 * 60 * 60 * 1000;
     const now = Date.now();
 
@@ -250,10 +246,10 @@ async function main() {
         return (t.volume24h || 0) >= 500;
       }
 
-      return true; // token lama tetap ditampilkan
+      return true;
     });
 
-    // Sort by volume (tertinggi di atas)
+    // Sort by volume descending
     processedTokens.sort(function(a, b) {
       return (b.volume24h || 0) - (a.volume24h || 0);
     });
@@ -297,15 +293,15 @@ async function main() {
       JSON.stringify(payload, null, 2)
     );
 
-    console.log("✅ Telemetry compiled successfully!");
-    console.log("   → Tokens analyzed : " + processedTokens.length);
-    console.log("   → With market data: " + pairMap.size);
-    console.log("   → Safe tokens     : " + payload.summary.safeTokensCount);
-    console.log("   → High risk       : " + payload.summary.highRiskCount);
-    console.log("   → Whale alerts    : " + whaleRadar.length);
+    console.log("Telemetry compiled successfully!");
+    console.log("  Tokens analyzed  : " + processedTokens.length);
+    console.log("  With market data : " + pairMap.size);
+    console.log("  Safe tokens      : " + payload.summary.safeTokensCount);
+    console.log("  High risk        : " + payload.summary.highRiskCount);
+    console.log("  Whale alerts     : " + whaleRadar.length);
 
   } catch (error) {
-    console.error("❌ Telemetry compilation failed:", error);
+    console.error("Telemetry compilation failed:", error);
     process.exit(1);
   }
 }
