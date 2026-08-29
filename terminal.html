@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLORT BOT — BankrBot Telemetry & Risk Terminal</title>
+  <title>BLORT BOT — Terminal</title>
   <link rel="icon" href="https://iili.io/CpjSv8x.md.jpg" type="image/jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
@@ -68,6 +68,7 @@
           <span class="text-emerald-400 font-bold text-[11px]">BANKR ENGINE ACTIVE</span>
         </div>
         <div class="flex items-center gap-2 mt-1">
+          <a href="index.html" class="px-2.5 py-1 bg-gray-800 border border-gray-600 text-gray-300 text-[11px] rounded hover:border-[#2DD4BF] hover:text-[#2DD4BF] font-bold transition">← Home</a>
           <a href="https://x.com/BotBlort" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 border border-[#2DD4BF]/40 text-[#2DD4BF] text-[11px] rounded hover:bg-[#2DD4BF] hover:text-black font-bold">🤖 @BotBlort</a>
           <a href="https://x.com/0xliamdavis" target="_blank" class="px-2.5 py-1 bg-[#C84B31]/10 border border-[#C84B31]/40 text-[#C84B31] text-[11px] rounded hover:bg-[#C84B31] hover:text-white font-bold">🛠️ @0xliamdavis</a>
         </div>
@@ -251,7 +252,6 @@
           ? token.safety.status
           : 'UNKNOWN';
 
-        // Trade link → Bankr Terminal
         const tradeUrl = 'https://bankr.bot/terminal/trade?out=' + token.address + '&chain=base';
 
         const tr = document.createElement('tr');
