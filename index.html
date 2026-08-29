@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLORT BOT — Advanced On-Chain Telemetry & Risk Terminal</title>
+  <link rel="icon" href="https://iili.io/CpjSv8x.md.jpg" type="image/jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Fira Code', monospace;
+    }
+    .font-retro { font-family: 'VT323', monospace; }
+    .retro-box {
+      border: 2px solid #C84B31;
+      box-shadow: 4px 4px 0px #1E4D4E;
+    }
+    .retro-btn {
+      transition: all 0.15s ease;
+    }
+    .retro-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 2px 2px 0px #2DD4BF;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #161b22; }
+    ::-webkit-scrollbar-thumb { background: #C84B31; border-radius: 3px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-3 md:p-6">
+
+  <!-- TOP TERMINAL HEADER -->
+  <header class="max-w-7xl mx-auto w-full mb-6">
+    <div class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- LOGO & MECHA TITLE -->
+      <div class="flex items-center gap-4">
+        <img src="https://iili.io/CpjSv8x.md.jpg" alt="Blort Bot Logo" class="w-14 h-14 rounded border-2 border-[#C84B31] object-cover shadow-lg">
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-3xl font-retro text-[#2DD4BF] tracking-widest">BLORT BOT</h1>
+            <span class="px-2 py-0.5 text-[10px] bg-[#C84B31] text-white font-bold rounded">TELEMETRY v2.0</span>
+          </div>
+          <p class="text-xs text-gray-400 mt-0.5">Autonomous On-Chain Risk Scanner & Whale Radar</p>
+        </div>
+      </div>
+
+      <!-- ANALYTICS SUMMARY CARDS -->
+      <div class="grid grid-cols-3 gap-2 w-full md:w-auto text-center font-mono">
+        <div class="bg-[#0d1117] p-2 rounded border border-gray-800">
+          <div class="text-[10px] text-gray-400">ANALYZED</div>
+          <div id="stat-total" class="text-base font-bold text-[#2DD4BF]">0</div>
+        </div>
+        <div class="bg-[#0d1117] p-2 rounded border border-gray-800">
+          <div class="text-[10px] text-gray-400">SAFE RATIO</div>
+          <div id="stat-safe" class="text-base font-bold text-emerald-400">0%</div>
+        </div>
+        <div class="bg-[#0d1117] p-2 rounded border border-gray-800">
+          <div class="text-[10px] text-gray-400">WHALE ALERTS</div>
+          <div id="stat-whales" class="text-base font-bold text-[#C84B31]">0</div>
+        </div>
+      </div>
+
+      <!-- SOCIAL LINKS & SYSTEM STATUS -->
+      <div class="flex flex-col items-center md:items-end gap-1 text-xs">
+        <div class="flex items-center gap-2 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-emerald-400 font-bold text-[11px]">RUNNER ONLINE</span>
+        </div>
+        <div class="flex items-center gap-2 mt-1">
+          <a href="https://x.com/BotBlort" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 border border-[#2DD4BF]/40 text-[#2DD4BF] text-[11px] rounded hover:bg-[#2DD4BF] hover:text-black font-bold">🤖 @BotBlort</a>
+          <a href="https://x.com/0xliamdavis" target="_blank" class="px-2.5 py-1 bg-[#C84B31]/10 border border-[#C84B31]/40 text-[#C84B31] text-[11px] rounded hover:bg-[#C84B31] hover:text-white font-bold">🛠️ @0xliamdavis</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN TERMINAL DASHBOARD -->
+  <main class="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+    <!-- LEFT & CENTER: DYNAMIC DEX PAIRS MONITOR (3 COLS) -->
+    <section class="lg:col-span-3 bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
+      <div>
+        
+        <!-- CONTROLS & FILTER BAR -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3 mb-4 pb-3 border-b border-gray-800">
+          
+          <div class="flex items-center gap-2 w-full md:w-auto">
+            <span class="text-xl">🔍</span>
+            <input type="text" id="search-input" placeholder="Search symbol or address..." class="w-full md:w-64 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
+          </div>
+
+          <!-- CHAIN FILTERS -->
+          <div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto text-xs">
+            <button onclick="filterChain('ALL')" class="chain-btn px-3 py-1 bg-[#2DD4BF] text-black font-bold rounded retro-btn" data-chain="ALL">ALL</button>
+            <button onclick="filterChain('solana')" class="chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn" data-chain="solana">SOLANA</button>
+            <button onclick="filterChain('base')" class="chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn" data-chain="base">BASE</button>
+          </div>
+
+        </div>
+
+        <!-- TELEMETRY TABLE -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead>
+              <tr class="text-gray-400 border-b border-gray-800 uppercase font-mono text-[11px]">
+                <th class="py-2">#</th>
+                <th class="py-2">Token</th>
+                <th class="py-2">Chain</th>
+                <th class="py-2">Price</th>
+                <th class="py-2">24h Vol</th>
+                <th class="py-2">Liquidity</th>
+                <th class="py-2">Risk Audit</th>
+                <th class="py-2 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="token-table-body" class="divide-y divide-gray-800/60">
+              <tr>
+                <td colspan="8" class="py-8 text-center text-gray-500 animate-pulse">Initializing Blort Bot telemetry scanner...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- TABLE FOOTER METRICS -->
+      <div class="mt-4 pt-3 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-400 gap-2">
+        <div id="last-update-time">Status: Syncing data...</div>
+        <div>Data Source: DexScreener Public Engine • 0% Server Overhead</div>
+      </div>
+    </section>
+
+    <!-- RIGHT: LIVE WHALE RADAR TERMINAL (1 COL) -->
+    <section class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
+          <h2 class="text-sm font-bold text-[#C84B31] flex items-center gap-2">
+            <span>🐋</span> WHALE RADAR
+          </h2>
+          <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE FEED</span>
+        </div>
+
+        <p class="text-[11px] text-gray-400 mb-3">Capturing high-value trades in real time.</p>
+
+        <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
+          <p class="text-xs text-gray-500 text-center py-6">Listening for whale signals...</p>
+        </div>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-gray-800 text-center">
+        <a href="https://x.com/BotBlort" target="_blank" class="text-[11px] text-[#2DD4BF] hover:underline">Follow @BotBlort for auto-alerts 📡</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RISK AUDIT POPUP MODAL -->
+  <div id="audit-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+    <div class="bg-[#161b22] max-w-md w-full p-5 rounded-lg retro-box border-2 border-[#2DD4BF]">
+      <div class="flex justify-between items-center pb-3 border-b border-gray-800">
+        <h3 id="modal-title" class="font-bold text-[#2DD4BF] text-base">TOKEN RISK AUDIT</h3>
+        <button onclick="closeModal()" class="text-gray-400 hover:text-white font-bold text-lg">&times;</button>
+      </div>
+      <div id="modal-content" class="py-4 space-y-3 text-xs">
+        <!-- Dynamic audit details inserted here -->
+      </div>
+      <button onclick="closeModal()" class="w-full py-2 bg-[#C84B31] text-white font-bold rounded retro-btn text-xs">CLOSE AUDIT</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="max-w-7xl mx-auto w-full text-center text-xs text-gray-500 mt-6 py-3 border-t border-gray-800">
+    <p>Blort Bot &copy; 2026. Designed for the <a href="https://x.com/bankrbot" target="_blank" class="text-[#2DD4BF] hover:underline">@bankrbot</a> ecosystem by <a href="https://x.com/0xliamdavis" target="_blank" class="text-[#C84B31] font-bold hover:underline">@0xliamdavis</a>.</p>
+  </footer>
+
+  <!-- ADVANCED ENGINE FRONTEND SCRIPT -->
+  <script>
+    let masterData = null;
+    let selectedChain = 'ALL';
+
+    async function fetchTelemetry() {
+      try {
+        const response = await fetch('./data/data.json?t=' + new Date().getTime());
+        if (!response.ok) throw new Error("Data pending");
+        masterData = await response.json();
+
+        renderDashboard();
+      } catch (err) {
+        console.warn("Waiting for GitHub Actions pipeline data...", err);
+      }
+    }
+
+    function renderDashboard() {
+      if (!masterData) return;
+
+      // Update Summary Stats
+      document.getElementById('stat-total').innerText = masterData.summary.totalAnalyzed || 0;
+      const safeRatio = Math.round((masterData.summary.safeTokensCount / masterData.summary.totalAnalyzed) * 100) || 0;
+      document.getElementById('stat-safe').innerText = safeRatio + '%';
+      document.getElementById('stat-whales').innerText = masterData.summary.totalWhaleAlerts || 0;
+      document.getElementById('last-update-time').innerText = 'Last Telemetry Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
+
+      renderTokens();
+      renderWhales();
+    }
+
+    function renderTokens() {
+      const tbody = document.getElementById('token-table-body');
+      const searchQuery = document.getElementById('search-input').value.toLowerCase();
+
+      tbody.innerHTML = '';
+
+      const filtered = masterData.tokens.filter(token => {
+        const matchesChain = selectedChain === 'ALL' || token.chain.toLowerCase() === selectedChain.toLowerCase();
+        const matchesSearch = token.name.toLowerCase().includes(searchQuery) || 
+                              token.symbol.toLowerCase().includes(searchQuery) ||
+                              token.address.toLowerCase().includes(searchQuery);
+        return matchesChain && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching tokens found.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(token => {
+        const isPositive = token.priceChange24h >= 0;
+        let riskColor = 'bg-emerald-950 text-emerald-400 border-emerald-500/40';
+        if (token.safety.status === 'CAUTION') riskColor = 'bg-yellow-950 text-yellow-400 border-yellow-500/40';
+        if (token.safety.status === 'HIGH_RISK') riskColor = 'bg-red-950 text-red-400 border-red-500/40';
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-gray-800/40 transition border-b border-gray-800/40";
+        tr.innerHTML = `
+          <td class="py-3 font-bold text-gray-500">${token.rank}</td>
+          <td class="py-3 font-bold text-white">${token.name} <span class="text-[10px] text-gray-400">(${token.symbol})</span></td>
+          <td class="py-3"><span class="px-2 py-0.5 bg-gray-800 text-gray-300 rounded text-[10px] font-mono uppercase">${token.chain}</span></td>
+          <td class="py-3 font-mono">$${token.priceUsd} <span class="${isPositive ? 'text-emerald-400' : 'text-red-400'} text-[10px] font-bold">(${isPositive ? '+' : ''}${token.priceChange24h}%)</span></td>
+          <td class="py-3 font-mono text-gray-300">$${Number(token.volume24h).toLocaleString()}</td>
+          <td class="py-3 font-mono text-gray-300">$${Number(token.liquidityUsd).toLocaleString()}</td>
+          <td class="py-3">
+            <button onclick="openAuditModal('${token.symbol}')" class="px-2 py-0.5 rounded border text-[10px] font-bold ${riskColor} hover:scale-105 transition">
+              SCORE ${token.safety.safetyScore}/100 [${token.safety.status}]
+            </button>
+          </td>
+          <td class="py-3 text-right">
+            <a href="${token.dexUrl}" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">DexScreener 📈</a>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderWhales() {
+      const container = document.getElementById('whale-feed');
+      container.innerHTML = '';
+
+      masterData.whaleRadar.forEach(alert => {
+        const isBuy = alert.type === 'BUY';
+        const card = document.createElement('div');
+        card.className = `p-2.5 rounded border ${isBuy ? 'border-emerald-500/30 bg-emerald-950/10' : 'border-red-500/30 bg-red-950/10'}`;
+        card.innerHTML = `
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bold text-xs ${isBuy ? 'text-emerald-400' : 'text-red-400'}">${alert.type} $${alert.token}</span>
+            <span class="text-[9px] px-1.5 py-0.5 bg-gray-800 text-gray-400 rounded uppercase font-mono">${alert.chain}</span>
+          </div>
+          <div class="text-sm font-bold text-white font-mono">$${Number(alert.amountUsd).toLocaleString()}</div>
+          <div class="flex justify-between text-[10px] text-gray-400 mt-1 font-mono">
+            <span>Impact: ${alert.priceImpact}</span>
+            <span class="truncate w-24">Tx: ${alert.txHash.slice(0, 10)}...</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterChain(chain) {
+      selectedChain = chain;
+      document.querySelectorAll('.chain-btn').forEach(btn => {
+        if (btn.getAttribute('data-chain') === chain) {
+          btn.className = 'chain-btn px-3 py-1 bg-[#2DD4BF] text-black font-bold rounded retro-btn';
+        } else {
+          btn.className = 'chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn';
+        }
+      });
+      renderTokens();
+    }
+
+    function openAuditModal(symbol) {
+      const token = masterData.tokens.find(t => t.symbol === symbol);
+      if (!token) return;
+
+      document.getElementById('modal-title').innerText = `RISK AUDIT: $${token.symbol}`;
+      const content = document.getElementById('modal-content');
+
+      const flagsHtml = token.safety.flags.length > 0
+        ? token.safety.flags.map(f => `<li class="text-red-400">⚠️ ${f}</li>`).join('')
+        : '<li class="text-emerald-400">✅ No Critical Anomalies Detected</li>';
+
+      content.innerHTML = `
+        <div class="flex justify-between border-b border-gray-800 pb-2">
+          <span>Safety Rating:</span>
+          <span class="font-bold">${token.safety.safetyScore} / 100</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-2">
+          <span>Status:</span>
+          <span class="font-bold">${token.safety.status}</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-2">
+          <span>24h Transactions:</span>
+          <span class="font-bold">${token.txns24h.buys} Buys / ${token.txns24h.sells} Sells</span>
+        </div>
+        <div class="mt-2">
+          <span class="font-bold">Detected Risk Flags:</span>
+          <ul class="mt-1 space-y-1 font-mono text-[11px]">${flagsHtml}</ul>
+        </div>
+      `;
+
+      document.getElementById('audit-modal').classList.remove('hidden');
+      document.getElementById('audit-modal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('audit-modal').classList.add('hidden');
+      document.getElementById('audit-modal').classList.remove('flex');
+    }
+
+    document.getElementById('search-input').addEventListener('input', renderTokens);
+
+    fetchTelemetry();
+    setInterval(fetchTelemetry, 30000);
+  </script>
+</body>
+</html>
