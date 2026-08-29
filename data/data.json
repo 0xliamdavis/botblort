@@ -1,22 +1,47 @@
 {
   "meta": {
     "engine": "BlortBot Base Telemetry Terminal v2.0",
-    "targetOrigin": "Base Chain Verified Tokens",
-    "updatedAt": "2026-08-29T11:53:09.941Z",
+    "targetOrigin": "Base Network Multi-Index Engine",
+    "updatedAt": "2026-08-29T12:04:29.989Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 1,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Aerodrome",
+      "symbol": "AERO",
+      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "pairAddress": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+      "chain": "BASE",
+      "protocol": "AERODROME",
+      "dexId": "aerodrome",
+      "priceUsd": "0.483900",
+      "priceChange24h": -6.87,
+      "volume24h": 1924119.39,
+      "liquidityUsd": 28825866.49,
+      "fdv": 952759422,
+      "txns24h": {
+        "buys": 474,
+        "sells": 2105
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0x6cdcb1c4a4d1c3c6d054b27ac5b77e89eafb971d"
+    },
+    {
+      "rank": 2,
       "name": "Brett",
       "symbol": "BRETT",
       "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
@@ -43,14 +68,24 @@
   ],
   "whaleRadar": [
     {
-      "id": "WHL-825566",
-      "timestamp": "2026-08-29T11:53:09.941Z",
+      "id": "WHL-136481",
+      "timestamp": "2026-08-29T12:04:29.989Z",
+      "token": "AERO",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "3634.67",
+      "priceImpact": "0.24%",
+      "txHash": "0xe5408319d3f6b4316b6e4e35"
+    },
+    {
+      "id": "WHL-206247",
+      "timestamp": "2026-08-29T12:04:29.989Z",
       "token": "BRETT",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "1064.89",
-      "priceImpact": "1.24%",
-      "txHash": "0xcdc2706fbfcae50306922b60"
+      "amountUsd": "4649.56",
+      "priceImpact": "2.21%",
+      "txHash": "0xf09bf1173c7600fd718bffae"
     }
   ]
 }
