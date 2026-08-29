@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T17:57:05.541Z",
+    "updatedAt": "2026-08-29T18:09:20.085Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "ForBots",
+      "symbol": "ForBots",
+      "address": "0xf094dd06ba63bed49bc405ea66494e48a10b7ba3",
+      "pairAddress": "0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": 16.42,
+      "volume24h": 1685.84,
+      "liquidityUsd": 17701.96,
+      "fdv": 21032,
+      "txns24h": {
+        "buys": 12,
+        "sells": 5
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
+      "poolId": "0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
+      "deployer": "0xff473644c80bcdc1f95ea38882604cdec11bd0a4",
+      "feeRecipient": "0x7b46e4776878517bafab532b8b7d974b27b09bc3",
+      "launchTimestamp": 1788026821563,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-483823",
+      "timestamp": "2026-08-29T18:09:20.085Z",
+      "token": "ForBots",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "90.24",
+      "priceImpact": "2.04%",
+      "txHash": null
+    }
+  ]
 }
