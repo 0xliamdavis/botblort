@@ -36,7 +36,7 @@
   <header class="max-w-7xl mx-auto w-full mb-6">
     <div class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col md:flex-row items-center justify-between gap-4">
       
-      <!-- LOGO & MECHA TITLE -->
+      <!-- LOGO & TITLE -->
       <div class="flex items-center gap-4">
         <img src="https://iili.io/CpjSv8x.md.jpg" alt="Blort Bot Logo" class="w-14 h-14 rounded border-2 border-[#C84B31] object-cover shadow-lg">
         <div>
@@ -82,7 +82,7 @@
   <!-- MAIN TERMINAL DASHBOARD -->
   <main class="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-    <!-- LEFT & CENTER: DYNAMIC BANKR DEX PAIRS MONITOR (3 COLS) -->
+    <!-- LEFT & CENTER: TOKEN TABLE -->
     <section class="lg:col-span-3 bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         
@@ -91,7 +91,7 @@
           
           <div class="flex items-center gap-2 w-full md:w-auto">
             <span class="text-xl">🔍</span>
-            <input type="text" id="search-input" placeholder="Filter by token name, symbol, or contract address..." class="w-full md:w-80 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
+            <input type="text" id="search-input" placeholder="Filter by token name, symbol, or contract..." class="w-full md:w-80 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
           </div>
 
           <!-- NETWORK BADGE -->
@@ -129,14 +129,14 @@
 
       </div>
 
-      <!-- TABLE FOOTER METRICS -->
+      <!-- TABLE FOOTER -->
       <div class="mt-4 pt-3 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-400 gap-2">
         <div id="last-update-time">Status: Fetching telemetry...</div>
-        <div>Source: Bankr API / Doppler Protocol Subgraph</div>
+        <div>Source: Bankr API + DexScreener</div>
       </div>
     </section>
 
-    <!-- RIGHT: LIVE WHALE RADAR TERMINAL (1 COL) -->
+    <!-- RIGHT: WHALE RADAR -->
     <section class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
@@ -146,7 +146,7 @@
           <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE FEED</span>
         </div>
 
-        <p class="text-[11px] text-gray-400 mb-3">Monitoring high-value orders for Bankr tokens.</p>
+        <p class="text-[11px] text-gray-400 mb-3">Monitoring high-value activity for Bankr tokens.</p>
 
         <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
           <p class="text-xs text-gray-500 text-center py-6">Listening for whale signals...</p>
@@ -168,7 +168,7 @@
         <button onclick="closeModal()" class="text-gray-400 hover:text-white font-bold text-lg">&times;</button>
       </div>
       <div id="modal-content" class="py-4 space-y-3 text-xs">
-        <!-- Dynamic audit details inserted here -->
+        <!-- Dynamic content -->
       </div>
       <button onclick="closeModal()" class="w-full py-2 bg-[#C84B31] text-white font-bold rounded retro-btn text-xs">CLOSE AUDIT</button>
     </div>
@@ -179,7 +179,7 @@
     <p>Blort Bot &copy; 2026. Custom telemetry tooling built for <a href="https://x.com/bankrbot" target="_blank" class="text-[#2DD4BF] hover:underline">@bankrbot</a> by <a href="https://x.com/0xliamdavis" target="_blank" class="text-[#C84B31] font-bold hover:underline">@0xliamdavis</a>.</p>
   </footer>
 
-  <!-- ADVANCED ENGINE FRONTEND SCRIPT -->
+  <!-- FRONTEND ENGINE -->
   <script>
     let masterData = null;
 
@@ -188,7 +188,6 @@
         const response = await fetch('./data/data.json?t=' + new Date().getTime());
         if (!response.ok) throw new Error("Data pending");
         masterData = await response.json();
-
         renderDashboard();
       } catch (err) {
         console.warn("Waiting for GitHub Actions telemetry output...", err);
@@ -198,11 +197,18 @@
     function renderDashboard() {
       if (!masterData) return;
 
-      document.getElementById('stat-total').innerText = masterData.summary.totalAnalyzed || 0;
-      const safeRatio = Math.round((masterData.summary.safeTokensCount / masterData.summary.totalAnalyzed) * 100) || 0;
+      const total = masterData.summary?.totalAnalyzed || 0;
+      const safeCount = masterData.summary?.safeTokensCount || 0;
+      const safeRatio = total > 0 ? Math.round((safeCount / total) * 100) : 0;
+
+      document.getElementById('stat-total').innerText = total;
       document.getElementById('stat-safe').innerText = safeRatio + '%';
-      document.getElementById('stat-whales').innerText = masterData.summary.totalWhaleAlerts || 0;
-      document.getElementById('last-update-time').innerText = 'Last Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
+      document.getElementById('stat-whales').innerText = masterData.summary?.totalWhaleAlerts || 0;
+
+      if (masterData.meta?.updatedAt) {
+        document.getElementById('last-update-time').innerText = 
+          'Last Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
+      }
 
       renderTokens();
       renderWhales();
@@ -210,43 +216,75 @@
 
     function renderTokens() {
       const tbody = document.getElementById('token-table-body');
-      const searchQuery = document.getElementById('search-input').value.toLowerCase();
+      const searchQuery = (document.getElementById('search-input').value || '').toLowerCase();
 
       tbody.innerHTML = '';
 
+      if (!masterData.tokens || masterData.tokens.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No BankrBot tokens detected yet.</td></tr>`;
+        return;
+      }
+
       const filtered = masterData.tokens.filter(token => {
-        return token.name.toLowerCase().includes(searchQuery) || 
-               token.symbol.toLowerCase().includes(searchQuery) ||
-               token.address.toLowerCase().includes(searchQuery);
+        const name = (token.name || '').toLowerCase();
+        const symbol = (token.symbol || '').toLowerCase();
+        const address = (token.address || '').toLowerCase();
+        return name.includes(searchQuery) || symbol.includes(searchQuery) || address.includes(searchQuery);
       });
 
       if (filtered.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching BankrBot tokens detected.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching BankrBot tokens found.</td></tr>`;
         return;
       }
 
       filtered.forEach(token => {
-        const isPositive = token.priceChange24h >= 0;
+        const priceChange = Number(token.priceChange24h) || 0;
+        const isPositive = priceChange >= 0;
+
         let riskColor = 'bg-emerald-950 text-emerald-400 border-emerald-500/40';
-        if (token.safety.status === 'CAUTION') riskColor = 'bg-yellow-950 text-yellow-400 border-yellow-500/40';
-        if (token.safety.status === 'HIGH_RISK') riskColor = 'bg-red-950 text-red-400 border-red-500/40';
+        if (token.safety?.status === 'CAUTION') riskColor = 'bg-yellow-950 text-yellow-400 border-yellow-500/40';
+        if (token.safety?.status === 'HIGH_RISK') riskColor = 'bg-red-950 text-red-400 border-red-500/40';
+
+        const protocol = (token.protocol || 'DOPPLER').toUpperCase();
+        const price = token.priceUsd ? `\[ {token.priceUsd}` : '—';
+        const volume = token.volume24h ? ` \]{Number(token.volume24h).toLocaleString()}` : '—';
+        const liquidity = token.liquidityUsd ? `\[ {Number(token.liquidityUsd).toLocaleString()}` : '—';
+        const safetyScore = token.safety?.safetyScore ?? '—';
+        const safetyStatus = token.safety?.status || 'UNKNOWN';
+        const dexUrl = token.dexUrl || `https://dexscreener.com/base/${token.address}`;
 
         const tr = document.createElement('tr');
         tr.className = "hover:bg-gray-800/40 transition border-b border-gray-800/40";
         tr.innerHTML = `
-          <td class="py-3 font-bold text-gray-500">${token.rank}</td>
-          <td class="py-3 font-bold text-white">${token.name} <span class="text-[10px] text-gray-400">(${token.symbol})</span></td>
-          <td class="py-3"><span class="px-2 py-0.5 bg-[#2DD4BF]/10 text-[#2DD4BF] rounded text-[10px] font-mono font-bold uppercase border border-[#2DD4BF]/30">DOPPLER</span></td>
-          <td class="py-3 font-mono">$${token.priceUsd} <span class="${isPositive ? 'text-emerald-400' : 'text-red-400'} text-[10px] font-bold">(${isPositive ? '+' : ''}${token.priceChange24h}%)</span></td>
-          <td class="py-3 font-mono text-gray-300">$${Number(token.volume24h).toLocaleString()}</td>
-          <td class="py-3 font-mono text-gray-300">$${Number(token.liquidityUsd).toLocaleString()}</td>
+          <td class="py-3 font-bold text-gray-500">${token.rank || '—'}</td>
+          <td class="py-3 font-bold text-white">
+            ${token.name || 'Unknown'} 
+            <span class="text-[10px] text-gray-400">(${token.symbol || '???'})</span>
+          </td>
           <td class="py-3">
-            <button onclick="openAuditModal('${token.symbol}')" class="px-2 py-0.5 rounded border text-[10px] font-bold ${riskColor} hover:scale-105 transition">
-              SCORE ${token.safety.safetyScore}/100 [${token.safety.status}]
+            <span class="px-2 py-0.5 bg-[#2DD4BF]/10 text-[#2DD4BF] rounded text-[10px] font-mono font-bold uppercase border border-[#2DD4BF]/30">
+              ${protocol}
+            </span>
+          </td>
+          <td class="py-3 font-mono">
+            ${price}
+            <span class="${isPositive ? 'text-emerald-400' : 'text-red-400'} text-[10px] font-bold">
+              (\( {isPositive ? '+' : ''} \){priceChange.toFixed(2)}%)
+            </span>
+          </td>
+          <td class="py-3 font-mono text-gray-300">${volume}</td>
+          <td class="py-3 font-mono text-gray-300">${liquidity}</td>
+          <td class="py-3">
+            <button onclick="openAuditModal('${token.symbol}')" 
+              class="px-2 py-0.5 rounded border text-[10px] font-bold ${riskColor} hover:scale-105 transition">
+              SCORE \( {safetyScore}/100 [ \){safetyStatus}]
             </button>
           </td>
           <td class="py-3 text-right">
-            <a href="${token.dexUrl}" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">Trade 📈</a>
+            <a href="${dexUrl}" target="_blank" 
+              class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">
+              Trade 📈
+            </a>
           </td>
         `;
         tbody.appendChild(tr);
@@ -257,19 +295,35 @@
       const container = document.getElementById('whale-feed');
       container.innerHTML = '';
 
+      if (!masterData.whaleRadar || masterData.whaleRadar.length === 0) {
+        container.innerHTML = `<p class="text-xs text-gray-500 text-center py-6">No whale activity detected yet.</p>`;
+        return;
+      }
+
       masterData.whaleRadar.forEach(alert => {
         const isBuy = alert.type === 'BUY';
         const card = document.createElement('div');
         card.className = `p-2.5 rounded border ${isBuy ? 'border-emerald-500/30 bg-emerald-950/10' : 'border-red-500/30 bg-red-950/10'}`;
+        
+        const txDisplay = alert.txHash 
+          ? (alert.txHash.length > 12 ? alert.txHash.slice(0, 10) + '...' : alert.txHash)
+          : '—';
+
         card.innerHTML = `
           <div class="flex justify-between items-center mb-1">
-            <span class="font-bold text-xs ${isBuy ? 'text-emerald-400' : 'text-red-400'}">${alert.type} $${alert.token}</span>
-            <span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">BASE</span>
+            <span class="font-bold text-xs ${isBuy ? 'text-emerald-400' : 'text-red-400'}">
+              ${alert.type || '???'} \]{alert.token || '???'}
+            </span>
+            <span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">
+              ${alert.chain || 'BASE'}
+            </span>
           </div>
-          <div class="text-sm font-bold text-white font-mono">$${Number(alert.amountUsd).toLocaleString()}</div>
+          <div class="text-sm font-bold text-white font-mono">
+            \[ {Number(alert.amountUsd || 0).toLocaleString()}
+          </div>
           <div class="flex justify-between text-[10px] text-gray-400 mt-1 font-mono">
-            <span>Impact: ${alert.priceImpact}</span>
-            <span class="truncate w-24">Tx: ${alert.txHash.slice(0, 10)}...</span>
+            <span>Impact: ${alert.priceImpact || '—'}</span>
+            <span class="truncate w-24">Tx: ${txDisplay}</span>
           </div>
         `;
         container.appendChild(card);
@@ -280,25 +334,37 @@
       const token = masterData.tokens.find(t => t.symbol === symbol);
       if (!token) return;
 
-      document.getElementById('modal-title').innerText = `RISK AUDIT: $${token.symbol}`;
+      document.getElementById('modal-title').innerText = `RISK AUDIT: \]{token.symbol}`;
       const content = document.getElementById('modal-content');
 
-      const flagsHtml = token.safety.flags.length > 0
-        ? token.safety.flags.map(f => `<li class="text-red-400">⚠️ ${f}</li>`).join('')
+      const flags = token.safety?.flags || [];
+      const flagsHtml = flags.length > 0
+        ? flags.map(f => `<li class="text-red-400">⚠️ ${f}</li>`).join('')
         : '<li class="text-emerald-400">✅ No Critical Anomalies Detected</li>';
+
+      const buys = token.txns24h?.buys ?? 0;
+      const sells = token.txns24h?.sells ?? 0;
 
       content.innerHTML = `
         <div class="flex justify-between border-b border-gray-800 pb-2">
           <span>Safety Rating:</span>
-          <span class="font-bold">${token.safety.safetyScore} / 100</span>
+          <span class="font-bold">${token.safety?.safetyScore ?? '—'} / 100</span>
         </div>
         <div class="flex justify-between border-b border-gray-800 pb-2">
           <span>Status:</span>
-          <span class="font-bold">${token.safety.status}</span>
+          <span class="font-bold">${token.safety?.status || 'UNKNOWN'}</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-2">
+          <span>Contract:</span>
+          <span class="font-mono text-[10px] text-gray-400 truncate max-w-[180px]">${token.address || '—'}</span>
         </div>
         <div class="flex justify-between border-b border-gray-800 pb-2">
           <span>24h Transactions:</span>
-          <span class="font-bold">${token.txns24h.buys} Buys / ${token.txns24h.sells} Sells</span>
+          <span class="font-bold">${buys} Buys / ${sells} Sells</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-2">
+          <span>Liquidity:</span>
+          <span class="font-bold">\( {token.liquidityUsd ? ' \)' + Number(token.liquidityUsd).toLocaleString() : '—'}</span>
         </div>
         <div class="mt-2">
           <span class="font-bold">Detected Risk Flags:</span>
@@ -317,6 +383,7 @@
 
     document.getElementById('search-input').addEventListener('input', renderTokens);
 
+    // Initial load + refresh every 30 seconds
     fetchTelemetry();
     setInterval(fetchTelemetry, 30000);
   </script>
