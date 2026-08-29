@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Calculates risk metrics specifically tailored for tokens on Base Network.
+ * Calculates risk metrics tailored for Base Network tokens.
  */
 function calculateRiskMetrics(pair) {
   let score = 100;
@@ -45,81 +45,41 @@ function calculateRiskMetrics(pair) {
   return { safetyScore: score, status, flags };
 }
 
-async function fetchBankrTelemetry() {
-  console.log("⚡ [BLORT BOT] Initiating Base Chain Token Telemetry Scan...");
+async function fetchBaseTelemetry() {
+  console.log("⚡ [BLORT BOT] Fetching live Base Chain token telemetry...");
 
   try {
-    let bankrTokenAddresses = [];
-
-    // 1. Try Primary Source: Bankr API
-    try {
-      const bankrRes = await fetch('https://api.bankr.bot/token-launches');
-      if (bankrRes.ok) {
-        const bankrData = await bankrRes.json();
-        const launches = Array.isArray(bankrData) ? bankrData : (bankrData.launches || []);
-        bankrTokenAddresses = launches
-          .filter(t => !t.chainId || t.chainId === 8453 || t.chain === 'base')
-          .map(t => t.tokenAddress || t.address)
-          .filter(Boolean);
-        console.log(`✅ Retrieved ${bankrTokenAddresses.length} tokens from Bankr API.`);
-      }
-    } catch (e) {
-      console.warn("⚠️ Primary Bankr API unavailable:", e.message);
+    // Fetch top boosted/trending tokens on Base directly from DexScreener public search
+    const response = await fetch('https://api.dexscreener.com/latest/dex/search?q=base');
+    
+    if (!response.ok) {
+      throw new Error(`DexScreener API returned status ${response.status}`);
     }
 
-    // 2. Secondary Fallback: Query DexScreener for Bankr / Doppler pairs
-    if (bankrTokenAddresses.length === 0) {
-      try {
-        console.log("🔄 Querying DexScreener search index for Bankr tokens...");
-        const searchRes = await fetch('https://api.dexscreener.com/latest/dex/search?q=bankr');
-        if (searchRes.ok) {
-          const searchData = await searchRes.json();
-          const pairs = searchData.pairs || [];
-          bankrTokenAddresses = pairs
-            .filter(p => p.chainId === 'base')
-            .map(p => p.baseToken.address);
-        }
-      } catch (e) {
-        console.warn("⚠️ Secondary search indexer failed:", e.message);
-      }
-    }
+    const data = await response.json();
+    const pairs = data.pairs || [];
 
-    // 3. Ultimate Fallback: Fetch Top Trading Pairs on Base Network to prevent empty UI
-    let rawPairs = [];
-    const uniqueAddresses = Array.from(new Set(bankrTokenAddresses)).slice(0, 30);
+    // Filter strictly for Base chain pairs
+    const basePairs = pairs.filter(p => p.chainId === 'base' && p.baseToken && p.liquidity?.usd > 1000);
 
-    if (uniqueAddresses.length > 0) {
-      const pairsRes = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${uniqueAddresses.join(',')}`);
-      if (pairsRes.ok) {
-        const pairsData = await pairsRes.json();
-        rawPairs = (pairsData.pairs || []).filter(p => p.chainId === 'base');
-      }
-    }
-
-    // If no specific Bankr addresses responded, query top Base DEX pools directly
-    if (rawPairs.length === 0) {
-      console.log("🛡️ Fallback triggered: Fetching top Base network token pairs directly...");
-      const topBaseRes = await fetch('https://api.dexscreener.com/latest/dex/search?q=base');
-      if (topBaseRes.ok) {
-        const topBaseData = await topBaseRes.json();
-        rawPairs = (topBaseData.pairs || []).filter(p => p.chainId === 'base');
-      }
-    }
-
-    // Deduplicate pair results by base token address
-    const uniquePairsMap = new Map();
-    rawPairs.forEach((pair) => {
-      const addr = pair.baseToken?.address;
-      if (addr && !uniquePairsMap.has(addr)) {
-        uniquePairsMap.set(addr, pair);
+    // Deduplicate by base token address
+    const uniqueMap = new Map();
+    basePairs.forEach(pair => {
+      const addr = pair.baseToken.address;
+      if (addr && !uniqueMap.has(addr)) {
+        uniqueMap.set(addr, pair);
       }
     });
 
-    const sortedPairs = Array.from(uniquePairsMap.values())
-      .sort((a, b) => (b.volume?.h24 || 0) - (a.volume?.h24 || 0));
+    const sortedPairs = Array.from(uniqueMap.values())
+      .sort((a, b) => (b.volume?.h24 || 0) - (a.volume?.h24 || 0))
+      .slice(0, 20);
 
-    // Process Token Telemetry Payload
-    const processedTokens = sortedPairs.slice(0, 20).map((pair, index) => {
+    if (sortedPairs.length === 0) {
+      throw new Error("No active Base pairs found from indexer.");
+    }
+
+    const processedTokens = sortedPairs.map((pair, index) => {
       const risk = calculateRiskMetrics(pair);
       return {
         rank: index + 1,
@@ -128,7 +88,7 @@ async function fetchBankrTelemetry() {
         address: pair.baseToken.address,
         pairAddress: pair.pairAddress,
         chain: "BASE",
-        protocol: pair.dexId ? pair.dexId.toUpperCase() : "BankrBot (Doppler)",
+        protocol: pair.dexId ? pair.dexId.toUpperCase() : "DOPPLER",
         dexId: pair.dexId,
         priceUsd: parseFloat(pair.priceUsd || 0).toFixed(6),
         priceChange24h: pair.priceChange?.h24 || 0,
@@ -144,20 +104,19 @@ async function fetchBankrTelemetry() {
       };
     });
 
-    // Generate Live Whale Radar Signals
     const whaleRadar = processedTokens
       .slice(0, 8)
       .map((token) => {
-        const isBuy = Math.random() > 0.35;
-        const simulatedAmount = (Math.random() * 4500 + 300).toFixed(2);
+        const isBuy = Math.random() > 0.4;
+        const amount = (Math.random() * 5000 + 400).toFixed(2);
         return {
           id: "WHL-" + Math.floor(100000 + Math.random() * 900000),
           timestamp: new Date().toISOString(),
           token: token.symbol,
           chain: "BASE",
           type: isBuy ? "BUY" : "SELL",
-          amountUsd: simulatedAmount,
-          priceImpact: (Math.random() * 3.5 + 0.4).toFixed(2) + "%",
+          amountUsd: amount,
+          priceImpact: (Math.random() * 3.0 + 0.3).toFixed(2) + "%",
           txHash: "0x" + Array.from({ length: 24 }, () => Math.floor(Math.random() * 16).toString(16)).join('')
         };
       });
@@ -165,7 +124,7 @@ async function fetchBankrTelemetry() {
     const payload = {
       meta: {
         engine: "BlortBot Base Telemetry Terminal v2.0",
-        targetOrigin: "Base Chain Telemetry / BankrBot",
+        targetOrigin: "Base Chain Public Indexer",
         updatedAt: new Date().toISOString(),
         builder: "@0xliamdavis",
         botAccount: "@BotBlort",
@@ -188,12 +147,12 @@ async function fetchBankrTelemetry() {
     }
 
     fs.writeFileSync(path.join(outputDir, 'data.json'), JSON.stringify(payload, null, 2));
-    console.log("✅ Data successfully generated and written to data/data.json");
+    console.log(`✅ Successfully generated payload with ${processedTokens.length} tokens.`);
 
   } catch (error) {
-    console.error("❌ Fatal Telemetry Failure:", error);
+    console.error("❌ Error fetching telemetry:", error);
     process.exit(1);
   }
 }
 
-fetchBankrTelemetry();
+fetchBaseTelemetry();
