@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T20:37:17.094Z",
+    "updatedAt": "2026-08-29T20:49:21.624Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Charleston AI",
+      "symbol": "CHS",
+      "address": "0xb15ddb3b94b92a07bc324a2542408d0e12baaba3",
+      "pairAddress": "0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -17,
+      "volume24h": 23639.7,
+      "liquidityUsd": 11626.8,
+      "fdv": 13615,
+      "txns24h": {
+        "buys": 160,
+        "sells": 236
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
+      "poolId": "0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
+      "deployer": "0x2c1ddb4e44d9c940462c1ae93840868d2ea9e502",
+      "feeRecipient": "0x1e968d014dbae18be533c7638dbfecad25beb143",
+      "launchTimestamp": 1788035962532,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-485537",
+      "timestamp": "2026-08-29T20:49:21.624Z",
+      "token": "CHS",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "1397.54",
+      "priceImpact": "0.48%",
+      "txHash": null
+    }
+  ]
 }
