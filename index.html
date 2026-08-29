@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLORT BOT — BankrBot Telemetry Terminal</title>
+  <link rel="icon" href="https://iili.io/CpjSv8x.md.jpg" type="image/jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Fira Code', monospace;
+    }
+    .font-retro { font-family: 'VT323', monospace; }
+    .retro-box {
+      border: 2px solid #C84B31;
+      box-shadow: 4px 4px 0px #1E4D4E;
+    }
+    .retro-btn {
+      transition: all 0.15s ease;
+    }
+    .retro-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 2px 2px 0px #2DD4BF;
+    }
+    .cursor-blink {
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .typing-cursor::after {
+      content: '▋';
+      animation: blink 1s step-end infinite;
+      color: #2DD4BF;
+      margin-left: 2px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- NAV -->
+  <nav class="border-b border-gray-800 bg-[#0d1117]/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://iili.io/CpjSv8x.md.jpg" alt="Blort Bot" class="w-9 h-9 rounded border border-[#C84B31]">
+        <span class="font-retro text-2xl text-[#2DD4BF] tracking-widest">BLORT BOT</span>
+      </div>
+      <div class="flex items-center gap-3 text-xs">
+        <a href="https://x.com/BotBlort" target="_blank" class="text-gray-400 hover:text-[#2DD4BF]">@BotBlort</a>
+        <a href="terminal.html" class="px-3 py-1.5 bg-[#C84B31] text-white font-bold rounded retro-btn">Open Terminal</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 w-full">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 text-[11px] font-bold mb-5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          BANKR ENGINE ACTIVE
+        </div>
+
+        <h1 class="font-retro text-4xl md:text-5xl text-[#2DD4BF] leading-tight mb-4 tracking-wide">
+          Autonomous Risk Terminal for BankrBot Tokens
+        </h1>
+
+        <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
+          Real-time telemetry and risk scoring for tokens deployed by <span class="text-[#2DD4BF]">@bankrbot</span> on Base via Doppler Protocol. Built for the agentic economy.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="terminal.html" class="px-5 py-2.5 bg-[#C84B31] text-white font-bold rounded retro-btn text-sm">
+            Launch Terminal →
+          </a>
+          <a href="https://github.com/0xliamdavis/botblort" target="_blank" class="px-5 py-2.5 border border-gray-600 text-gray-300 rounded hover:border-[#2DD4BF] hover:text-[#2DD4BF] text-sm transition">
+            View Source
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Chat Box -->
+      <div class="bg-[#161b22] rounded-lg retro-box p-4">
+        <div class="flex items-center gap-2 mb-3 pb-2 border-b border-gray-800">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          <span class="text-[11px] text-gray-500 ml-2">blort@bankr — session</span>
+        </div>
+
+        <div id="chat-box" class="h-64 overflow-y-auto space-y-3 text-xs font-mono pr-1">
+          <!-- messages injected by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="border-t border-gray-800 bg-[#0d1117]">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="font-retro text-3xl text-[#2DD4BF] mb-2 tracking-wide">What it does</h2>
+      <p class="text-gray-500 text-sm mb-10">Core capabilities of the Blort telemetry engine.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">📡</div>
+          <h3 class="font-bold text-white mb-2 text-sm">Live Bankr Launches</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Pulls real deployed tokens directly from the official Bankr API, filtered to Base + Doppler only.</p>
+        </div>
+
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">🛡️</div>
+          <h3 class="font-bold text-white mb-2 text-sm">Risk Scoring</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Simple heuristic risk model based on liquidity, volume ratio, transaction count, and FDV disparity.</p>
+        </div>
+
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">🐋</div>
+          <h3 class="font-bold text-white mb-2 text-sm">Whale Radar</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Highlights higher-activity tokens so you can quickly spot where volume is concentrating.</p>
+        </div>
+
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">⚡</div>
+          <h3 class="font-bold text-white mb-2 text-sm">Serverless Updates</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Runs fully on GitHub Actions every 10 minutes. No server, no paid infra.</p>
+        </div>
+
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">🔗</div>
+          <h3 class="font-bold text-white mb-2 text-sm">One-Click Trade</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Every token links straight into the Bankr Terminal so you can trade without leaving the flow.</p>
+        </div>
+
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800 hover:border-[#C84B31]/50 transition">
+          <div class="text-2xl mb-3">🆕</div>
+          <h3 class="font-bold text-white mb-2 text-sm">Smart New Token Filter</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">New launches under 6 hours only appear once they reach at least $500 in 24h volume.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="font-retro text-3xl text-[#2DD4BF] mb-2 tracking-wide">How it works</h2>
+      <p class="text-gray-500 text-sm mb-10">Simple pipeline. No backend server required.</p>
+
+      <div class="grid md:grid-cols-4 gap-4 text-center">
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800">
+          <div class="text-[#C84B31] font-bold text-lg mb-2">01</div>
+          <h3 class="text-sm font-bold text-white mb-1">Bankr API</h3>
+          <p class="text-[11px] text-gray-400">Fetch latest deployed tokens on Base</p>
+        </div>
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800">
+          <div class="text-[#C84B31] font-bold text-lg mb-2">02</div>
+          <h3 class="text-sm font-bold text-white mb-1">DexScreener</h3>
+          <p class="text-[11px] text-gray-400">Enrich with price, volume & liquidity</p>
+        </div>
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800">
+          <div class="text-[#C84B31] font-bold text-lg mb-2">03</div>
+          <h3 class="text-sm font-bold text-white mb-1">Risk Engine</h3>
+          <p class="text-[11px] text-gray-400">Score each token and flag risks</p>
+        </div>
+        <div class="bg-[#161b22] p-5 rounded-lg border border-gray-800">
+          <div class="text-[#C84B31] font-bold text-lg mb-2">04</div>
+          <h3 class="text-sm font-bold text-white mb-1">GitHub Pages</h3>
+          <p class="text-[11px] text-gray-400">Serve live dashboard every 10 min</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="border-t border-gray-800 bg-[#0d1117]">
+    <div class="max-w-3xl mx-auto px-4 py-16">
+      <h2 class="font-retro text-3xl text-[#2DD4BF] mb-2 tracking-wide text-center">FAQ</h2>
+      <p class="text-gray-500 text-sm mb-10 text-center">Common questions about Blort Bot.</p>
+
+      <div class="space-y-4" id="faq">
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>What tokens does Blort track?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            Only tokens deployed by @bankrbot on Base through the Doppler Protocol. We do not track random Base memecoins.
+          </div>
+        </div>
+
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>Why is price / volume sometimes empty?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            Very new Doppler (Uniswap V4) tokens often take time to appear on DexScreener. Until market data is available, Blort shows "—" and marks them as new launches.
+          </div>
+        </div>
+
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>How often is the data updated?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            The telemetry engine runs every 10 minutes via GitHub Actions and pushes a fresh data.json to the site.
+          </div>
+        </div>
+
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>What does the risk score mean?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            Score starts at 100 and is reduced based on low liquidity, high volume/liquidity ratio, low transaction count, and extreme FDV disparity. 
+            SAFE ≥ 70 · CAUTION 45–69 · HIGH_RISK &lt; 45.
+          </div>
+        </div>
+
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>Is this an official Bankr product?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            No. Blort Bot is an independent community tool built for the Bankr ecosystem by @0xliamdavis. It is not affiliated with or endorsed by Bankr.
+          </div>
+        </div>
+
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center text-sm font-bold text-white hover:bg-gray-800/40 transition">
+            <span>Why do some new tokens not appear?</span>
+            <span class="text-[#C84B31]">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs text-gray-400 leading-relaxed">
+            New tokens under 6 hours old are only shown once they reach at least $500 in 24h volume. This reduces noise from zero-activity launches.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+      <h2 class="font-retro text-3xl text-[#2DD4BF] mb-4 tracking-wide">Ready to scan?</h2>
+      <p class="text-gray-400 text-sm mb-8">Open the live terminal and monitor BankrBot deployments on Base.</p>
+      <a href="terminal.html" class="inline-block px-6 py-3 bg-[#C84B31] text-white font-bold rounded retro-btn text-sm">
+        Open Terminal →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-500">
+    <p>
+      Blort Bot © 2026 · Built for 
+      <a href="https://x.com/bankrbot" target="_blank" class="text-[#2DD4BF] hover:underline">@bankrbot</a> 
+      by 
+      <a href="https://x.com/0xliamdavis" target="_blank" class="text-[#C84B31] hover:underline">@0xliamdavis</a>
+    </p>
+  </footer>
+
+  <script>
+    // Typing chat animation
+    const messages = [
+      { role: "system", text: "> BLORT BOT v2.3 online" },
+      { role: "system", text: "> Connecting to Bankr API..." },
+      { role: "bot", text: "Scanning Base for Doppler launches..." },
+      { role: "bot", text: "Found new @bankrbot deployments." },
+      { role: "bot", text: "Enriching market data via DexScreener..." },
+      { role: "bot", text: "Risk engine active. Filtering low-volume new tokens." },
+      { role: "system", text: "> Telemetry ready. Open terminal to continue." }
+    ];
+
+    const chatBox = document.getElementById("chat-box");
+    let msgIndex = 0;
+
+    function typeMessage(msg, callback) {
+      const div = document.createElement("div");
+      div.className = msg.role === "system" ? "text-gray-500" : "text-[#2DD4BF]";
+      
+      const prefix = msg.role === "bot" ? "blort> " : "";
+      let i = 0;
+      const full = prefix + msg.text;
+
+      function tick() {
+        if (i <= full.length) {
+          div.textContent = full.slice(0, i);
+          div.classList.add("typing-cursor");
+          i++;
+          chatBox.scrollTop = chatBox.scrollHeight;
+          setTimeout(tick, 18 + Math.random() * 25);
+        } else {
+          div.classList.remove("typing-cursor");
+          if (callback) callback();
+        }
+      }
+
+      chatBox.appendChild(div);
+      tick();
+    }
+
+    function nextMessage() {
+      if (msgIndex >= messages.length) return;
+      typeMessage(messages[msgIndex], function() {
+        msgIndex++;
+        setTimeout(nextMessage, 400);
+      });
+    }
+
+    // Start typing after short delay
+    setTimeout(nextMessage, 600);
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector("span:last-child");
+        const isHidden = content.classList.contains("hidden");
+
+        // close others
+        document.querySelectorAll(".faq-content").forEach(function(c) {
+          c.classList.add("hidden");
+        });
+        document.querySelectorAll(".faq-btn span:last-child").forEach(function(i) {
+          i.textContent = "+";
+        });
+
+        if (isHidden) {
+          content.classList.remove("hidden");
+          icon.textContent = "−";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
