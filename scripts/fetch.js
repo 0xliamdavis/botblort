@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 function calculateRiskMetrics(pair) {
   let score = 100;
   const flags = [];
@@ -48,26 +46,44 @@ async function fetchBaseTelemetry() {
   console.log("⚡ Starting Blort Bot Base Telemetry Engine...");
 
   try {
-    // API khusus pencarian token & DEX populer di jaringan Base
-    const res = await fetch('https://api.dexscreener.com/latest/dex/search?q=base');
-    const data = await res.json();
+    // 1. Ambil token trending/boosted di DexScreener
+    const boostRes = await fetch('https://api.dexscreener.com/token-boosts/top/v1');
+    const boostData = await boostRes.json();
     
-    let rawPairs = data.pairs || [];
+    // Filter hanya token yang ada di chain 'base'
+    const baseBoosts = (boostData || []).filter(item => item.chainId === 'base');
+    const tokenAddresses = Array.from(new Set(baseBoosts.map(b => b.tokenAddress))).slice(0, 30);
 
-    // Filter STRICT hanya untuk chainId 'base'
-    const basePairs = rawPairs.filter(p => p.chainId === 'base');
+    let basePairs = [];
 
-    // Deduplicate pairs by pair address
-    const uniquePairsMap = new Map();
+    if (tokenAddresses.length > 0) {
+      // Fetch detail pairs berdasarkan token address asli
+      const pairsRes = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddresses.join(',')}`);
+      const pairsData = await pairsRes.json();
+      basePairs = (pairsData.pairs || []).filter(p => p.chainId === 'base');
+    }
+
+    // Jika token boost sedikit, fallback ke search query variatif
+    if (basePairs.length < 10) {
+      const searchRes = await fetch('https://api.dexscreener.com/latest/dex/search?q=aerodrome');
+      const searchData = await searchRes.json();
+      const extraPairs = (searchData.pairs || []).filter(p => p.chainId === 'base');
+      basePairs = [...basePairs, ...extraPairs];
+    }
+
+    // Filter unik berdasarkan Token Address (mencegah nama/link duplikat)
+    const uniqueTokensMap = new Map();
     basePairs.forEach((pair) => {
-      if (pair.pairAddress && !uniquePairsMap.has(pair.pairAddress)) {
-        uniquePairsMap.set(pair.pairAddress, pair);
+      const tokenAddr = pair.baseToken?.address;
+      if (tokenAddr && !uniqueTokensMap.has(tokenAddr)) {
+        uniqueTokensMap.set(tokenAddr, pair);
       }
     });
 
-    const sortedPairs = Array.from(uniquePairsMap.values()).sort((a, b) => (b.volume?.h24 || 0) - (a.volume?.h24 || 0));
+    const sortedPairs = Array.from(uniqueTokensMap.values())
+      .sort((a, b) => (b.volume?.h24 || 0) - (a.volume?.h24 || 0));
 
-    // Top 20 Processed Base Tokens
+    // Ambil Top 20 Token Unik
     const processedTokens = sortedPairs.slice(0, 20).map((pair, index) => {
       const risk = calculateRiskMetrics(pair);
       return {
@@ -93,9 +109,9 @@ async function fetchBaseTelemetry() {
       };
     });
 
-    // Generate Real-Time Base Whale Radar Alerts
+    // Real-Time Base Whale Radar Feed
     const whaleRadar = processedTokens
-      .filter((token) => token.volume24h > 20000)
+      .filter((token) => token.volume24h > 10000)
       .slice(0, 8)
       .map((token) => {
         const isBuy = Math.random() > 0.35;
