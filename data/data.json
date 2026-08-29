@@ -1,91 +1,423 @@
 {
   "meta": {
-    "engine": "BlortBot Base Telemetry Terminal v2.0",
-    "targetOrigin": "Base Network Multi-Index Engine",
-    "updatedAt": "2026-08-29T13:03:53.277Z",
+    "engine": "BlortBot Bankr Telemetry Terminal v2.1",
+    "targetOrigin": "Bankr API + DexScreener",
+    "updatedAt": "2026-08-29T13:19:06.146Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 2,
-    "safeTokensCount": 2,
+    "totalAnalyzed": 13,
+    "safeTokensCount": 0,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Aerodrome",
-      "symbol": "AERO",
-      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-      "pairAddress": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+      "name": "titcoin",
+      "symbol": "TIT",
+      "address": "0x4445e718a94b363389066e5af8632bf9c14bbba3",
+      "pairAddress": null,
       "chain": "BASE",
-      "protocol": "AERODROME",
-      "dexId": "aerodrome",
-      "priceUsd": "0.481700",
-      "priceChange24h": -7.35,
-      "volume24h": 1856392.13,
-      "liquidityUsd": 28761455.14,
-      "fdv": 948486454,
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 440,
-        "sells": 2086
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 100,
-        "status": "SAFE",
-        "flags": []
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x6cdcb1c4a4d1c3c6d054b27ac5b77e89eafb971d"
+      "dexUrl": "https://dexscreener.com/base/0x4445e718a94b363389066e5af8632bf9c14bbba3",
+      "poolId": "0x0e460e66b996c74be17dff4c0685f97f3daf834a0536ef449ea556f99897f3ff",
+      "deployer": "0x73b7c10f18b1c5166111063d7de6b8c75c54c60b",
+      "feeRecipient": "0x59734b2b2b741d629591103b47c9a3b840cfad74",
+      "launchTimestamp": 1788009438627
     },
     {
       "rank": 2,
-      "name": "Brett",
-      "symbol": "BRETT",
-      "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
-      "pairAddress": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
+      "name": "UNITED STATES SUPPLY MINERAL-USSM",
+      "symbol": "USSM",
+      "address": "0x8f9609f25131182741218afa04c5dfeadda3bba3",
+      "pairAddress": null,
       "chain": "BASE",
-      "protocol": "AERODROME",
-      "dexId": "aerodrome",
-      "priceUsd": "0.004961",
-      "priceChange24h": -4.22,
-      "volume24h": 158572.69,
-      "liquidityUsd": 778272.18,
-      "fdv": 49169443,
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 373,
-        "sells": 543
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 100,
-        "status": "SAFE",
-        "flags": []
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x4e829f8a5213c42535ab84aa40bd4adcce9cba02"
-    }
-  ],
-  "whaleRadar": [
-    {
-      "id": "WHL-811385",
-      "timestamp": "2026-08-29T13:03:53.277Z",
-      "token": "AERO",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "5306.70",
-      "priceImpact": "0.41%",
-      "txHash": "0x5647aa67a1d1094aaa4f2ef9"
+      "dexUrl": "https://dexscreener.com/base/0x8f9609f25131182741218afa04c5dfeadda3bba3",
+      "poolId": "0x0f045d6950c36b793a55daf6a4e18867018598d610304aa82ee1e9fb765bb9da",
+      "deployer": "0x1e2b5f5f888061bc9064ad5fc650790900a76d6d",
+      "feeRecipient": "0xab0122634137f6cd06fe7ac608bc22a16716f1f2",
+      "launchTimestamp": 1788009358167
     },
     {
-      "id": "WHL-672387",
-      "timestamp": "2026-08-29T13:03:53.277Z",
-      "token": "BRETT",
+      "rank": 3,
+      "name": "chatbot",
+      "symbol": "chatbot",
+      "address": "0x8727e38cde1314e7fd8ba0491220d643c86d3ba3",
+      "pairAddress": null,
       "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "2844.80",
-      "priceImpact": "2.17%",
-      "txHash": "0xef0a6de344c9533abfda37bd"
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x8727e38cde1314e7fd8ba0491220d643c86d3ba3",
+      "poolId": "0x0a4d4077a31d46dc108f43ac5242c8f0509c2b5243d5110167dc2e2f3ea8b754",
+      "deployer": "0xe5b13e07f7a6e1d296c3b3a7de7b26a8a848e8fc",
+      "feeRecipient": "0x0a62eef6524a4094f34e69326420383272761e09",
+      "launchTimestamp": 1788009355131
+    },
+    {
+      "rank": 4,
+      "name": "BASELINE",
+      "symbol": "BASELINE",
+      "address": "0x9471ac19e16eb068a939596e1ce7ab5cd2bb8ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x9471ac19e16eb068a939596e1ce7ab5cd2bb8ba3",
+      "poolId": "0x571a3ce745fc0c7f759055de296dbffc9857e044b3e66592052a9f1f73ceac9a",
+      "deployer": "0xa71c1999ac45dad78cb4456c2c45c0069c2fad3f",
+      "feeRecipient": "0xb989a7246376c2b6f09fece21712739bb035430c",
+      "launchTimestamp": 1788009276395
+    },
+    {
+      "rank": 5,
+      "name": "Pons Charity",
+      "symbol": "CHARITY",
+      "address": "0xe3d72e7c7716b6fbe939065faaaa9576c676aba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xe3d72e7c7716b6fbe939065faaaa9576c676aba3",
+      "poolId": "0x429d3118c041997c2ad95d1c16af9dbe9841397e033341710fba572ae2aa361c",
+      "deployer": "0x3af3370899436e859782d9835c853862b23449c3",
+      "feeRecipient": "0x5cf9a0aaa5e1c0d2c76d3cf857d10b880ff7213b",
+      "launchTimestamp": 1788009113677
+    },
+    {
+      "rank": 6,
+      "name": "NOLOCK",
+      "symbol": "WLAI",
+      "address": "0x86a501b42c15f9ada2785314c6630e8b8913eba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x86a501b42c15f9ada2785314c6630e8b8913eba3",
+      "poolId": "0xca399b14cc5db663b8c8bcb2e68e5753ca8574747f7b3aeb3a52316520adaae2",
+      "deployer": "0x6fe92281d5ecce4d241c5c1b92ee07d50a9b2e26",
+      "feeRecipient": "0xa7627e24d9c82e5598ce10e3c9a796b9f991d11d",
+      "launchTimestamp": 1788008943473
+    },
+    {
+      "rank": 7,
+      "name": "Mika Life Companion",
+      "symbol": "Mika",
+      "address": "0xcd36a8d550136988b67f35696abe5e4b86407ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xcd36a8d550136988b67f35696abe5e4b86407ba3",
+      "poolId": "0xc063fe5c4970ffd165580daa970f164b9cba3d8472cf0b510f4d15b07fdea630",
+      "deployer": "0xe59704345499c09919dfd772f5bef8cadad0d54a",
+      "feeRecipient": "0x56290900858385ad5d9ded1845ed3ba74a3a0894",
+      "launchTimestamp": 1788008789938
+    },
+    {
+      "rank": 8,
+      "name": "ponscharity",
+      "symbol": "CHARITY",
+      "address": "0x451ee11193ff7e45694d2904b9955ab691c9bba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x451ee11193ff7e45694d2904b9955ab691c9bba3",
+      "poolId": "0xbf542e2b81ed8ee27d5e3d7e0226351414a82ac5cc9b82a03655af772c55578e",
+      "deployer": "0x560737ccd1b5a50a1bdbedb75fb9cd0dadffe752",
+      "feeRecipient": "0x733828a5e1cd17e69a8152b9fb110d505a511efb",
+      "launchTimestamp": 1788008603943
+    },
+    {
+      "rank": 9,
+      "name": "Roblox Collectible Cards",
+      "symbol": "RCC",
+      "address": "0xc5b392addbbf3630d4fc8a570ad5a7ff9fe7bba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xc5b392addbbf3630d4fc8a570ad5a7ff9fe7bba3",
+      "poolId": "0x154c42856493f106956ec6f9126ddd84959c02c3d5cdd134bcf5c0c21d558927",
+      "deployer": "0xe44b0bd4c78cc6c02dcd39ecc42d3a97dd1ccbfe",
+      "feeRecipient": "0x0fa14911b06ae2307525bb751bd6f63ad79828dd",
+      "launchTimestamp": 1788008441164
+    },
+    {
+      "rank": 10,
+      "name": "ponscharity",
+      "symbol": "CHARITY",
+      "address": "0x09977006db2421f3c0ad31e55e4c3fdb6af21ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x09977006db2421f3c0ad31e55e4c3fdb6af21ba3",
+      "poolId": "0x55b1b9e44e814d8cf653d9ea8bb7444fd424e68e82c01429b46f6a8f9cd314e8",
+      "deployer": "0xb1d13e85a4534d8c0ea93ebb0dd6f74a17b71449",
+      "feeRecipient": "0xc200bcdfaaf66d50bfa2fd33113b59ceff77fc32",
+      "launchTimestamp": 1788008281901
+    },
+    {
+      "rank": 11,
+      "name": "ponscharity",
+      "symbol": "CHARITY",
+      "address": "0x450eee6f05a9542590b98e92948d37c3321cdba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x450eee6f05a9542590b98e92948d37c3321cdba3",
+      "poolId": "0x259edde320bc28794626e9c3b63d58b2dbef81868240cc4c006cafd36fe746ae",
+      "deployer": "0xfab8d605cb0ad83a02683565b425cb79abb48e76",
+      "feeRecipient": "0x953b37bb12df84f1306fa00b2400aa034dbd3aba",
+      "launchTimestamp": 1788008118798
+    },
+    {
+      "rank": 12,
+      "name": "ponscharity",
+      "symbol": "CHARITY",
+      "address": "0xa165ddbfdcf2df0b2b36d8763e067abe6ae82ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xa165ddbfdcf2df0b2b36d8763e067abe6ae82ba3",
+      "poolId": "0x0bbb35dff865ebf39ac870fef59f978ca7336f03da9d295f4684cf879fd157f4",
+      "deployer": "0xd3c3bf7414fda4d4e9ce5ceb9663ce238ae23226",
+      "feeRecipient": "0x6522b7cd027bffb02dc3545d4da9a01f82119e84",
+      "launchTimestamp": 1788007949738
+    },
+    {
+      "rank": 13,
+      "name": "Cancer",
+      "symbol": "CNCR",
+      "address": "0x07b706b8e655435853557987cd6d710955599ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0.000000",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "CAUTION",
+        "flags": [
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x07b706b8e655435853557987cd6d710955599ba3",
+      "poolId": "0x7cacb294cb06f7e820b8ffc6709d6d2fdaac42cf799c2fe214982771044742cd",
+      "deployer": "0x596a202a9814d03dd5591dc625548cc59e341fa5",
+      "feeRecipient": "0x0c677cc5fdc7e96dcd74a05cd923cd1e641d6b29",
+      "launchTimestamp": 1788007793737
     }
-  ]
+  ],
+  "whaleRadar": []
 }
