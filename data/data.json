@@ -1,19 +1,47 @@
 {
   "meta": {
     "engine": "BlortBot Base Telemetry Terminal v2.0",
-    "targetOrigin": "BankrBot Deployed Tokens",
-    "updatedAt": "2026-08-29T11:33:53.738Z",
+    "updatedAt": "2026-08-29T18:40:00.000Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
-    "targetChain": "BASE",
-    "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
+    "targetChain": "BASE"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Bankr Token",
+      "symbol": "BNKR",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pairAddress": "0x0000000000000000000000000000000000000000",
+      "chain": "BASE",
+      "protocol": "BankrBot (Doppler)",
+      "dexId": "uniswap",
+      "priceUsd": "0.001420",
+      "priceChange24h": 12.5,
+      "volume24h": 54200,
+      "liquidityUsd": 25000,
+      "fdv": 142000,
+      "txns24h": { "buys": 140, "sells": 45 },
+      "safety": { "safetyScore": 85, "status": "SAFE", "flags": [] },
+      "dexUrl": "https://dexscreener.com/base"
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-992812",
+      "timestamp": "2026-08-29T18:40:00.000Z",
+      "token": "BNKR",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "2500.00",
+      "priceImpact": "1.25%",
+      "txHash": "0x482910481204810294812049"
+    }
+  ]
 }
