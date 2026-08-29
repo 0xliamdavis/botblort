@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T19:02:12.898Z",
+    "updatedAt": "2026-08-29T19:17:15.249Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Petronella",
+      "symbol": "Petron",
+      "address": "0x2ac0ff75afde52de52d4dd7891dd31ff63f1dba3",
+      "pairAddress": "0x65c5ccaf77e8dfabbed71d5a06717db75a16f200435377c09f53e8512a707b78",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -43.41,
+      "volume24h": 2870.36,
+      "liquidityUsd": 8926.23,
+      "fdv": 10247,
+      "txns24h": {
+        "buys": 20,
+        "sells": 15
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x65c5ccaf77e8dfabbed71d5a06717db75a16f200435377c09f53e8512a707b78",
+      "poolId": "0x65c5ccaf77e8dfabbed71d5a06717db75a16f200435377c09f53e8512a707b78",
+      "deployer": "0x307e2d49d3b4bfcd01e7e63acb336ecb71407d11",
+      "feeRecipient": "0x95526d72b3ab292e992c9ba2e4502752b1313f27",
+      "launchTimestamp": 1788030487559,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-403323",
+      "timestamp": "2026-08-29T19:17:15.249Z",
+      "token": "Petron",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "107.55",
+      "priceImpact": "0.69%",
+      "txHash": null
+    }
+  ]
 }
