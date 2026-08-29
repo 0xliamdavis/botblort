@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLORT BOT — Base Chain Telemetry & Risk Terminal</title>
+  <title>BLORT BOT — BankrBot Telemetry & Risk Terminal</title>
   <link rel="icon" href="https://iili.io/CpjSv8x.md.jpg" type="image/jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
@@ -42,9 +42,9 @@
         <div>
           <div class="flex items-center gap-2">
             <h1 class="text-3xl font-retro text-[#2DD4BF] tracking-widest">BLORT BOT</h1>
-            <span class="px-2 py-0.5 text-[10px] bg-[#C84B31] text-white font-bold rounded">BASE ENGINE v2.0</span>
+            <span class="px-2 py-0.5 text-[10px] bg-[#C84B31] text-white font-bold rounded">BANKR TELEMETRY</span>
           </div>
-          <p class="text-xs text-gray-400 mt-0.5">Autonomous Base Chain On-Chain Risk Scanner & Whale Radar</p>
+          <p class="text-xs text-gray-400 mt-0.5">Autonomous Risk Terminal for @bankrbot Deployed Tokens on Base</p>
         </div>
       </div>
 
@@ -68,7 +68,7 @@
       <div class="flex flex-col items-center md:items-end gap-1 text-xs">
         <div class="flex items-center gap-2 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-full">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          <span class="text-emerald-400 font-bold text-[11px]">RUNNER ONLINE</span>
+          <span class="text-emerald-400 font-bold text-[11px]">BANKR ENGINE ACTIVE</span>
         </div>
         <div class="flex items-center gap-2 mt-1">
           <a href="https://x.com/BotBlort" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 border border-[#2DD4BF]/40 text-[#2DD4BF] text-[11px] rounded hover:bg-[#2DD4BF] hover:text-black font-bold">🤖 @BotBlort</a>
@@ -82,7 +82,7 @@
   <!-- MAIN TERMINAL DASHBOARD -->
   <main class="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-    <!-- LEFT & CENTER: DYNAMIC BASE DEX PAIRS MONITOR (3 COLS) -->
+    <!-- LEFT & CENTER: DYNAMIC BANKR DEX PAIRS MONITOR (3 COLS) -->
     <section class="lg:col-span-3 bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         
@@ -91,14 +91,14 @@
           
           <div class="flex items-center gap-2 w-full md:w-auto">
             <span class="text-xl">🔍</span>
-            <input type="text" id="search-input" placeholder="Search token name, symbol, or address..." class="w-full md:w-80 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
+            <input type="text" id="search-input" placeholder="Filter by token name, symbol, or contract address..." class="w-full md:w-80 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
           </div>
 
-          <!-- NETWORK BADGE (BASE NETWORK ONLY) -->
+          <!-- NETWORK BADGE -->
           <div class="flex items-center gap-2 font-mono text-xs">
             <span class="px-3 py-1 bg-[#0052FF]/20 border border-[#0052FF] text-white font-bold rounded flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-[#0052FF] animate-pulse"></span>
-              BASE NETWORK ONLY
+              BANKRBOT DEPLOYED (BASE)
             </span>
           </div>
 
@@ -111,7 +111,7 @@
               <tr class="text-gray-400 border-b border-gray-800 uppercase font-mono text-[11px]">
                 <th class="py-2">#</th>
                 <th class="py-2">Token</th>
-                <th class="py-2">Chain</th>
+                <th class="py-2">Protocol</th>
                 <th class="py-2">Price</th>
                 <th class="py-2">24h Vol</th>
                 <th class="py-2">Liquidity</th>
@@ -131,8 +131,8 @@
 
       <!-- TABLE FOOTER METRICS -->
       <div class="mt-4 pt-3 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-400 gap-2">
-        <div id="last-update-time">Status: Syncing data...</div>
-        <div>Data Source: DexScreener Public Engine • 0% Server Overhead</div>
+        <div id="last-update-time">Status: Fetching telemetry...</div>
+        <div>Source: Bankr API / Doppler Protocol Subgraph</div>
       </div>
     </section>
 
@@ -141,12 +141,12 @@
       <div>
         <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
           <h2 class="text-sm font-bold text-[#C84B31] flex items-center gap-2">
-            <span>🐋</span> BASE WHALE RADAR
+            <span>🐋</span> WHALE RADAR
           </h2>
           <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE FEED</span>
         </div>
 
-        <p class="text-[11px] text-gray-400 mb-3">Capturing high-value trades on Base in real time.</p>
+        <p class="text-[11px] text-gray-400 mb-3">Monitoring high-value orders for Bankr tokens.</p>
 
         <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
           <p class="text-xs text-gray-500 text-center py-6">Listening for whale signals...</p>
@@ -154,7 +154,7 @@
       </div>
 
       <div class="mt-4 pt-3 border-t border-gray-800 text-center">
-        <a href="https://x.com/BotBlort" target="_blank" class="text-[11px] text-[#2DD4BF] hover:underline">Follow @BotBlort for auto-alerts 📡</a>
+        <a href="https://x.com/BotBlort" target="_blank" class="text-[11px] text-[#2DD4BF] hover:underline">Follow @BotBlort for alerts 📡</a>
       </div>
     </section>
 
@@ -176,7 +176,7 @@
 
   <!-- FOOTER -->
   <footer class="max-w-7xl mx-auto w-full text-center text-xs text-gray-500 mt-6 py-3 border-t border-gray-800">
-    <p>Blort Bot &copy; 2026. Designed for the <a href="https://x.com/bankrbot" target="_blank" class="text-[#2DD4BF] hover:underline">@bankrbot</a> ecosystem by <a href="https://x.com/0xliamdavis" target="_blank" class="text-[#C84B31] font-bold hover:underline">@0xliamdavis</a>.</p>
+    <p>Blort Bot &copy; 2026. Custom telemetry tooling built for <a href="https://x.com/bankrbot" target="_blank" class="text-[#2DD4BF] hover:underline">@bankrbot</a> by <a href="https://x.com/0xliamdavis" target="_blank" class="text-[#C84B31] font-bold hover:underline">@0xliamdavis</a>.</p>
   </footer>
 
   <!-- ADVANCED ENGINE FRONTEND SCRIPT -->
@@ -191,19 +191,18 @@
 
         renderDashboard();
       } catch (err) {
-        console.warn("Waiting for GitHub Actions pipeline data...", err);
+        console.warn("Waiting for GitHub Actions telemetry output...", err);
       }
     }
 
     function renderDashboard() {
       if (!masterData) return;
 
-      // Update Summary Stats
       document.getElementById('stat-total').innerText = masterData.summary.totalAnalyzed || 0;
       const safeRatio = Math.round((masterData.summary.safeTokensCount / masterData.summary.totalAnalyzed) * 100) || 0;
       document.getElementById('stat-safe').innerText = safeRatio + '%';
       document.getElementById('stat-whales').innerText = masterData.summary.totalWhaleAlerts || 0;
-      document.getElementById('last-update-time').innerText = 'Last Telemetry Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
+      document.getElementById('last-update-time').innerText = 'Last Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
 
       renderTokens();
       renderWhales();
@@ -222,7 +221,7 @@
       });
 
       if (filtered.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching Base tokens found.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching BankrBot tokens detected.</td></tr>`;
         return;
       }
 
@@ -237,7 +236,7 @@
         tr.innerHTML = `
           <td class="py-3 font-bold text-gray-500">${token.rank}</td>
           <td class="py-3 font-bold text-white">${token.name} <span class="text-[10px] text-gray-400">(${token.symbol})</span></td>
-          <td class="py-3"><span class="px-2 py-0.5 bg-[#0052FF]/20 text-white rounded text-[10px] font-mono font-bold uppercase border border-[#0052FF]/40">BASE</span></td>
+          <td class="py-3"><span class="px-2 py-0.5 bg-[#2DD4BF]/10 text-[#2DD4BF] rounded text-[10px] font-mono font-bold uppercase border border-[#2DD4BF]/30">DOPPLER</span></td>
           <td class="py-3 font-mono">$${token.priceUsd} <span class="${isPositive ? 'text-emerald-400' : 'text-red-400'} text-[10px] font-bold">(${isPositive ? '+' : ''}${token.priceChange24h}%)</span></td>
           <td class="py-3 font-mono text-gray-300">$${Number(token.volume24h).toLocaleString()}</td>
           <td class="py-3 font-mono text-gray-300">$${Number(token.liquidityUsd).toLocaleString()}</td>
@@ -247,7 +246,7 @@
             </button>
           </td>
           <td class="py-3 text-right">
-            <a href="${token.dexUrl}" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">DexScreener 📈</a>
+            <a href="${token.dexUrl}" target="_blank" class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">Trade 📈</a>
           </td>
         `;
         tbody.appendChild(tr);
