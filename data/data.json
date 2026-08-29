@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T21:41:27.558Z",
+    "updatedAt": "2026-08-29T21:57:44.631Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 4,
-    "safeTokensCount": 4,
+    "totalAnalyzed": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
@@ -25,18 +25,20 @@
       "protocol": "DOPPLER",
       "dexId": "uniswap",
       "priceUsd": "0.000000",
-      "priceChange24h": 77.49,
-      "volume24h": 47886.55,
-      "liquidityUsd": 28708.77,
-      "fdv": 36391,
+      "priceChange24h": 11.21,
+      "volume24h": 64070.15,
+      "liquidityUsd": 19330.69,
+      "fdv": 22802,
       "txns24h": {
-        "buys": 179,
-        "sells": 304
+        "buys": 273,
+        "sells": 443
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 90,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0xe408df6ce4f80666852aa53b8fda8e9db848e56641597fe8867a3ca826f87413",
       "poolId": "0xe408df6ce4f80666852aa53b8fda8e9db848e56641597fe8867a3ca826f87413",
@@ -55,13 +57,13 @@
       "protocol": "DOPPLER",
       "dexId": "uniswap",
       "priceUsd": "0.000000",
-      "priceChange24h": 22.5,
-      "volume24h": 40396.78,
-      "liquidityUsd": 18841.54,
-      "fdv": 18836,
+      "priceChange24h": 7.53,
+      "volume24h": 41222.96,
+      "liquidityUsd": 16590.6,
+      "fdv": 16534,
       "txns24h": {
-        "buys": 208,
-        "sells": 315
+        "buys": 214,
+        "sells": 324
       },
       "safety": {
         "safetyScore": 90,
@@ -76,111 +78,27 @@
       "feeRecipient": "0xd4fd8d6f0f64f3d0ba015b645ca8f8c13355c24a",
       "launchTimestamp": 1788039489078,
       "isNew": true
-    },
-    {
-      "rank": 3,
-      "name": "Lumi",
-      "symbol": "Lumi",
-      "address": "0x2659e80bf30b703a39b2f5e04c240f2c3b30dba3",
-      "pairAddress": "0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "0.000000",
-      "priceChange24h": -19.35,
-      "volume24h": 35736.57,
-      "liquidityUsd": 12608.9,
-      "fdv": 12557,
-      "txns24h": {
-        "buys": 169,
-        "sells": 263
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
-      "poolId": "0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
-      "deployer": "0xf32574c9cec326f35851583da12609dddfafc8e8",
-      "feeRecipient": "0x6d30421e21a05a7209a7d3f41ae912d1f7d5a5be",
-      "launchTimestamp": 1788038065752,
-      "isNew": true
-    },
-    {
-      "rank": 4,
-      "name": "Revel",
-      "symbol": "REVEL",
-      "address": "0xd9e9df0617b3c7564e5b365cb13a939aeab75ba3",
-      "pairAddress": "0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "0.000000",
-      "priceChange24h": -24.74,
-      "volume24h": 3346.44,
-      "liquidityUsd": 11565.28,
-      "fdv": 13623,
-      "txns24h": {
-        "buys": 25,
-        "sells": 23
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
-      "poolId": "0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
-      "deployer": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "feeRecipient": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "launchTimestamp": 1788037971903,
-      "isNew": true
     }
   ],
   "whaleRadar": [
     {
-      "id": "WHL-265804",
-      "timestamp": "2026-08-29T21:41:27.558Z",
+      "id": "WHL-728047",
+      "timestamp": "2026-08-29T21:57:44.631Z",
       "token": "pif",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "3466.30",
-      "priceImpact": "1.21%",
+      "amountUsd": "3386.90",
+      "priceImpact": "0.56%",
       "txHash": null
     },
     {
-      "id": "WHL-224776",
-      "timestamp": "2026-08-29T21:41:27.558Z",
+      "id": "WHL-896785",
+      "timestamp": "2026-08-29T21:57:44.631Z",
       "token": "pif",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "1125.03",
-      "priceImpact": "0.88%",
-      "txHash": null
-    },
-    {
-      "id": "WHL-774633",
-      "timestamp": "2026-08-29T21:41:27.558Z",
-      "token": "Lumi",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "3109.84",
-      "priceImpact": "0.91%",
-      "txHash": null
-    },
-    {
-      "id": "WHL-969441",
-      "timestamp": "2026-08-29T21:41:27.558Z",
-      "token": "REVEL",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "88.83",
-      "priceImpact": "2.13%",
+      "amountUsd": "3637.31",
+      "priceImpact": "1.25%",
       "txHash": null
     }
   ]
