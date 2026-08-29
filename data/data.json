@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T15:01:28.903Z",
+    "updatedAt": "2026-08-29T15:17:15.827Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Beam grin",
+      "symbol": "BEAM",
+      "address": "0x983376566510d53a3b2aae12fe3cc9627560aba3",
+      "pairAddress": "0x8cf8b64e6b4cb55040819cf67b0c11c0fbf0984f080bef9d58e4ba81289d543c",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -25.44,
+      "volume24h": 8896.77,
+      "liquidityUsd": 9855.96,
+      "fdv": 11582,
+      "txns24h": {
+        "buys": 83,
+        "sells": 127
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x8cf8b64e6b4cb55040819cf67b0c11c0fbf0984f080bef9d58e4ba81289d543c",
+      "poolId": "0x8cf8b64e6b4cb55040819cf67b0c11c0fbf0984f080bef9d58e4ba81289d543c",
+      "deployer": "0x812db9b2691a457b67eb72f6b76a7fb4413d33f7",
+      "feeRecipient": "0x812db9b2691a457b67eb72f6b76a7fb4413d33f7",
+      "launchTimestamp": 1788015781263,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-509650",
+      "timestamp": "2026-08-29T15:17:15.827Z",
+      "token": "BEAM",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "737.98",
+      "priceImpact": "2.26%",
+      "txHash": null
+    }
+  ]
 }
