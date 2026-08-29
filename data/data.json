@@ -2,36 +2,36 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T18:21:27.197Z",
+    "updatedAt": "2026-08-29T18:37:21.460Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 1,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "ForBots",
-      "symbol": "ForBots",
-      "address": "0xf094dd06ba63bed49bc405ea66494e48a10b7ba3",
-      "pairAddress": "0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
+      "name": "Mike",
+      "symbol": "MIKE",
+      "address": "0x88a9a9a4199c7af57e29d232246b4f3ebfee1ba3",
+      "pairAddress": "0xfa52b18b560d734ef5ca8769be65d275fa7d5c716f10eb05f8b84d8b57fe7ca5",
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
       "priceUsd": "0.000000",
-      "priceChange24h": -43.57,
-      "volume24h": 2385.6,
-      "liquidityUsd": 8717.69,
-      "fdv": 10194,
+      "priceChange24h": -43.58,
+      "volume24h": 2380.13,
+      "liquidityUsd": 8666.7,
+      "fdv": 10190,
       "txns24h": {
-        "buys": 19,
-        "sells": 13
+        "buys": 16,
+        "sells": 9
       },
       "safety": {
         "safetyScore": 90,
@@ -40,23 +40,65 @@
           "MEDIUM_LIQUIDITY"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
-      "poolId": "0xff178029d5255bfab5660c0f46d602f4e0e574e55c055c2d83aedefe60cdaec5",
-      "deployer": "0xff473644c80bcdc1f95ea38882604cdec11bd0a4",
-      "feeRecipient": "0x7b46e4776878517bafab532b8b7d974b27b09bc3",
-      "launchTimestamp": 1788026821563,
+      "dexUrl": "https://dexscreener.com/base/0xfa52b18b560d734ef5ca8769be65d275fa7d5c716f10eb05f8b84d8b57fe7ca5",
+      "poolId": "0xfa52b18b560d734ef5ca8769be65d275fa7d5c716f10eb05f8b84d8b57fe7ca5",
+      "deployer": "0x2c8a835583e71d2991e65dec6107708947e6e5b2",
+      "feeRecipient": "0x506adbb09c04e19686f5c88af9e5427518c7a8c5",
+      "launchTimestamp": 1788027825659,
+      "isNew": true
+    },
+    {
+      "rank": 2,
+      "name": "Boing Boing",
+      "symbol": "BOING",
+      "address": "0x27ef02347ba466e60f691e475b8ec122aacccba3",
+      "pairAddress": "0x0da5474fb60bb263c240c8d3113cc070d1253d866c8515d62861ca3ba663b874",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -43.54,
+      "volume24h": 2379.61,
+      "liquidityUsd": 8670.25,
+      "fdv": 10195,
+      "txns24h": {
+        "buys": 17,
+        "sells": 10
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x0da5474fb60bb263c240c8d3113cc070d1253d866c8515d62861ca3ba663b874",
+      "poolId": "0x0da5474fb60bb263c240c8d3113cc070d1253d866c8515d62861ca3ba663b874",
+      "deployer": "0x70a916cc879877ea210634271d545a28a6625b65",
+      "feeRecipient": "0x305a37bf8cf4c35a02cabdf4c57f0a05b24c8703",
+      "launchTimestamp": 1788028392489,
       "isNew": true
     }
   ],
   "whaleRadar": [
     {
-      "id": "WHL-939388",
-      "timestamp": "2026-08-29T18:21:27.197Z",
-      "token": "ForBots",
+      "id": "WHL-409226",
+      "timestamp": "2026-08-29T18:37:21.460Z",
+      "token": "MIKE",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "187.97",
+      "priceImpact": "0.47%",
+      "txHash": null
+    },
+    {
+      "id": "WHL-957025",
+      "timestamp": "2026-08-29T18:37:21.460Z",
+      "token": "BOING",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "147.30",
-      "priceImpact": "1.89%",
+      "amountUsd": "124.73",
+      "priceImpact": "0.99%",
       "txHash": null
     }
   ]
