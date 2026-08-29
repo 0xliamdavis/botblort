@@ -2,36 +2,66 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-29T21:01:33.292Z",
+    "updatedAt": "2026-08-29T21:17:20.582Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 1,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Charleston AI",
-      "symbol": "CHS",
-      "address": "0xb15ddb3b94b92a07bc324a2542408d0e12baaba3",
-      "pairAddress": "0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
+      "name": "Lumi",
+      "symbol": "Lumi",
+      "address": "0x2659e80bf30b703a39b2f5e04c240f2c3b30dba3",
+      "pairAddress": "0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
       "priceUsd": "0.000000",
-      "priceChange24h": -17,
-      "volume24h": 23639.7,
-      "liquidityUsd": 11626.8,
-      "fdv": 13615,
+      "priceChange24h": 59.54,
+      "volume24h": 33316.97,
+      "liquidityUsd": 24382.47,
+      "fdv": 24841,
       "txns24h": {
-        "buys": 160,
-        "sells": 236
+        "buys": 156,
+        "sells": 249
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
+      "poolId": "0x8f4f044629d6976c2a18a3ed496bb318420eec433572f79061d7e962868f2fab",
+      "deployer": "0xf32574c9cec326f35851583da12609dddfafc8e8",
+      "feeRecipient": "0x6d30421e21a05a7209a7d3f41ae912d1f7d5a5be",
+      "launchTimestamp": 1788038065752,
+      "isNew": true
+    },
+    {
+      "rank": 2,
+      "name": "Revel",
+      "symbol": "REVEL",
+      "address": "0xd9e9df0617b3c7564e5b365cb13a939aeab75ba3",
+      "pairAddress": "0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -19.56,
+      "volume24h": 3287.61,
+      "liquidityUsd": 12347.63,
+      "fdv": 14560,
+      "txns24h": {
+        "buys": 23,
+        "sells": 20
       },
       "safety": {
         "safetyScore": 90,
@@ -40,23 +70,33 @@
           "MEDIUM_LIQUIDITY"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
-      "poolId": "0xc092e5e13caaa92adad1a07ebc82cbaaf721d71dd1a0f8347ba12f3e733090bb",
-      "deployer": "0x2c1ddb4e44d9c940462c1ae93840868d2ea9e502",
-      "feeRecipient": "0x1e968d014dbae18be533c7638dbfecad25beb143",
-      "launchTimestamp": 1788035962532,
+      "dexUrl": "https://dexscreener.com/base/0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
+      "poolId": "0xf0bbfc046acd761524b8c2da5f506963a51270f43b445f6157bf9d9932d5047f",
+      "deployer": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
+      "feeRecipient": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
+      "launchTimestamp": 1788037971903,
       "isNew": true
     }
   ],
   "whaleRadar": [
     {
-      "id": "WHL-519979",
-      "timestamp": "2026-08-29T21:01:33.292Z",
-      "token": "CHS",
+      "id": "WHL-168229",
+      "timestamp": "2026-08-29T21:17:20.582Z",
+      "token": "Lumi",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "1623.52",
-      "priceImpact": "0.68%",
+      "amountUsd": "2754.22",
+      "priceImpact": "1.90%",
+      "txHash": null
+    },
+    {
+      "id": "WHL-531801",
+      "timestamp": "2026-08-29T21:17:20.582Z",
+      "token": "REVEL",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "182.02",
+      "priceImpact": "1.81%",
       "txHash": null
     }
   ]
