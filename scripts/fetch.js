@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Calculates risk metrics specifically tailored for newly launched Doppler/Bankr tokens.
+ * Calculates risk metrics specifically tailored for Doppler / BankrBot tokens on Base.
  */
 function calculateRiskMetrics(pair) {
   let score = 100;
@@ -51,7 +51,7 @@ async function fetchBankrTelemetry() {
   try {
     let bankrTokenAddresses = [];
 
-    // Primary Source: Official Bankr Token Launch API Endpoint
+    // 1. Query Primary Endpoint: Official Bankr API
     try {
       const bankrRes = await fetch('https://api.bankr.bot/token-launches');
       if (bankrRes.ok) {
@@ -63,15 +63,15 @@ async function fetchBankrTelemetry() {
           .map(t => t.tokenAddress || t.address)
           .filter(Boolean);
           
-        console.log(`✅ Retrieved ${bankrTokenAddresses.length} token addresses from Bankr API.`);
+        console.log(`✅ Fetched ${bankrTokenAddresses.length} token addresses directly from Bankr API.`);
       }
     } catch (e) {
-      console.warn("⚠️ Primary Bankr API endpoint unreachable, initiating fallback scanner:", e.message);
+      console.warn("⚠️ Direct Bankr API response failure, initializing fallback indexer:", e.message);
     }
 
-    // Secondary Fallback: Query DexScreener Indexer for Bankr Factory / Doppler Pairs
+    // 2. Secondary Indexer: Search for Bankr Factory / Doppler protocol listings
     if (bankrTokenAddresses.length === 0) {
-      console.log("🔄 Querying DexScreener indexer for Bankr Doppler contracts...");
+      console.log("🔄 Running DexScreener indexer query for Bankr Doppler deployments...");
       const searchRes = await fetch('https://api.dexscreener.com/latest/dex/search?q=bankr');
       const searchData = await searchRes.json();
       const pairs = searchData.pairs || [];
@@ -84,15 +84,15 @@ async function fetchBankrTelemetry() {
     const uniqueAddresses = Array.from(new Set(bankrTokenAddresses)).slice(0, 30);
 
     if (uniqueAddresses.length === 0) {
-      throw new Error("Failed to resolve any valid Bankr token addresses.");
+      throw new Error("No valid Bankr token contract addresses could be resolved.");
     }
 
-    // Fetch live market data and order book telemetry
+    // 3. Fetch Pairs Data from DexScreener
     const pairsRes = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${uniqueAddresses.join(',')}`);
     const pairsData = await pairsRes.json();
     const rawPairs = (pairsData.pairs || []).filter(p => p.chainId === 'base');
 
-    // Deduplicate pair results by base token address
+    // Deduplicate pair results
     const uniquePairsMap = new Map();
     rawPairs.forEach((pair) => {
       const addr = pair.baseToken?.address;
@@ -104,12 +104,12 @@ async function fetchBankrTelemetry() {
     const sortedPairs = Array.from(uniquePairsMap.values())
       .sort((a, b) => (b.volume?.h24 || 0) - (a.volume?.h24 || 0));
 
-    // Process Token Payload
+    // Process Token Telemetry
     const processedTokens = sortedPairs.slice(0, 20).map((pair, index) => {
       const risk = calculateRiskMetrics(pair);
       return {
         rank: index + 1,
-        name: pair.baseToken.name || "Unknown Bankr Token",
+        name: pair.baseToken.name || "Bankr Token",
         symbol: pair.baseToken.symbol || "TOKEN",
         address: pair.baseToken.address,
         pairAddress: pair.pairAddress,
@@ -130,13 +130,13 @@ async function fetchBankrTelemetry() {
       };
     });
 
-    // Real-Time Whale Alert Radar Data Generator
+    // Generate Whale Radar Feeds for Bankr Tokens
     const whaleRadar = processedTokens
-      .filter((token) => token.volume24h > 500)
+      .filter((token) => token.volume24h > 100)
       .slice(0, 8)
       .map((token) => {
         const isBuy = Math.random() > 0.35;
-        const simulatedAmount = (Math.random() * 4500 + 500).toFixed(2);
+        const simulatedAmount = (Math.random() * 3500 + 200).toFixed(2);
         return {
           id: "WHL-" + Math.floor(100000 + Math.random() * 900000),
           timestamp: new Date().toISOString(),
@@ -175,10 +175,10 @@ async function fetchBankrTelemetry() {
     }
 
     fs.writeFileSync(path.join(outputDir, 'data.json'), JSON.stringify(payload, null, 2));
-    console.log("✅ Successfully generated BankrBot Telemetry Teleport at data/data.json");
+    console.log("✅ Successfully written fresh telemetry payload to data/data.json");
 
   } catch (error) {
-    console.error("❌ Fatal Telemetry Failure:", error);
+    console.error("❌ Fatal Telemetry Error:", error);
     process.exit(1);
   }
 }
