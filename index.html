@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLORT BOT — Advanced On-Chain Telemetry & Risk Terminal</title>
+  <title>BLORT BOT — Base Chain Telemetry & Risk Terminal</title>
   <link rel="icon" href="https://iili.io/CpjSv8x.md.jpg" type="image/jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
@@ -42,9 +42,9 @@
         <div>
           <div class="flex items-center gap-2">
             <h1 class="text-3xl font-retro text-[#2DD4BF] tracking-widest">BLORT BOT</h1>
-            <span class="px-2 py-0.5 text-[10px] bg-[#C84B31] text-white font-bold rounded">TELEMETRY v2.0</span>
+            <span class="px-2 py-0.5 text-[10px] bg-[#C84B31] text-white font-bold rounded">BASE ENGINE v2.0</span>
           </div>
-          <p class="text-xs text-gray-400 mt-0.5">Autonomous On-Chain Risk Scanner & Whale Radar</p>
+          <p class="text-xs text-gray-400 mt-0.5">Autonomous Base Chain On-Chain Risk Scanner & Whale Radar</p>
         </div>
       </div>
 
@@ -82,7 +82,7 @@
   <!-- MAIN TERMINAL DASHBOARD -->
   <main class="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-    <!-- LEFT & CENTER: DYNAMIC DEX PAIRS MONITOR (3 COLS) -->
+    <!-- LEFT & CENTER: DYNAMIC BASE DEX PAIRS MONITOR (3 COLS) -->
     <section class="lg:col-span-3 bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         
@@ -91,14 +91,15 @@
           
           <div class="flex items-center gap-2 w-full md:w-auto">
             <span class="text-xl">🔍</span>
-            <input type="text" id="search-input" placeholder="Search symbol or address..." class="w-full md:w-64 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
+            <input type="text" id="search-input" placeholder="Search token name, symbol, or address..." class="w-full md:w-80 bg-[#0d1117] border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-[#2DD4BF]">
           </div>
 
-          <!-- CHAIN FILTERS -->
-          <div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto text-xs">
-            <button onclick="filterChain('ALL')" class="chain-btn px-3 py-1 bg-[#2DD4BF] text-black font-bold rounded retro-btn" data-chain="ALL">ALL</button>
-            <button onclick="filterChain('solana')" class="chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn" data-chain="solana">SOLANA</button>
-            <button onclick="filterChain('base')" class="chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn" data-chain="base">BASE</button>
+          <!-- NETWORK BADGE (BASE NETWORK ONLY) -->
+          <div class="flex items-center gap-2 font-mono text-xs">
+            <span class="px-3 py-1 bg-[#0052FF]/20 border border-[#0052FF] text-white font-bold rounded flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[#0052FF] animate-pulse"></span>
+              BASE NETWORK ONLY
+            </span>
           </div>
 
         </div>
@@ -140,12 +141,12 @@
       <div>
         <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
           <h2 class="text-sm font-bold text-[#C84B31] flex items-center gap-2">
-            <span>🐋</span> WHALE RADAR
+            <span>🐋</span> BASE WHALE RADAR
           </h2>
           <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE FEED</span>
         </div>
 
-        <p class="text-[11px] text-gray-400 mb-3">Capturing high-value trades in real time.</p>
+        <p class="text-[11px] text-gray-400 mb-3">Capturing high-value trades on Base in real time.</p>
 
         <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
           <p class="text-xs text-gray-500 text-center py-6">Listening for whale signals...</p>
@@ -181,7 +182,6 @@
   <!-- ADVANCED ENGINE FRONTEND SCRIPT -->
   <script>
     let masterData = null;
-    let selectedChain = 'ALL';
 
     async function fetchTelemetry() {
       try {
@@ -216,15 +216,13 @@
       tbody.innerHTML = '';
 
       const filtered = masterData.tokens.filter(token => {
-        const matchesChain = selectedChain === 'ALL' || token.chain.toLowerCase() === selectedChain.toLowerCase();
-        const matchesSearch = token.name.toLowerCase().includes(searchQuery) || 
-                              token.symbol.toLowerCase().includes(searchQuery) ||
-                              token.address.toLowerCase().includes(searchQuery);
-        return matchesChain && matchesSearch;
+        return token.name.toLowerCase().includes(searchQuery) || 
+               token.symbol.toLowerCase().includes(searchQuery) ||
+               token.address.toLowerCase().includes(searchQuery);
       });
 
       if (filtered.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching tokens found.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching Base tokens found.</td></tr>`;
         return;
       }
 
@@ -239,7 +237,7 @@
         tr.innerHTML = `
           <td class="py-3 font-bold text-gray-500">${token.rank}</td>
           <td class="py-3 font-bold text-white">${token.name} <span class="text-[10px] text-gray-400">(${token.symbol})</span></td>
-          <td class="py-3"><span class="px-2 py-0.5 bg-gray-800 text-gray-300 rounded text-[10px] font-mono uppercase">${token.chain}</span></td>
+          <td class="py-3"><span class="px-2 py-0.5 bg-[#0052FF]/20 text-white rounded text-[10px] font-mono font-bold uppercase border border-[#0052FF]/40">BASE</span></td>
           <td class="py-3 font-mono">$${token.priceUsd} <span class="${isPositive ? 'text-emerald-400' : 'text-red-400'} text-[10px] font-bold">(${isPositive ? '+' : ''}${token.priceChange24h}%)</span></td>
           <td class="py-3 font-mono text-gray-300">$${Number(token.volume24h).toLocaleString()}</td>
           <td class="py-3 font-mono text-gray-300">$${Number(token.liquidityUsd).toLocaleString()}</td>
@@ -267,7 +265,7 @@
         card.innerHTML = `
           <div class="flex justify-between items-center mb-1">
             <span class="font-bold text-xs ${isBuy ? 'text-emerald-400' : 'text-red-400'}">${alert.type} $${alert.token}</span>
-            <span class="text-[9px] px-1.5 py-0.5 bg-gray-800 text-gray-400 rounded uppercase font-mono">${alert.chain}</span>
+            <span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">BASE</span>
           </div>
           <div class="text-sm font-bold text-white font-mono">$${Number(alert.amountUsd).toLocaleString()}</div>
           <div class="flex justify-between text-[10px] text-gray-400 mt-1 font-mono">
@@ -277,18 +275,6 @@
         `;
         container.appendChild(card);
       });
-    }
-
-    function filterChain(chain) {
-      selectedChain = chain;
-      document.querySelectorAll('.chain-btn').forEach(btn => {
-        if (btn.getAttribute('data-chain') === chain) {
-          btn.className = 'chain-btn px-3 py-1 bg-[#2DD4BF] text-black font-bold rounded retro-btn';
-        } else {
-          btn.className = 'chain-btn px-3 py-1 bg-[#0d1117] text-gray-300 border border-gray-700 rounded retro-btn';
-        }
-      });
-      renderTokens();
     }
 
     function openAuditModal(symbol) {
