@@ -1,0 +1,34 @@
+name: Blort Bot Telemetry Engine Pipeline
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # Auto-run setiap 15 menit
+  workflow_dispatch: # Memungkinkan tombol 'Run workflow' manual di GitHub Actions
+
+jobs:
+  run-telemetry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Execute Telemetry Data Fetcher
+        run: node scripts/fetch.js
+
+      - name: Commit and Push Updated Telemetry Data
+        run: |
+          git config --global user.name "BlortBot-Engine"
+          git config --global user.email "engine@blortbot.internal"
+          git add data/data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "telemetry: automated on-chain refresh [skip ci]" && git push)
