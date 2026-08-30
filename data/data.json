@@ -2,18 +2,79 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.5",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-30T22:02:13.275Z",
+    "updatedAt": "2026-08-30T22:17:29.765Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 2
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Cow Bot",
+      "symbol": "COWBOT",
+      "address": "0x9e99048b8d3e5d8d9f8ffaa02dd8336e11dfcba3",
+      "pairAddress": "0xce289f4943bc12bd1f3d4999772cf3854c659b1d408d4b4ba8b057ff69daae74",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0320e-7",
+      "priceChange24h": -43.03,
+      "volume24h": 2415.03,
+      "volume1h": 2415.03,
+      "liquidityUsd": 8781.52,
+      "fdv": 10325,
+      "txns24h": {
+        "buys": 15,
+        "sells": 7
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xce289f4943bc12bd1f3d4999772cf3854c659b1d408d4b4ba8b057ff69daae74",
+      "poolId": "0xce289f4943bc12bd1f3d4999772cf3854c659b1d408d4b4ba8b057ff69daae74",
+      "deployer": "0x4ac3bd17d3bcf8e7a7d0ea8eece12e7a047d5007",
+      "feeRecipient": "0x7b46e4776878517bafab532b8b7d974b27b09bc3",
+      "launchTimestamp": 1788127467914,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "ACT-COWBOT-BUY",
+      "timestamp": "2026-08-30T22:17:29.765Z",
+      "token": "COWBOT",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "2415.03",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "BUY PRESSURE",
+      "detail": "15 buys / 7 sells · 68% buy",
+      "address": "0x9e99048b8d3e5d8d9f8ffaa02dd8336e11dfcba3"
+    },
+    {
+      "id": "ACT-COWBOT-AVG",
+      "timestamp": "2026-08-30T22:17:29.765Z",
+      "token": "COWBOT",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "109.77",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $110 / tx · 22 txns",
+      "address": "0x9e99048b8d3e5d8d9f8ffaa02dd8336e11dfcba3"
+    }
+  ]
 }
