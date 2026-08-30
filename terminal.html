@@ -173,6 +173,14 @@
         renderDashboard();
       } catch (err) {
         console.warn("Waiting for telemetry...", err);
+        const tbody = document.getElementById('token-table-body');
+        if (tbody && !masterData) {
+          tbody.innerHTML =
+            '<tr><td colspan="8" class="py-10 text-center">' +
+              '<div class="text-gray-400 text-sm mb-2">Unable to load telemetry data</div>' +
+              '<div class="text-gray-600 text-[11px]">Retrying automatically...</div>' +
+            '</td></tr>';
+        }
       }
     }
 
@@ -230,7 +238,7 @@
       filtered.forEach(function(token) {
         const priceChange = Number(token.priceChange24h) || 0;
         const isPositive = priceChange >= 0;
-        const hasPrice = token.priceUsd && Number(token.priceUsd) > 0;
+        const hasPrice = token.priceUsd && token.priceUsd !== "0" && Number(token.priceUsd) > 0;
 
         let riskColor = 'bg-emerald-950 text-emerald-400 border-emerald-500/40';
         if (token.safety && token.safety.status === 'CAUTION') {
@@ -262,21 +270,30 @@
           : 'UNKNOWN';
 
         const tradeUrl = 'https://bankr.bot/terminal/trade?out=' + token.address + '&chain=base';
+        const basescanUrl = 'https://basescan.org/token/' + token.address;
 
-        // NEW badge
         const newBadge = token.isNew
           ? ' <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-[#C84B31]/20 text-[#C84B31] border border-[#C84B31]/40 rounded">NEW</span>'
           : '';
+
+        const shortAddr = token.address
+          ? (token.address.slice(0, 6) + '...' + token.address.slice(-4))
+          : '—';
 
         const tr = document.createElement('tr');
         tr.className = 'hover:bg-gray-800/40 transition border-b border-gray-800/40';
 
         tr.innerHTML =
           '<td class="py-3 font-bold text-gray-500">' + (token.rank || '—') + '</td>' +
-          '<td class="py-3 font-bold text-white">' +
-            (token.name || 'Unknown') +
-            ' <span class="text-[10px] text-gray-400">(' + (token.symbol || '???') + ')</span>' +
-            newBadge +
+          '<td class="py-3">' +
+            '<div class="font-bold text-white">' +
+              (token.name || 'Unknown') +
+              ' <span class="text-[10px] text-gray-400">(' + (token.symbol || '???') + ')</span>' +
+              newBadge +
+            '</div>' +
+            '<a href="' + basescanUrl + '" target="_blank" class="text-[10px] text-gray-500 hover:text-[#2DD4BF] font-mono transition">' +
+              shortAddr + ' ↗' +
+            '</a>' +
           '</td>' +
           '<td class="py-3">' +
             '<span class="px-2 py-0.5 bg-[#2DD4BF]/10 text-[#2DD4BF] rounded text-[10px] font-mono font-bold uppercase border border-[#2DD4BF]/30">' +
@@ -296,10 +313,16 @@
             '</button>' +
           '</td>' +
           '<td class="py-3 text-right">' +
-            '<a href="' + tradeUrl + '" target="_blank" ' +
-              'class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">' +
-              'Trade 📈' +
-            '</a>' +
+            '<div class="flex items-center justify-end gap-1.5">' +
+              '<a href="' + basescanUrl + '" target="_blank" ' +
+                'class="px-2 py-1 bg-gray-800 border border-gray-600 text-gray-300 rounded text-[10px] font-bold hover:border-[#2DD4BF] hover:text-[#2DD4BF] transition" title="Basescan">' +
+                'Scan' +
+              '</a>' +
+              '<a href="' + tradeUrl + '" target="_blank" ' +
+                'class="px-2.5 py-1 bg-[#2DD4BF]/10 text-[#2DD4BF] border border-[#2DD4BF]/30 rounded text-[11px] font-bold hover:bg-[#2DD4BF] hover:text-black transition">' +
+                'Trade 📈' +
+              '</a>' +
+            '</div>' +
           '</td>';
 
         tbody.appendChild(tr);
@@ -365,6 +388,7 @@
 
       const buys = (token.txns24h && token.txns24h.buys != null) ? token.txns24h.buys : 0;
       const sells = (token.txns24h && token.txns24h.sells != null) ? token.txns24h.sells : 0;
+      const basescanUrl = 'https://basescan.org/token/' + token.address;
 
       content.innerHTML =
         '<div class="flex justify-between border-b border-gray-800 pb-2">' +
@@ -377,7 +401,9 @@
         '</div>' +
         '<div class="flex justify-between border-b border-gray-800 pb-2">' +
           '<span>Contract:</span>' +
-          '<span class="font-mono text-[10px] text-gray-400 truncate max-w-[180px]">' + (token.address || '—') + '</span>' +
+          '<a href="' + basescanUrl + '" target="_blank" class="font-mono text-[10px] text-[#2DD4BF] hover:underline truncate max-w-[180px]">' +
+            (token.address || '—') +
+          '</a>' +
         '</div>' +
         '<div class="flex justify-between border-b border-gray-800 pb-2">' +
           '<span>24h Transactions:</span>' +
