@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-30T18:41:41.685Z",
+    "updatedAt": "2026-08-30T18:57:28.813Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Karis",
+      "symbol": "KARIS",
+      "address": "0x5ddb68bd1b8f3f8d0460c15d6c534a5e64be2ba3",
+      "pairAddress": "0x1dceae7c027124d613c81dfae009739744434002e233f2409ad7613f66384c87",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -29.63,
+      "volume24h": 6386.35,
+      "liquidityUsd": 10975.23,
+      "fdv": 10932,
+      "txns24h": {
+        "buys": 31,
+        "sells": 38
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x1dceae7c027124d613c81dfae009739744434002e233f2409ad7613f66384c87",
+      "poolId": "0x1dceae7c027124d613c81dfae009739744434002e233f2409ad7613f66384c87",
+      "deployer": "0x880c0de96211a6a22eb09997ed8fb0b0d6b449f1",
+      "feeRecipient": "0x57f2c8ae6fce109f2ca27ee6a6eb92103ec32f29",
+      "launchTimestamp": 1788115485340,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-931412",
+      "timestamp": "2026-08-30T18:57:28.813Z",
+      "token": "KARIS",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "484.07",
+      "priceImpact": "1.13%",
+      "txHash": null
+    }
+  ]
 }
