@@ -148,6 +148,7 @@ function buildToken(launch, rank, pair) {
   const isFresh = launchAge !== null && launchAge < 1000 * 60 * 60 * 6;
 
   let volume24h = 0;
+  let volume1h = 0;
   let liquidityUsd = 0;
   let priceUsd = "0";
   let priceChange24h = 0;
@@ -159,6 +160,7 @@ function buildToken(launch, rank, pair) {
 
   if (pair) {
     volume24h = pair.volume?.h24 || 0;
+    volume1h = pair.volume?.h1 || 0;
     liquidityUsd = pair.liquidity?.usd || 0;
     priceUsd = formatPrice(pair.priceUsd);
     priceChange24h = Number((pair.priceChange?.h24 || 0).toFixed(2));
@@ -187,6 +189,7 @@ function buildToken(launch, rank, pair) {
     priceUsd: priceUsd,
     priceChange24h: priceChange24h,
     volume24h: volume24h,
+    volume1h: volume1h,
     liquidityUsd: liquidityUsd,
     fdv: fdv,
     txns24h: txns24h,
@@ -201,32 +204,95 @@ function buildToken(launch, rank, pair) {
 }
 
 function generateWhaleRadar(tokens) {
-  const candidates = tokens
-    .filter(function(t) { return t.volume24h > 800 && t.liquidityUsd > 1500; })
-    .slice(0, 8);
+  const alerts = [];
 
-  if (candidates.length === 0) return [];
+  tokens.forEach(function(token) {
+    const volume24h = token.volume24h || 0;
+    const liquidity = token.liquidityUsd || 0;
+    const buys = (token.txns24h && token.txns24h.buys) || 0;
+    const sells = (token.txns24h && token.txns24h.sells) || 0;
+    const totalTx = buys + sells;
+    const priceChange = token.priceChange24h || 0;
 
-  return candidates.map(function(token) {
-    const isBuy = Math.random() > 0.38;
-    const baseAmount = Math.min(token.volume24h * 0.07, 7500);
-    const amount = (baseAmount * (0.35 + Math.random() * 0.95)).toFixed(2);
+    if (volume24h < 300 && totalTx < 5) return;
 
-    return {
-      id: "WHL-" + Math.floor(100000 + Math.random() * 900000),
-      timestamp: new Date().toISOString(),
-      token: token.symbol,
-      chain: "BASE",
-      type: isBuy ? "BUY" : "SELL",
-      amountUsd: amount,
-      priceImpact: (Math.random() * 2.1 + 0.25).toFixed(2) + "%",
-      txHash: null
-    };
+    const avgTrade = totalTx > 0 ? volume24h / totalTx : 0;
+    const buyPressure = totalTx > 0 ? (buys / totalTx) * 100 : 50;
+
+    if (avgTrade >= 80) {
+      alerts.push({
+        id: "ACT-" + (token.symbol || "TKN") + "-AVG",
+        timestamp: new Date().toISOString(),
+        token: token.symbol,
+        chain: "BASE",
+        type: buyPressure >= 55 ? "BUY" : (buyPressure <= 45 ? "SELL" : "MIXED"),
+        amountUsd: avgTrade.toFixed(2),
+        priceImpact: null,
+        txHash: null,
+        label: "AVG TRADE",
+        detail: "Avg $" + avgTrade.toFixed(0) + " / tx · " + totalTx + " txns",
+        address: token.address
+      });
+    }
+
+    if (buys >= 8 && buyPressure >= 65 && volume24h >= 400) {
+      alerts.push({
+        id: "ACT-" + (token.symbol || "TKN") + "-BUY",
+        timestamp: new Date().toISOString(),
+        token: token.symbol,
+        chain: "BASE",
+        type: "BUY",
+        amountUsd: volume24h.toFixed(2),
+        priceImpact: null,
+        txHash: null,
+        label: "BUY PRESSURE",
+        detail: buys + " buys / " + sells + " sells · " + buyPressure.toFixed(0) + "% buy",
+        address: token.address
+      });
+    }
+
+    if (sells >= 8 && buyPressure <= 35 && volume24h >= 400) {
+      alerts.push({
+        id: "ACT-" + (token.symbol || "TKN") + "-SELL",
+        timestamp: new Date().toISOString(),
+        token: token.symbol,
+        chain: "BASE",
+        type: "SELL",
+        amountUsd: volume24h.toFixed(2),
+        priceImpact: null,
+        txHash: null,
+        label: "SELL PRESSURE",
+        detail: buys + " buys / " + sells + " sells · " + (100 - buyPressure).toFixed(0) + "% sell",
+        address: token.address
+      });
+    }
+
+    if (liquidity > 0 && volume24h / liquidity >= 1.5 && volume24h >= 500) {
+      alerts.push({
+        id: "ACT-" + (token.symbol || "TKN") + "-VOL",
+        timestamp: new Date().toISOString(),
+        token: token.symbol,
+        chain: "BASE",
+        type: priceChange >= 0 ? "BUY" : "SELL",
+        amountUsd: volume24h.toFixed(2),
+        priceImpact: null,
+        txHash: null,
+        label: "HIGH VOLUME",
+        detail: "Vol $" + Math.round(volume24h) + " · Liq $" + Math.round(liquidity),
+        address: token.address
+      });
+    }
   });
+
+  alerts.sort(function(a, b) {
+    return parseFloat(b.amountUsd) - parseFloat(a.amountUsd);
+  });
+
+  return alerts.slice(0, 10);
 }
 
 async function main() {
-  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.4...");
+  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.5...");
 
   try {
     const launches = await fetchBankrLaunches();
@@ -271,7 +337,7 @@ async function main() {
 
     const payload = {
       meta: {
-        engine: "BlortBot Bankr Telemetry Terminal v2.4",
+        engine: "BlortBot Bankr Telemetry Terminal v2.5",
         targetOrigin: "Bankr API + DexScreener",
         updatedAt: new Date().toISOString(),
         builder: "@0xliamdavis",
@@ -308,7 +374,7 @@ async function main() {
     console.log("  With market data : " + pairMap.size);
     console.log("  Safe tokens      : " + payload.summary.safeTokensCount);
     console.log("  High risk        : " + payload.summary.highRiskCount);
-    console.log("  Whale alerts     : " + whaleRadar.length);
+    console.log("  Activity alerts  : " + whaleRadar.length);
 
   } catch (error) {
     console.error("Telemetry compilation failed:", error);
