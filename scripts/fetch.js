@@ -1,6 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 
+function formatPrice(value) {
+  const p = parseFloat(value);
+  if (!p || p <= 0) return "0";
+
+  if (p >= 1) return p.toFixed(4);
+  if (p >= 0.01) return p.toFixed(6);
+  if (p >= 0.0001) return p.toFixed(8);
+  if (p >= 0.000001) return p.toFixed(10);
+
+  return p.toExponential(4);
+}
+
 function calculateRiskMetrics(tokenData, isVeryNew) {
   let score = 100;
   const flags = [];
@@ -137,7 +149,7 @@ function buildToken(launch, rank, pair) {
 
   let volume24h = 0;
   let liquidityUsd = 0;
-  let priceUsd = "0.000000";
+  let priceUsd = "0";
   let priceChange24h = 0;
   let fdv = 0;
   let txns24h = { buys: 0, sells: 0 };
@@ -148,9 +160,7 @@ function buildToken(launch, rank, pair) {
   if (pair) {
     volume24h = pair.volume?.h24 || 0;
     liquidityUsd = pair.liquidity?.usd || 0;
-    priceUsd = parseFloat(pair.priceUsd || 0) > 0
-      ? parseFloat(pair.priceUsd).toFixed(6)
-      : "0.000000";
+    priceUsd = formatPrice(pair.priceUsd);
     priceChange24h = Number((pair.priceChange?.h24 || 0).toFixed(2));
     fdv = pair.fdv || 0;
     txns24h = {
@@ -216,7 +226,7 @@ function generateWhaleRadar(tokens) {
 }
 
 async function main() {
-  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.3...");
+  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.4...");
 
   try {
     const launches = await fetchBankrLaunches();
@@ -261,7 +271,7 @@ async function main() {
 
     const payload = {
       meta: {
-        engine: "BlortBot Bankr Telemetry Terminal v2.3",
+        engine: "BlortBot Bankr Telemetry Terminal v2.4",
         targetOrigin: "Bankr API + DexScreener",
         updatedAt: new Date().toISOString(),
         builder: "@0xliamdavis",
