@@ -202,7 +202,13 @@
       tbody.innerHTML = '';
 
       if (!masterData.tokens || masterData.tokens.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="8" class="py-6 text-center text-gray-500">No BankrBot tokens detected yet.</td></tr>';
+        tbody.innerHTML =
+          '<tr><td colspan="8" class="py-10 text-center">' +
+            '<div class="text-gray-400 text-sm mb-2">No tokens currently match the filter</div>' +
+            '<div class="text-gray-600 text-[11px] max-w-sm mx-auto leading-relaxed">' +
+              'New launches under 6 hours only appear after reaching $500+ in 24h volume. Older tokens are always shown when available.' +
+            '</div>' +
+          '</td></tr>';
         return;
       }
 
@@ -214,7 +220,10 @@
       });
 
       if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="8" class="py-6 text-center text-gray-500">No matching tokens found.</td></tr>';
+        tbody.innerHTML =
+          '<tr><td colspan="8" class="py-8 text-center text-gray-500">' +
+            'No tokens match your search.' +
+          '</td></tr>';
         return;
       }
 
@@ -254,6 +263,11 @@
 
         const tradeUrl = 'https://bankr.bot/terminal/trade?out=' + token.address + '&chain=base';
 
+        // NEW badge
+        const newBadge = token.isNew
+          ? ' <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-[#C84B31]/20 text-[#C84B31] border border-[#C84B31]/40 rounded">NEW</span>'
+          : '';
+
         const tr = document.createElement('tr');
         tr.className = 'hover:bg-gray-800/40 transition border-b border-gray-800/40';
 
@@ -262,6 +276,7 @@
           '<td class="py-3 font-bold text-white">' +
             (token.name || 'Unknown') +
             ' <span class="text-[10px] text-gray-400">(' + (token.symbol || '???') + ')</span>' +
+            newBadge +
           '</td>' +
           '<td class="py-3">' +
             '<span class="px-2 py-0.5 bg-[#2DD4BF]/10 text-[#2DD4BF] rounded text-[10px] font-mono font-bold uppercase border border-[#2DD4BF]/30">' +
