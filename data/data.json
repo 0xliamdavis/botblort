@@ -2,18 +2,62 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.3",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-30T16:17:26.705Z",
+    "updatedAt": "2026-08-30T16:29:27.366Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "MACHI",
+      "symbol": "MACHI",
+      "address": "0x858e49b0fe678af486afbed97eddd140eabe1ba3",
+      "pairAddress": "0x26333735eadaf942e3c551a48b8bc34ba1e1f3358ba74403a01a50b435d5c3f0",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.000000",
+      "priceChange24h": -0.55,
+      "volume24h": 22723.83,
+      "liquidityUsd": 17575.45,
+      "fdv": 20813,
+      "txns24h": {
+        "buys": 81,
+        "sells": 116
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x26333735eadaf942e3c551a48b8bc34ba1e1f3358ba74403a01a50b435d5c3f0",
+      "poolId": "0x26333735eadaf942e3c551a48b8bc34ba1e1f3358ba74403a01a50b435d5c3f0",
+      "deployer": "0xb8c69f0a0577f7c79325e4dd1e14aeac97d95731",
+      "feeRecipient": "0x2c5327e2ba93ca9ce777ed13fb3eed4092c318cb",
+      "launchTimestamp": 1788107188494,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "WHL-398259",
+      "timestamp": "2026-08-30T16:29:27.366Z",
+      "token": "MACHI",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "1173.63",
+      "priceImpact": "1.12%",
+      "txHash": null
+    }
+  ]
 }
