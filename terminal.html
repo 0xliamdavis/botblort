@@ -57,7 +57,7 @@
           <div id="stat-safe" class="text-base font-bold text-emerald-400">0%</div>
         </div>
         <div class="bg-[#0d1117] p-2 rounded border border-gray-800">
-          <div class="text-[10px] text-gray-400">WHALE ALERTS</div>
+          <div class="text-[10px] text-gray-400">ACTIVITY</div>
           <div id="stat-whales" class="text-base font-bold text-[#C84B31]">0</div>
         </div>
       </div>
@@ -125,18 +125,18 @@
       </div>
     </section>
 
-    <!-- WHALE RADAR -->
+    <!-- ACTIVITY RADAR -->
     <section class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
           <h2 class="text-sm font-bold text-[#C84B31] flex items-center gap-2">
-            <span>🐋</span> WHALE RADAR
+            <span>📡</span> ACTIVITY RADAR
           </h2>
-          <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE FEED</span>
+          <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">ON-CHAIN</span>
         </div>
-        <p class="text-[11px] text-gray-400 mb-3">Monitoring high-value activity for Bankr tokens.</p>
+        <p class="text-[11px] text-gray-400 mb-3">Real signals from volume, buy/sell pressure & avg trade size.</p>
         <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
-          <p class="text-xs text-gray-500 text-center py-6">Listening for whale signals...</p>
+          <p class="text-xs text-gray-500 text-center py-6">Listening for activity signals...</p>
         </div>
       </div>
       <div class="mt-4 pt-3 border-t border-gray-800 text-center">
@@ -334,35 +334,42 @@
       container.innerHTML = '';
 
       if (!masterData.whaleRadar || masterData.whaleRadar.length === 0) {
-        container.innerHTML = '<p class="text-xs text-gray-500 text-center py-6">No whale activity detected yet.</p>';
+        container.innerHTML = '<p class="text-xs text-gray-500 text-center py-6">No significant activity detected yet.</p>';
         return;
       }
 
       masterData.whaleRadar.forEach(function(alert) {
         const isBuy = alert.type === 'BUY';
-        const card = document.createElement('div');
-        card.className = 'p-2.5 rounded border ' +
-          (isBuy ? 'border-emerald-500/30 bg-emerald-950/10' : 'border-red-500/30 bg-red-950/10');
+        const isSell = alert.type === 'SELL';
+        const borderClass = isBuy
+          ? 'border-emerald-500/30 bg-emerald-950/10'
+          : (isSell ? 'border-red-500/30 bg-red-950/10' : 'border-yellow-500/30 bg-yellow-950/10');
+        const typeClass = isBuy
+          ? 'text-emerald-400'
+          : (isSell ? 'text-red-400' : 'text-yellow-400');
 
-        const txDisplay = alert.txHash
-          ? (alert.txHash.length > 12 ? alert.txHash.slice(0, 10) + '...' : alert.txHash)
-          : '—';
+        const basescanUrl = alert.address
+          ? ('https://basescan.org/token/' + alert.address)
+          : '#';
+
+        const card = document.createElement('div');
+        card.className = 'p-2.5 rounded border ' + borderClass;
 
         card.innerHTML =
           '<div class="flex justify-between items-center mb-1">' +
-            '<span class="font-bold text-xs ' + (isBuy ? 'text-emerald-400' : 'text-red-400') + '">' +
-              (alert.type || '???') + ' $' + (alert.token || '???') +
+            '<span class="font-bold text-xs ' + typeClass + '">' +
+              (alert.label || alert.type || 'ACTIVITY') + ' · $' + (alert.token || '???') +
             '</span>' +
-            '<span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">' +
-              (alert.chain || 'BASE') +
-            '</span>' +
+            '<span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">BASE</span>' +
           '</div>' +
           '<div class="text-sm font-bold text-white font-mono">$' +
-            Number(alert.amountUsd || 0).toLocaleString() +
+            Number(alert.amountUsd || 0).toLocaleString(undefined, { maximumFractionDigits: 0 }) +
           '</div>' +
           '<div class="flex justify-between text-[10px] text-gray-400 mt-1 font-mono">' +
-            '<span>Impact: ' + (alert.priceImpact || '—') + '</span>' +
-            '<span class="truncate w-24">Tx: ' + txDisplay + '</span>' +
+            '<span class="truncate pr-2">' + (alert.detail || '') + '</span>' +
+            (alert.address
+              ? '<a href="' + basescanUrl + '" target="_blank" class="text-[#2DD4BF] hover:underline shrink-0">scan ↗</a>'
+              : '') +
           '</div>';
 
         container.appendChild(card);
