@@ -2,18 +2,79 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.5",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-31T09:49:47.756Z",
+    "updatedAt": "2026-08-31T10:02:25.926Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 2
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "slop",
+      "symbol": "slop",
+      "address": "0xea5d5375c2885528df73bdc468bbba2855648ba3",
+      "pairAddress": "0x71e975b34aa07759954e3f9f07c1ed6ef7c3aa471979b14bc7e0e755d964105c",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.2330e-7",
+      "priceChange24h": -12.5,
+      "volume24h": 6171.59,
+      "volume1h": 6171.59,
+      "liquidityUsd": 18758.49,
+      "fdv": 22331,
+      "txns24h": {
+        "buys": 15,
+        "sells": 8
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x71e975b34aa07759954e3f9f07c1ed6ef7c3aa471979b14bc7e0e755d964105c",
+      "poolId": "0x71e975b34aa07759954e3f9f07c1ed6ef7c3aa471979b14bc7e0e755d964105c",
+      "deployer": "0x1f6d72c0c6081a84d820b40f2ae3f84a81956894",
+      "feeRecipient": "0x1f6d72c0c6081a84d820b40f2ae3f84a81956894",
+      "launchTimestamp": 1788170348290,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "ACT-slop-BUY",
+      "timestamp": "2026-08-31T10:02:25.926Z",
+      "token": "slop",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "6171.59",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "BUY PRESSURE",
+      "detail": "15 buys / 8 sells · 65% buy",
+      "address": "0xea5d5375c2885528df73bdc468bbba2855648ba3"
+    },
+    {
+      "id": "ACT-slop-AVG",
+      "timestamp": "2026-08-31T10:02:25.926Z",
+      "token": "slop",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "268.33",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $268 / tx · 23 txns",
+      "address": "0xea5d5375c2885528df73bdc468bbba2855648ba3"
+    }
+  ]
 }
