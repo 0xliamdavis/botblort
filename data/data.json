@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-31T14:29:44.137Z",
+    "updatedAt": "2026-08-31T14:41:57.451Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 14,
-    "withMarketData": 3,
+    "withMarketData": 4,
     "safeTokensCount": 2,
-    "highRiskCount": 1,
+    "highRiskCount": 2,
     "totalWhaleAlerts": 1
   },
   "tokens": [
@@ -119,6 +119,41 @@
     },
     {
       "rank": 4,
+      "name": "XYO",
+      "symbol": "XYO",
+      "address": "0x860e06187abe46a2721f1186f03b57342c8eeba3",
+      "pairAddress": "0xaf1e8a00816ca4b7a1cc7e3320d6a526ef49e190063ecdb6cb644fd42c075cf2",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0220e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.02,
+      "volume1h": 0.02,
+      "liquidityUsd": 0,
+      "fdv": 10228,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xaf1e8a00816ca4b7a1cc7e3320d6a526ef49e190063ecdb6cb644fd42c075cf2",
+      "poolId": "0xaf1e8a00816ca4b7a1cc7e3320d6a526ef49e190063ecdb6cb644fd42c075cf2",
+      "deployer": "0x5ff0ffb0539a943476ad24688b932b099c3d3e52",
+      "feeRecipient": "0x5ff0ffb0539a943476ad24688b932b099c3d3e52",
+      "launchTimestamp": 1788185536262,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 5,
       "name": "DualShock Controller",
       "symbol": "BOOBPAD",
       "address": "0xaa52d1859f9a2b92d51bf531421f6b284d8e7ba3",
@@ -153,7 +188,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "AI Supercycle",
       "symbol": "AISUP",
       "address": "0x3721fc781aafc97d82ee12f3f51768a8eb435ba3",
@@ -188,7 +223,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Badabing",
       "symbol": "BDB",
       "address": "0x15d923acb1f0e6ada47e8748d4623db1f3507ba3",
@@ -223,7 +258,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "DefendIntelligence",
       "symbol": "AnisAyari",
       "address": "0xfa5c323402577d1265bc823bd22b59dedd3f2ba3",
@@ -258,7 +293,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "OrloChain",
       "symbol": "ORLO",
       "address": "0x6fbfbef5ddccdf52fd1a95ea57b1278799443ba3",
@@ -293,7 +328,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "The Crowd",
       "symbol": "CROWD",
       "address": "0x5522582333be6b92cd6f8de99202e0da63d2eba3",
@@ -324,41 +359,6 @@
       "deployer": "0x41d44c7abd924073c923d4aa7ec654d04536d0e4",
       "feeRecipient": "0x1b6583f5cc4d8e572ae026744f77ff94c8956333",
       "launchTimestamp": 1788185586628,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 10,
-      "name": "XYO",
-      "symbol": "XYO",
-      "address": "0x860e06187abe46a2721f1186f03b57342c8eeba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x860e06187abe46a2721f1186f03b57342c8eeba3&chain=base",
-      "poolId": "0xaf1e8a00816ca4b7a1cc7e3320d6a526ef49e190063ecdb6cb644fd42c075cf2",
-      "deployer": "0x5ff0ffb0539a943476ad24688b932b099c3d3e52",
-      "feeRecipient": "0x5ff0ffb0539a943476ad24688b932b099c3d3e52",
-      "launchTimestamp": 1788185536262,
       "isNew": true,
       "hasMarketData": false
     },
@@ -506,7 +506,7 @@
   "whaleRadar": [
     {
       "id": "ACT-TheNativeToken-VOL",
-      "timestamp": "2026-08-31T14:29:44.137Z",
+      "timestamp": "2026-08-31T14:41:57.451Z",
       "token": "TheNativeToken",
       "chain": "BASE",
       "type": "BUY",
