@@ -2,18 +2,99 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.5",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-31T03:22:20.579Z",
+    "updatedAt": "2026-08-31T03:37:39.500Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Omarchy",
+      "symbol": "Omarchy",
+      "address": "0xe0d0815c6bd1fac41e5260b3248c4c5a37e0dba3",
+      "pairAddress": "0x04419bb97de0c91910cdf7cfc2129a480ddc7cd9af98bbca1a965084110492e3",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.0540e-7",
+      "priceChange24h": 57.4,
+      "volume24h": 15899.62,
+      "volume1h": 15899.62,
+      "liquidityUsd": 17440.7,
+      "fdv": 20542,
+      "txns24h": {
+        "buys": 92,
+        "sells": 140
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x04419bb97de0c91910cdf7cfc2129a480ddc7cd9af98bbca1a965084110492e3",
+      "poolId": "0x04419bb97de0c91910cdf7cfc2129a480ddc7cd9af98bbca1a965084110492e3",
+      "deployer": "0x2c1ddb4e44d9c940462c1ae93840868d2ea9e502",
+      "feeRecipient": "0xf5f8414fc251ecb7f3d11045c49101aa00394380",
+      "launchTimestamp": 1788146790272,
+      "isNew": true
+    },
+    {
+      "rank": 2,
+      "name": "World Clock",
+      "symbol": "WORLDCLOCK",
+      "address": "0xb28d4cc72dc8495580bf22c53abdb9a164a60ba3",
+      "pairAddress": "0x1ace03ed365f3d77b66095cd0a0767d3a971f383de5e00f766f7ed4522d851ed",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.1830e-7",
+      "priceChange24h": -43.39,
+      "volume24h": 14198.77,
+      "volume1h": 14198.77,
+      "liquidityUsd": 10756.8,
+      "fdv": 11834,
+      "txns24h": {
+        "buys": 44,
+        "sells": 65
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x1ace03ed365f3d77b66095cd0a0767d3a971f383de5e00f766f7ed4522d851ed",
+      "poolId": "0x1ace03ed365f3d77b66095cd0a0767d3a971f383de5e00f766f7ed4522d851ed",
+      "deployer": "0xb8c69f0a0577f7c79325e4dd1e14aeac97d95731",
+      "feeRecipient": "0xf5f8414fc251ecb7f3d11045c49101aa00394380",
+      "launchTimestamp": 1788146874059,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "ACT-WORLDCLOCK-AVG",
+      "timestamp": "2026-08-31T03:37:39.500Z",
+      "token": "WORLDCLOCK",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "130.26",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $130 / tx · 109 txns",
+      "address": "0xb28d4cc72dc8495580bf22c53abdb9a164a60ba3"
+    }
+  ]
 }
