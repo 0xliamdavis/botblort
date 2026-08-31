@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.5",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-31T03:37:39.500Z",
+    "updatedAt": "2026-08-31T03:49:40.903Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 2,
     "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
@@ -24,15 +24,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.0540e-7",
-      "priceChange24h": 57.4,
-      "volume24h": 15899.62,
-      "volume1h": 15899.62,
-      "liquidityUsd": 17440.7,
-      "fdv": 20542,
+      "priceUsd": "2.0550e-7",
+      "priceChange24h": 57.47,
+      "volume24h": 15907.24,
+      "volume1h": 15907.24,
+      "liquidityUsd": 17449.33,
+      "fdv": 20552,
       "txns24h": {
-        "buys": 92,
-        "sells": 140
+        "buys": 93,
+        "sells": 141
       },
       "safety": {
         "safetyScore": 90,
@@ -57,15 +57,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.1830e-7",
-      "priceChange24h": -43.39,
-      "volume24h": 14198.77,
-      "volume1h": 14198.77,
-      "liquidityUsd": 10756.8,
-      "fdv": 11834,
+      "priceUsd": "1.0880e-7",
+      "priceChange24h": -47.93,
+      "volume24h": 14238.58,
+      "volume1h": 14238.58,
+      "liquidityUsd": 9278.23,
+      "fdv": 10886,
       "txns24h": {
-        "buys": 44,
-        "sells": 65
+        "buys": 45,
+        "sells": 66
       },
       "safety": {
         "safetyScore": 90,
@@ -84,16 +84,29 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-WORLDCLOCK-AVG",
-      "timestamp": "2026-08-31T03:37:39.500Z",
+      "id": "ACT-WORLDCLOCK-VOL",
+      "timestamp": "2026-08-31T03:49:40.903Z",
       "token": "WORLDCLOCK",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "130.26",
+      "amountUsd": "14238.58",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $14239 · Liq $9278",
+      "address": "0xb28d4cc72dc8495580bf22c53abdb9a164a60ba3"
+    },
+    {
+      "id": "ACT-WORLDCLOCK-AVG",
+      "timestamp": "2026-08-31T03:49:40.903Z",
+      "token": "WORLDCLOCK",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "128.28",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $130 / tx · 109 txns",
+      "detail": "Avg $128 / tx · 111 txns",
       "address": "0xb28d4cc72dc8495580bf22c53abdb9a164a60ba3"
     }
   ]
