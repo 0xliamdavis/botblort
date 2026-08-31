@@ -89,7 +89,7 @@ async function fetchDexScreenerData(addresses) {
   if (!addresses.length) return new Map();
 
   const pairMap = new Map();
-  const chunkSize = 20;
+  const chunkSize = 15;
 
   for (let i = 0; i < addresses.length; i += chunkSize) {
     const chunk = addresses.slice(i, i + chunkSize);
@@ -97,7 +97,10 @@ async function fetchDexScreenerData(addresses) {
     try {
       const url1 = "https://api.dexscreener.com/tokens/v1/base/" + chunk.join(",");
       const res1 = await fetch(url1);
-      if (res1.ok) {
+      if (res1.status === 429) {
+        console.warn("DexScreener rate limited (tokens/v1), waiting 2s...");
+        await new Promise(function(r) { setTimeout(r, 2000); });
+      } else if (res1.ok) {
         const data1 = await res1.json();
         const pairs = Array.isArray(data1) ? data1 : (data1.pairs || []);
         pairs.forEach(function(pair) {
@@ -111,12 +114,17 @@ async function fetchDexScreenerData(addresses) {
           }
         });
       }
-    } catch (e) {}
+    } catch (e) {
+      console.warn("DexScreener tokens/v1 error:", e.message || e);
+    }
 
     try {
       const url2 = "https://api.dexscreener.com/latest/dex/tokens/" + chunk.join(",");
       const res2 = await fetch(url2);
-      if (res2.ok) {
+      if (res2.status === 429) {
+        console.warn("DexScreener rate limited (latest/dex), waiting 2s...");
+        await new Promise(function(r) { setTimeout(r, 2000); });
+      } else if (res2.ok) {
         const data2 = await res2.json();
         const pairs = data2.pairs || [];
         pairs.forEach(function(pair) {
@@ -130,10 +138,12 @@ async function fetchDexScreenerData(addresses) {
           }
         });
       }
-    } catch (e) {}
+    } catch (e) {
+      console.warn("DexScreener latest/dex error:", e.message || e);
+    }
 
     if (i + chunkSize < addresses.length) {
-      await new Promise(function(r) { setTimeout(r, 300); });
+      await new Promise(function(r) { setTimeout(r, 500); });
     }
   }
 
@@ -199,7 +209,8 @@ function buildToken(launch, rank, pair) {
     deployer: (launch.deployer && launch.deployer.walletAddress) || null,
     feeRecipient: (launch.feeRecipient && launch.feeRecipient.walletAddress) || null,
     launchTimestamp: launch.timestamp || null,
-    isNew: isVeryNew || isFresh
+    isNew: isVeryNew || isFresh,
+    hasMarketData: !!(pair && (volume24h > 0 || liquidityUsd > 0))
   };
 }
 
@@ -292,7 +303,7 @@ function generateWhaleRadar(tokens) {
 }
 
 async function main() {
-  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.5...");
+  console.log("[BLORT BOT] Starting BankrBot Base Telemetry Engine v2.6...");
 
   try {
     const launches = await fetchBankrLaunches();
@@ -309,35 +320,46 @@ async function main() {
       return buildToken(launch, index + 1, pair);
     });
 
-    // Filter rules:
-    // - New tokens (< 6 hours) must have volume >= $500
-    // - Older tokens are always included
+    // Filter v2.6 — cegah dashboard kosong
     const SIX_HOURS = 6 * 60 * 60 * 1000;
+    const FORTY_EIGHT_HOURS = 48 * 60 * 60 * 1000;
     const now = Date.now();
 
     processedTokens = processedTokens.filter(function(t) {
-      const isNew = t.launchTimestamp && (now - t.launchTimestamp) < SIX_HOURS;
+      const age = t.launchTimestamp ? (now - t.launchTimestamp) : null;
+      const isNew = age !== null && age < SIX_HOURS;
+      const isVeryOld = age !== null && age > FORTY_EIGHT_HOURS;
+      const hasActivity = (t.volume24h || 0) > 0 || (t.liquidityUsd || 0) > 0;
 
-      if (isNew) {
-        return (t.volume24h || 0) >= 500;
-      }
-
+      if (hasActivity) return true;
+      if (isNew) return true;
+      if (age !== null && age <= FORTY_EIGHT_HOURS) return true;
+      if (isVeryOld && !hasActivity) return false;
       return true;
     });
 
-    // Sort by volume descending
     processedTokens.sort(function(a, b) {
-      return (b.volume24h || 0) - (a.volume24h || 0);
+      const volDiff = (b.volume24h || 0) - (a.volume24h || 0);
+      if (volDiff !== 0) return volDiff;
+
+      const liqDiff = (b.liquidityUsd || 0) - (a.liquidityUsd || 0);
+      if (liqDiff !== 0) return liqDiff;
+
+      return (b.launchTimestamp || 0) - (a.launchTimestamp || 0);
     });
 
-    processedTokens = processedTokens.slice(0, 30);
+    processedTokens = processedTokens.slice(0, 40);
     processedTokens.forEach(function(t, i) { t.rank = i + 1; });
 
     const whaleRadar = generateWhaleRadar(processedTokens);
 
+    const withMarket = processedTokens.filter(function(t) {
+      return t.hasMarketData;
+    }).length;
+
     const payload = {
       meta: {
-        engine: "BlortBot Bankr Telemetry Terminal v2.5",
+        engine: "BlortBot Bankr Telemetry Terminal v2.6",
         targetOrigin: "Bankr API + DexScreener",
         updatedAt: new Date().toISOString(),
         builder: "@0xliamdavis",
@@ -347,6 +369,7 @@ async function main() {
       },
       summary: {
         totalAnalyzed: processedTokens.length,
+        withMarketData: withMarket,
         safeTokensCount: processedTokens.filter(function(t) {
           return t.safety.status === "SAFE";
         }).length,
@@ -371,7 +394,8 @@ async function main() {
 
     console.log("Telemetry compiled successfully!");
     console.log("  Tokens analyzed  : " + processedTokens.length);
-    console.log("  With market data : " + pairMap.size);
+    console.log("  With market data : " + withMarket);
+    console.log("  DexScreener hits : " + pairMap.size);
     console.log("  Safe tokens      : " + payload.summary.safeTokensCount);
     console.log("  High risk        : " + payload.summary.highRiskCount);
     console.log("  Activity alerts  : " + whaleRadar.length);
