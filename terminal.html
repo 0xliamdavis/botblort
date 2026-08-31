@@ -125,14 +125,14 @@
       </div>
     </section>
 
-    <!-- ACTIVITY RADAR -->
+    <!-- WHALE RADAR -->
     <section class="bg-[#161b22] p-4 rounded-lg retro-box flex flex-col justify-between">
       <div>
         <div class="flex items-center justify-between mb-3 pb-2 border-b border-gray-800">
           <h2 class="text-sm font-bold text-[#C84B31] flex items-center gap-2">
-            <span>📡</span> ACTIVITY RADAR
+            <span>🐋</span> ACTIVITY RADAR
           </h2>
-          <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">ON-CHAIN</span>
+          <span class="text-[10px] px-2 py-0.5 bg-red-950 border border-red-500 text-red-400 rounded font-bold animate-pulse">LIVE</span>
         </div>
         <p class="text-[11px] text-gray-400 mb-3">Real signals from volume, buy/sell pressure & avg trade size.</p>
         <div id="whale-feed" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
@@ -196,8 +196,9 @@
       document.getElementById('stat-whales').textContent = masterData.summary?.totalWhaleAlerts || 0;
 
       if (masterData.meta?.updatedAt) {
+        const eng = masterData.meta.engine ? (' · ' + masterData.meta.engine.replace('BlortBot Bankr Telemetry Terminal ', '')) : '';
         document.getElementById('last-update-time').textContent =
-          'Last Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString();
+          'Last Update: ' + new Date(masterData.meta.updatedAt).toLocaleTimeString() + eng;
       }
 
       renderTokens();
@@ -212,9 +213,9 @@
       if (!masterData.tokens || masterData.tokens.length === 0) {
         tbody.innerHTML =
           '<tr><td colspan="8" class="py-10 text-center">' +
-            '<div class="text-gray-400 text-sm mb-2">No tokens currently match the filter</div>' +
+            '<div class="text-gray-400 text-sm mb-2">No Bankr Base tokens in current scan</div>' +
             '<div class="text-gray-600 text-[11px] max-w-sm mx-auto leading-relaxed">' +
-              'New launches under 6 hours only appear after reaching $500+ in 24h volume. Older tokens are always shown when available.' +
+              'Engine is live. New Doppler launches appear here even before DexScreener indexes them. Check back in a few minutes.' +
             '</div>' +
           '</td></tr>';
         return;
@@ -238,7 +239,8 @@
       filtered.forEach(function(token) {
         const priceChange = Number(token.priceChange24h) || 0;
         const isPositive = priceChange >= 0;
-        const hasPrice = token.priceUsd && token.priceUsd !== "0" && Number(token.priceUsd) > 0;
+        const hasPrice = token.priceUsd && Number(token.priceUsd) > 0;
+        const hasMarket = token.hasMarketData || (token.volume24h > 0 || token.liquidityUsd > 0);
 
         let riskColor = 'bg-emerald-950 text-emerald-400 border-emerald-500/40';
         if (token.safety && token.safety.status === 'CAUTION') {
@@ -272,9 +274,13 @@
         const tradeUrl = 'https://bankr.bot/terminal/trade?out=' + token.address + '&chain=base';
         const basescanUrl = 'https://basescan.org/token/' + token.address;
 
-        const newBadge = token.isNew
-          ? ' <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-[#C84B31]/20 text-[#C84B31] border border-[#C84B31]/40 rounded">NEW</span>'
-          : '';
+        let badges = '';
+        if (token.isNew) {
+          badges += ' <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-[#C84B31]/20 text-[#C84B31] border border-[#C84B31]/40 rounded">NEW</span>';
+        }
+        if (!hasMarket) {
+          badges += ' <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-gray-800 text-gray-400 border border-gray-600 rounded">NO DATA</span>';
+        }
 
         const shortAddr = token.address
           ? (token.address.slice(0, 6) + '...' + token.address.slice(-4))
@@ -289,7 +295,7 @@
             '<div class="font-bold text-white">' +
               (token.name || 'Unknown') +
               ' <span class="text-[10px] text-gray-400">(' + (token.symbol || '???') + ')</span>' +
-              newBadge +
+              badges +
             '</div>' +
             '<a href="' + basescanUrl + '" target="_blank" class="text-[10px] text-gray-500 hover:text-[#2DD4BF] font-mono transition">' +
               shortAddr + ' ↗' +
@@ -307,7 +313,7 @@
           '<td class="py-3 font-mono text-gray-300">' + volumeText + '</td>' +
           '<td class="py-3 font-mono text-gray-300">' + liquidityText + '</td>' +
           '<td class="py-3">' +
-            '<button onclick="openAuditModal(\'' + (token.symbol || '') + '\')" ' +
+            '<button onclick="openAuditModal(\'' + (token.symbol || '').replace(/'/g, '') + '\')" ' +
               'class="px-2 py-0.5 rounded border text-[10px] font-bold ' + riskColor + ' hover:scale-105 transition">' +
               'SCORE ' + safetyScore + '/100 [' + safetyStatus + ']' +
             '</button>' +
@@ -360,15 +366,17 @@
             '<span class="font-bold text-xs ' + typeClass + '">' +
               (alert.label || alert.type || 'ACTIVITY') + ' · $' + (alert.token || '???') +
             '</span>' +
-            '<span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">BASE</span>' +
+            '<span class="text-[9px] px-1.5 py-0.5 bg-[#0052FF]/20 border border-[#0052FF]/30 text-white rounded uppercase font-mono">' +
+              (alert.chain || 'BASE') +
+            '</span>' +
           '</div>' +
           '<div class="text-sm font-bold text-white font-mono">$' +
-            Number(alert.amountUsd || 0).toLocaleString(undefined, { maximumFractionDigits: 0 }) +
+            Number(alert.amountUsd || 0).toLocaleString() +
           '</div>' +
           '<div class="flex justify-between text-[10px] text-gray-400 mt-1 font-mono">' +
             '<span class="truncate pr-2">' + (alert.detail || '') + '</span>' +
             (alert.address
-              ? '<a href="' + basescanUrl + '" target="_blank" class="text-[#2DD4BF] hover:underline shrink-0">scan ↗</a>'
+              ? '<a href="' + basescanUrl + '" target="_blank" class="text-[#2DD4BF] hover:underline shrink-0">view</a>'
               : '') +
           '</div>';
 
