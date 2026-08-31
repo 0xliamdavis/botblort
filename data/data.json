@@ -2,18 +2,79 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.5",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-08-31T05:09:47.911Z",
+    "updatedAt": "2026-08-31T05:21:53.127Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 0,
-    "safeTokensCount": 0,
+    "totalAnalyzed": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 2
   },
-  "tokens": [],
-  "whaleRadar": []
+  "tokens": [
+    {
+      "rank": 1,
+      "name": "Macroduck",
+      "symbol": "Macroduck",
+      "address": "0x52aa7bc237a5009b05b4289bb3a2f576f9b9eba3",
+      "pairAddress": "0xe0185649ce9b479deebdc972b6dbf517102395de7d6a04ab3fdcfaa47c7845f0",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.3440e-7",
+      "priceChange24h": 43.31,
+      "volume24h": 11773.7,
+      "volume1h": 11773.7,
+      "liquidityUsd": 19618.89,
+      "fdv": 23446,
+      "txns24h": {
+        "buys": 33,
+        "sells": 88
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xe0185649ce9b479deebdc972b6dbf517102395de7d6a04ab3fdcfaa47c7845f0",
+      "poolId": "0xe0185649ce9b479deebdc972b6dbf517102395de7d6a04ab3fdcfaa47c7845f0",
+      "deployer": "0xe7093f49ae0df32687df78bf58dd69ecc8306f54",
+      "feeRecipient": "0x0aef256f62deafb38b3d75cc9bbe4c5602f64836",
+      "launchTimestamp": 1788152968767,
+      "isNew": true
+    }
+  ],
+  "whaleRadar": [
+    {
+      "id": "ACT-Macroduck-SELL",
+      "timestamp": "2026-08-31T05:21:53.127Z",
+      "token": "Macroduck",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "11773.70",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "SELL PRESSURE",
+      "detail": "33 buys / 88 sells · 73% sell",
+      "address": "0x52aa7bc237a5009b05b4289bb3a2f576f9b9eba3"
+    },
+    {
+      "id": "ACT-Macroduck-AVG",
+      "timestamp": "2026-08-31T05:21:53.127Z",
+      "token": "Macroduck",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "97.30",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $97 / tx · 121 txns",
+      "address": "0x52aa7bc237a5009b05b4289bb3a2f576f9b9eba3"
+    }
+  ]
 }
