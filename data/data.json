@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-02T04:57:17.382Z",
+    "updatedAt": "2026-09-02T05:16:04.747Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,45 +13,11 @@
     "withMarketData": 3,
     "safeTokensCount": 3,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 3
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Desa",
-      "symbol": "DESA",
-      "address": "0x3a8f515c318c3c4cb049a450db62c1bc5a60eba3",
-      "pairAddress": "0x75b76ba76bed7416967a80683f7ab68c4a5c42cd966d42af79ba91aa6defd20f",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.3500e-7",
-      "priceChange24h": -23.75,
-      "volume24h": 25088.71,
-      "volume1h": 0,
-      "liquidityUsd": 11545.97,
-      "fdv": 13503,
-      "txns24h": {
-        "buys": 103,
-        "sells": 147
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x75b76ba76bed7416967a80683f7ab68c4a5c42cd966d42af79ba91aa6defd20f",
-      "poolId": "0x75b76ba76bed7416967a80683f7ab68c4a5c42cd966d42af79ba91aa6defd20f",
-      "deployer": "0x6605e7311eefbd413ccd71ab814dbf3b354e3536",
-      "feeRecipient": "0xa4b2a40e7fdc12ebe6459d7bc35abdd15fa77895",
-      "launchTimestamp": 1788316691715,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "Desa",
       "symbol": "Desa",
       "address": "0xc7d9c236b091f65350a293290d02c2850c471ba3",
@@ -81,6 +47,41 @@
       "deployer": "0x3f3910dc3c8ff7c3ea8d98d7b2250d898eb142f8",
       "feeRecipient": "0xb200a2d03fad69f72e1a14f6b487a750008426c5",
       "launchTimestamp": 1788316695704,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
+      "name": "Artificial Inu",
+      "symbol": "AINU",
+      "address": "0x73534b8b6c5a9dc3d836b7d3edd004bcf458aba3",
+      "pairAddress": "0xdef8bfdc7e802458bdf11b38b9ef60decb1a9333a12b72b4c36f629240977fe3",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0080e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.24,
+      "volume1h": 0.24,
+      "liquidityUsd": 8575.06,
+      "fdv": 10088,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xdef8bfdc7e802458bdf11b38b9ef60decb1a9333a12b72b4c36f629240977fe3",
+      "poolId": "0xdef8bfdc7e802458bdf11b38b9ef60decb1a9333a12b72b4c36f629240977fe3",
+      "deployer": "0x579fbc2cbbc44794a12e2b61b68c1849d8ccd900",
+      "feeRecipient": "0x923b2957acc9025a2e084e2293a221c8cbc6cbba",
+      "launchTimestamp": 1788325292569,
       "isNew": true,
       "hasMarketData": true
     },
@@ -717,21 +718,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-DESA-VOL",
-      "timestamp": "2026-09-02T04:57:17.382Z",
-      "token": "DESA",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "25088.71",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "HIGH VOLUME",
-      "detail": "Vol $25089 · Liq $11546",
-      "address": "0x3a8f515c318c3c4cb049a450db62c1bc5a60eba3"
-    },
-    {
       "id": "ACT-Desa-AVG",
-      "timestamp": "2026-09-02T04:57:17.382Z",
+      "timestamp": "2026-09-02T05:16:04.747Z",
       "token": "Desa",
       "chain": "BASE",
       "type": "MIXED",
@@ -741,19 +729,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $128 / tx · 66 txns",
       "address": "0xc7d9c236b091f65350a293290d02c2850c471ba3"
-    },
-    {
-      "id": "ACT-DESA-AVG",
-      "timestamp": "2026-09-02T04:57:17.382Z",
-      "token": "DESA",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "100.35",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $100 / tx · 250 txns",
-      "address": "0x3a8f515c318c3c4cb049a450db62c1bc5a60eba3"
     }
   ]
 }
