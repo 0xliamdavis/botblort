@@ -2,15 +2,15 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-02T19:29:17.954Z",
+    "updatedAt": "2026-09-02T19:41:56.973Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 18,
-    "withMarketData": 5,
+    "totalAnalyzed": 21,
+    "withMarketData": 4,
     "safeTokensCount": 4,
     "highRiskCount": 0,
     "totalWhaleAlerts": 2
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.8020e-7",
-      "priceChange24h": 84.07,
-      "volume24h": 12106.33,
-      "volume1h": 3084.37,
-      "liquidityUsd": 27075.95,
-      "fdv": 28028,
+      "priceUsd": "2.7920e-7",
+      "priceChange24h": 83.39,
+      "volume24h": 12136.62,
+      "volume1h": 1145.62,
+      "liquidityUsd": 26977.03,
+      "fdv": 27925,
       "txns24h": {
-        "buys": 89,
-        "sells": 138
+        "buys": 91,
+        "sells": 141
       },
       "safety": {
         "safetyScore": 100,
@@ -153,40 +153,146 @@
     },
     {
       "rank": 5,
-      "name": "Runtime",
-      "symbol": "Runtime",
-      "address": "0xc7438ec45cb8d782f04c685bb7b0269359bceba3",
-      "pairAddress": "0x30fb2d3e6d1c6bf4c09c5d4fc61e6f4faf5e9776fca91422e55be99b91a32829",
+      "name": "EZ Labs",
+      "symbol": "EZLABS",
+      "address": "0x0afc911ca77d8ba7ebf6c5329c9ff52522920ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.5670e-8",
-      "priceChange24h": -33.72,
-      "volume24h": 93.63,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
       "volume1h": 0,
       "liquidityUsd": 0,
-      "fdv": 2567,
+      "fdv": 0,
       "txns24h": {
-        "buys": 6,
-        "sells": 8
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 55,
+        "safetyScore": 35,
         "status": "CAUTION",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x30fb2d3e6d1c6bf4c09c5d4fc61e6f4faf5e9776fca91422e55be99b91a32829",
-      "poolId": "0x30fb2d3e6d1c6bf4c09c5d4fc61e6f4faf5e9776fca91422e55be99b91a32829",
-      "deployer": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
-      "feeRecipient": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
-      "launchTimestamp": 1788369830099,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x0afc911ca77d8ba7ebf6c5329c9ff52522920ba3&chain=base",
+      "poolId": "0xdb0b09898e20669269b3b9b91726f23086cd4172bca65c52e9cec7d7bb946fc8",
+      "deployer": "0x963f07dc10b2465c2ed8edf93908b45a29e7592e",
+      "feeRecipient": "0x963f07dc10b2465c2ed8edf93908b45a29e7592e",
+      "launchTimestamp": 1788377876805,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 6,
+      "name": "CAROLINA",
+      "symbol": "LINA",
+      "address": "0xc4bdbbb498d76ba2743e4381e0dd327803ef2ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc4bdbbb498d76ba2743e4381e0dd327803ef2ba3&chain=base",
+      "poolId": "0xf4883db34932859c3f7542c5f49ddb70e476d1425c5b9c421807b4e5dd00e11b",
+      "deployer": "0x93e235e9719aab901f0dcbcf0a6430482be479a8",
+      "feeRecipient": "0x93e235e9719aab901f0dcbcf0a6430482be479a8",
+      "launchTimestamp": 1788377740707,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 7,
+      "name": "Keploy",
+      "symbol": "KEPLOY",
+      "address": "0xa40fb4ae1edbb7b062881fdf6b5ee63824ce5ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa40fb4ae1edbb7b062881fdf6b5ee63824ce5ba3&chain=base",
+      "poolId": "0xb6943edb3e653bbf6fed9c718e1e05f5e29485f90cb4580365608d9aad8c2b8b",
+      "deployer": "0x4c09d6675e2f50eb90963a33573f91ac6edfbe82",
+      "feeRecipient": "0x0082497075a7d35de3fe1e7ce81ee570e4176f17",
+      "launchTimestamp": 1788377630963,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 8,
+      "name": "Omarchy plugin",
+      "symbol": "Omarchy plugin",
+      "address": "0x8a298886d93397dc919d74d446fe3338ed196ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x8a298886d93397dc919d74d446fe3338ed196ba3&chain=base",
+      "poolId": "0x0e437e180f5000938335d9c116e346957d542d4a0fd49b548a0e9090ba149728",
+      "deployer": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
+      "feeRecipient": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
+      "launchTimestamp": 1788377625853,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "Ciphnode",
       "symbol": "CIPHNODE",
       "address": "0x78a0413c8d6eece612e7e651a8906403da59dba3",
@@ -221,7 +327,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 10,
       "name": "GrowthAssistant",
       "symbol": "GROWTH",
       "address": "0xee184c3ba80d440518de7002c3d4b151c8cd8ba3",
@@ -256,7 +362,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 11,
       "name": "AGD",
       "symbol": "AGD",
       "address": "0xd81c1b029cfd2427790fa08e909ea45fad9e8ba3",
@@ -291,7 +397,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 12,
       "name": "Tessara",
       "symbol": "TESSARA",
       "address": "0xd46c742fd820e33c4d98df73d849ebff1a2efba3",
@@ -326,7 +432,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 13,
       "name": "Base Batches",
       "symbol": "BASE BATCHES",
       "address": "0xfb4db15c4c38e68055402afde4067e1b0a0f7ba3",
@@ -361,7 +467,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 14,
       "name": "Builder",
       "symbol": "BUILDER",
       "address": "0x1e4f4778d9b3bb2acb9b496bf3fde40a76664ba3",
@@ -396,7 +502,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "clippy",
       "symbol": "CLIP",
       "address": "0xf1cd41f84b81a346bb7e36964c87ca0f8f119ba3",
@@ -431,7 +537,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 16,
       "name": "Arixians",
       "symbol": "ARIXA",
       "address": "0x2dffe1ba895120c7741e7106a126ec2d68488ba3",
@@ -466,7 +572,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 17,
       "name": "Orlo.Wallet",
       "symbol": "ORLO",
       "address": "0x883d5618fb48c7a58109fac327e54e8f7a0ecba3",
@@ -501,7 +607,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 18,
       "name": "Perceptive",
       "symbol": "Perceptive",
       "address": "0x175a5845e9e3ecaf6999491da276a5c14ce59ba3",
@@ -536,7 +642,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 19,
       "name": "Perceptive",
       "symbol": "PERCEPTIVE",
       "address": "0x0b958812ff25340029cb37ad458d29c6810aaba3",
@@ -571,7 +677,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 20,
       "name": "KING FREEBOTS",
       "symbol": "KINGBOTS",
       "address": "0x938e6e844c269a4f44edc74c4ba061e1734f6ba3",
@@ -606,7 +712,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 21,
       "name": "Base Batceh 004",
       "symbol": "BB004",
       "address": "0x5c99239328ca0c07f2deabecccd0a199fbe47ba3",
@@ -644,7 +750,7 @@
   "whaleRadar": [
     {
       "id": "ACT-MANT-AVG",
-      "timestamp": "2026-09-02T19:29:17.954Z",
+      "timestamp": "2026-09-02T19:41:56.972Z",
       "token": "MANT",
       "chain": "BASE",
       "type": "MIXED",
@@ -657,7 +763,7 @@
     },
     {
       "id": "ACT-PCME-AVG",
-      "timestamp": "2026-09-02T19:29:17.954Z",
+      "timestamp": "2026-09-02T19:41:56.973Z",
       "token": "PCME",
       "chain": "BASE",
       "type": "SELL",
