@@ -2,92 +2,57 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-02T14:17:49.766Z",
+    "updatedAt": "2026-09-02T14:34:31.572Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 9,
-    "withMarketData": 2,
-    "safeTokensCount": 1,
-    "highRiskCount": 1,
+    "totalAnalyzed": 8,
+    "withMarketData": 0,
+    "safeTokensCount": 0,
+    "highRiskCount": 0,
     "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Make it Exist First",
-      "symbol": "EXIST",
-      "address": "0x56e4d20a5bea0687101ce6dbcfdb0dda6fbfaba3",
-      "pairAddress": "0xf1a2a52fb11e7afe2d02aae1c26484c33b3ce0e1ffef82795f76edfa49fcff7c",
+      "name": "hello",
+      "symbol": "HELLO",
+      "address": "0x695c39b02401abda4000742cb9b7e9e6b356bba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0170e-7",
-      "priceChange24h": -9.55,
-      "volume24h": 93.76,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
       "volume1h": 0,
       "liquidityUsd": 0,
-      "fdv": 10174,
+      "fdv": 0,
       "txns24h": {
-        "buys": 2,
-        "sells": 3
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xf1a2a52fb11e7afe2d02aae1c26484c33b3ce0e1ffef82795f76edfa49fcff7c",
-      "poolId": "0xf1a2a52fb11e7afe2d02aae1c26484c33b3ce0e1ffef82795f76edfa49fcff7c",
-      "deployer": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "feeRecipient": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "launchTimestamp": 1788352299452,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x695c39b02401abda4000742cb9b7e9e6b356bba3&chain=base",
+      "poolId": "0xe8f30f44eb29e27c6cb750dcb5bcf209c4dddb9fa11db616e6d4283fe2ed4289",
+      "deployer": "0x1871c0760f23bb0df7573eb8137ff3ab2102eb93",
+      "feeRecipient": "0x1871c0760f23bb0df7573eb8137ff3ab2102eb93",
+      "launchTimestamp": 1788359556884,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 2,
-      "name": "Smash the guac",
-      "symbol": "GUAC",
-      "address": "0x0e65fcc0729e0a4b8d101588aa63d61e63cafba3",
-      "pairAddress": "0xfde9d95674c8d3d7bb0a597b294c47370c6a55bd2c255e1fe8eda7f43c465d68",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0150e-7",
-      "priceChange24h": -2.53,
-      "volume24h": 23.42,
-      "volume1h": 0,
-      "liquidityUsd": 8633.96,
-      "fdv": 10157,
-      "txns24h": {
-        "buys": 2,
-        "sells": 3
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xfde9d95674c8d3d7bb0a597b294c47370c6a55bd2c255e1fe8eda7f43c465d68",
-      "poolId": "0xfde9d95674c8d3d7bb0a597b294c47370c6a55bd2c255e1fe8eda7f43c465d68",
-      "deployer": "0xd1feb0a3e43bb0af4e6ec2ac6db71b3d7e1072db",
-      "feeRecipient": "0xd1feb0a3e43bb0af4e6ec2ac6db71b3d7e1072db",
-      "launchTimestamp": 1788352617985,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
       "name": "WHISKER (=^.^=)",
       "symbol": "WSKR",
       "address": "0xa0e60136478d0af3399b33604a0085e8963b0ba3",
@@ -122,7 +87,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "Epstein PDF",
       "symbol": "EpsteinPDF",
       "address": "0x98d1f37ebe2868da473eafdd95aa509d1a9d6ba3",
@@ -157,7 +122,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "Epstein PDF",
       "symbol": "EpsteinPDF",
       "address": "0x343f3654403a68612de8e7284ec468b761d4dba3",
@@ -192,7 +157,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Epstein PDF",
       "symbol": "EpsteinPDF",
       "address": "0xa98ef1b847401361ee594309896642585e525ba3",
@@ -227,7 +192,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "SNOWDEN",
       "symbol": "SNOWDEN",
       "address": "0x6a4abd3856c9e96b82174f397c7361166cbedba3",
@@ -262,7 +227,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "ToonApp",
       "symbol": "TOON",
       "address": "0xfed4ab32b693e66e6614d47eac2ee90e98ef7ba3",
@@ -297,7 +262,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "ShUp",
       "symbol": "ShUp",
       "address": "0xd4ba22176a0e5950b040f3e7d1bb6d67789d0ba3",
