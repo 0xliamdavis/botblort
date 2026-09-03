@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-03T09:15:14.446Z",
+    "updatedAt": "2026-09-03T09:32:38.640Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,11 +13,43 @@
     "withMarketData": 6,
     "safeTokensCount": 5,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Homebase",
+      "symbol": "HOME",
+      "address": "0xb9a1e52f3ed678b01ff5e256fde43f26f9c01ba3",
+      "pairAddress": "0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0.0000034160",
+      "priceChange24h": 1909,
+      "volume24h": 118636.31,
+      "volume1h": 118636.31,
+      "liquidityUsd": 124027.74,
+      "fdv": 341668,
+      "txns24h": {
+        "buys": 422,
+        "sells": 705
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
+      "poolId": "0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
+      "deployer": "0x74234f0c74efbd3f1b60349d015b7309b00757dc",
+      "feeRecipient": "0x23cebf0e3529a3af4756efae22e56b9797f008e3",
+      "launchTimestamp": 1788426840221,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "PRAY",
       "symbol": "PRAY",
       "address": "0x17d8c700bbaca79d7befed2a93de5fc9b73e4ba3",
@@ -47,11 +79,11 @@
       "deployer": "0xbeb3cac71ff7bbc8e773904ce08863adb401c65d",
       "feeRecipient": "0xbeb3cac71ff7bbc8e773904ce08863adb401c65d",
       "launchTimestamp": 1788405647074,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "crabtalkai",
       "symbol": "crabtalkai",
       "address": "0xfb2d032867086bb2b768dbeb37d044fcea889ba3",
@@ -62,7 +94,7 @@
       "priceUsd": "1.0740e-7",
       "priceChange24h": -34,
       "volume24h": 6429.62,
-      "volume1h": 2878.39,
+      "volume1h": 0,
       "liquidityUsd": 9153.34,
       "fdv": 10746,
       "txns24h": {
@@ -81,38 +113,6 @@
       "deployer": "0x5a44a31b0de7867dab4ebd125ae7576a1486e6dc",
       "feeRecipient": "0x892836325faea5f4d6886bd0f169e0bdbfda750d",
       "launchTimestamp": 1788423176782,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
-      "name": "Homebase",
-      "symbol": "HOME",
-      "address": "0xb9a1e52f3ed678b01ff5e256fde43f26f9c01ba3",
-      "pairAddress": "0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.5120e-7",
-      "priceChange24h": 47.72,
-      "volume24h": 2250.53,
-      "volume1h": 2250.53,
-      "liquidityUsd": 20872.82,
-      "fdv": 25128,
-      "txns24h": {
-        "buys": 13,
-        "sells": 6
-      },
-      "safety": {
-        "safetyScore": 100,
-        "status": "SAFE",
-        "flags": []
-      },
-      "dexUrl": "https://dexscreener.com/base/0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
-      "poolId": "0xcfa6173616804aa9974bf7a648149a98b5ce64251f3ed0b9852dd3dc0d8caa24",
-      "deployer": "0x74234f0c74efbd3f1b60349d015b7309b00757dc",
-      "feeRecipient": "0x23cebf0e3529a3af4756efae22e56b9797f008e3",
-      "launchTimestamp": 1788426840221,
       "isNew": true,
       "hasMarketData": true
     },
@@ -1413,7 +1413,7 @@
   "whaleRadar": [
     {
       "id": "ACT-PRAY-VOL",
-      "timestamp": "2026-09-03T09:15:14.446Z",
+      "timestamp": "2026-09-03T09:32:38.640Z",
       "token": "PRAY",
       "chain": "BASE",
       "type": "BUY",
@@ -1425,21 +1425,8 @@
       "address": "0x17d8c700bbaca79d7befed2a93de5fc9b73e4ba3"
     },
     {
-      "id": "ACT-HOME-BUY",
-      "timestamp": "2026-09-03T09:15:14.446Z",
-      "token": "HOME",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "2250.53",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "BUY PRESSURE",
-      "detail": "13 buys / 6 sells · 68% buy",
-      "address": "0xb9a1e52f3ed678b01ff5e256fde43f26f9c01ba3"
-    },
-    {
       "id": "ACT-crabtalkai-AVG",
-      "timestamp": "2026-09-03T09:15:14.446Z",
+      "timestamp": "2026-09-03T09:32:38.640Z",
       "token": "crabtalkai",
       "chain": "BASE",
       "type": "MIXED",
@@ -1452,15 +1439,15 @@
     },
     {
       "id": "ACT-HOME-AVG",
-      "timestamp": "2026-09-03T09:15:14.446Z",
+      "timestamp": "2026-09-03T09:32:38.640Z",
       "token": "HOME",
       "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "118.45",
+      "type": "SELL",
+      "amountUsd": "105.27",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $118 / tx · 19 txns",
+      "detail": "Avg $105 / tx · 1127 txns",
       "address": "0xb9a1e52f3ed678b01ff5e256fde43f26f9c01ba3"
     }
   ]
