@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-03T21:39:58.733Z",
+    "updatedAt": "2026-09-03T21:51:56.733Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 38,
-    "withMarketData": 3,
+    "withMarketData": 4,
     "safeTokensCount": 3,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
   "tokens": [
@@ -52,6 +52,41 @@
     },
     {
       "rank": 2,
+      "name": "WAAPL",
+      "symbol": "WAAPL",
+      "address": "0xcbb149f40027e8a9508ec34e2474baaeb1f98ba3",
+      "pairAddress": "0xaef78920a118c4c4b9111b50cc656255d8136b980a1a057ff8a6c31f6f194908",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.4060e-8",
+      "priceChange24h": 0,
+      "volume24h": 0.13,
+      "volume1h": 0.13,
+      "liquidityUsd": 0,
+      "fdv": 2406,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xaef78920a118c4c4b9111b50cc656255d8136b980a1a057ff8a6c31f6f194908",
+      "poolId": "0xaef78920a118c4c4b9111b50cc656255d8136b980a1a057ff8a6c31f6f194908",
+      "deployer": "0xfc1b9894b6ce25b94a8a55d71bf3477b18d7261c",
+      "feeRecipient": "0x46f4ae4d8db16b0333ee726b9a02b583dbe58657",
+      "launchTimestamp": 1788471707397,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
       "name": "A Storm of Cybercabs",
       "symbol": "CYBERCAB",
       "address": "0x2427910c4febb4bf51d61fe6607654c43d84dba3",
@@ -86,7 +121,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "SeedVerse.Base",
       "symbol": "VERSE",
       "address": "0x0b21f7cefef43f4916abc2f2ddbe62fb03c7cba3",
@@ -121,7 +156,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "name": "B20-Token Launcher",
+      "symbol": "B20T",
+      "address": "0x98b06a12f7ac5885fc89f27ee5442e8b2c4b2ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x98b06a12f7ac5885fc89f27ee5442e8b2c4b2ba3&chain=base",
+      "poolId": "0xf7e51c27d07f5e91645ae1280eed1ef9327d21faba179855ec16c8beafda212e",
+      "deployer": "0xb157e9fbe43c55012f6047aef4b7001a1d70e54a",
+      "feeRecipient": "0xb157e9fbe43c55012f6047aef4b7001a1d70e54a",
+      "launchTimestamp": 1788471885390,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
       "name": "BELLY",
       "symbol": "BE",
       "address": "0x08beaef8240e0c0c6cc7ffa51f49ca09fa99cba3",
@@ -156,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 7,
       "name": "BELLY",
       "symbol": "BE",
       "address": "0xc044549c93e97da43f00899f177fd29f83ee0ba3",
@@ -191,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "BELLY",
       "symbol": "BE",
       "address": "0x44b3b181a96ba80cb6c0cc31885a01c634e24ba3",
@@ -226,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "Quantum Bitcoin",
       "symbol": "qBTC",
       "address": "0x80652f9350e7a39d366b720c362fcdca4aeb3ba3",
@@ -261,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Pods Media",
       "symbol": "Pods Media",
       "address": "0x8d79aafaa3948483604d2dd4ceb029cae4587ba3",
@@ -296,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Pods",
       "symbol": "Pods",
       "address": "0x4d906bb45b2b3bdb0818747952795ed604559ba3",
@@ -331,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "Daniel_Farinax",
       "symbol": "Daniel_Farinax",
       "address": "0xc410d8a52ae94794a2fcbdd2f9d5630cb4ecbba3",
@@ -366,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "BtcbBoris",
       "symbol": "BtcbBoris",
       "address": "0x535e463eb1f5bfe719e3e71c5e51da2805e36ba3",
@@ -401,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "BYSICON",
       "symbol": "BYS",
       "address": "0xf37e221fbd39ff17ab09392661557958202e8ba3",
@@ -436,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Bankr KIKIR",
       "symbol": "BNKRKKR",
       "address": "0xd2a94d09a60860052d2c23d997dbe5dab2857ba3",
@@ -471,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "Privy",
       "symbol": "PRIVY",
       "address": "0xe8d7f26481c1c71d00aefdd8812608bef52c9ba3",
@@ -506,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "Quantum Safe Bitcoin",
       "symbol": "QSBTC",
       "address": "0x80195905f20d36dec80722c8d030294087275ba3",
@@ -541,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "PrivyBots",
       "symbol": "PRIVY",
       "address": "0x1a765bdd5c86a8020d6c5d03a0b828347b678ba3",
@@ -576,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "quantum-safe Bitcoin",
       "symbol": "qsBTC",
       "address": "0xd7f10ff0bb69d9c3fa32797c227e08804aaedba3",
@@ -611,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "KIZ",
       "symbol": "KIZ",
       "address": "0x243da81c46f8d56fc783c694815b33cd70989ba3",
@@ -646,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "PEE",
       "symbol": "PEE",
       "address": "0xa0d9b902a496d40ad83ab42f44485cc3c2642ba3",
@@ -681,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "Trump $1 Coin",
       "symbol": "TRUMP1",
       "address": "0x82784b04e3183a0e3b220d4789f46ed3c2726ba3",
@@ -716,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "exynos",
       "symbol": "EXYNOS",
       "address": "0x1bc625b423b0ff8974df9bfaee6815c8f436aba3",
@@ -751,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "qinglong",
       "symbol": "qinglong",
       "address": "0xd66b3955d413541ba8ad0d05eeea1e4217d38ba3",
@@ -786,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "qinglong",
       "symbol": "qinglong",
       "address": "0x36cc9286c58c0d073ddc93158baf5e833339bba3",
@@ -821,7 +891,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "qinglong",
       "symbol": "qinglong",
       "address": "0xc719a0383e8e64ebc41d100c6e42a1ead7e72ba3",
@@ -856,7 +926,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "BasedBaldBrianIAmGayBlueInu",
       "symbol": "BasedBBIAGBInu",
       "address": "0xb183a682b6a22fc3eb8ff0b66b3eed855bf7eba3",
@@ -891,7 +961,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "ostium",
       "symbol": "OSTI",
       "address": "0xfa3aebd5a8f07a02eac0bbc5612b19570c4dcba3",
@@ -926,7 +996,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 29,
       "name": "defi-native",
       "symbol": "defi-native",
       "address": "0x7695919c498cfdc0a1954e12f049a6dec2571ba3",
@@ -961,7 +1031,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 30,
       "name": "BaseB20Rwagmi",
       "symbol": "B20RWA",
       "address": "0xa9e4aa4a66591d82a5dd10fd607b80d3b5855ba3",
@@ -996,7 +1066,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 31,
       "name": "Pizza Base",
       "symbol": "PizzaBase",
       "address": "0x42935814d32b1f6eea1c7a64f65c1b6be0ccbba3",
@@ -1031,7 +1101,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 32,
       "name": "BELLY",
       "symbol": "BE",
       "address": "0x2e63da32bc15a794ed43e2510cd697f9de913ba3",
@@ -1066,7 +1136,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 33,
       "name": "Aviya Finance",
       "symbol": "Aviya",
       "address": "0x64b59d0dd761b5f062ea2ed4dbbdbd77b7394ba3",
@@ -1101,7 +1171,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 34,
       "name": "Pizza Hood",
       "symbol": "PizzaHood",
       "address": "0xe5b2c0e0fde421a34f7b654afff77aac93dfbba3",
@@ -1136,7 +1206,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 35,
       "name": "No-Memory",
       "symbol": "NOMEMORY",
       "address": "0xe0e0751adc8237b80167602540eb06b1caccfba3",
@@ -1171,7 +1241,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 34,
+      "rank": 36,
       "name": "BaldHat",
       "symbol": "BaldHat",
       "address": "0x2c3666e395f7ab9e418199fd179611953fce7ba3",
@@ -1206,7 +1276,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 35,
+      "rank": 37,
       "name": "Beaver",
       "symbol": "BEAVER",
       "address": "0xf77dabe6f3b641bc7692ace6a7718cb993b17ba3",
@@ -1241,7 +1311,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 36,
+      "rank": 38,
       "name": "Orlo.Chain",
       "symbol": "ORLO",
       "address": "0xced116f9dc7e86c900ac830a84acda80922ddba3",
@@ -1274,82 +1344,12 @@
       "launchTimestamp": 1788462527144,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 37,
-      "name": "BERAK",
-      "symbol": "BERAK",
-      "address": "0x81bb03988289ecef19c4addcbc2f123aff083ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x81bb03988289ecef19c4addcbc2f123aff083ba3&chain=base",
-      "poolId": "0x6232236675e25d9a7a13dabcb3f2f826bb80ec150846a53bcace16f529932c90",
-      "deployer": "0x3352e721cebcec2950f8dc1f28d654602edacbea",
-      "feeRecipient": "0x3352e721cebcec2950f8dc1f28d654602edacbea",
-      "launchTimestamp": 1788460046031,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 38,
-      "name": "Minus One Doge",
-      "symbol": "-1DOGE",
-      "address": "0x39f7644505b72872ab0d45ac0c80c3fbf9d38ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x39f7644505b72872ab0d45ac0c80c3fbf9d38ba3&chain=base",
-      "poolId": "0x61763662993a3e287cf7ca4b0288157b33f14f2ff155318ec82e2c20303ed631",
-      "deployer": "0x3352e721cebcec2950f8dc1f28d654602edacbea",
-      "feeRecipient": "0x683bd2b402eeae46bb4b4f59ac4f3d7376cf68bd",
-      "launchTimestamp": 1788459781172,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-CIRIT-AVG",
-      "timestamp": "2026-09-03T21:39:58.733Z",
+      "timestamp": "2026-09-03T21:51:56.732Z",
       "token": "CIRIT",
       "chain": "BASE",
       "type": "BUY",
