@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-03T07:24:24.188Z",
+    "updatedAt": "2026-09-03T07:42:01.996Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 5,
-    "safeTokensCount": 4,
+    "withMarketData": 4,
+    "safeTokensCount": 3,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -155,38 +155,38 @@
     },
     {
       "rank": 5,
-      "name": "paperclip",
-      "symbol": "PAPERCLIP",
-      "address": "0x2a96f372ad340eaf63f27d815a34d1276a714ba3",
-      "pairAddress": "0x5630487585646f0aff08072d814a604dda42a36351a9face5d9ddb2087000460",
+      "name": "JPMD",
+      "symbol": "JPMD",
+      "address": "0xfbd8c0ea6c730964cadacce334c52a69899b9ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0160e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8641.57,
-      "fdv": 10167,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x5630487585646f0aff08072d814a604dda42a36351a9face5d9ddb2087000460",
-      "poolId": "0x5630487585646f0aff08072d814a604dda42a36351a9face5d9ddb2087000460",
-      "deployer": "0x6249f0cb5bb0b14d79bd71b76c50c441a4d8517d",
-      "feeRecipient": "0x6249f0cb5bb0b14d79bd71b76c50c441a4d8517d",
-      "launchTimestamp": 1788390329485,
-      "isNew": false,
-      "hasMarketData": true
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xfbd8c0ea6c730964cadacce334c52a69899b9ba3&chain=base",
+      "poolId": "0xe1accfd8f08404a982a93b9b359cf52360d6e8ca78ef1ab8d74e9763792a9e19",
+      "deployer": "0xb60d2e8a42df08fdcbf907d11f54b27f56058773",
+      "feeRecipient": "0xb60d2e8a42df08fdcbf907d11f54b27f56058773",
+      "launchTimestamp": 1788420773159,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 6,
@@ -1417,7 +1417,7 @@
   "whaleRadar": [
     {
       "id": "ACT-PRAY-VOL",
-      "timestamp": "2026-09-03T07:24:24.188Z",
+      "timestamp": "2026-09-03T07:42:01.996Z",
       "token": "PRAY",
       "chain": "BASE",
       "type": "BUY",
