@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-03T22:13:31.208Z",
+    "updatedAt": "2026-09-03T22:30:02.121Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -11,7 +11,7 @@
   "summary": {
     "totalAnalyzed": 40,
     "withMarketData": 4,
-    "safeTokensCount": 2,
+    "safeTokensCount": 3,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -59,22 +59,21 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.4110e-8",
-      "priceChange24h": 0.35,
-      "volume24h": 0.27,
-      "volume1h": 0.27,
-      "liquidityUsd": 2411.52,
-      "fdv": 2412,
+      "priceUsd": "2.4390e-8",
+      "priceChange24h": 1.51,
+      "volume24h": 0.94,
+      "volume1h": 0.94,
+      "liquidityUsd": 2439.53,
+      "fdv": 2440,
       "txns24h": {
-        "buys": 2,
-        "sells": 4
+        "buys": 5,
+        "sells": 10
       },
       "safety": {
-        "safetyScore": 60,
-        "status": "CAUTION",
+        "safetyScore": 75,
+        "status": "SAFE",
         "flags": [
-          "LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "LOW_LIQUIDITY"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0x3975db06ea65983137ba731718cc9b9ec44c17748244e90ec8fd16148830da2b",
@@ -185,7 +184,7 @@
       "dexUrl": "https://bankr.bot/terminal/trade?out=0x6acc751d0309853bcd42eb87d993b8c8189dcba3&chain=base",
       "poolId": "0xe901dacefe6364cd18392e19b95d9d404412c4c13897926370bc0ef3c7f7601d",
       "deployer": "0x7f85f65c00e5663e3e5f6db7cd7689ae209758dd",
-      "feeRecipient": "0x7f85f65c00e5663e3e5f6db7cd7689ae209758dd",
+      "feeRecipient": "0x50ba557d1fdc846f48da5ae2b5d51a8ee05aa245",
       "launchTimestamp": 1788473056736,
       "isNew": true,
       "hasMarketData": false
@@ -255,7 +254,7 @@
       "dexUrl": "https://bankr.bot/terminal/trade?out=0x36d7bf1e99ca866f0b5f7d4d16a8348536bd0ba3&chain=base",
       "poolId": "0xe7a422399a2252a31e2f23da59222dad959d1c2365f7f5a12b3aa559ab0349f2",
       "deployer": "0x7f85f65c00e5663e3e5f6db7cd7689ae209758dd",
-      "feeRecipient": "0x7f85f65c00e5663e3e5f6db7cd7689ae209758dd",
+      "feeRecipient": "0x50ba557d1fdc846f48da5ae2b5d51a8ee05aa245",
       "launchTimestamp": 1788473056553,
       "isNew": true,
       "hasMarketData": false
@@ -1419,7 +1418,7 @@
   "whaleRadar": [
     {
       "id": "ACT-CIRIT-AVG",
-      "timestamp": "2026-09-03T22:13:31.207Z",
+      "timestamp": "2026-09-03T22:30:02.120Z",
       "token": "CIRIT",
       "chain": "BASE",
       "type": "MIXED",
