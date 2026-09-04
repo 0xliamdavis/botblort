@@ -2,22 +2,54 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-04T03:41:07.639Z",
+    "updatedAt": "2026-09-04T03:57:21.233Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 40,
+    "totalAnalyzed": 36,
     "withMarketData": 4,
     "safeTokensCount": 2,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Save Ethereum Foundation",
+      "symbol": "SEF",
+      "address": "0x8fbde59e4df06cc55cebcbfa40c3f0b5b0921ba3",
+      "pairAddress": "0x5bbf19c2d6cb306d3d7cc492b7b997cfe7334b5ea834d8ef4db90a1e0a57ae13",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.2510e-7",
+      "priceChange24h": 11.67,
+      "volume24h": 4913.87,
+      "volume1h": 4913.87,
+      "liquidityUsd": 22225.85,
+      "fdv": 22514,
+      "txns24h": {
+        "buys": 21,
+        "sells": 18
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0x5bbf19c2d6cb306d3d7cc492b7b997cfe7334b5ea834d8ef4db90a1e0a57ae13",
+      "poolId": "0x5bbf19c2d6cb306d3d7cc492b7b997cfe7334b5ea834d8ef4db90a1e0a57ae13",
+      "deployer": "0x5513a83fda04ae7d0bfdc1eb6d37aeb16455ca55",
+      "feeRecipient": "0x355919971b379ca9741ff29939c4ba716f873560",
+      "launchTimestamp": 1788493532723,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "MAGA",
       "symbol": "MAGA",
       "address": "0x0f13185f3c083ccc6b2082902d35d63c1a229ba3",
@@ -52,7 +84,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "WAAPL",
       "symbol": "WAAPL",
       "address": "0x0900dc62f5b87b88a307a5813dd4372ecbe26ba3",
@@ -82,11 +114,11 @@
       "deployer": "0xfc1b9894b6ce25b94a8a55d71bf3477b18d7261c",
       "feeRecipient": "0x46f4ae4d8db16b0333ee726b9a02b583dbe58657",
       "launchTimestamp": 1788472320768,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "WAAPL",
       "symbol": "WAAPL",
       "address": "0xcbb149f40027e8a9508ec34e2474baaeb1f98ba3",
@@ -117,41 +149,6 @@
       "deployer": "0xfc1b9894b6ce25b94a8a55d71bf3477b18d7261c",
       "feeRecipient": "0x46f4ae4d8db16b0333ee726b9a02b583dbe58657",
       "launchTimestamp": 1788471707397,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
-      "name": "A Storm of Cybercabs",
-      "symbol": "CYBERCAB",
-      "address": "0x2427910c4febb4bf51d61fe6607654c43d84dba3",
-      "pairAddress": "0x5f77e281c31cee201790b801e8cf8301614fd69b09457c97bf6cf2e52d134ac2",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0060e-7",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 8551.99,
-      "fdv": 10061,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x5f77e281c31cee201790b801e8cf8301614fd69b09457c97bf6cf2e52d134ac2",
-      "poolId": "0x5f77e281c31cee201790b801e8cf8301614fd69b09457c97bf6cf2e52d134ac2",
-      "deployer": "0xbc721028363fac67ce2a9d91b0dc7206479e373b",
-      "feeRecipient": "0xbc721028363fac67ce2a9d91b0dc7206479e373b",
-      "launchTimestamp": 1788468050817,
       "isNew": false,
       "hasMarketData": true
     },
@@ -1274,147 +1271,21 @@
       "launchTimestamp": 1788468336304,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 37,
-      "name": "PrivyBots",
-      "symbol": "PRIVY",
-      "address": "0x1a765bdd5c86a8020d6c5d03a0b828347b678ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1a765bdd5c86a8020d6c5d03a0b828347b678ba3&chain=base",
-      "poolId": "0x0dd1de9e3f43956712c5cd5d3111ccb358f38aa506e3534b0ab3aec97a14f82f",
-      "deployer": "0x98ea33a4f360196bcf6f957efbd07ceb12a38b01",
-      "feeRecipient": "0x98ea33a4f360196bcf6f957efbd07ceb12a38b01",
-      "launchTimestamp": 1788468273945,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 38,
-      "name": "quantum-safe Bitcoin",
-      "symbol": "qsBTC",
-      "address": "0xd7f10ff0bb69d9c3fa32797c227e08804aaedba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd7f10ff0bb69d9c3fa32797c227e08804aaedba3&chain=base",
-      "poolId": "0xbccff73dde77257f8c3de0b2c44e870c2814c44cd65be4a0de65cb9d1ef94cd1",
-      "deployer": "0xbc721028363fac67ce2a9d91b0dc7206479e373b",
-      "feeRecipient": "0xbc721028363fac67ce2a9d91b0dc7206479e373b",
-      "launchTimestamp": 1788468185981,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 39,
-      "name": "KIZ",
-      "symbol": "KIZ",
-      "address": "0x243da81c46f8d56fc783c694815b33cd70989ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x243da81c46f8d56fc783c694815b33cd70989ba3&chain=base",
-      "poolId": "0x4d16cc54ade0db37d2ea5d96f311da3a6d73ac63360a83b374e755094e4a0158",
-      "deployer": "0x03186a78f6fa5ebf261408d4a9cb99899c347294",
-      "feeRecipient": "0x03186a78f6fa5ebf261408d4a9cb99899c347294",
-      "launchTimestamp": 1788468042115,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 40,
-      "name": "PEE",
-      "symbol": "PEE",
-      "address": "0xa0d9b902a496d40ad83ab42f44485cc3c2642ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa0d9b902a496d40ad83ab42f44485cc3c2642ba3&chain=base",
-      "poolId": "0xfbcc5070b26fcc3c891e0ba91d560319f9c1a9770b9d9f2b6ff2a4d69b6b067f",
-      "deployer": "0x03186a78f6fa5ebf261408d4a9cb99899c347294",
-      "feeRecipient": "0x03186a78f6fa5ebf261408d4a9cb99899c347294",
-      "launchTimestamp": 1788467875412,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": []
+  "whaleRadar": [
+    {
+      "id": "ACT-SEF-AVG",
+      "timestamp": "2026-09-04T03:57:21.233Z",
+      "token": "SEF",
+      "chain": "BASE",
+      "type": "MIXED",
+      "amountUsd": "126.00",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $126 / tx · 39 txns",
+      "address": "0x8fbde59e4df06cc55cebcbfa40c3f0b5b0921ba3"
+    }
+  ]
 }
