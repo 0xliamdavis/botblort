@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-04T03:01:36.576Z",
+    "updatedAt": "2026-09-04T03:23:02.414Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 40,
     "withMarketData": 4,
     "safeTokensCount": 2,
-    "highRiskCount": 1,
+    "highRiskCount": 2,
     "totalWhaleAlerts": 0
   },
   "tokens": [
@@ -1050,11 +1050,11 @@
         "sells": 3
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0xcc306cc6246f60e9d8d4769f5d310bee6f050888b4c6b36d00a1390388dd2ec2",
@@ -1062,7 +1062,7 @@
       "deployer": "0x2e14740ed4d7304af727057c55e02f692bcd6a28",
       "feeRecipient": "0x2e14740ed4d7304af727057c55e02f692bcd6a28",
       "launchTimestamp": 1788469458567,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": false
     },
     {
