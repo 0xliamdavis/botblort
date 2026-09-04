@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-04T19:57:16.063Z",
+    "updatedAt": "2026-09-04T20:17:05.526Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 31,
-    "withMarketData": 7,
-    "safeTokensCount": 3,
+    "withMarketData": 6,
+    "safeTokensCount": 2,
     "highRiskCount": 3,
     "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "inkbros",
-      "symbol": "INKBROS",
-      "address": "0xd12321878ec00e081e26bc178f74606b1f68fba3",
-      "pairAddress": "0xfb98f4da552afda829e0d15984c8d04f9b0f1a140f0754a3aac608551548c740",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0140e-7",
-      "priceChange24h": 0.95,
-      "volume24h": 2786.71,
-      "volume1h": 0,
-      "liquidityUsd": 9264.53,
-      "fdv": 10142,
-      "txns24h": {
-        "buys": 19,
-        "sells": 29
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xfb98f4da552afda829e0d15984c8d04f9b0f1a140f0754a3aac608551548c740",
-      "poolId": "0xfb98f4da552afda829e0d15984c8d04f9b0f1a140f0754a3aac608551548c740",
-      "deployer": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "feeRecipient": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "launchTimestamp": 1788535943104,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "PRIME",
       "symbol": "PRIME",
       "address": "0x468806f9def39185f794317b9ca950af05967ba3",
@@ -62,7 +28,7 @@
       "priceUsd": "2.1830e-7",
       "priceChange24h": 203,
       "volume24h": 518.95,
-      "volume1h": 238.83,
+      "volume1h": 0,
       "liquidityUsd": 18174.26,
       "fdv": 21839,
       "txns24h": {
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "SpaceX",
       "symbol": "X",
       "address": "0x9e163a4d1f94fc90eb631a1f0de3be6144033ba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "NOBRAKES",
       "symbol": "NBRK",
       "address": "0x22dc3f5668d08f1bb24e856586700f9ce5b44ba3",
@@ -154,7 +120,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "SpaceEggs",
       "symbol": "🥚",
       "address": "0x952106a1c7f10a8b9ce16c6d12f7c5f90f053ba3",
@@ -189,7 +155,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Stonks",
       "symbol": "STON",
       "address": "0x3870a944e7edbeeb5a39ba92256d6d94dab02ba3",
@@ -224,7 +190,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "CASH BULLS",
       "symbol": "CB",
       "address": "0xec935f3c35d04146c680fc4f08e0fe5b4961dba3",
@@ -259,7 +225,77 @@
       "hasMarketData": true
     },
     {
+      "rank": 7,
+      "name": "stonk on base",
+      "symbol": "stonk",
+      "address": "0xe565a576e3628c95d0a0a970b147fb3b459a3ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe565a576e3628c95d0a0a970b147fb3b459a3ba3&chain=base",
+      "poolId": "0xc90e8e15ae0f608eb87735821f30986e7e386e5307593d7fc407257f05944d4c",
+      "deployer": "0xa5d64e975eaf0b598faedff4a77160af8308ae29",
+      "feeRecipient": "0xa5d64e975eaf0b598faedff4a77160af8308ae29",
+      "launchTimestamp": 1788552990002,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
       "rank": 8,
+      "name": "stonk",
+      "symbol": "STONK",
+      "address": "0x259c136c04a2120ab7a9aaf30f98a67c28178ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x259c136c04a2120ab7a9aaf30f98a67c28178ba3&chain=base",
+      "poolId": "0x3bd05cbc3a7bd40320a24fd49dd43da6ac7563c5046c16a5bbf16cd24410a746",
+      "deployer": "0xa5d64e975eaf0b598faedff4a77160af8308ae29",
+      "feeRecipient": "0xa5d64e975eaf0b598faedff4a77160af8308ae29",
+      "launchTimestamp": 1788552915460,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "testr",
       "symbol": "TESTR",
       "address": "0xd4542fa127a03a3b60eec4049357c406ed84bba3",
@@ -294,7 +330,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "FLICKR",
       "symbol": "FLICKR",
       "address": "0x1c2f00d1bb71da446458bd9179e53cf74e695ba3",
@@ -329,7 +365,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Say the Ticker",
       "symbol": "TICKER",
       "address": "0x7b6b1b5241397c3ca44eec1bc44a72b228178ba3",
@@ -364,7 +400,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Say the Ticker",
       "symbol": "TICKER",
       "address": "0xa6e42ccba004a45512e7f077cdf1a061759e9ba3",
@@ -399,7 +435,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "MicroBase",
       "symbol": "MBSE",
       "address": "0x4499e17cef1792782a6740940fb2702711919ba3",
@@ -434,7 +470,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Stock1",
       "symbol": "Stock1",
       "address": "0xbd9e9725e0c8aaaaf6d77cd5395faa12e1e1cba3",
@@ -469,7 +505,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Betrayal",
       "symbol": "Betrayal",
       "address": "0xc57c25807abead763267a8cdb968077c0bf56ba3",
@@ -504,7 +540,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "SpaceS*X",
       "symbol": "S*x",
       "address": "0xdf9a17a7cb4d2cc78ded1bdb9ed1d32f81d96ba3",
@@ -539,7 +575,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "NOBRAKES",
       "symbol": "NBRK",
       "address": "0xb66b31c184ae4cb2e8b91413c807994367083ba3",
@@ -574,7 +610,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "First Cat Paired Zcash",
       "symbol": "ZECAT",
       "address": "0xbd277c58aab104ae65c7c0a79723aab22e97fba3",
@@ -609,7 +645,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "NOBRAKES",
       "symbol": "NBRK",
       "address": "0x4bb8d45dcae98c77ccae62316fce3e0a51a18ba3",
@@ -644,7 +680,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "ArixaByARC",
       "symbol": "ARX",
       "address": "0x16ace29f28524135336b4c60447d8e9144cbfba3",
@@ -679,7 +715,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "KeystoneKUSD",
       "symbol": "KUSD",
       "address": "0xf5f2ec0a65362c4bc67616fd553c70aab8023ba3",
@@ -714,7 +750,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "6 Stocks",
       "symbol": "sixstocks",
       "address": "0x5acbd148daa2e72ae0126980e29e4b31262aaba3",
@@ -749,7 +785,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "Tenor.Finance",
       "symbol": "TENOR",
       "address": "0x6fb6f5a222954552d509f6521ffe831ba43c0ba3",
@@ -784,7 +820,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "Orlo.Wallet",
       "symbol": "ORLO",
       "address": "0x001b0959b553b301e626d1e3d0ef3a42b3378ba3",
@@ -819,7 +855,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "Agentic SeedVerse",
       "symbol": "VERSE",
       "address": "0xda000742502902a0adcf6e824e663e1b3e1f1ba3",
@@ -854,7 +890,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "Artificial Gooner Intelligence",
       "symbol": "AGI",
       "address": "0x3fc3dd86a65d842e62b30ba4d500c23ba3f33ba3",
@@ -889,7 +925,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "Tesla",
       "symbol": "TSLA",
       "address": "0x74d62688d073cf45f7bb31f129bbfad3363deba3",
@@ -924,7 +960,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "SanDisk",
       "symbol": "SNDK",
       "address": "0xe66d514e103d76c5769e5a6e53e5056c31510ba3",
@@ -959,7 +995,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "Toplica Milosevic",
       "symbol": "X-59",
       "address": "0x05c5c68732c93301f89729e5398577de90b34ba3",
@@ -994,7 +1030,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "SanDisk",
       "symbol": "SNDK",
       "address": "0x1d352284305b1aa1df820dd9bfb38575f6f58ba3",
@@ -1029,7 +1065,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "SanDisk",
       "symbol": "SanDisk",
       "address": "0x6d2af85f3e54c6a0f7a9f142efc2a2513cac4ba3",
@@ -1062,47 +1098,12 @@
       "launchTimestamp": 1788537952363,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 31,
-      "name": "BASE MEME TREASURY",
-      "symbol": "BASEMEME",
-      "address": "0x740268df32bb4170e2ed622e0c5dcba6918f4ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x740268df32bb4170e2ed622e0c5dcba6918f4ba3&chain=base",
-      "poolId": "0x39ece663ffc0d4f5dc5b2f4edb81772d823c9fdf287f375d0eecc2ab52deb8c6",
-      "deployer": "0xe729cbbed5d7c5d7931d8cdf5e3a0ce0406f8c7c",
-      "feeRecipient": "0xe729cbbed5d7c5d7931d8cdf5e3a0ce0406f8c7c",
-      "launchTimestamp": 1788534614038,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-PRIME-SELL",
-      "timestamp": "2026-09-04T19:57:16.062Z",
+      "timestamp": "2026-09-04T20:17:05.525Z",
       "token": "PRIME",
       "chain": "BASE",
       "type": "SELL",
