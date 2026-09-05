@@ -2,56 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-05T21:17:00.303Z",
+    "updatedAt": "2026-09-05T21:30:14.542Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 32,
+    "totalAnalyzed": 31,
     "withMarketData": 3,
-    "safeTokensCount": 3,
-    "highRiskCount": 0,
-    "totalWhaleAlerts": 3
+    "safeTokensCount": 2,
+    "highRiskCount": 1,
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "NOVEL",
-      "symbol": "NOVEL",
-      "address": "0x926ec27700f6642bfe1dfef85257984c5a8f0ba3",
-      "pairAddress": "0x847991607bfc9cfd6a5d0a50fc4ef8c792207411eb7cbc0ad09fad78ae564443",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.1660e-7",
-      "priceChange24h": -29.63,
-      "volume24h": 23164.68,
-      "volume1h": 0,
-      "liquidityUsd": 9975.92,
-      "fdv": 11666,
-      "txns24h": {
-        "buys": 104,
-        "sells": 141
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x847991607bfc9cfd6a5d0a50fc4ef8c792207411eb7cbc0ad09fad78ae564443",
-      "poolId": "0x847991607bfc9cfd6a5d0a50fc4ef8c792207411eb7cbc0ad09fad78ae564443",
-      "deployer": "0xc362421524411a4c0499985a77b52da5a00f0386",
-      "feeRecipient": "0xc362421524411a4c0499985a77b52da5a00f0386",
-      "launchTimestamp": 1788630639190,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "CHARIZARD",
       "symbol": "ZARD",
       "address": "0x7e06916cc7a81fd95b9cb0cbaefe32379edd8ba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "ROBINS HOODE",
       "symbol": "ROBINS",
       "address": "0xbe2391a8868cd509e84a202c52248af2dc4c3ba3",
@@ -115,6 +81,42 @@
       "deployer": "0x998306ae816de056349d9c00314530f643703267",
       "feeRecipient": "0x998306ae816de056349d9c00314530f643703267",
       "launchTimestamp": 1788635059054,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
+      "name": "First Deploy Paired Bittensor Tao",
+      "symbol": "FIRST",
+      "address": "0x203dab97a261f296790b549f9a80aaeae9516ba3",
+      "pairAddress": "0x4b889d4d19ed7e29a7ca0f3e4976260efae1063b649a0ae70914acf4eef74492",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.5460e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.47,
+      "volume1h": 0.47,
+      "liquidityUsd": 3.96,
+      "fdv": 15466,
+      "txns24h": {
+        "buys": 0,
+        "sells": 1
+      },
+      "safety": {
+        "safetyScore": 25,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT",
+          "HIGH_FDV_DISPARITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x4b889d4d19ed7e29a7ca0f3e4976260efae1063b649a0ae70914acf4eef74492",
+      "poolId": "0xb45fe7ed212ef454e06556b3565df8fffbe74d1ee0c971b9d9fa2763126c4a0e",
+      "deployer": "0xed741be37ad0aab739f1380ad8c6b728b14dcc23",
+      "feeRecipient": "0xed741be37ad0aab739f1380ad8c6b728b14dcc23",
+      "launchTimestamp": 1788643320038,
       "isNew": true,
       "hasMarketData": true
     },
@@ -1097,60 +1099,12 @@
       "launchTimestamp": 1788630970633,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 32,
-      "name": "DevinAi",
-      "symbol": "DevinAi",
-      "address": "0x600756b9969707e800f665ff2863980d14b5aba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x600756b9969707e800f665ff2863980d14b5aba3&chain=base",
-      "poolId": "0xedf327c16c9de0d5f4748af6aabf544adf4683be4ca1f4730ef3eb5ed04b7a1b",
-      "deployer": "0x58c4d262ad5ae033ee64d8df78a46ed992d16c4b",
-      "feeRecipient": "0x78116d1cb4b7eb0ba019b5aa5bfc09d7c8631fd7",
-      "launchTimestamp": 1788630648416,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
-      "id": "ACT-NOVEL-VOL",
-      "timestamp": "2026-09-05T21:17:00.303Z",
-      "token": "NOVEL",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "23164.68",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "HIGH VOLUME",
-      "detail": "Vol $23165 · Liq $9976",
-      "address": "0x926ec27700f6642bfe1dfef85257984c5a8f0ba3"
-    },
-    {
       "id": "ACT-ZARD-AVG",
-      "timestamp": "2026-09-05T21:17:00.303Z",
+      "timestamp": "2026-09-05T21:30:14.542Z",
       "token": "ZARD",
       "chain": "BASE",
       "type": "BUY",
@@ -1160,19 +1114,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $267 / tx · 48 txns",
       "address": "0x7e06916cc7a81fd95b9cb0cbaefe32379edd8ba3"
-    },
-    {
-      "id": "ACT-NOVEL-AVG",
-      "timestamp": "2026-09-05T21:17:00.302Z",
-      "token": "NOVEL",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "94.55",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $95 / tx · 245 txns",
-      "address": "0x926ec27700f6642bfe1dfef85257984c5a8f0ba3"
     }
   ]
 }
