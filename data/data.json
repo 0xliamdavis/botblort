@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-05T16:17:03.799Z",
+    "updatedAt": "2026-09-05T16:32:17.096Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 28,
-    "withMarketData": 4,
-    "safeTokensCount": 3,
+    "withMarketData": 3,
+    "safeTokensCount": 2,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -87,40 +87,6 @@
     },
     {
       "rank": 3,
-      "name": "Chess Complexity",
-      "symbol": "CHESS",
-      "address": "0xd918e9f477311a274d09e35a0490ccc8bfd0cba3",
-      "pairAddress": "0x0e62429b85de7e6dd037a44489b3170377eca42d6edcab4de32d0ef11fb1dc06",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0050e-7",
-      "priceChange24h": -0.1,
-      "volume24h": 43.47,
-      "volume1h": 0,
-      "liquidityUsd": 8548.73,
-      "fdv": 10057,
-      "txns24h": {
-        "buys": 15,
-        "sells": 25
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x0e62429b85de7e6dd037a44489b3170377eca42d6edcab4de32d0ef11fb1dc06",
-      "poolId": "0x0e62429b85de7e6dd037a44489b3170377eca42d6edcab4de32d0ef11fb1dc06",
-      "deployer": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "feeRecipient": "0x355fb1ab35746fba89f8c40668b2cdd00bbef4d1",
-      "launchTimestamp": 1788599125981,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
       "name": "100 %",
       "symbol": "Equities",
       "address": "0xec0092970da90217983083865790fc76f7466ba3",
@@ -152,6 +118,41 @@
       "launchTimestamp": 1788600896616,
       "isNew": false,
       "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "stockfi",
+      "symbol": "STOCKFI",
+      "address": "0x9fd206034e17f374ac939063b2c69d36500cdba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9fd206034e17f374ac939063b2c69d36500cdba3&chain=base",
+      "poolId": "0xa9dc9d79b2231fc71abd86212a4313d1e167bc50a1d63a7158e37dc7e43a7241",
+      "deployer": "0x24a0652638a8531880e65aef08da9288c7d49150",
+      "feeRecipient": "0x24a0652638a8531880e65aef08da9288c7d49150",
+      "launchTimestamp": 1788625085071,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -997,7 +998,7 @@
   "whaleRadar": [
     {
       "id": "ACT-TICKER-AVG",
-      "timestamp": "2026-09-05T16:17:03.799Z",
+      "timestamp": "2026-09-05T16:32:17.096Z",
       "token": "TICKER",
       "chain": "BASE",
       "type": "MIXED",
