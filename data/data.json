@@ -2,22 +2,56 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-05T03:22:20.309Z",
+    "updatedAt": "2026-09-05T03:40:22.517Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 28,
-    "withMarketData": 1,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 30,
+    "withMarketData": 3,
+    "safeTokensCount": 3,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Supersonic",
+      "symbol": "Supersonic",
+      "address": "0xb29c8597a9e69c82d4ccc267bed87779cbd0fba3",
+      "pairAddress": "0xd93d6a101007c2bd586d03350f5878928a9ff1457a3c9269e832e2e523981517",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0860e-7",
+      "priceChange24h": -27.64,
+      "volume24h": 13089.98,
+      "volume1h": 13089.98,
+      "liquidityUsd": 9259.62,
+      "fdv": 10860,
+      "txns24h": {
+        "buys": 27,
+        "sells": 34
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xd93d6a101007c2bd586d03350f5878928a9ff1457a3c9269e832e2e523981517",
+      "poolId": "0xd93d6a101007c2bd586d03350f5878928a9ff1457a3c9269e832e2e523981517",
+      "deployer": "0x7c6104308a4da7b36e46496de53e7f18b3e65702",
+      "feeRecipient": "0xa37bf0f7ae7431352da37a3273c99448b7653799",
+      "launchTimestamp": 1788578827384,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "LA Base",
       "symbol": "LABASE",
       "address": "0x6e6035f84b937bd04deaff5b64e557c4324b3ba3",
@@ -51,7 +85,77 @@
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "name": "GauntletAi",
+      "symbol": "GauntletAi",
+      "address": "0xb4fc40d32c1e812201a6ce82ae79c625ea1e5ba3",
+      "pairAddress": "0xa8de2555fc494479d5f4b90da25cb347ab863a6a1ec1ee8f41874b48be3d3495",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0070e-7",
+      "priceChange24h": -38.85,
+      "volume24h": 486.01,
+      "volume1h": 486.01,
+      "liquidityUsd": 8612.51,
+      "fdv": 10072,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xa8de2555fc494479d5f4b90da25cb347ab863a6a1ec1ee8f41874b48be3d3495",
+      "poolId": "0xa8de2555fc494479d5f4b90da25cb347ab863a6a1ec1ee8f41874b48be3d3495",
+      "deployer": "0x7c6104308a4da7b36e46496de53e7f18b3e65702",
+      "feeRecipient": "0xf22ea11d23ee8acca1d12f9eaabc2cca2e991981",
+      "launchTimestamp": 1788579500700,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "Supersonic",
+      "symbol": "SUPERSONIC",
+      "address": "0xe121e0410c3157620eda76aad252c22bb00dcba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe121e0410c3157620eda76aad252c22bb00dcba3&chain=base",
+      "poolId": "0x4ae84c6c8b58ef83b39c7d119c5f24542f6b4036ad40f8e534abf7fbc6266e1f",
+      "deployer": "0x7c6104308a4da7b36e46496de53e7f18b3e65702",
+      "feeRecipient": "0x7c6104308a4da7b36e46496de53e7f18b3e65702",
+      "launchTimestamp": 1788578926744,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 5,
       "name": "Mia Blonde",
       "symbol": "MBE",
       "address": "0xa1afd8916eec53153077a31a7f5f7366145fdba3",
@@ -86,7 +190,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 3,
+      "rank": 6,
       "name": "stock2",
       "symbol": "stock2",
       "address": "0x80b594f85ccd93abf7bead18bf6e22600fef9ba3",
@@ -121,7 +225,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 7,
       "name": "Wilfred",
       "symbol": "WILFRED",
       "address": "0x72db9e495a25276897f8608d4428107def262ba3",
@@ -156,7 +260,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 8,
       "name": "SAN DICKBUTT",
       "symbol": "DICKBUTT",
       "address": "0x4e9e3b9e3df814bb79b09dd8d28c8cd28bc4cba3",
@@ -191,7 +295,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 9,
       "name": "Base Honk Master",
       "symbol": "HONK",
       "address": "0xb438ecb6f3edc7fc4bf62139444c837239988ba3",
@@ -226,7 +330,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 10,
       "name": "Slink by shivon",
       "symbol": "SLINK",
       "address": "0xfd9cbdb5a89c748db8c9808facd75607b5a17ba3",
@@ -261,7 +365,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 11,
       "name": "SAYLOR MOON",
       "symbol": "SAYLORMOON",
       "address": "0x85fc5c8c5c3d53370cca29047c964325a193fba3",
@@ -296,7 +400,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 12,
       "name": "SAYLOR MOON",
       "symbol": "SAYLORMOON",
       "address": "0xedc83e29aec197c6a5e8100afdaa48dd0faceba3",
@@ -331,7 +435,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 13,
       "name": "Checkr",
       "symbol": "Checkr",
       "address": "0xa8b5a587c4e0da2b8c978d61846b82ca4b56eba3",
@@ -366,7 +470,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 14,
       "name": "Checkr",
       "symbol": "Checkr",
       "address": "0xe4ffc47cd6c9067e44b2a3928103613f5de90ba3",
@@ -401,7 +505,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "Checkr",
       "symbol": "Checkr",
       "address": "0xa6a091add5ab37249f164e751cdf2b1434aa7ba3",
@@ -436,7 +540,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 16,
       "name": "Not on Base",
       "symbol": "NOTONBASE",
       "address": "0x2c6e7c508e8ab877208136287c3f96fd3115fba3",
@@ -471,7 +575,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 17,
       "name": "Crucix",
       "symbol": "CRX",
       "address": "0x9d457fe6b117095717d37a753c8b15fec4386ba3",
@@ -506,7 +610,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 18,
       "name": "test",
       "symbol": "TEST",
       "address": "0x38faa72fd14e8f3538a6c39e210b21da8d260ba3",
@@ -541,7 +645,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 19,
       "name": "Memecoin Strategy",
       "symbol": "MSTR",
       "address": "0xa42267808711375cd4515badff04c1c6aaaf1ba3",
@@ -576,7 +680,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 20,
       "name": "ponszi",
       "symbol": "PONSZI",
       "address": "0xa0c346315440e28d8974c99be6af5c19c0aa3ba3",
@@ -611,7 +715,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 21,
       "name": "happy first birtday",
       "symbol": "happy first birthday",
       "address": "0xe93a2a9b902391dab74dee28990de9588617bba3",
@@ -646,7 +750,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 22,
       "name": "stonk on base",
       "symbol": "stonk",
       "address": "0xe565a576e3628c95d0a0a970b147fb3b459a3ba3",
@@ -681,7 +785,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 23,
       "name": "stonk",
       "symbol": "STONK",
       "address": "0x259c136c04a2120ab7a9aaf30f98a67c28178ba3",
@@ -716,7 +820,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 24,
       "name": "testr",
       "symbol": "TESTR",
       "address": "0xd4542fa127a03a3b60eec4049357c406ed84bba3",
@@ -751,7 +855,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 25,
       "name": "FLICKR",
       "symbol": "FLICKR",
       "address": "0x1c2f00d1bb71da446458bd9179e53cf74e695ba3",
@@ -786,7 +890,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 26,
       "name": "Say the Ticker",
       "symbol": "TICKER",
       "address": "0x7b6b1b5241397c3ca44eec1bc44a72b228178ba3",
@@ -821,7 +925,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 27,
       "name": "Say the Ticker",
       "symbol": "TICKER",
       "address": "0xa6e42ccba004a45512e7f077cdf1a061759e9ba3",
@@ -856,7 +960,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 28,
       "name": "MicroBase",
       "symbol": "MBSE",
       "address": "0x4499e17cef1792782a6740940fb2702711919ba3",
@@ -891,7 +995,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 29,
       "name": "Stock1",
       "symbol": "Stock1",
       "address": "0xbd9e9725e0c8aaaaf6d77cd5395faa12e1e1cba3",
@@ -926,7 +1030,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 30,
       "name": "Betrayal",
       "symbol": "Betrayal",
       "address": "0xc57c25807abead763267a8cdb968077c0bf56ba3",
@@ -959,47 +1063,12 @@
       "launchTimestamp": 1788549031297,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "SpaceS*X",
-      "symbol": "S*x",
-      "address": "0xdf9a17a7cb4d2cc78ded1bdb9ed1d32f81d96ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xdf9a17a7cb4d2cc78ded1bdb9ed1d32f81d96ba3&chain=base",
-      "poolId": "0x91bf2cf5c3e0d13baeef97909b7dbd062e85fb2d75b83979afecaed5b186f4e1",
-      "deployer": "0x23bfa2b0dcddbc6101fdb4200217215030222a88",
-      "feeRecipient": "0x23bfa2b0dcddbc6101fdb4200217215030222a88",
-      "launchTimestamp": 1788548323475,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-LABASE-SELL",
-      "timestamp": "2026-09-05T03:22:20.309Z",
+      "timestamp": "2026-09-05T03:40:22.517Z",
       "token": "LABASE",
       "chain": "BASE",
       "type": "SELL",
@@ -1009,6 +1078,32 @@
       "label": "SELL PRESSURE",
       "detail": "30 buys / 80 sells · 73% sell",
       "address": "0x6e6035f84b937bd04deaff5b64e557c4324b3ba3"
+    },
+    {
+      "id": "ACT-Supersonic-AVG",
+      "timestamp": "2026-09-05T03:40:22.516Z",
+      "token": "Supersonic",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "214.59",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $215 / tx · 61 txns",
+      "address": "0xb29c8597a9e69c82d4ccc267bed87779cbd0fba3"
+    },
+    {
+      "id": "ACT-GauntletAi-AVG",
+      "timestamp": "2026-09-05T03:40:22.517Z",
+      "token": "GauntletAi",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "97.20",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $97 / tx · 5 txns",
+      "address": "0xb4fc40d32c1e812201a6ce82ae79c625ea1e5ba3"
     }
   ]
 }
