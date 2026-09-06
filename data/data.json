@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-06T16:19:23.873Z",
+    "updatedAt": "2026-09-06T16:34:21.395Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 29,
-    "withMarketData": 2,
+    "totalAnalyzed": 27,
+    "withMarketData": 3,
     "safeTokensCount": 1,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 4
   },
   "tokens": [
@@ -86,6 +86,76 @@
     },
     {
       "rank": 3,
+      "name": "browngoku",
+      "symbol": "BROWNGOKU",
+      "address": "0x377e1cab6b42beb93a8c8d3c13308f69446beba3",
+      "pairAddress": "0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0180e-7",
+      "priceChange24h": -12.12,
+      "volume24h": 122.06,
+      "volume1h": 122.06,
+      "liquidityUsd": 0,
+      "fdv": 10185,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
+      "poolId": "0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
+      "deployer": "0xb6e409a0290d565ef36281f217410fd19573b79e",
+      "feeRecipient": "0xb6e409a0290d565ef36281f217410fd19573b79e",
+      "launchTimestamp": 1788712348923,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "Bandit Troupe Book",
+      "symbol": "BOOK",
+      "address": "0xcfe7b8b54237c5edbc230c845045f09736ef9ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xcfe7b8b54237c5edbc230c845045f09736ef9ba3&chain=base",
+      "poolId": "0x59ec72ed950987253e13dd2ef39b242f65ee4493d9e76c305201913e5f98ef63",
+      "deployer": "0x3352e721cebcec2950f8dc1f28d654602edacbea",
+      "feeRecipient": "0x3352e721cebcec2950f8dc1f28d654602edacbea",
+      "launchTimestamp": 1788712024284,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 5,
       "name": "GlobalHome",
       "symbol": "GLOBALHOME",
       "address": "0xe289720850a05fe9ec1b996ec033702f74dbbba3",
@@ -120,7 +190,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 6,
       "name": "COINBASE STOCK",
       "symbol": "CBSE",
       "address": "0x14ede82521fe0232ed1ec8cfa1666ea165c80ba3",
@@ -155,7 +225,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 7,
       "name": "Airdrop Base SOON",
       "symbol": "SOON",
       "address": "0x3bf927d5e49a838d36d6afbb0bbfdeb14a1a0ba3",
@@ -190,7 +260,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "BASEtember",
       "symbol": "BASEtember",
       "address": "0xcdb343568672d8a53dc1cb9273d2cb5172a94ba3",
@@ -225,7 +295,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "Fee Split Test",
       "symbol": "FST",
       "address": "0x66c87da3691ed52f6c830e2957724dc3b1921ba3",
@@ -254,13 +324,13 @@
       "dexUrl": "https://bankr.bot/terminal/trade?out=0x66c87da3691ed52f6c830e2957724dc3b1921ba3&chain=base",
       "poolId": "0x1b84d277582a2e07551f68cc16e3c02c29bf6f09ccf02d183e3f870fdd11cc4e",
       "deployer": "0xc6cb4cd20911a4a4a65895688a885848f2255526",
-      "feeRecipient": "0xc6cb4cd20911a4a4a65895688a885848f2255526",
+      "feeRecipient": "0xe708a56a0607ef0bb27c879f8d085436c63ba432",
       "launchTimestamp": 1788709266353,
       "isNew": true,
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Groktagon",
       "symbol": "GROKTAGON",
       "address": "0x9f2a6b6e774920aca3cd1f01a5800223f4466ba3",
@@ -295,7 +365,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "PEENUT",
       "symbol": "PEENUT",
       "address": "0x1b5d0ad9f220026d7ef1e040261cf8e5bafa4ba3",
@@ -330,7 +400,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "PEE",
       "symbol": "PEE",
       "address": "0x3dd8546b07e82f8a5750dc51887bcc69b8e07ba3",
@@ -365,7 +435,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "THE FIRST",
       "symbol": "FIRST",
       "address": "0xc5fdc7112dbfd4ee1bf07345c5df8c6e12c9fba3",
@@ -400,7 +470,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "Jimoty",
       "symbol": "JMTY",
       "address": "0xd12b3774f1aabebc758ba8baeb0a3e6cd81fdba3",
@@ -435,7 +505,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "AiRUnNer pRo. INc.",
       "symbol": "AiRUnNer",
       "address": "0x579a4f66e8c81c060eac591b57b44187387f2ba3",
@@ -470,7 +540,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "SelfStock",
       "symbol": "SELFSTOCK",
       "address": "0x6f72ca256233eb21a5c3f89c3ae94678b40e8ba3",
@@ -505,7 +575,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "x402claw",
       "symbol": "x402claw",
       "address": "0xd36010e1dcbdf218cc16f0139e40e6233d0f2ba3",
@@ -540,7 +610,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "Ben",
       "symbol": "Ben",
       "address": "0x93f10a2a95ca2822a4cab431f0593b0b42654ba3",
@@ -575,7 +645,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "BAnebase",
       "symbol": "BANEBASE",
       "address": "0x58d390407a2a909fdfad14e1aeb0f5f792342ba3",
@@ -610,7 +680,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "IGNOREslide",
       "symbol": "IGNOREslide",
       "address": "0xed10e5757393695aab7b289c8a91cb45fe79eba3",
@@ -645,7 +715,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "First Deploy Paired Hyperliquid cbHYPE",
       "symbol": "cbHYPE",
       "address": "0x6b2e7211a89db807d905f853fd3aa98f29cb9ba3",
@@ -680,7 +750,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "FIRST MEOW MEME",
       "symbol": "MEOW",
       "address": "0x510cf701e2045275721751d6b3cb1e6600b42ba3",
@@ -715,7 +785,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "Gyndore",
       "symbol": "GYNDORE",
       "address": "0xeb00919cbf388a8fbafce57e29132cb1bb388ba3",
@@ -750,7 +820,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "AI2HUMAN",
       "symbol": "AI2HUMAN",
       "address": "0x61e29a1fac507c6032d963cb06e58bcea2c4fba3",
@@ -785,7 +855,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "HangHover",
       "symbol": "HANGHOVER",
       "address": "0xb64f993b330d0c4a848ac963568740d7bbc24ba3",
@@ -820,7 +890,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "degen",
       "symbol": "DEGEN",
       "address": "0x725753e650340adc853902623a0808da95f7dba3",
@@ -855,7 +925,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "Nerd Vision Destroyed Already",
       "symbol": "NVDA",
       "address": "0x8faaefb351a4d89bf4001af23fefcb1bc8e41ba3",
@@ -888,152 +958,12 @@
       "launchTimestamp": 1788679065806,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 26,
-      "name": "Anonymous Cat",
-      "symbol": "ZCAT",
-      "address": "0x1ccafc444ab4bb658f416f6a17615e55a3a08ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1ccafc444ab4bb658f416f6a17615e55a3a08ba3&chain=base",
-      "poolId": "0xe506f12a32aa0e11d425843e1ee89e3c90624202530afd4984f3d6739059e1f3",
-      "deployer": "0xf7b289f3dd7b2ebdc7f1b6e579d36cb0d1412a9e",
-      "feeRecipient": "0xf7b289f3dd7b2ebdc7f1b6e579d36cb0d1412a9e",
-      "launchTimestamp": 1788678295047,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 27,
-      "name": "Hover",
-      "symbol": "HOVER",
-      "address": "0x35708419ec07bc825b17a98a8b56d8d38c25aba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x35708419ec07bc825b17a98a8b56d8d38c25aba3&chain=base",
-      "poolId": "0x9eb375f533c495935739ef8035266d6d5dc8eb8af7e7184ce79fae438553301d",
-      "deployer": "0x8eed177094d9f27aeb0e6656f3c14da4d4a9608f",
-      "feeRecipient": "0x25db24e63a8cdd60bd8a22330277fe3cce71862f",
-      "launchTimestamp": 1788672608535,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "Hover",
-      "symbol": "HOVER",
-      "address": "0xaa8d4cf32ab647ed6ed67f2ba25bedaef75f6ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xaa8d4cf32ab647ed6ed67f2ba25bedaef75f6ba3&chain=base",
-      "poolId": "0x18471faf42f6d581fe8e75cef89fb2f1141766b61166f3b79559574585af5933",
-      "deployer": "0x8eed177094d9f27aeb0e6656f3c14da4d4a9608f",
-      "feeRecipient": "0x25db24e63a8cdd60bd8a22330277fe3cce71862f",
-      "launchTimestamp": 1788672608401,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 29,
-      "name": "Hover",
-      "symbol": "HOVER",
-      "address": "0x722a4590359831e18f49366c851fcd3d54a95ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x722a4590359831e18f49366c851fcd3d54a95ba3&chain=base",
-      "poolId": "0x97524d84954b36298dc236ebd4b8a58a78685436008cc4a195006828ba2a3e09",
-      "deployer": "0x8eed177094d9f27aeb0e6656f3c14da4d4a9608f",
-      "feeRecipient": "0x25db24e63a8cdd60bd8a22330277fe3cce71862f",
-      "launchTimestamp": 1788672608303,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-BEHINDSTOCK-BUY",
-      "timestamp": "2026-09-06T16:19:23.873Z",
+      "timestamp": "2026-09-06T16:34:21.395Z",
       "token": "BEHINDSTOCK",
       "chain": "BASE",
       "type": "BUY",
@@ -1046,7 +976,7 @@
     },
     {
       "id": "ACT-RARE-BUY",
-      "timestamp": "2026-09-06T16:19:23.873Z",
+      "timestamp": "2026-09-06T16:34:21.395Z",
       "token": "RARE",
       "chain": "BASE",
       "type": "BUY",
@@ -1059,7 +989,7 @@
     },
     {
       "id": "ACT-BEHINDSTOCK-AVG",
-      "timestamp": "2026-09-06T16:19:23.872Z",
+      "timestamp": "2026-09-06T16:34:21.395Z",
       "token": "BEHINDSTOCK",
       "chain": "BASE",
       "type": "BUY",
@@ -1072,7 +1002,7 @@
     },
     {
       "id": "ACT-RARE-AVG",
-      "timestamp": "2026-09-06T16:19:23.873Z",
+      "timestamp": "2026-09-06T16:34:21.395Z",
       "token": "RARE",
       "chain": "BASE",
       "type": "BUY",
