@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-06T17:16:40.317Z",
+    "updatedAt": "2026-09-06T17:30:14.206Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 33,
-    "withMarketData": 4,
+    "withMarketData": 5,
     "safeTokensCount": 2,
-    "highRiskCount": 1,
+    "highRiskCount": 2,
     "totalWhaleAlerts": 6
   },
   "tokens": [
@@ -155,6 +155,41 @@
     },
     {
       "rank": 5,
+      "name": "Fee Split Test",
+      "symbol": "FST",
+      "address": "0x66c87da3691ed52f6c830e2957724dc3b1921ba3",
+      "pairAddress": "0x1b84d277582a2e07551f68cc16e3c02c29bf6f09ccf02d183e3f870fdd11cc4e",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0200e-7",
+      "priceChange24h": 0,
+      "volume24h": 1.01,
+      "volume1h": 1.01,
+      "liquidityUsd": 0,
+      "fdv": 10207,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x1b84d277582a2e07551f68cc16e3c02c29bf6f09ccf02d183e3f870fdd11cc4e",
+      "poolId": "0x1b84d277582a2e07551f68cc16e3c02c29bf6f09ccf02d183e3f870fdd11cc4e",
+      "deployer": "0xc6cb4cd20911a4a4a65895688a885848f2255526",
+      "feeRecipient": "0x2376f8975810c73db54762019445e2d649e464c8",
+      "launchTimestamp": 1788709266353,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 6,
       "name": "OPENCODEX",
       "symbol": "OPENCODEX",
       "address": "0xc83a55fc35f1139bc8374992bd0105441c81dba3",
@@ -189,7 +224,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "LVL",
       "symbol": "LVL",
       "address": "0x6a56cf65ca2673415fb79de715bfb0bb95ff0ba3",
@@ -224,7 +259,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "BlueCat",
       "symbol": "BLUCAT",
       "address": "0xba89f5bf3c4eb9642a8e2b3c1e465781ea1f4ba3",
@@ -259,7 +294,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Axiome",
       "symbol": "AXIOME",
       "address": "0xbae018fd75850f6fa426fa136f8bec7d36d1dba3",
@@ -294,7 +329,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Base Morning",
       "symbol": "BM",
       "address": "0xe604a34133ec30aec715197782631e9600b73ba3",
@@ -329,7 +364,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Seed.Verse",
       "symbol": "VERSE",
       "address": "0xa7070aa32635c8d60536118eaaae5c055e791ba3",
@@ -364,7 +399,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "bag stays on",
       "symbol": "BAG",
       "address": "0x5741bfae8686fbeb8588a96d2ca2d6824df36ba3",
@@ -399,7 +434,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Shinzou wo Sasageyo",
       "symbol": "Sasageyo",
       "address": "0xaf81ad56b3feaab23521ce6606183828d021aba3",
@@ -434,7 +469,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Bandit Troupe Book",
       "symbol": "BOOK",
       "address": "0xcfe7b8b54237c5edbc230c845045f09736ef9ba3",
@@ -469,7 +504,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "GlobalHome",
       "symbol": "GLOBALHOME",
       "address": "0xe289720850a05fe9ec1b996ec033702f74dbbba3",
@@ -504,7 +539,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "COINBASE STOCK",
       "symbol": "CBSE",
       "address": "0x14ede82521fe0232ed1ec8cfa1666ea165c80ba3",
@@ -539,7 +574,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Airdrop Base SOON",
       "symbol": "SOON",
       "address": "0x3bf927d5e49a838d36d6afbb0bbfdeb14a1a0ba3",
@@ -574,7 +609,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "BASEtember",
       "symbol": "BASEtember",
       "address": "0xcdb343568672d8a53dc1cb9273d2cb5172a94ba3",
@@ -605,41 +640,6 @@
       "deployer": "0xe729cbbed5d7c5d7931d8cdf5e3a0ce0406f8c7c",
       "feeRecipient": "0xe729cbbed5d7c5d7931d8cdf5e3a0ce0406f8c7c",
       "launchTimestamp": 1788709727037,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 18,
-      "name": "Fee Split Test",
-      "symbol": "FST",
-      "address": "0x66c87da3691ed52f6c830e2957724dc3b1921ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x66c87da3691ed52f6c830e2957724dc3b1921ba3&chain=base",
-      "poolId": "0x1b84d277582a2e07551f68cc16e3c02c29bf6f09ccf02d183e3f870fdd11cc4e",
-      "deployer": "0xc6cb4cd20911a4a4a65895688a885848f2255526",
-      "feeRecipient": "0x2376f8975810c73db54762019445e2d649e464c8",
-      "launchTimestamp": 1788709266353,
       "isNew": true,
       "hasMarketData": false
     },
@@ -1172,7 +1172,7 @@
   "whaleRadar": [
     {
       "id": "ACT-BEHINDSTOCK-BUY",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "BEHINDSTOCK",
       "chain": "BASE",
       "type": "BUY",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": "ACT-COACHIE-BUY",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "COACHIE",
       "chain": "BASE",
       "type": "BUY",
@@ -1198,7 +1198,7 @@
     },
     {
       "id": "ACT-RARE-BUY",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "RARE",
       "chain": "BASE",
       "type": "BUY",
@@ -1211,7 +1211,7 @@
     },
     {
       "id": "ACT-BEHINDSTOCK-AVG",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "BEHINDSTOCK",
       "chain": "BASE",
       "type": "BUY",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": "ACT-COACHIE-AVG",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "COACHIE",
       "chain": "BASE",
       "type": "BUY",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": "ACT-RARE-AVG",
-      "timestamp": "2026-09-06T17:16:40.317Z",
+      "timestamp": "2026-09-06T17:30:14.205Z",
       "token": "RARE",
       "chain": "BASE",
       "type": "BUY",
