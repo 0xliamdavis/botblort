@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-06T05:40:09.571Z",
+    "updatedAt": "2026-09-06T05:52:06.822Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 34,
     "withMarketData": 6,
     "safeTokensCount": 5,
-    "highRiskCount": 1,
+    "highRiskCount": 2,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -62,7 +62,7 @@
       "priceUsd": "1.1250e-7",
       "priceChange24h": -56.38,
       "volume24h": 22250.39,
-      "volume1h": 0.25,
+      "volume1h": 0,
       "liquidityUsd": 9599.22,
       "fdv": 11251,
       "txns24h": {
@@ -840,11 +840,11 @@
         "sells": 2
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0xcc63bb72ba8b104812681044230cf38b108480866d29008520b68e221e77810b",
@@ -852,7 +852,7 @@
       "deployer": "0xb248228e769dd8750e844c539d110200c2d61dd0",
       "feeRecipient": "0x50ba557d1fdc846f48da5ae2b5d51a8ee05aa245",
       "launchTimestamp": 1788652109131,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": false
     },
     {
@@ -1208,7 +1208,7 @@
   "whaleRadar": [
     {
       "id": "ACT-LVL-VOL",
-      "timestamp": "2026-09-06T05:40:09.571Z",
+      "timestamp": "2026-09-06T05:52:06.822Z",
       "token": "LVL",
       "chain": "BASE",
       "type": "SELL",
@@ -1221,7 +1221,7 @@
     },
     {
       "id": "ACT-LVL-AVG",
-      "timestamp": "2026-09-06T05:40:09.571Z",
+      "timestamp": "2026-09-06T05:52:06.822Z",
       "token": "LVL",
       "chain": "BASE",
       "type": "SELL",
