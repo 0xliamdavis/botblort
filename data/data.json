@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-07T17:13:15.249Z",
+    "updatedAt": "2026-09-07T17:31:13.752Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 22,
-    "withMarketData": 4,
-    "safeTokensCount": 4,
+    "withMarketData": 3,
+    "safeTokensCount": 3,
     "highRiskCount": 0,
     "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "iA",
-      "symbol": "iA",
-      "address": "0x6757fc3b77bfd2c286c4cf45b93d274949e79ba3",
-      "pairAddress": "0x7cefb2a2790c975fbf2897f2f2dabab0fa809e071af95ef073d87e2b41739af0",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.6860e-8",
-      "priceChange24h": -52.55,
-      "volume24h": 192.71,
-      "volume1h": 0,
-      "liquidityUsd": 2284.29,
-      "fdv": 2687,
-      "txns24h": {
-        "buys": 7,
-        "sells": 11
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "LOW_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x7cefb2a2790c975fbf2897f2f2dabab0fa809e071af95ef073d87e2b41739af0",
-      "poolId": "0x7cefb2a2790c975fbf2897f2f2dabab0fa809e071af95ef073d87e2b41739af0",
-      "deployer": "0x2265f8c2c50ee315fe12fb021fb7f9474bb5174b",
-      "feeRecipient": "0x2265f8c2c50ee315fe12fb021fb7f9474bb5174b",
-      "launchTimestamp": 1788742491741,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "Green Trumpet",
       "symbol": "GREENTRUMPET",
       "address": "0x4955ffc4876cf51975290002071c2392cf045ba3",
@@ -86,7 +52,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "ORWELL",
       "symbol": "ORWELL",
       "address": "0xdda8ab43fab096aaddaa06a07d26a424d54e7ba3",
@@ -97,7 +63,7 @@
       "priceUsd": "1.0420e-7",
       "priceChange24h": 3.75,
       "volume24h": 21.49,
-      "volume1h": 1.03,
+      "volume1h": 0,
       "liquidityUsd": 8857.72,
       "fdv": 10421,
       "txns24h": {
@@ -120,7 +86,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "OOF",
       "symbol": "OOF",
       "address": "0x7e2c5e57b5331e61de3eda729dd607d1b1507ba3",
@@ -152,6 +118,41 @@
       "launchTimestamp": 1788773133842,
       "isNew": false,
       "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "BankrPaired",
+      "symbol": "BNKRP",
+      "address": "0x39410bd0690b520b37676c1f245da2ebe2c13ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x39410bd0690b520b37676c1f245da2ebe2c13ba3&chain=base",
+      "poolId": "0x885defd7a88b5c93fda13287526da0fb87643505a6e9d773db9363306339b4ab",
+      "deployer": "0xbd7d9ec8432bac0014b0f91173b66840218f9a78",
+      "feeRecipient": "0xbd7d9ec8432bac0014b0f91173b66840218f9a78",
+      "launchTimestamp": 1788801233622,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
