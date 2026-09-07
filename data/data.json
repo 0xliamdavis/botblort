@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-07T01:50:19.967Z",
+    "updatedAt": "2026-09-07T02:14:05.220Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 34,
-    "withMarketData": 4,
+    "withMarketData": 3,
     "safeTokensCount": 3,
-    "highRiskCount": 2,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -62,7 +62,7 @@
       "priceUsd": "2.9850e-8",
       "priceChange24h": -47.28,
       "volume24h": 181.51,
-      "volume1h": 181.51,
+      "volume1h": 0,
       "liquidityUsd": 2537.34,
       "fdv": 2985,
       "txns24h": {
@@ -86,41 +86,6 @@
     },
     {
       "rank": 3,
-      "name": "browngoku",
-      "symbol": "BROWNGOKU",
-      "address": "0x377e1cab6b42beb93a8c8d3c13308f69446beba3",
-      "pairAddress": "0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0180e-7",
-      "priceChange24h": -12.12,
-      "volume24h": 122.06,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10185,
-      "txns24h": {
-        "buys": 2,
-        "sells": 3
-      },
-      "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
-        "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
-      "poolId": "0x5735ac73049ac912949415138449dce2ec33949cd61227d7b583163b93da46a7",
-      "deployer": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "feeRecipient": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "launchTimestamp": 1788712348923,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
       "name": "robotok",
       "symbol": "ROBOTOK",
       "address": "0xa8092cbf046915846e3730bf25d48c4ac70a9ba3",
@@ -153,6 +118,41 @@
       "launchTimestamp": 1788735810489,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "ORWELL",
+      "symbol": "ORWELL",
+      "address": "0xdda8ab43fab096aaddaa06a07d26a424d54e7ba3",
+      "pairAddress": "0xbb174813a16722ef9249e02ac8b9aaaa063171dd0183dd2b10beb81bbe547326",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0040e-7",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 10045,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xbb174813a16722ef9249e02ac8b9aaaa063171dd0183dd2b10beb81bbe547326",
+      "poolId": "0xbb174813a16722ef9249e02ac8b9aaaa063171dd0183dd2b10beb81bbe547326",
+      "deployer": "0x998306ae816de056349d9c00314530f643703267",
+      "feeRecipient": "0x998306ae816de056349d9c00314530f643703267",
+      "launchTimestamp": 1788746661952,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -1208,7 +1208,7 @@
   "whaleRadar": [
     {
       "id": "ACT-COACHIE-BUY",
-      "timestamp": "2026-09-07T01:50:19.967Z",
+      "timestamp": "2026-09-07T02:14:05.220Z",
       "token": "COACHIE",
       "chain": "BASE",
       "type": "BUY",
@@ -1221,7 +1221,7 @@
     },
     {
       "id": "ACT-COACHIE-AVG",
-      "timestamp": "2026-09-07T01:50:19.967Z",
+      "timestamp": "2026-09-07T02:14:05.220Z",
       "token": "COACHIE",
       "chain": "BASE",
       "type": "BUY",
