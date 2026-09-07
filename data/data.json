@@ -2,56 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-07T04:50:56.640Z",
+    "updatedAt": "2026-09-07T05:13:35.239Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 33,
+    "totalAnalyzed": 32,
     "withMarketData": 4,
     "safeTokensCount": 4,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Coachie",
-      "symbol": "COACHIE",
-      "address": "0xcab90490b3038497d9cbe9e2981f943ec2a04ba3",
-      "pairAddress": "0x359311b26967a564e49fe5abdb5a7aa0dc94cc17bb99e7e908b521f037dc342f",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0320e-7",
-      "priceChange24h": -42.92,
-      "volume24h": 2412.89,
-      "volume1h": 0,
-      "liquidityUsd": 8851.96,
-      "fdv": 10328,
-      "txns24h": {
-        "buys": 15,
-        "sells": 7
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x359311b26967a564e49fe5abdb5a7aa0dc94cc17bb99e7e908b521f037dc342f",
-      "poolId": "0x359311b26967a564e49fe5abdb5a7aa0dc94cc17bb99e7e908b521f037dc342f",
-      "deployer": "0x2ab621da087b575156e7872a00ae64e83075b75d",
-      "feeRecipient": "0x5eb45bd36e1b7306408aa01552cf4a6b32c753df",
-      "launchTimestamp": 1788713198020,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "iA",
       "symbol": "iA",
       "address": "0x6757fc3b77bfd2c286c4cf45b93d274949e79ba3",
@@ -81,6 +47,41 @@
       "deployer": "0x2265f8c2c50ee315fe12fb021fb7f9474bb5174b",
       "feeRecipient": "0x2265f8c2c50ee315fe12fb021fb7f9474bb5174b",
       "launchTimestamp": 1788742491741,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
+      "name": "Green Trumpet",
+      "symbol": "GREENTRUMPET",
+      "address": "0x4955ffc4876cf51975290002071c2392cf045ba3",
+      "pairAddress": "0x218e90cf1669f6ac450b16af30a8f680f5409bc5279e38fb530b5d5b15d816d5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0030e-7",
+      "priceChange24h": -12.67,
+      "volume24h": 122.69,
+      "volume1h": 122.69,
+      "liquidityUsd": 8527.82,
+      "fdv": 10032,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x218e90cf1669f6ac450b16af30a8f680f5409bc5279e38fb530b5d5b15d816d5",
+      "poolId": "0x218e90cf1669f6ac450b16af30a8f680f5409bc5279e38fb530b5d5b15d816d5",
+      "deployer": "0xb6e409a0290d565ef36281f217410fd19573b79e",
+      "feeRecipient": "0xb6e409a0290d565ef36281f217410fd19573b79e",
+      "launchTimestamp": 1788756945884,
       "isNew": true,
       "hasMarketData": true
     },
@@ -151,7 +152,7 @@
       "deployer": "0xc57cc1643f8a4b27f17d5aeddda0a96216ccbeaf",
       "feeRecipient": "0x50ba557d1fdc846f48da5ae2b5d51a8ee05aa245",
       "launchTimestamp": 1788735810489,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": true
     },
     {
@@ -1133,69 +1134,7 @@
       "launchTimestamp": 1788713490000,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 33,
-      "name": "Seed.Verse",
-      "symbol": "VERSE",
-      "address": "0xa7070aa32635c8d60536118eaaae5c055e791ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa7070aa32635c8d60536118eaaae5c055e791ba3&chain=base",
-      "poolId": "0xda4da8b469c6423f5ccce679a8663b07564ce98a7d0a7f749f9504a86dcf2da9",
-      "deployer": "0x3d25ac44daffc42823584bbb40219d82082226b2",
-      "feeRecipient": "0x3d25ac44daffc42823584bbb40219d82082226b2",
-      "launchTimestamp": 1788713239583,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": [
-    {
-      "id": "ACT-COACHIE-BUY",
-      "timestamp": "2026-09-07T04:50:56.640Z",
-      "token": "COACHIE",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "2412.89",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "BUY PRESSURE",
-      "detail": "15 buys / 7 sells · 68% buy",
-      "address": "0xcab90490b3038497d9cbe9e2981f943ec2a04ba3"
-    },
-    {
-      "id": "ACT-COACHIE-AVG",
-      "timestamp": "2026-09-07T04:50:56.639Z",
-      "token": "COACHIE",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "109.68",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $110 / tx · 22 txns",
-      "address": "0xcab90490b3038497d9cbe9e2981f943ec2a04ba3"
-    }
-  ]
+  "whaleRadar": []
 }
