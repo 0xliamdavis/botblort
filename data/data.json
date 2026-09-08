@@ -2,14 +2,14 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-08T19:22:29.731Z",
+    "updatedAt": "2026-09-08T19:41:14.093Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 28,
+    "totalAnalyzed": 27,
     "withMarketData": 6,
     "safeTokensCount": 6,
     "highRiskCount": 0,
@@ -25,20 +25,22 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000018490",
-      "priceChange24h": 924,
-      "volume24h": 631036.52,
-      "volume1h": 37623.73,
-      "liquidityUsd": 87797.65,
-      "fdv": 184906,
+      "priceUsd": "0.0000015840",
+      "priceChange24h": 778,
+      "volume24h": 645367.35,
+      "volume1h": 37095.25,
+      "liquidityUsd": 79944.77,
+      "fdv": 158440,
       "txns24h": {
-        "buys": 3472,
-        "sells": 5465
+        "buys": 3558,
+        "sells": 5608
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 80,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "HIGH_VOLATILITY_RATIO"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0xbcdd8383e38069f626846b94e93ee4d2c00cadfcce4b9457b0b8b04289030345",
       "poolId": "0xbcdd8383e38069f626846b94e93ee4d2c00cadfcce4b9457b0b8b04289030345",
@@ -954,60 +956,25 @@
       "launchTimestamp": 1788814522959,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "First Deploy Paired Bittensor TAO",
-      "symbol": "FIRST",
-      "address": "0x2cfd35da5f34472b9293aa048e872eeecc009ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2cfd35da5f34472b9293aa048e872eeecc009ba3&chain=base",
-      "poolId": "0xde4ab21f553eb1baa194a9ee48a77bc94b6d5898343d330a949d1a7a440e6ae2",
-      "deployer": "0xe26a82c8199ef96c578281b2a012b6268ed890ab",
-      "feeRecipient": "0xe26a82c8199ef96c578281b2a012b6268ed890ab",
-      "launchTimestamp": 1788814136764,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-CHIP-VOL",
-      "timestamp": "2026-09-08T19:22:29.731Z",
+      "timestamp": "2026-09-08T19:41:14.093Z",
       "token": "CHIP",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "631036.52",
+      "amountUsd": "645367.35",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $631037 · Liq $87798",
+      "detail": "Vol $645367 · Liq $79945",
       "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3"
     },
     {
       "id": "ACT-FLY-VOL",
-      "timestamp": "2026-09-08T19:22:29.731Z",
+      "timestamp": "2026-09-08T19:41:14.093Z",
       "token": "FLY",
       "chain": "BASE",
       "type": "SELL",
