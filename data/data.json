@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-08T17:19:19.839Z",
+    "updatedAt": "2026-09-08T17:34:14.381Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,7 +13,7 @@
     "withMarketData": 5,
     "safeTokensCount": 5,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000017760",
-      "priceChange24h": 884,
-      "volume24h": 519383.52,
-      "volume1h": 519383.52,
-      "liquidityUsd": 85533.74,
-      "fdv": 177647,
+      "priceUsd": "0.0000014850",
+      "priceChange24h": 723,
+      "volume24h": 558018.58,
+      "volume1h": 558018.58,
+      "liquidityUsd": 76643.11,
+      "fdv": 148544,
       "txns24h": {
-        "buys": 2803,
-        "sells": 4427
+        "buys": 3031,
+        "sells": 4778
       },
       "safety": {
         "safetyScore": 100,
@@ -57,20 +57,22 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "3.9390e-7",
-      "priceChange24h": 95.17,
-      "volume24h": 14542.23,
-      "volume1h": 14542.23,
-      "liquidityUsd": 30403.43,
-      "fdv": 39396,
+      "priceUsd": "1.4600e-7",
+      "priceChange24h": -27.65,
+      "volume24h": 24559.58,
+      "volume1h": 24559.58,
+      "liquidityUsd": 12482.49,
+      "fdv": 14604,
       "txns24h": {
-        "buys": 88,
-        "sells": 131
+        "buys": 158,
+        "sells": 246
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 90,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0xd9ac6632cf545de5f1bf7743c2665ebb01d08f0987589991a6ab3cfe630296a3",
       "poolId": "0xd9ac6632cf545de5f1bf7743c2665ebb01d08f0987589991a6ab3cfe630296a3",
@@ -126,7 +128,7 @@
       "priceUsd": "1.0000e-7",
       "priceChange24h": -0.8,
       "volume24h": 14.86,
-      "volume1h": 0.04,
+      "volume1h": 0,
       "liquidityUsd": 10004.4,
       "fdv": 10004,
       "txns24h": {
@@ -957,16 +959,29 @@
   "whaleRadar": [
     {
       "id": "ACT-CHIP-VOL",
-      "timestamp": "2026-09-08T17:19:19.839Z",
+      "timestamp": "2026-09-08T17:34:14.380Z",
       "token": "CHIP",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "519383.52",
+      "amountUsd": "558018.58",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $519384 · Liq $85534",
+      "detail": "Vol $558019 · Liq $76643",
       "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3"
+    },
+    {
+      "id": "ACT-FLY-VOL",
+      "timestamp": "2026-09-08T17:34:14.381Z",
+      "token": "FLY",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "24559.58",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $24560 · Liq $12482",
+      "address": "0x6dbf72b48a5ca17ced854008f0952f630ac16ba3"
     }
   ]
 }
