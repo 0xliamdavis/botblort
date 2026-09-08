@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-08T16:44:08.134Z",
+    "updatedAt": "2026-09-08T16:58:24.381Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 27,
-    "withMarketData": 5,
-    "safeTokensCount": 5,
+    "withMarketData": 4,
+    "safeTokensCount": 4,
     "highRiskCount": 0,
     "totalWhaleAlerts": 1
   },
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "7.7130e-7",
-      "priceChange24h": 327,
-      "volume24h": 167269.53,
-      "volume1h": 167269.53,
-      "liquidityUsd": 49816.82,
-      "fdv": 77135,
+      "priceUsd": "0.0000024400",
+      "priceChange24h": 1252,
+      "volume24h": 266664.18,
+      "volume1h": 266664.18,
+      "liquidityUsd": 103099.26,
+      "fdv": 244079,
       "txns24h": {
-        "buys": 941,
-        "sells": 1503
+        "buys": 1560,
+        "sells": 2501
       },
       "safety": {
         "safetyScore": 100,
@@ -153,38 +153,38 @@
     },
     {
       "rank": 5,
-      "name": "TenorMarkets",
-      "symbol": "TENOR",
-      "address": "0x07726de004ecb1af476da3166e87178e0fe5fba3",
-      "pairAddress": "0xd7dd6308a5ae94ddfcf5cf14b3b6b89c39acf71a5074c34ad863342f3b35b047",
+      "name": "한국",
+      "symbol": "한국",
+      "address": "0x510900b8fc679acb144a9611588d38a760524ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0180e-7",
-      "priceChange24h": 2,
-      "volume24h": 7.54,
-      "volume1h": 7.54,
-      "liquidityUsd": 8654.14,
-      "fdv": 10181,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 2,
-        "sells": 4
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xd7dd6308a5ae94ddfcf5cf14b3b6b89c39acf71a5074c34ad863342f3b35b047",
-      "poolId": "0xd7dd6308a5ae94ddfcf5cf14b3b6b89c39acf71a5074c34ad863342f3b35b047",
-      "deployer": "0xd68ae499c3071a3abaa990ce7eaeeb1bd252da23",
-      "feeRecipient": "0xd68ae499c3071a3abaa990ce7eaeeb1bd252da23",
-      "launchTimestamp": 1788812645341,
-      "isNew": false,
-      "hasMarketData": true
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x510900b8fc679acb144a9611588d38a760524ba3&chain=base",
+      "poolId": "0xeddeb25653d1c77497df32ead5e5a4b8a3bc350b6b7646b67267a8b0af3cef58",
+      "deployer": "0x16df4d2d88e7cbd08d50eddc00298ff815b4bde3",
+      "feeRecipient": "0x16df4d2d88e7cbd08d50eddc00298ff815b4bde3",
+      "launchTimestamp": 1788886056110,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 6,
@@ -960,15 +960,15 @@
   "whaleRadar": [
     {
       "id": "ACT-CHIP-VOL",
-      "timestamp": "2026-09-08T16:44:08.134Z",
+      "timestamp": "2026-09-08T16:58:24.381Z",
       "token": "CHIP",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "167269.53",
+      "amountUsd": "266664.18",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $167270 · Liq $49817",
+      "detail": "Vol $266664 · Liq $103099",
       "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3"
     }
   ]
