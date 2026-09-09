@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-09T13:44:35.995Z",
+    "updatedAt": "2026-09-09T13:58:23.946Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 37,
-    "withMarketData": 6,
-    "safeTokensCount": 6,
+    "totalAnalyzed": 36,
+    "withMarketData": 5,
+    "safeTokensCount": 5,
     "highRiskCount": 0,
     "totalWhaleAlerts": 3
   },
@@ -62,7 +62,7 @@
       "priceUsd": "1.6400e-7",
       "priceChange24h": -0.28,
       "volume24h": 16972,
-      "volume1h": 304.42,
+      "volume1h": 0,
       "liquidityUsd": 13916.96,
       "fdv": 16403,
       "txns24h": {
@@ -189,38 +189,38 @@
     },
     {
       "rank": 6,
-      "name": "HookrFun",
-      "symbol": "HOOKR",
-      "address": "0x87e978a829abdaa8e74f079e27ddf19cf43d3ba3",
-      "pairAddress": "0x8404231eb8a245da66d9c13ff9ef4bd490793d6f1a58a9074e521684abcb3c0a",
+      "name": "Desktop",
+      "symbol": "DESKTOP",
+      "address": "0xef7b2a7c69a2095aa5b11f59bf73abe9dd6ceba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0170e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8652.11,
-      "fdv": 10179,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x8404231eb8a245da66d9c13ff9ef4bd490793d6f1a58a9074e521684abcb3c0a",
-      "poolId": "0x8404231eb8a245da66d9c13ff9ef4bd490793d6f1a58a9074e521684abcb3c0a",
-      "deployer": "0x8928d3a34d3a4d8f58e4f29af9608e7d010b9b5a",
-      "feeRecipient": "0x8928d3a34d3a4d8f58e4f29af9608e7d010b9b5a",
-      "launchTimestamp": 1788909258358,
-      "isNew": false,
-      "hasMarketData": true
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xef7b2a7c69a2095aa5b11f59bf73abe9dd6ceba3&chain=base",
+      "poolId": "0x0e560e3ca00bd9db9799aed0ea1a8b8d377f9ad8db2490ef62b7cfedfa2a0ed8",
+      "deployer": "0x012b58fcc25e01b45d4b03dfb4b675ee1f95f1d0",
+      "feeRecipient": "0x012b58fcc25e01b45d4b03dfb4b675ee1f95f1d0",
+      "launchTimestamp": 1788961537339,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 7,
@@ -1271,47 +1271,12 @@
       "launchTimestamp": 1788912501293,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 37,
-      "name": "ORACLE",
-      "symbol": "ORACLE",
-      "address": "0x71ac2bbff97d1ceea2bff8cbb7bd252225bb1ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x71ac2bbff97d1ceea2bff8cbb7bd252225bb1ba3&chain=base",
-      "poolId": "0xd5fe41252e15bb47f7c389e60f04b41c752f5d726b0f26a7c1ebdbf74e53609b",
-      "deployer": "0xbd7d9ec8432bac0014b0f91173b66840218f9a78",
-      "feeRecipient": "0xbd7d9ec8432bac0014b0f91173b66840218f9a78",
-      "launchTimestamp": 1788912046889,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-SECRET-VOL",
-      "timestamp": "2026-09-09T13:44:35.995Z",
+      "timestamp": "2026-09-09T13:58:23.946Z",
       "token": "SECRET",
       "chain": "BASE",
       "type": "SELL",
@@ -1324,7 +1289,7 @@
     },
     {
       "id": "ACT-SECRET-AVG",
-      "timestamp": "2026-09-09T13:44:35.995Z",
+      "timestamp": "2026-09-09T13:58:23.945Z",
       "token": "SECRET",
       "chain": "BASE",
       "type": "SELL",
@@ -1337,7 +1302,7 @@
     },
     {
       "id": "ACT-MELISSA-AVG",
-      "timestamp": "2026-09-09T13:44:35.995Z",
+      "timestamp": "2026-09-09T13:58:23.946Z",
       "token": "MELISSA",
       "chain": "BASE",
       "type": "SELL",
