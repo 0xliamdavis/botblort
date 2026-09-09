@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-09T02:19:28.229Z",
+    "updatedAt": "2026-09-09T02:36:11.649Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 30,
+    "totalAnalyzed": 29,
     "withMarketData": 10,
-    "safeTokensCount": 9,
-    "highRiskCount": 1,
+    "safeTokensCount": 10,
+    "highRiskCount": 0,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000026570",
-      "priceChange24h": 1372,
-      "volume24h": 690552.16,
-      "volume1h": 14933.09,
-      "liquidityUsd": 109324.23,
-      "fdv": 265779,
+      "priceUsd": "0.0000026070",
+      "priceChange24h": 1345,
+      "volume24h": 697881.54,
+      "volume1h": 22040.56,
+      "liquidityUsd": 108221.99,
+      "fdv": 260732,
       "txns24h": {
-        "buys": 4011,
-        "sells": 6340
+        "buys": 4054,
+        "sells": 6407
       },
       "safety": {
         "safetyScore": 100,
@@ -159,22 +159,21 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.1070e-7",
-      "priceChange24h": 6.52,
-      "volume24h": 37.62,
-      "volume1h": 25.12,
-      "liquidityUsd": 0,
-      "fdv": 11077,
+      "priceUsd": "1.1210e-7",
+      "priceChange24h": 7.81,
+      "volume24h": 43.77,
+      "volume1h": 31.27,
+      "liquidityUsd": 9528.35,
+      "fdv": 11212,
       "txns24h": {
-        "buys": 3,
-        "sells": 6
+        "buys": 4,
+        "sells": 8
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 90,
+        "status": "SAFE",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "MEDIUM_LIQUIDITY"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0x2324082a349c93c88668b9e9dc48b8ee1f280ac0457f8cbdee7faa8508d68118",
@@ -321,7 +320,7 @@
       "deployer": "0xafc39c1feb73d83011b4106a4ad6fb209b8bba83",
       "feeRecipient": "0xafc39c1feb73d83011b4106a4ad6fb209b8bba83",
       "launchTimestamp": 1788899081892,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": true
     },
     {
@@ -1023,60 +1022,25 @@
       "launchTimestamp": 1788855965394,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 30,
-      "name": "Colosseum",
-      "symbol": "COLOSSEUM",
-      "address": "0xf0f214a33c310d8c9e72c4da59bdb9e9ed42bba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xf0f214a33c310d8c9e72c4da59bdb9e9ed42bba3&chain=base",
-      "poolId": "0x8b1b8516c0aab5aae8cb4f3b6f0f40008008ae9a5a70271c0d3c111f34e64b1b",
-      "deployer": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "feeRecipient": "0xb6e409a0290d565ef36281f217410fd19573b79e",
-      "launchTimestamp": 1788854543512,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-CHIP-VOL",
-      "timestamp": "2026-09-09T02:19:28.229Z",
+      "timestamp": "2026-09-09T02:36:11.648Z",
       "token": "CHIP",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "690552.16",
+      "amountUsd": "697881.54",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $690552 · Liq $109324",
+      "detail": "Vol $697882 · Liq $108222",
       "address": "0x75af968d2e58749fda1b42c58186b76f5e511ba3"
     },
     {
       "id": "ACT-FLY-VOL",
-      "timestamp": "2026-09-09T02:19:28.229Z",
+      "timestamp": "2026-09-09T02:36:11.649Z",
       "token": "FLY",
       "chain": "BASE",
       "type": "SELL",
