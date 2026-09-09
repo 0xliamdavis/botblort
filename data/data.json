@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-09T18:46:53.093Z",
+    "updatedAt": "2026-09-09T18:58:55.426Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 25,
     "withMarketData": 6,
     "safeTokensCount": 6,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 4
   },
   "tokens": [
@@ -96,7 +96,7 @@
       "priceUsd": "1.0230e-7",
       "priceChange24h": -49.61,
       "volume24h": 3394.07,
-      "volume1h": 3394.07,
+      "volume1h": 1213.76,
       "liquidityUsd": 8705.55,
       "fdv": 10233,
       "txns24h": {
@@ -164,7 +164,7 @@
       "priceUsd": "1.1170e-7",
       "priceChange24h": 11.48,
       "volume24h": 67.5,
-      "volume1h": 8.61,
+      "volume1h": 0,
       "liquidityUsd": 9493.33,
       "fdv": 11172,
       "txns24h": {
@@ -836,11 +836,11 @@
         "sells": 2
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0xcccfef33eb022ffef6ab68045c9433be8301b5d747eed97120ea3a439dd00ab6",
@@ -848,7 +848,7 @@
       "deployer": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
       "feeRecipient": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
       "launchTimestamp": 1788958484753,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": false
     },
     {
@@ -890,7 +890,7 @@
   "whaleRadar": [
     {
       "id": "ACT-STONKIT-VOL",
-      "timestamp": "2026-09-09T18:46:53.093Z",
+      "timestamp": "2026-09-09T18:58:55.426Z",
       "token": "STONKIT",
       "chain": "BASE",
       "type": "SELL",
@@ -903,7 +903,7 @@
     },
     {
       "id": "ACT-DESKTOP-VOL",
-      "timestamp": "2026-09-09T18:46:53.093Z",
+      "timestamp": "2026-09-09T18:58:55.426Z",
       "token": "DESKTOP",
       "chain": "BASE",
       "type": "SELL",
@@ -916,7 +916,7 @@
     },
     {
       "id": "ACT-USELESS-BUY",
-      "timestamp": "2026-09-09T18:46:53.093Z",
+      "timestamp": "2026-09-09T18:58:55.426Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
@@ -929,7 +929,7 @@
     },
     {
       "id": "ACT-USELESS-AVG",
-      "timestamp": "2026-09-09T18:46:53.093Z",
+      "timestamp": "2026-09-09T18:58:55.426Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
