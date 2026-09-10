@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-10T17:48:57.822Z",
+    "updatedAt": "2026-09-10T18:01:30.523Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,7 +13,7 @@
     "withMarketData": 10,
     "safeTokensCount": 9,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 5
   },
   "tokens": [
     {
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000023270",
-      "priceChange24h": 2862,
-      "volume24h": 159564.5,
-      "volume1h": 125714.96,
-      "liquidityUsd": 118634.05,
-      "fdv": 232780,
+      "priceUsd": "0.0000022660",
+      "priceChange24h": 2783,
+      "volume24h": 172270.63,
+      "volume1h": 101022.31,
+      "liquidityUsd": 116788.44,
+      "fdv": 226632,
       "txns24h": {
-        "buys": 4502,
-        "sells": 7139
+        "buys": 4563,
+        "sells": 7238
       },
       "safety": {
         "safetyScore": 100,
@@ -57,15 +57,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.3270e-7",
-      "priceChange24h": 30.94,
-      "volume24h": 28360.96,
-      "volume1h": 7944.56,
-      "liquidityUsd": 19530.6,
-      "fdv": 23277,
+      "priceUsd": "2.2050e-7",
+      "priceChange24h": 24.09,
+      "volume24h": 30391.44,
+      "volume1h": 4740.63,
+      "liquidityUsd": 18590.84,
+      "fdv": 22058,
       "txns24h": {
-        "buys": 83,
-        "sells": 216
+        "buys": 87,
+        "sells": 223
       },
       "safety": {
         "safetyScore": 90,
@@ -1410,20 +1410,33 @@
   "whaleRadar": [
     {
       "id": "ACT-BADAPPLES-SELL",
-      "timestamp": "2026-09-10T17:48:57.822Z",
+      "timestamp": "2026-09-10T18:01:30.523Z",
       "token": "BADAPPLES",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "28360.96",
+      "amountUsd": "30391.44",
       "priceImpact": null,
       "txHash": null,
       "label": "SELL PRESSURE",
-      "detail": "83 buys / 216 sells · 72% sell",
+      "detail": "87 buys / 223 sells · 72% sell",
+      "address": "0x57abb6a3d87feab6c133b3c90da4171966713ba3"
+    },
+    {
+      "id": "ACT-BADAPPLES-VOL",
+      "timestamp": "2026-09-10T18:01:30.523Z",
+      "token": "BADAPPLES",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "30391.44",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $30391 · Liq $18591",
       "address": "0x57abb6a3d87feab6c133b3c90da4171966713ba3"
     },
     {
       "id": "ACT-PonyAI-VOL",
-      "timestamp": "2026-09-10T17:48:57.822Z",
+      "timestamp": "2026-09-10T18:01:30.523Z",
       "token": "PonyAI",
       "chain": "BASE",
       "type": "SELL",
@@ -1436,7 +1449,7 @@
     },
     {
       "id": "ACT-PonyAI-AVG",
-      "timestamp": "2026-09-10T17:48:57.822Z",
+      "timestamp": "2026-09-10T18:01:30.523Z",
       "token": "PonyAI",
       "chain": "BASE",
       "type": "SELL",
@@ -1449,15 +1462,15 @@
     },
     {
       "id": "ACT-BADAPPLES-AVG",
-      "timestamp": "2026-09-10T17:48:57.822Z",
+      "timestamp": "2026-09-10T18:01:30.523Z",
       "token": "BADAPPLES",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "94.85",
+      "amountUsd": "98.04",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $95 / tx · 299 txns",
+      "detail": "Avg $98 / tx · 310 txns",
       "address": "0x57abb6a3d87feab6c133b3c90da4171966713ba3"
     }
   ]
