@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-10T01:01:22.215Z",
+    "updatedAt": "2026-09-10T01:22:49.097Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 29,
     "withMarketData": 11,
     "safeTokensCount": 10,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 6
   },
   "tokens": [
@@ -264,15 +264,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0420e-7",
-      "priceChange24h": 0.01,
-      "volume24h": 12.58,
-      "volume1h": 0,
-      "liquidityUsd": 8859.64,
-      "fdv": 10423,
+      "priceUsd": "1.0390e-7",
+      "priceChange24h": -0.26,
+      "volume24h": 13.8,
+      "volume1h": 1.21,
+      "liquidityUsd": 8836.27,
+      "fdv": 10396,
       "txns24h": {
         "buys": 2,
-        "sells": 5
+        "sells": 6
       },
       "safety": {
         "safetyScore": 75,
@@ -694,11 +694,11 @@
         "sells": 2
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0x5322cbcac7b01da3b1a9bea623c2ab5ff440d101879864bf645ca96ff939aad9",
@@ -706,7 +706,7 @@
       "deployer": "0x5918b823ee30040911823774a4c1de72cd2607d2",
       "feeRecipient": "0x5918b823ee30040911823774a4c1de72cd2607d2",
       "launchTimestamp": 1788981225051,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": false
     },
     {
@@ -1028,7 +1028,7 @@
   "whaleRadar": [
     {
       "id": "ACT-Grok-VOL",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.096Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "BUY",
@@ -1041,7 +1041,7 @@
     },
     {
       "id": "ACT-Grok-SELL",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.097Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
@@ -1054,7 +1054,7 @@
     },
     {
       "id": "ACT-DESKTOP-VOL",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.097Z",
       "token": "DESKTOP",
       "chain": "BASE",
       "type": "SELL",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": "ACT-USELESS-BUY",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.097Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": "ACT-USELESS-AVG",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.097Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
@@ -1093,7 +1093,7 @@
     },
     {
       "id": "ACT-Grok-AVG",
-      "timestamp": "2026-09-10T01:01:22.215Z",
+      "timestamp": "2026-09-10T01:22:49.097Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
