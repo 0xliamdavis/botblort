@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-10T11:49:44.325Z",
+    "updatedAt": "2026-09-10T12:04:00.860Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,10 +10,10 @@
   },
   "summary": {
     "totalAnalyzed": 27,
-    "withMarketData": 11,
-    "safeTokensCount": 10,
+    "withMarketData": 10,
+    "safeTokensCount": 9,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 7
+    "totalWhaleAlerts": 5
   },
   "tokens": [
     {
@@ -188,40 +188,6 @@
     },
     {
       "rank": 6,
-      "name": "USELESS",
-      "symbol": "USELESS",
-      "address": "0x68a62f0214be8b48ae06ac33c8fcbade0c7feba3",
-      "pairAddress": "0xc10f65739086763f2dbb99d6a06ec54e25df9e18134d0df5c6fc44a7e29d9bce",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0230e-7",
-      "priceChange24h": -49.61,
-      "volume24h": 3394.07,
-      "volume1h": 0,
-      "liquidityUsd": 8705.55,
-      "fdv": 10233,
-      "txns24h": {
-        "buys": 15,
-        "sells": 7
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xc10f65739086763f2dbb99d6a06ec54e25df9e18134d0df5c6fc44a7e29d9bce",
-      "poolId": "0xc10f65739086763f2dbb99d6a06ec54e25df9e18134d0df5c6fc44a7e29d9bce",
-      "deployer": "0xac4f738a1778f3745bf0a96a87ee4787e3ab1cee",
-      "feeRecipient": "0xac4f738a1778f3745bf0a96a87ee4787e3ab1cee",
-      "launchTimestamp": 1788976626181,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 7,
       "name": "ethos",
       "symbol": "ETHOS",
       "address": "0x8e1f5207c0257c5b59293ddbdc33b39575151ba3",
@@ -256,7 +222,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "CumRocket",
       "symbol": "CUMROCKET",
       "address": "0x756d3e95dbdf53229ce267cf74782762e512fba3",
@@ -291,7 +257,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Apple Turnover",
       "symbol": "$TURNOVER",
       "address": "0x1953168e5d523d76e7a0213911bd81d9f8409ba3",
@@ -326,7 +292,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "fuckbidenslaptop",
       "symbol": "FUCKBIDENSLAPTOP",
       "address": "0x8a23c8d6c0675cc6d1d1a2484178f56bdf68aba3",
@@ -360,7 +326,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "reputation",
       "symbol": "REP",
       "address": "0x64870682bd549b468d5a760854ea2d0295f83ba3",
@@ -393,6 +359,41 @@
       "launchTimestamp": 1789020842557,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 11,
+      "name": "Quantum Bitcoin",
+      "symbol": "qBTC",
+      "address": "0x1a2004b9de9dc931dea73d0125c30df6be0a9ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1a2004b9de9dc931dea73d0125c30df6be0a9ba3&chain=base",
+      "poolId": "0xb86a75b705a4215078bc8984033423e3753e5fff2025bb9354a3880e104e0ff1",
+      "deployer": "0x0447ac8016901eac26172e2fb53dbd4bfe18c36c",
+      "feeRecipient": "0x9872899e311eef842fcbce466e8f99118e8083a4",
+      "launchTimestamp": 1789041583049,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 12,
@@ -958,7 +959,7 @@
   "whaleRadar": [
     {
       "id": "ACT-blohard-VOL",
-      "timestamp": "2026-09-10T11:49:44.324Z",
+      "timestamp": "2026-09-10T12:04:00.859Z",
       "token": "blohard",
       "chain": "BASE",
       "type": "BUY",
@@ -971,7 +972,7 @@
     },
     {
       "id": "ACT-Grok-VOL",
-      "timestamp": "2026-09-10T11:49:44.325Z",
+      "timestamp": "2026-09-10T12:04:00.859Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "BUY",
@@ -984,7 +985,7 @@
     },
     {
       "id": "ACT-Grok-SELL",
-      "timestamp": "2026-09-10T11:49:44.325Z",
+      "timestamp": "2026-09-10T12:04:00.859Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
@@ -996,34 +997,8 @@
       "address": "0x9875269145e7aa87680559d39192b857233f6ba3"
     },
     {
-      "id": "ACT-USELESS-BUY",
-      "timestamp": "2026-09-10T11:49:44.325Z",
-      "token": "USELESS",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "3394.07",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "BUY PRESSURE",
-      "detail": "15 buys / 7 sells · 68% buy",
-      "address": "0x68a62f0214be8b48ae06ac33c8fcbade0c7feba3"
-    },
-    {
-      "id": "ACT-USELESS-AVG",
-      "timestamp": "2026-09-10T11:49:44.325Z",
-      "token": "USELESS",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "154.28",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $154 / tx · 22 txns",
-      "address": "0x68a62f0214be8b48ae06ac33c8fcbade0c7feba3"
-    },
-    {
       "id": "ACT-Grok-AVG",
-      "timestamp": "2026-09-10T11:49:44.325Z",
+      "timestamp": "2026-09-10T12:04:00.859Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
@@ -1036,7 +1011,7 @@
     },
     {
       "id": "ACT-BLUE-AVG",
-      "timestamp": "2026-09-10T11:49:44.325Z",
+      "timestamp": "2026-09-10T12:04:00.859Z",
       "token": "BLUE",
       "chain": "BASE",
       "type": "SELL",
