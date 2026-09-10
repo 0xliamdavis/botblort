@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-10T14:52:21.026Z",
+    "updatedAt": "2026-09-10T15:14:24.595Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 28,
-    "withMarketData": 11,
-    "safeTokensCount": 11,
+    "totalAnalyzed": 29,
+    "withMarketData": 10,
+    "safeTokensCount": 10,
     "highRiskCount": 0,
     "totalWhaleAlerts": 10
   },
@@ -25,20 +25,22 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000022490",
-      "priceChange24h": 1337,
-      "volume24h": 617004.65,
-      "volume1h": 284792.1,
-      "liquidityUsd": 114514.38,
-      "fdv": 224945,
+      "priceUsd": "0.0000012790",
+      "priceChange24h": 717,
+      "volume24h": 659668.09,
+      "volume1h": 177060.54,
+      "liquidityUsd": 81104.75,
+      "fdv": 127984,
       "txns24h": {
-        "buys": 1792,
-        "sells": 4516
+        "buys": 1874,
+        "sells": 4748
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 80,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "HIGH_VOLATILITY_RATIO"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0x44acda02fdfc8ecaace6fefd1c77b1c0b981ab92f10c00619b0ec5fdb74ccd3b",
       "poolId": "0x44acda02fdfc8ecaace6fefd1c77b1c0b981ab92f10c00619b0ec5fdb74ccd3b",
@@ -94,7 +96,7 @@
       "priceUsd": "1.2650e-7",
       "priceChange24h": -19.39,
       "volume24h": 25823.96,
-      "volume1h": 25823.96,
+      "volume1h": 49.86,
       "liquidityUsd": 12702.99,
       "fdv": 12655,
       "txns24h": {
@@ -186,40 +188,6 @@
     },
     {
       "rank": 6,
-      "name": "MacroStrategy",
-      "symbol": "MACR",
-      "address": "0xd29e114b630e13fab90cba4afabcf68b351d8ba3",
-      "pairAddress": "0x7dde08dc95bc46897ce579cf6297896d78b919cc1f788f2eb96bc8da3df7f687",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0810e-7",
-      "priceChange24h": -39.79,
-      "volume24h": 6435.09,
-      "volume1h": 0,
-      "liquidityUsd": 9240.31,
-      "fdv": 10814,
-      "txns24h": {
-        "buys": 53,
-        "sells": 80
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x7dde08dc95bc46897ce579cf6297896d78b919cc1f788f2eb96bc8da3df7f687",
-      "poolId": "0x7dde08dc95bc46897ce579cf6297896d78b919cc1f788f2eb96bc8da3df7f687",
-      "deployer": "0xa0aa77b37451eb8040836112f70633df2661c0e3",
-      "feeRecipient": "0x134bcac812b7a17f10fd3f133fd62fc3d082d0fc",
-      "launchTimestamp": 1788984561780,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 7,
       "name": "ULTRON",
       "symbol": "ULTRON",
       "address": "0x3b78ed5bf4d8c90e4d7cb99d6ded7de1c5f9eba3",
@@ -254,7 +222,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "CumRocket",
       "symbol": "CUMROCKET",
       "address": "0x756d3e95dbdf53229ce267cf74782762e512fba3",
@@ -289,7 +257,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "fuckbidenslaptop",
       "symbol": "FUCKBIDENSLAPTOP",
       "address": "0x8a23c8d6c0675cc6d1d1a2484178f56bdf68aba3",
@@ -323,7 +291,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "reputation",
       "symbol": "REP",
       "address": "0x64870682bd549b468d5a760854ea2d0295f83ba3",
@@ -358,7 +326,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "Official Erika Kirk Coin",
       "symbol": "ERIKA",
       "address": "0x660ca28cfe4a1241f6cfa94720a242f94aeefba3",
@@ -393,7 +361,112 @@
       "hasMarketData": true
     },
     {
+      "rank": 11,
+      "name": "TAO",
+      "symbol": "TAO",
+      "address": "0xc1a7d5df39890b904bc2204c03bd40e637aa7ba3",
+      "pairAddress": "0xa6b3f898b1614050203ac5c7a05644587bc0639e2d57df8c9c161375bbbc46e3",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0",
+      "priceChange24h": 112,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 29,
+        "sells": 51
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xa6b3f898b1614050203ac5c7a05644587bc0639e2d57df8c9c161375bbbc46e3",
+      "poolId": "0xa6b3f898b1614050203ac5c7a05644587bc0639e2d57df8c9c161375bbbc46e3",
+      "deployer": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
+      "feeRecipient": "0x9e2120ff9b087ec22be4bb2037481d7c7ce1f37d",
+      "launchTimestamp": 1789052970095,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
       "rank": 12,
+      "name": "TAO",
+      "symbol": "TAO",
+      "address": "0x11e97845417500d75901ddd4a15272b2a8134ba3",
+      "pairAddress": "0xac655bab095009b08041890832f75f898961b3593c3ccb49641016b377e06743",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "0",
+      "priceChange24h": 94.75,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 96,
+        "sells": 150
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xac655bab095009b08041890832f75f898961b3593c3ccb49641016b377e06743",
+      "poolId": "0xac655bab095009b08041890832f75f898961b3593c3ccb49641016b377e06743",
+      "deployer": "0x5918b823ee30040911823774a4c1de72cd2607d2",
+      "feeRecipient": "0x5918b823ee30040911823774a4c1de72cd2607d2",
+      "launchTimestamp": 1789052932369,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 13,
+      "name": "MacroStrategy",
+      "symbol": "MACRO",
+      "address": "0x925f9afc7b58ba3784d7877d079821db7821aba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x925f9afc7b58ba3784d7877d079821db7821aba3&chain=base",
+      "poolId": "0xc684f0af2a6c20fb9cf2a99fbf47c632b7a6292bdaf8fef9965816dd651ddcb8",
+      "deployer": "0x3f2fb5afe1743d67d2094b02bb099eb0e2d44ad9",
+      "feeRecipient": "0x3f2fb5afe1743d67d2094b02bb099eb0e2d44ad9",
+      "launchTimestamp": 1789052454005,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 14,
       "name": "Grok on Base",
       "symbol": "GrokB",
       "address": "0x5715ac976131f1aeac9530acf112a76217440ba3",
@@ -428,7 +501,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Pichai",
       "symbol": "pichai",
       "address": "0x98b5754edeeff3de4f22e02a85f95b7338b9cba3",
@@ -463,7 +536,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "STONFKLY",
       "symbol": "STONFKLY",
       "address": "0xdeae234f8c8a57a10dd0c0f33a8be8c4ff4a3ba3",
@@ -498,7 +571,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "TREX",
       "symbol": "TREX",
       "address": "0x606ec05041c06c67cb83199582c4d21b63079ba3",
@@ -533,7 +606,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "StonkOG",
       "symbol": "STONKFLY",
       "address": "0x75207ddc5a1bd69b787419cf195b474577329ba3",
@@ -568,7 +641,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "stonkfly",
       "symbol": "stonkfly",
       "address": "0xb5a555740d69c79ac4e72aaa5f7f3a05c6fe6ba3",
@@ -603,7 +676,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "Based Grok",
       "symbol": "BGROK",
       "address": "0x48458182c94cfb6e43a23e1f394b79097cca5ba3",
@@ -638,7 +711,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "Quantum Bitcoin",
       "symbol": "qBTC",
       "address": "0x1a2004b9de9dc931dea73d0125c30df6be0a9ba3",
@@ -673,7 +746,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "quotron",
       "symbol": "QUOTRON",
       "address": "0xe095351609c3d2b2e7da59fc43c919d88ef14ba3",
@@ -708,7 +781,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "stock",
       "symbol": "STOCK",
       "address": "0xe30351cda1f962cf0802d4496b052964874b6ba3",
@@ -743,7 +816,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "Manifold Markets",
       "symbol": "MM",
       "address": "0x1ca67b82061de8c0f80197ba76f46fc4df6e9ba3",
@@ -778,7 +851,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "RedTeam",
       "symbol": "SN61",
       "address": "0x50207851b7f7d394a0a6a441971192a5bb05fba3",
@@ -813,7 +886,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "blohard.social",
       "symbol": "blohard",
       "address": "0xe1a45256311f97e358087bbdb9bf5629ff2b5ba3",
@@ -848,7 +921,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "Make it Blue",
       "symbol": "BLUE",
       "address": "0x7274f96e73a5befdf577baf2633e7ca23004fba3",
@@ -883,7 +956,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "ORACLE",
       "symbol": "ORACLE",
       "address": "0x5f64bde96c38e9c277efcc18393a900b6fc31ba3",
@@ -918,7 +991,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 29,
       "name": "Apple Duo",
       "symbol": "DUO",
       "address": "0x84405d40be5acbbe0f5977e2899e796934470ba3",
@@ -951,73 +1024,38 @@
       "launchTimestamp": 1788985418880,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "Grok Coin",
-      "symbol": "Grok",
-      "address": "0xb37316dedb2d41de41c1e9e0840120e1ce58dba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb37316dedb2d41de41c1e9e0840120e1ce58dba3&chain=base",
-      "poolId": "0xb16c61dc9c848e7f0da1de3332110b60da4fa8084af0f15272911d2cd47083f6",
-      "deployer": "0xb22a634f4e584042daea957d8d1e33af626534c1",
-      "feeRecipient": "0xbe3fdf7c4aebc47d93b7a04253d3499280b78199",
-      "launchTimestamp": 1788984778992,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-STONKFLY-SELL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "STONKFLY",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "617004.65",
+      "amountUsd": "659668.09",
       "priceImpact": null,
       "txHash": null,
       "label": "SELL PRESSURE",
-      "detail": "1792 buys / 4516 sells · 72% sell",
+      "detail": "1874 buys / 4748 sells · 72% sell",
       "address": "0x9b83c2f3c1975bf4b6cc04f8d3f6bc1e98e38ba3"
     },
     {
       "id": "ACT-STONKFLY-VOL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "STONKFLY",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "617004.65",
+      "amountUsd": "659668.09",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $617005 · Liq $114514",
+      "detail": "Vol $659668 · Liq $81105",
       "address": "0x9b83c2f3c1975bf4b6cc04f8d3f6bc1e98e38ba3"
     },
     {
       "id": "ACT-blohard-VOL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "blohard",
       "chain": "BASE",
       "type": "BUY",
@@ -1030,7 +1068,7 @@
     },
     {
       "id": "ACT-TIM-SELL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "TIM",
       "chain": "BASE",
       "type": "SELL",
@@ -1043,7 +1081,7 @@
     },
     {
       "id": "ACT-TIM-VOL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "TIM",
       "chain": "BASE",
       "type": "SELL",
@@ -1056,7 +1094,7 @@
     },
     {
       "id": "ACT-stonkfly-SELL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "stonkfly",
       "chain": "BASE",
       "type": "SELL",
@@ -1069,7 +1107,7 @@
     },
     {
       "id": "ACT-stonkfly-VOL",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "stonkfly",
       "chain": "BASE",
       "type": "SELL",
@@ -1082,7 +1120,7 @@
     },
     {
       "id": "ACT-BLUE-AVG",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "BLUE",
       "chain": "BASE",
       "type": "SELL",
@@ -1095,20 +1133,20 @@
     },
     {
       "id": "ACT-STONKFLY-AVG",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "STONKFLY",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "97.81",
+      "amountUsd": "99.62",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $98 / tx · 6308 txns",
+      "detail": "Avg $100 / tx · 6622 txns",
       "address": "0x9b83c2f3c1975bf4b6cc04f8d3f6bc1e98e38ba3"
     },
     {
       "id": "ACT-ULTRON-AVG",
-      "timestamp": "2026-09-10T14:52:21.025Z",
+      "timestamp": "2026-09-10T15:14:24.595Z",
       "token": "ULTRON",
       "chain": "BASE",
       "type": "SELL",
