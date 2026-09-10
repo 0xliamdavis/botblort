@@ -2,14 +2,14 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-10T04:33:17.152Z",
+    "updatedAt": "2026-09-10T04:51:03.645Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 27,
+    "totalAnalyzed": 26,
     "withMarketData": 11,
     "safeTokensCount": 10,
     "highRiskCount": 1,
@@ -25,20 +25,22 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.4080e-7",
-      "priceChange24h": 35.23,
-      "volume24h": 37314.88,
-      "volume1h": 37314.88,
-      "liquidityUsd": 20266.78,
-      "fdv": 24082,
+      "priceUsd": "2.3350e-7",
+      "priceChange24h": 31.16,
+      "volume24h": 37591.49,
+      "volume1h": 2086.57,
+      "liquidityUsd": 19715.4,
+      "fdv": 23357,
       "txns24h": {
-        "buys": 201,
-        "sells": 331
+        "buys": 203,
+        "sells": 333
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 90,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0x1e6765453e50ceeba17322bab908e89282f4546783e992196c182f8e3f62f9f8",
       "poolId": "0x1e6765453e50ceeba17322bab908e89282f4546783e992196c182f8e3f62f9f8",
@@ -128,7 +130,7 @@
       "priceUsd": "1.1500e-7",
       "priceChange24h": -35.39,
       "volume24h": 13473.75,
-      "volume1h": 13473.75,
+      "volume1h": 0,
       "liquidityUsd": 9845.57,
       "fdv": 11503,
       "txns24h": {
@@ -915,60 +917,25 @@
       "launchTimestamp": 1788972758951,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 27,
-      "name": "HOOKS",
-      "symbol": "HOOKS",
-      "address": "0x839dec4ba1514de64608e3f3226134bdf74f8ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x839dec4ba1514de64608e3f3226134bdf74f8ba3&chain=base",
-      "poolId": "0x4584c85e79c43ad2ee6b95550788143494edfb59bd4795ffafdde5d7a03b20b3",
-      "deployer": "0xe5a4b1b587a50df0c382aaec9ddda743815899c3",
-      "feeRecipient": "0xe5a4b1b587a50df0c382aaec9ddda743815899c3",
-      "launchTimestamp": 1788972543519,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-blohard-VOL",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "blohard",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "37314.88",
+      "amountUsd": "37591.49",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $37315 · Liq $20267",
+      "detail": "Vol $37591 · Liq $19715",
       "address": "0x6ff244ebf1740af09a8229a054ca9195a3201ba3"
     },
     {
       "id": "ACT-Grok-VOL",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "BUY",
@@ -981,7 +948,7 @@
     },
     {
       "id": "ACT-Grok-SELL",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
@@ -994,7 +961,7 @@
     },
     {
       "id": "ACT-USELESS-BUY",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
@@ -1007,7 +974,7 @@
     },
     {
       "id": "ACT-USELESS-AVG",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "USELESS",
       "chain": "BASE",
       "type": "BUY",
@@ -1020,7 +987,7 @@
     },
     {
       "id": "ACT-Grok-AVG",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "Grok",
       "chain": "BASE",
       "type": "SELL",
@@ -1033,7 +1000,7 @@
     },
     {
       "id": "ACT-BLUE-AVG",
-      "timestamp": "2026-09-10T04:33:17.152Z",
+      "timestamp": "2026-09-10T04:51:03.645Z",
       "token": "BLUE",
       "chain": "BASE",
       "type": "SELL",
