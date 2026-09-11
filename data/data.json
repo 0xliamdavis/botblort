@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-11T17:03:16.458Z",
+    "updatedAt": "2026-09-11T17:22:15.830Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 31,
-    "withMarketData": 7,
-    "safeTokensCount": 6,
+    "withMarketData": 6,
+    "safeTokensCount": 5,
     "highRiskCount": 1,
     "totalWhaleAlerts": 2
   },
@@ -132,7 +132,7 @@
       "priceUsd": "1.0130e-7",
       "priceChange24h": -0.01,
       "volume24h": 5.77,
-      "volume1h": 0.35,
+      "volume1h": 0,
       "liquidityUsd": 8611.72,
       "fdv": 10131,
       "txns24h": {
@@ -167,7 +167,7 @@
       "priceUsd": "9.8740e-8",
       "priceChange24h": -1.98,
       "volume24h": 2.54,
-      "volume1h": 1.23,
+      "volume1h": 0,
       "liquidityUsd": 8392.98,
       "fdv": 9874,
       "txns24h": {
@@ -192,41 +192,6 @@
     },
     {
       "rank": 6,
-      "name": "Microsoft",
-      "symbol": "MICROSOFT",
-      "address": "0xa7b2da4f83b533ed3b6c8918a1198176c4350ba3",
-      "pairAddress": "0xe0cc7e482ded9823c2d386b4c43aeb08e63572a84cd07f8e5a0f229399663187",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0070e-7",
-      "priceChange24h": 0,
-      "volume24h": 0.02,
-      "volume1h": 0,
-      "liquidityUsd": 8560.18,
-      "fdv": 10071,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xe0cc7e482ded9823c2d386b4c43aeb08e63572a84cd07f8e5a0f229399663187",
-      "poolId": "0xe0cc7e482ded9823c2d386b4c43aeb08e63572a84cd07f8e5a0f229399663187",
-      "deployer": "0x63632c04aa6b302f3908ee850a2da3d8b8be2456",
-      "feeRecipient": "0x63632c04aa6b302f3908ee850a2da3d8b8be2456",
-      "launchTimestamp": 1789135429986,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 7,
       "name": "crypto.com",
       "symbol": "crypto.com",
       "address": "0x49b06b94f359e6c58f78575661358b4917008ba3",
@@ -261,7 +226,77 @@
       "hasMarketData": true
     },
     {
+      "rank": 7,
+      "name": "Blockchain for Agentic Settlement & Exchange",
+      "symbol": "BASE",
+      "address": "0x884bdac9ea5a68709ea1639bf95235c0529d1ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x884bdac9ea5a68709ea1639bf95235c0529d1ba3&chain=base",
+      "poolId": "0x73324f256261dd6a2b70aa8d6a28f2e9a18ecbc52400a40c9f4c935f14bf585d",
+      "deployer": "0xb2eef204fed25397c88cc016b0af20f4dbe25dee",
+      "feeRecipient": "0xb2eef204fed25397c88cc016b0af20f4dbe25dee",
+      "launchTimestamp": 1789147025584,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
       "rank": 8,
+      "name": "XRocket",
+      "symbol": "XRocket",
+      "address": "0x82d926e636ae2c2b994dd4c13d582f0233b0eba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x82d926e636ae2c2b994dd4c13d582f0233b0eba3&chain=base",
+      "poolId": "0xb24d8b1441ad9de508b61495e11e9f3f5b1317c23c41c90eab1a1ad84325a74b",
+      "deployer": "0x7c5d5133f7691c9fcf09a4560e77fc87f1b16313",
+      "feeRecipient": "0x7c5d5133f7691c9fcf09a4560e77fc87f1b16313",
+      "launchTimestamp": 1789146492894,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "Ding",
       "symbol": "DING",
       "address": "0x2570d2e6f0e8d3508f654245a532710e1c3a9ba3",
@@ -296,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "FLY VIRUS ATTACK",
       "symbol": "FLY",
       "address": "0x10f6579c426fe0b8b2a78c67480afdcc5c1aeba3",
@@ -331,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Hilbert Resignation",
       "symbol": "HILBERT",
       "address": "0x216cd1c0f8551e298c863cda97cd8b81c3caaba3",
@@ -366,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "PIXEL FLYBRAIN",
       "symbol": "PXFLYBRAIN",
       "address": "0xbbe4ab05699f333f9a05894ed20945cff98caba3",
@@ -401,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "MicroStrategy",
       "symbol": "MCRO",
       "address": "0x471cf7e5a46f643d0316616e8edb68cf84df0ba3",
@@ -436,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "based",
       "symbol": "BASED",
       "address": "0x8896cb175b77b9b7f830dcb473cd5e5c38ef4ba3",
@@ -471,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "based",
       "symbol": "BASED",
       "address": "0x999e3fae2e437163a913efa3c6bd73a27a4e0ba3",
@@ -506,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "based fly",
       "symbol": "BASEFLY",
       "address": "0x703fb738de7f418fa4c66f763ebc2ba29bd6aba3",
@@ -541,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "200ms",
       "symbol": "200MS",
       "address": "0x270f848bca4a8c61e03bd5e32364d54528728ba3",
@@ -576,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "ORACLE",
       "symbol": "ORACLE",
       "address": "0xb0fba72aaed38452561ce82840653b39b7d96ba3",
@@ -611,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "FLY",
       "symbol": "FLY",
       "address": "0x98665d9c34f0a676d09880350f96b72838cdfba3",
@@ -646,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "Based",
       "symbol": "BASED",
       "address": "0xb9e484eec5e80876ec4d79eb2f85e21ffea62ba3",
@@ -681,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "Coinbase Wallet",
       "symbol": "BaseApp",
       "address": "0x016da327b152d3a62fcd073d592ce3c9cf185ba3",
@@ -716,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "BREW on Base",
       "symbol": "BREW",
       "address": "0xc2bb894421f0dd973ccd0ff1dcd930882b9e9ba3",
@@ -751,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "stonkfly",
       "symbol": "STONKFLY",
       "address": "0x6f4a4eb68b5ea88baa2ffab700d7a15b91271ba3",
@@ -786,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "MICROFLY",
       "symbol": "MICROFLY",
       "address": "0xc7ae4776dce01fa81a88ee110e82be2677267ba3",
@@ -821,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "theflybook",
       "symbol": "THEFLYBOOK",
       "address": "0x3d7ba46d21f0ef8f2b1a185c1fb9b4ff788abba3",
@@ -856,7 +891,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "MicroFly",
       "symbol": "MicroFly",
       "address": "0x630a7d1067572c6bba5992b71743c42812ad3ba3",
@@ -891,7 +926,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "MicroFly",
       "symbol": "MicroFly",
       "address": "0x02bf2e240923db205c29a7303de6e38835565ba3",
@@ -926,7 +961,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "WallStreetBets",
       "symbol": "WSB",
       "address": "0x875685a4d3d430d41cb319f6003f802e1edefba3",
@@ -961,7 +996,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "Erebus",
       "symbol": "EREBUS",
       "address": "0x15c61704d68cfc7c4e75cb0a7a880c3a13972ba3",
@@ -996,7 +1031,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "Degen Village",
       "symbol": "DEGEN",
       "address": "0x7028a9627e69c93994a4d3e8c7d5535a74d67ba3",
@@ -1031,7 +1066,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "VoidAuth",
       "symbol": "VOIDAUTH",
       "address": "0x55aa900348cc6bc4cd17c31667978dfc6997cba3",
@@ -1064,47 +1099,12 @@
       "launchTimestamp": 1789137285615,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 31,
-      "name": "Flybot",
-      "symbol": "Flybot",
-      "address": "0x0b7784ed119d0127b58c4ec8e57a2fe9198d7ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x0b7784ed119d0127b58c4ec8e57a2fe9198d7ba3&chain=base",
-      "poolId": "0xcecc359b300bca2ac255a5f6b0a4a9ad6113cbaf4a28534c7f05ad372d94fa92",
-      "deployer": "0x5918b823ee30040911823774a4c1de72cd2607d2",
-      "feeRecipient": "0x5918b823ee30040911823774a4c1de72cd2607d2",
-      "launchTimestamp": 1789135086023,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-BASED-BUY",
-      "timestamp": "2026-09-11T17:03:16.458Z",
+      "timestamp": "2026-09-11T17:22:15.830Z",
       "token": "BASED",
       "chain": "BASE",
       "type": "BUY",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": "ACT-BASED-AVG",
-      "timestamp": "2026-09-11T17:03:16.458Z",
+      "timestamp": "2026-09-11T17:22:15.830Z",
       "token": "BASED",
       "chain": "BASE",
       "type": "BUY",
