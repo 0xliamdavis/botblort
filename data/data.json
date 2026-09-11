@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-11T10:32:53.145Z",
+    "updatedAt": "2026-09-11T10:50:34.161Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,10 +10,10 @@
   },
   "summary": {
     "totalAnalyzed": 25,
-    "withMarketData": 10,
-    "safeTokensCount": 8,
+    "withMarketData": 9,
+    "safeTokensCount": 7,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 5
+    "totalWhaleAlerts": 4
   },
   "tokens": [
     {
@@ -62,7 +62,7 @@
       "priceUsd": "1.0340e-7",
       "priceChange24h": -50.53,
       "volume24h": 10788.64,
-      "volume1h": 10788.64,
+      "volume1h": 276.99,
       "liquidityUsd": 8810.12,
       "fdv": 10342,
       "txns24h": {
@@ -120,40 +120,6 @@
     },
     {
       "rank": 4,
-      "name": "KCGI",
-      "symbol": "KCGI",
-      "address": "0x949be5a5523f6db43bd6dfe805f073f2a0adeba3",
-      "pairAddress": "0x7675d5f391a90819855eb27a00689d1d56fbcac0df0edc7b4fd774b6a1b4b958",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0540e-7",
-      "priceChange24h": -35.45,
-      "volume24h": 1337.52,
-      "volume1h": 0,
-      "liquidityUsd": 8985.01,
-      "fdv": 10547,
-      "txns24h": {
-        "buys": 6,
-        "sells": 9
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x7675d5f391a90819855eb27a00689d1d56fbcac0df0edc7b4fd774b6a1b4b958",
-      "poolId": "0x7675d5f391a90819855eb27a00689d1d56fbcac0df0edc7b4fd774b6a1b4b958",
-      "deployer": "0x75a2705d820682c202c3f039178b6f1601e0ab14",
-      "feeRecipient": "0xb78d26b3edfc981677113bddc2b429012e2fcf6a",
-      "launchTimestamp": 1789084217348,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 5,
       "name": "35121",
       "symbol": "35121",
       "address": "0x686578adc7b569cfc64258fa38674c4483b78ba3",
@@ -187,7 +153,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Buttertensor",
       "symbol": "BUTT",
       "address": "0x9d5efd31cd563eaed56d216567e1670668ce0ba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "BUCK",
       "symbol": "BUCK",
       "address": "0x482ac499661e97723ace2c49d362d33de9843ba3",
@@ -257,7 +223,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "LIKA",
       "symbol": "LIKA",
       "address": "0xbed98ecf534b4930f21b4277031a960504474ba3",
@@ -292,7 +258,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Mint Club",
       "symbol": "MINT™",
       "address": "0x4ecc4d2e7873e2878782c5a9d6455b38ff1d8ba3",
@@ -327,7 +293,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "!PULANG!!",
       "symbol": "!PULANG!!",
       "address": "0xf6108856a65f34a7a462ecb729be075a3b57cba3",
@@ -360,6 +326,41 @@
       "launchTimestamp": 1789102867873,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 10,
+      "name": "parallax",
+      "symbol": "PARALLAX",
+      "address": "0x1eff69bda33e9fcb0403211e2981a0e92e1fbba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1eff69bda33e9fcb0403211e2981a0e92e1fbba3&chain=base",
+      "poolId": "0xc4c77259dbe4822ba0c9e1adf136e1b178362b400d4defba1a9c950bfcc52be2",
+      "deployer": "0x9e2bb931a824595c1bd26dcc6fe8eef074b68775",
+      "feeRecipient": "0x9e2bb931a824595c1bd26dcc6fe8eef074b68775",
+      "launchTimestamp": 1789123023999,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 11,
@@ -890,7 +891,7 @@
   "whaleRadar": [
     {
       "id": "ACT-BrainStomz-VOL",
-      "timestamp": "2026-09-11T10:32:53.144Z",
+      "timestamp": "2026-09-11T10:50:34.160Z",
       "token": "BrainStomz",
       "chain": "BASE",
       "type": "BUY",
@@ -903,7 +904,7 @@
     },
     {
       "id": "ACT-Bagtone-AVG",
-      "timestamp": "2026-09-11T10:32:53.144Z",
+      "timestamp": "2026-09-11T10:50:34.160Z",
       "token": "Bagtone",
       "chain": "BASE",
       "type": "SELL",
@@ -916,7 +917,7 @@
     },
     {
       "id": "ACT-BrainStomz-AVG",
-      "timestamp": "2026-09-11T10:32:53.144Z",
+      "timestamp": "2026-09-11T10:50:34.160Z",
       "token": "BrainStomz",
       "chain": "BASE",
       "type": "SELL",
@@ -929,7 +930,7 @@
     },
     {
       "id": "ACT-Quorum-AVG",
-      "timestamp": "2026-09-11T10:32:53.144Z",
+      "timestamp": "2026-09-11T10:50:34.160Z",
       "token": "Quorum",
       "chain": "BASE",
       "type": "MIXED",
@@ -939,19 +940,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $94 / tx · 38 txns",
       "address": "0x52e564b0187c96f6368a51027301aa8a0ae25ba3"
-    },
-    {
-      "id": "ACT-KCGI-AVG",
-      "timestamp": "2026-09-11T10:32:53.144Z",
-      "token": "KCGI",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "89.17",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $89 / tx · 15 txns",
-      "address": "0x949be5a5523f6db43bd6dfe805f073f2a0adeba3"
     }
   ]
 }
