@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-11T06:28:50.572Z",
+    "updatedAt": "2026-09-11T06:49:59.386Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -11,8 +11,8 @@
   "summary": {
     "totalAnalyzed": 27,
     "withMarketData": 8,
-    "safeTokensCount": 6,
-    "highRiskCount": 2,
+    "safeTokensCount": 7,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 4
   },
   "tokens": [
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.8390e-7",
-      "priceChange24h": 40,
-      "volume24h": 34233.81,
-      "volume1h": 0,
-      "liquidityUsd": 15600.34,
-      "fdv": 18391,
+      "priceUsd": "1.7820e-7",
+      "priceChange24h": 35.69,
+      "volume24h": 34253.24,
+      "volume1h": 19.43,
+      "liquidityUsd": 15131.06,
+      "fdv": 17825,
       "txns24h": {
-        "buys": 129,
-        "sells": 196
+        "buys": 130,
+        "sells": 197
       },
       "safety": {
         "safetyScore": 90,
@@ -196,21 +196,21 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0110e-7",
-      "priceChange24h": 0,
-      "volume24h": 0.02,
-      "volume1h": 0.02,
-      "liquidityUsd": 0,
-      "fdv": 10114,
+      "priceUsd": "1.0090e-7",
+      "priceChange24h": -0.23,
+      "volume24h": 0.03,
+      "volume1h": 0.03,
+      "liquidityUsd": 8577.78,
+      "fdv": 10092,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 2,
+        "sells": 4
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 75,
+        "status": "SAFE",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
+          "MEDIUM_LIQUIDITY",
           "LOW_TRANSACTION_COUNT"
         ]
       },
@@ -961,33 +961,33 @@
   "whaleRadar": [
     {
       "id": "ACT-BrainStomz-VOL",
-      "timestamp": "2026-09-11T06:28:50.572Z",
+      "timestamp": "2026-09-11T06:49:59.386Z",
       "token": "BrainStomz",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "34233.81",
+      "amountUsd": "34253.24",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $34234 · Liq $15600",
+      "detail": "Vol $34253 · Liq $15131",
       "address": "0x2dfee8993fe66e2898910f433cff4b555a4ebba3"
     },
     {
       "id": "ACT-BrainStomz-AVG",
-      "timestamp": "2026-09-11T06:28:50.572Z",
+      "timestamp": "2026-09-11T06:49:59.386Z",
       "token": "BrainStomz",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "105.33",
+      "amountUsd": "104.75",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $105 / tx · 325 txns",
+      "detail": "Avg $105 / tx · 327 txns",
       "address": "0x2dfee8993fe66e2898910f433cff4b555a4ebba3"
     },
     {
       "id": "ACT-Quorum-AVG",
-      "timestamp": "2026-09-11T06:28:50.572Z",
+      "timestamp": "2026-09-11T06:49:59.386Z",
       "token": "Quorum",
       "chain": "BASE",
       "type": "MIXED",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": "ACT-KCGI-AVG",
-      "timestamp": "2026-09-11T06:28:50.572Z",
+      "timestamp": "2026-09-11T06:49:59.386Z",
       "token": "KCGI",
       "chain": "BASE",
       "type": "SELL",
