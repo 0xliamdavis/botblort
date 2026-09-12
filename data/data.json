@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T10:47:25.395Z",
+    "updatedAt": "2026-09-12T10:59:41.908Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 39,
-    "withMarketData": 8,
-    "safeTokensCount": 6,
+    "withMarketData": 7,
+    "safeTokensCount": 5,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Tim Cook",
-      "symbol": "COOK",
-      "address": "0xa68b5d0073e7f49ada94074ed93a4ac3e3438ba3",
-      "pairAddress": "0x5ea67711d82bc4233072e6f3e558ce79a4b4137ff9ec55677b8978a43cabd98c",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.1540e-7",
-      "priceChange24h": -29.72,
-      "volume24h": 5517.36,
-      "volume1h": 0,
-      "liquidityUsd": 9847.35,
-      "fdv": 11549,
-      "txns24h": {
-        "buys": 36,
-        "sells": 96
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x5ea67711d82bc4233072e6f3e558ce79a4b4137ff9ec55677b8978a43cabd98c",
-      "poolId": "0x5ea67711d82bc4233072e6f3e558ce79a4b4137ff9ec55677b8978a43cabd98c",
-      "deployer": "0xbc0025d353164fee47e4d635073ed34390d24610",
-      "feeRecipient": "0x6a756c576c9ff33183ebb0ad746d79f2c21bcbc8",
-      "launchTimestamp": 1789168477773,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "Mark Zuckerberg-META",
       "symbol": "Mark Zuckerberg",
       "address": "0x107bad7276cfcb3fddbe86e02ea882181a0d0ba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "ZUCKBUCK",
       "symbol": "ZUCKBUCK",
       "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "JENSEN",
       "symbol": "JENSEN",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "amc",
       "symbol": "AMC",
       "address": "0x6f780a63befc8d7c0386414962e9a8c4a9225ba3",
@@ -187,7 +153,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "ANSEM BASE",
       "symbol": "ANSEM",
       "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "imjpmorgan",
       "symbol": "IMJPMORGAN",
       "address": "0xd2350568a01df4c2a0993f5261890bcf8a09dba3",
@@ -257,7 +223,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "Sanjam",
       "symbol": "Sanjam",
       "address": "0xf7f679d83d9e0a3adafba209c22368f338314ba3",
@@ -290,6 +256,41 @@
       "launchTimestamp": 1789184833135,
       "isNew": false,
       "hasMarketData": true
+    },
+    {
+      "rank": 8,
+      "name": "Eggbase",
+      "symbol": "EGG",
+      "address": "0x5e5f73892e1a5d0a417523d3bf79e87cdffafba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x5e5f73892e1a5d0a417523d3bf79e87cdffafba3&chain=base",
+      "poolId": "0x62622e41a026cefe21a06b513b93de18d52d0e0be16e232a2c7d7890c64b7b83",
+      "deployer": "0xfb38300ab4435d1d33cf40d45f25af745d0be3ff",
+      "feeRecipient": "0xfb38300ab4435d1d33cf40d45f25af745d0be3ff",
+      "launchTimestamp": 1789210618889,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 9,
@@ -1379,21 +1380,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-COOK-SELL",
-      "timestamp": "2026-09-12T10:47:25.394Z",
-      "token": "COOK",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "5517.36",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "36 buys / 96 sells · 73% sell",
-      "address": "0xa68b5d0073e7f49ada94074ed93a4ac3e3438ba3"
-    },
-    {
       "id": "ACT-Mark Zuckerberg-SELL",
-      "timestamp": "2026-09-12T10:47:25.394Z",
+      "timestamp": "2026-09-12T10:59:41.908Z",
       "token": "Mark Zuckerberg",
       "chain": "BASE",
       "type": "SELL",
@@ -1406,7 +1394,7 @@
     },
     {
       "id": "ACT-ZUCKBUCK-SELL",
-      "timestamp": "2026-09-12T10:47:25.394Z",
+      "timestamp": "2026-09-12T10:59:41.908Z",
       "token": "ZUCKBUCK",
       "chain": "BASE",
       "type": "SELL",
@@ -1419,7 +1407,7 @@
     },
     {
       "id": "ACT-JENSEN-AVG",
-      "timestamp": "2026-09-12T10:47:25.394Z",
+      "timestamp": "2026-09-12T10:59:41.908Z",
       "token": "JENSEN",
       "chain": "BASE",
       "type": "MIXED",
