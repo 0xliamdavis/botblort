@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T07:16:41.255Z",
+    "updatedAt": "2026-09-12T07:30:59.981Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,10 +10,10 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 9,
-    "safeTokensCount": 7,
+    "withMarketData": 8,
+    "safeTokensCount": 6,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 5
+    "totalWhaleAlerts": 4
   },
   "tokens": [
     {
@@ -59,15 +59,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0260e-7",
-      "priceChange24h": -38.46,
-      "volume24h": 4333.99,
-      "volume1h": 0,
-      "liquidityUsd": 8920.68,
-      "fdv": 10261,
+      "priceUsd": "1.0880e-7",
+      "priceChange24h": -34.69,
+      "volume24h": 4335.28,
+      "volume1h": 1.28,
+      "liquidityUsd": 9468.66,
+      "fdv": 10889,
       "txns24h": {
         "buys": 21,
-        "sells": 52
+        "sells": 53
       },
       "safety": {
         "safetyScore": 90,
@@ -188,40 +188,6 @@
     },
     {
       "rank": 6,
-      "name": "COBIE",
-      "symbol": "COBIE",
-      "address": "0x4afe3a738ba55aa58f2cd21d80e091b3cf3d6ba3",
-      "pairAddress": "0x744867487643847dc2cea0c2bf7d1069600b74f91d6a0bc897dfa66bb432b977",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0960e-7",
-      "priceChange24h": -11.12,
-      "volume24h": 635.26,
-      "volume1h": 0,
-      "liquidityUsd": 10967.67,
-      "fdv": 10969,
-      "txns24h": {
-        "buys": 6,
-        "sells": 14
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x744867487643847dc2cea0c2bf7d1069600b74f91d6a0bc897dfa66bb432b977",
-      "poolId": "0x744867487643847dc2cea0c2bf7d1069600b74f91d6a0bc897dfa66bb432b977",
-      "deployer": "0xa2baa5527e25de10099096a3257d0b1938f095b1",
-      "feeRecipient": "0xb5b8cf5c90f4ff455c7768ac0f120197010d3d7e",
-      "launchTimestamp": 1789168101879,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 7,
       "name": "ANSEM BASE",
       "symbol": "ANSEM",
       "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
@@ -232,7 +198,7 @@
       "priceUsd": "1.0120e-7",
       "priceChange24h": 0,
       "volume24h": 2.03,
-      "volume1h": 2.03,
+      "volume1h": 0,
       "liquidityUsd": 0,
       "fdv": 10128,
       "txns24h": {
@@ -256,7 +222,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "imjpmorgan",
       "symbol": "IMJPMORGAN",
       "address": "0xd2350568a01df4c2a0993f5261890bcf8a09dba3",
@@ -291,7 +257,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Sanjam",
       "symbol": "Sanjam",
       "address": "0xf7f679d83d9e0a3adafba209c22368f338314ba3",
@@ -324,6 +290,41 @@
       "launchTimestamp": 1789184833135,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 9,
+      "name": "Fist Token Pair Tao",
+      "symbol": "TAO",
+      "address": "0x9d60ac8b744132eb6e23bc267df2d45be9b8eba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9d60ac8b744132eb6e23bc267df2d45be9b8eba3&chain=base",
+      "poolId": "0xbdc41e27e9871b823d51dc2a2827d8d1b8015d41e8c9b2112c3ba8312243058f",
+      "deployer": "0x59e31442a4632f8d82a64d5f06f2e6166c0866f0",
+      "feeRecipient": "0x59e31442a4632f8d82a64d5f06f2e6166c0866f0",
+      "launchTimestamp": 1789198130488,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 10,
@@ -1414,7 +1415,7 @@
   "whaleRadar": [
     {
       "id": "ACT-COOK-SELL",
-      "timestamp": "2026-09-12T07:16:41.255Z",
+      "timestamp": "2026-09-12T07:30:59.981Z",
       "token": "COOK",
       "chain": "BASE",
       "type": "SELL",
@@ -1427,20 +1428,20 @@
     },
     {
       "id": "ACT-Mark Zuckerberg-SELL",
-      "timestamp": "2026-09-12T07:16:41.255Z",
+      "timestamp": "2026-09-12T07:30:59.981Z",
       "token": "Mark Zuckerberg",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "4333.99",
+      "amountUsd": "4335.28",
       "priceImpact": null,
       "txHash": null,
       "label": "SELL PRESSURE",
-      "detail": "21 buys / 52 sells · 71% sell",
+      "detail": "21 buys / 53 sells · 72% sell",
       "address": "0x107bad7276cfcb3fddbe86e02ea882181a0d0ba3"
     },
     {
       "id": "ACT-ZUCKBUCK-SELL",
-      "timestamp": "2026-09-12T07:16:41.255Z",
+      "timestamp": "2026-09-12T07:30:59.981Z",
       "token": "ZUCKBUCK",
       "chain": "BASE",
       "type": "SELL",
@@ -1452,21 +1453,8 @@
       "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3"
     },
     {
-      "id": "ACT-COBIE-SELL",
-      "timestamp": "2026-09-12T07:16:41.255Z",
-      "token": "COBIE",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "635.26",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "6 buys / 14 sells · 70% sell",
-      "address": "0x4afe3a738ba55aa58f2cd21d80e091b3cf3d6ba3"
-    },
-    {
       "id": "ACT-JENSEN-AVG",
-      "timestamp": "2026-09-12T07:16:41.255Z",
+      "timestamp": "2026-09-12T07:30:59.981Z",
       "token": "JENSEN",
       "chain": "BASE",
       "type": "MIXED",
