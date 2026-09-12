@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T08:19:22.600Z",
+    "updatedAt": "2026-09-12T08:34:29.532Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -62,7 +62,7 @@
       "priceUsd": "1.0880e-7",
       "priceChange24h": -34.69,
       "volume24h": 4335.28,
-      "volume1h": 1.28,
+      "volume1h": 0,
       "liquidityUsd": 9468.66,
       "fdv": 10889,
       "txns24h": {
@@ -86,6 +86,40 @@
     },
     {
       "rank": 3,
+      "name": "ZUCKBUCK",
+      "symbol": "ZUCKBUCK",
+      "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3",
+      "pairAddress": "0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.3160e-7",
+      "priceChange24h": 293,
+      "volume24h": 3913.58,
+      "volume1h": 179.09,
+      "liquidityUsd": 19250.58,
+      "fdv": 23163,
+      "txns24h": {
+        "buys": 52,
+        "sells": 127
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
+      "poolId": "0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
+      "deployer": "0x0ba56f3df8914be4a6ddb994eb7b645ec504e236",
+      "feeRecipient": "0x0ba56f3df8914be4a6ddb994eb7b645ec504e236",
+      "launchTimestamp": 1789170731289,
+      "isNew": false,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
       "name": "JENSEN",
       "symbol": "JENSEN",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3",
@@ -115,40 +149,6 @@
       "deployer": "0x174c9bc25dbc9429dba0015d72194b1c04eec8bb",
       "feeRecipient": "0xc59b0c072f73ceea3dc354031165501c0ff25023",
       "launchTimestamp": 1789177260738,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
-      "name": "ZUCKBUCK",
-      "symbol": "ZUCKBUCK",
-      "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3",
-      "pairAddress": "0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.3410e-7",
-      "priceChange24h": 297,
-      "volume24h": 3815.78,
-      "volume1h": 81.29,
-      "liquidityUsd": 19449.65,
-      "fdv": 23417,
-      "txns24h": {
-        "buys": 52,
-        "sells": 125
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
-      "poolId": "0x197c45214cc4ab7569c77b4ce647fcd4a603407393d27bdda1fddd9a7799312b",
-      "deployer": "0x0ba56f3df8914be4a6ddb994eb7b645ec504e236",
-      "feeRecipient": "0x0ba56f3df8914be4a6ddb994eb7b645ec504e236",
-      "launchTimestamp": 1789170731289,
       "isNew": false,
       "hasMarketData": true
     },
@@ -1415,7 +1415,7 @@
   "whaleRadar": [
     {
       "id": "ACT-COOK-SELL",
-      "timestamp": "2026-09-12T08:19:22.599Z",
+      "timestamp": "2026-09-12T08:34:29.531Z",
       "token": "COOK",
       "chain": "BASE",
       "type": "SELL",
@@ -1428,7 +1428,7 @@
     },
     {
       "id": "ACT-Mark Zuckerberg-SELL",
-      "timestamp": "2026-09-12T08:19:22.600Z",
+      "timestamp": "2026-09-12T08:34:29.531Z",
       "token": "Mark Zuckerberg",
       "chain": "BASE",
       "type": "SELL",
@@ -1441,20 +1441,20 @@
     },
     {
       "id": "ACT-ZUCKBUCK-SELL",
-      "timestamp": "2026-09-12T08:19:22.600Z",
+      "timestamp": "2026-09-12T08:34:29.531Z",
       "token": "ZUCKBUCK",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "3815.78",
+      "amountUsd": "3913.58",
       "priceImpact": null,
       "txHash": null,
       "label": "SELL PRESSURE",
-      "detail": "52 buys / 125 sells · 71% sell",
+      "detail": "52 buys / 127 sells · 71% sell",
       "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3"
     },
     {
       "id": "ACT-JENSEN-AVG",
-      "timestamp": "2026-09-12T08:19:22.600Z",
+      "timestamp": "2026-09-12T08:34:29.531Z",
       "token": "JENSEN",
       "chain": "BASE",
       "type": "MIXED",
