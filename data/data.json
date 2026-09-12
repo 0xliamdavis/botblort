@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T22:30:41.246Z",
+    "updatedAt": "2026-09-12T22:49:09.179Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 23,
+    "totalAnalyzed": 21,
     "withMarketData": 15,
     "safeTokensCount": 14,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 3
+    "totalWhaleAlerts": 4
   },
   "tokens": [
     {
@@ -89,20 +89,22 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.4670e-7",
-      "priceChange24h": 35.57,
-      "volume24h": 27545.9,
-      "volume1h": 27545.9,
-      "liquidityUsd": 20742.72,
-      "fdv": 24676,
+      "priceUsd": "2.0780e-7",
+      "priceChange24h": 14.2,
+      "volume24h": 30512.54,
+      "volume1h": 30512.54,
+      "liquidityUsd": 17691.12,
+      "fdv": 20787,
       "txns24h": {
-        "buys": 187,
-        "sells": 307
+        "buys": 207,
+        "sells": 336
       },
       "safety": {
-        "safetyScore": 100,
+        "safetyScore": 90,
         "status": "SAFE",
-        "flags": []
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
       },
       "dexUrl": "https://dexscreener.com/base/0xcb53eb8f35c0d2a88c075f2a73ff866323076bc370f9adcf49c4246c64645b3c",
       "poolId": "0xcb53eb8f35c0d2a88c075f2a73ff866323076bc370f9adcf49c4246c64645b3c",
@@ -226,7 +228,7 @@
       "priceUsd": "3.6370e-8",
       "priceChange24h": -23.94,
       "volume24h": 1240.21,
-      "volume1h": 17.49,
+      "volume1h": 14.29,
       "liquidityUsd": 3089.83,
       "fdv": 3637,
       "txns24h": {
@@ -500,7 +502,7 @@
       "priceUsd": "1.0450e-7",
       "priceChange24h": 0,
       "volume24h": 0.26,
-      "volume1h": 0.26,
+      "volume1h": 0,
       "liquidityUsd": 0,
       "fdv": 10459,
       "txns24h": {
@@ -732,82 +734,12 @@
       "launchTimestamp": 1789239943701,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 22,
-      "name": "Debot-B20",
-      "symbol": "DB20",
-      "address": "0x06d69b63782a87fea8384abc087e3993fcceaba3",
-      "pairAddress": "0xe2a470a5aa14617ca7956a4bdf65368d454ef183f091cb191fad881f9528b145",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0120e-7",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10120,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xe2a470a5aa14617ca7956a4bdf65368d454ef183f091cb191fad881f9528b145",
-      "poolId": "0xe2a470a5aa14617ca7956a4bdf65368d454ef183f091cb191fad881f9528b145",
-      "deployer": "0x5ae90cf7f8482789a0e8cc37c80cf5cb25298d16",
-      "feeRecipient": "0x5ae90cf7f8482789a0e8cc37c80cf5cb25298d16",
-      "launchTimestamp": 1789239893150,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 23,
-      "name": "Bleachers",
-      "symbol": "BLEACHERS",
-      "address": "0x306805d4504baf28f16dc099de24183175c25ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x306805d4504baf28f16dc099de24183175c25ba3&chain=base",
-      "poolId": "0xf4bb09f8904432fecf0e1f7ccd940df51f73fa437815bf7628129761e3cd8f67",
-      "deployer": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "feeRecipient": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "launchTimestamp": 1789239616466,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-misalignment-VOL",
-      "timestamp": "2026-09-12T22:30:41.245Z",
+      "timestamp": "2026-09-12T22:49:09.179Z",
       "token": "misalignment",
       "chain": "BASE",
       "type": "BUY",
@@ -820,7 +752,7 @@
     },
     {
       "id": "ACT-Erodoro-VOL",
-      "timestamp": "2026-09-12T22:30:41.245Z",
+      "timestamp": "2026-09-12T22:49:09.179Z",
       "token": "Erodoro",
       "chain": "BASE",
       "type": "BUY",
@@ -832,8 +764,21 @@
       "address": "0x8a3b05887c3bec5b7bf4f376ec8d385053ddbba3"
     },
     {
+      "id": "ACT-UNDERDOG-VOL",
+      "timestamp": "2026-09-12T22:49:09.179Z",
+      "token": "UNDERDOG",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "30512.54",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $30513 · Liq $17691",
+      "address": "0xfbdd6537bfd6f0ea75140706286f48c9aa210ba3"
+    },
+    {
       "id": "ACT-misalignment-AVG",
-      "timestamp": "2026-09-12T22:30:41.245Z",
+      "timestamp": "2026-09-12T22:49:09.179Z",
       "token": "misalignment",
       "chain": "BASE",
       "type": "SELL",
