@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T12:44:13.167Z",
+    "updatedAt": "2026-09-12T12:58:01.181Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,14 +10,46 @@
   },
   "summary": {
     "totalAnalyzed": 38,
-    "withMarketData": 6,
-    "safeTokensCount": 4,
+    "withMarketData": 7,
+    "safeTokensCount": 5,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 5
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Degenfly",
+      "symbol": "DEGENFLY",
+      "address": "0x90efca879e81054cdabd593ad8debe98943fdba3",
+      "pairAddress": "0x39b1bb804850318eb51a296a7234eb51370f5985bf38694a89d5d23eb95d4799",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.5680e-7",
+      "priceChange24h": 109,
+      "volume24h": 63863.99,
+      "volume1h": 63863.99,
+      "liquidityUsd": 21476.7,
+      "fdv": 25681,
+      "txns24h": {
+        "buys": 188,
+        "sells": 465
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0x39b1bb804850318eb51a296a7234eb51370f5985bf38694a89d5d23eb95d4799",
+      "poolId": "0x39b1bb804850318eb51a296a7234eb51370f5985bf38694a89d5d23eb95d4799",
+      "deployer": "0x9a7dd839233f1470b6394c9dc3d94fc42f9bd0ce",
+      "feeRecipient": "0xfbe6da8d615be7c0b44a8329b57499291341c3f2",
+      "launchTimestamp": 1789217422195,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "ZUCKBUCK",
       "symbol": "ZUCKBUCK",
       "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3",
@@ -51,7 +83,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "JENSEN",
       "symbol": "JENSEN",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3",
@@ -85,7 +117,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "amc",
       "symbol": "AMC",
       "address": "0x6f780a63befc8d7c0386414962e9a8c4a9225ba3",
@@ -119,7 +151,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "ANSEM BASE",
       "symbol": "ANSEM",
       "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
@@ -154,7 +186,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "imjpmorgan",
       "symbol": "IMJPMORGAN",
       "address": "0xd2350568a01df4c2a0993f5261890bcf8a09dba3",
@@ -189,7 +221,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Sanjam",
       "symbol": "Sanjam",
       "address": "0xf7f679d83d9e0a3adafba209c22368f338314ba3",
@@ -224,7 +256,77 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "name": "Degenfly",
+      "symbol": "DEGENFLY",
+      "address": "0x5a6499f35210ad93381497c03304b70b27226ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x5a6499f35210ad93381497c03304b70b27226ba3&chain=base",
+      "poolId": "0xe41bd81a396b9c11f4114b13243865268ce40ccffe620236eab69391747c512d",
+      "deployer": "0xcf723853a69593dfa30446021dc8273a3dfc695e",
+      "feeRecipient": "0x7d9098b20dcb5cb28ac0a2533fb770b0912720cb",
+      "launchTimestamp": 1789217571257,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
+      "name": "VibeCode",
+      "symbol": "VIBE",
+      "address": "0xaf3884edd1efbd99e64904ae4c41d525ee025ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xaf3884edd1efbd99e64904ae4c41d525ee025ba3&chain=base",
+      "poolId": "0x5951a9c12360f6bb9d17844027314c72a8869aa9292ee5fd48fcd3548676a48d",
+      "deployer": "0xcf723853a69593dfa30446021dc8273a3dfc695e",
+      "feeRecipient": "0xccb7fe44c94760971048e06d33de8a89a60d4efe",
+      "launchTimestamp": 1789217359660,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 10,
       "name": "cobie",
       "symbol": "COBIE",
       "address": "0x84002ff8ecd879a4feca47f86f7092807e4aeba3",
@@ -259,7 +361,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 11,
       "name": "OpenAI",
       "symbol": "OPENAI",
       "address": "0xd95a121a5d5389e31dc11dae52f9f265ed5c3ba3",
@@ -294,7 +396,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 12,
       "name": "Eggbase",
       "symbol": "EGG",
       "address": "0x5e5f73892e1a5d0a417523d3bf79e87cdffafba3",
@@ -329,7 +431,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 13,
       "name": "Fist Token Pair Tao",
       "symbol": "TAO",
       "address": "0x9d60ac8b744132eb6e23bc267df2d45be9b8eba3",
@@ -364,7 +466,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 14,
       "name": "Flyguana",
       "symbol": "Flyguana",
       "address": "0xd0c098986cfef059a5a44aa43c12bee159f30ba3",
@@ -399,7 +501,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "Flyguana",
       "symbol": "Flyguana",
       "address": "0x1572478d2bab8e49b23a66af17897cafa0bb3ba3",
@@ -434,7 +536,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 16,
       "name": "Bankr Assistant Maid Dragon",
       "symbol": "BAMD",
       "address": "0xc5e1a07b49104cb5dfff8a777eb24f5cd591fba3",
@@ -469,7 +571,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 17,
       "name": "Flybot",
       "symbol": "Flybot",
       "address": "0x5585479996de88e76a60423bff8681e68d575ba3",
@@ -504,7 +606,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 18,
       "name": "BASE MEMECOINS",
       "symbol": "BASE",
       "address": "0xa96938305dbb8efaf664fa60fe042028be546ba3",
@@ -539,7 +641,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 19,
       "name": "Millennium Base",
       "symbol": "MILLENNIUM",
       "address": "0x69453d4ba135cbc1a8d1fde3ded483d250ee7ba3",
@@ -574,7 +676,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 20,
       "name": "microfly simulator",
       "symbol": "MICROFLY",
       "address": "0xe46139d8cccac5cf96155bffef8f496a08a1eba3",
@@ -609,7 +711,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 21,
       "name": "First FlyBrainBot Operations System of Brain",
       "symbol": "FFOSOB",
       "address": "0x48e8292775bebdae9f359b579e113914fde63ba3",
@@ -644,7 +746,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 22,
       "name": "Fly Language Model",
       "symbol": "FLM",
       "address": "0x2c910241f2f2488cd764d2a7b0a2ee6aa7166ba3",
@@ -679,7 +781,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 23,
       "name": "🪰",
       "symbol": "🪰",
       "address": "0xd8ba2d0cec7aeae1f62ef348c4a9f53d17285ba3",
@@ -714,7 +816,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 24,
       "name": "Ignyte",
       "symbol": "IGNYTE",
       "address": "0x6720ca099da2e277095d5f503a1b193a17938ba3",
@@ -749,7 +851,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 25,
       "name": "Model Kit HouseFly",
       "symbol": "MODELKIT",
       "address": "0x53ba0b286bc8ea8888bdb65cd66fa57c993bdba3",
@@ -784,7 +886,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 26,
       "name": "Hmmm",
       "symbol": "HMMM",
       "address": "0x4687bb3538d7e2e7abcd61f5fa69b6e2b5166ba3",
@@ -819,7 +921,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 27,
       "name": "The Mate of Fruit Fly",
       "symbol": "MATE",
       "address": "0xafc96b479e273c5ebc913c9207206fe9f8e5cba3",
@@ -854,7 +956,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 28,
       "name": "GitModelFlyBrain",
       "symbol": "GitModelFlyBrain",
       "address": "0x53294317808795c099000eac8c9951af26a3cba3",
@@ -889,7 +991,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 29,
       "name": "Model 3D Print FLY",
       "symbol": "ModelFly",
       "address": "0xd893206c5f0ccac9cce58cecce3e10d3813c1ba3",
@@ -924,7 +1026,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 30,
       "name": "The Book Of The FLY",
       "symbol": "BOOKFLY",
       "address": "0xb7de242fb2a872157b675630e2e32d564ceaaba3",
@@ -959,7 +1061,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 31,
       "name": "BOOGLE",
       "symbol": "BOOGL",
       "address": "0x23b7700376b196cb274425dd3be744a280bb3ba3",
@@ -994,7 +1096,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 32,
       "name": "First Stock Degen Mode",
       "symbol": "DEGEN",
       "address": "0x01217f2e4c131438908e57f3b275882f04610ba3",
@@ -1029,7 +1131,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 33,
       "name": "Musk Stimmy",
       "symbol": "STIMMY",
       "address": "0xfb4bbfef545e8eec9e7c84b4d6c3d57515475ba3",
@@ -1064,7 +1166,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 34,
       "name": "ELON",
       "symbol": "ELON",
       "address": "0x52b892be498e9d7a857fe5a5a34d058c53a43ba3",
@@ -1099,7 +1201,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 35,
       "name": "Jesse",
       "symbol": "JESSE",
       "address": "0x858113133f9d95e061b639fa5c4edd1f84a03ba3",
@@ -1134,7 +1236,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 36,
       "name": "Fly Language Model",
       "symbol": "FLM",
       "address": "0x7c0b125220547b664e04f525770aa22c1196cba3",
@@ -1169,7 +1271,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 34,
+      "rank": 37,
       "name": "Mark Zuckerberg-META",
       "symbol": "Mark Zuckerberg",
       "address": "0x4924ee0670942165efae2091e3cd0dfcef490ba3",
@@ -1204,7 +1306,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 35,
+      "rank": 38,
       "name": "BitTorture",
       "symbol": "FIN",
       "address": "0xe50ba43e0f712817c5619d826fb29283180f1ba3",
@@ -1237,117 +1339,38 @@
       "launchTimestamp": 1789169313937,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 36,
-      "name": "haram",
-      "symbol": "HARAM",
-      "address": "0xe8bcbf7a892715aecbe36513bdc475feb6137ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe8bcbf7a892715aecbe36513bdc475feb6137ba3&chain=base",
-      "poolId": "0x4b894b76553151ef50c01b9a9fd52af73097e1b36910ffa1989c9b0e0d261bf7",
-      "deployer": "0x50c8c6278901b157e278628f85a01a2a6ccc56d5",
-      "feeRecipient": "0x50c8c6278901b157e278628f85a01a2a6ccc56d5",
-      "launchTimestamp": 1789169166385,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 37,
-      "name": "X",
-      "symbol": "X",
-      "address": "0x65b2d43c8d926f05b001ddbcf0408480dcb77ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x65b2d43c8d926f05b001ddbcf0408480dcb77ba3&chain=base",
-      "poolId": "0x9529a0ad8235345fb9c75f2fa2c3c6d3286993d0c94daf679e341f903b468cbf",
-      "deployer": "0x6e9b3a40697e9875ada93c60585b8fab836b1b0f",
-      "feeRecipient": "0x6e9b3a40697e9875ada93c60585b8fab836b1b0f",
-      "launchTimestamp": 1789169073654,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 38,
-      "name": "Project Honey Pot",
-      "symbol": "HONEYPOT",
-      "address": "0x48cff830355dc153dbf3918eabdc52448e86aba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x48cff830355dc153dbf3918eabdc52448e86aba3&chain=base",
-      "poolId": "0xfacb1188a387cc4c7b7938452008300d11a1e769916371e3631fd752beb5d719",
-      "deployer": "0x50c8c6278901b157e278628f85a01a2a6ccc56d5",
-      "feeRecipient": "0x9a8bfabd413e18901a1d78971364d9be794cff02",
-      "launchTimestamp": 1789168871615,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
+      "id": "ACT-DEGENFLY-SELL",
+      "timestamp": "2026-09-12T12:58:01.181Z",
+      "token": "DEGENFLY",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "63863.99",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "SELL PRESSURE",
+      "detail": "188 buys / 465 sells · 71% sell",
+      "address": "0x90efca879e81054cdabd593ad8debe98943fdba3"
+    },
+    {
+      "id": "ACT-DEGENFLY-VOL",
+      "timestamp": "2026-09-12T12:58:01.181Z",
+      "token": "DEGENFLY",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "63863.99",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $63864 · Liq $21477",
+      "address": "0x90efca879e81054cdabd593ad8debe98943fdba3"
+    },
+    {
       "id": "ACT-ZUCKBUCK-SELL",
-      "timestamp": "2026-09-12T12:44:13.167Z",
+      "timestamp": "2026-09-12T12:58:01.181Z",
       "token": "ZUCKBUCK",
       "chain": "BASE",
       "type": "SELL",
@@ -1360,7 +1383,7 @@
     },
     {
       "id": "ACT-JENSEN-AVG",
-      "timestamp": "2026-09-12T12:44:13.167Z",
+      "timestamp": "2026-09-12T12:58:01.181Z",
       "token": "JENSEN",
       "chain": "BASE",
       "type": "MIXED",
@@ -1370,6 +1393,19 @@
       "label": "AVG TRADE",
       "detail": "Avg $148 / tx · 26 txns",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3"
+    },
+    {
+      "id": "ACT-DEGENFLY-AVG",
+      "timestamp": "2026-09-12T12:58:01.180Z",
+      "token": "DEGENFLY",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "97.80",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $98 / tx · 653 txns",
+      "address": "0x90efca879e81054cdabd593ad8debe98943fdba3"
     }
   ]
 }
