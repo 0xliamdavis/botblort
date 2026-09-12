@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T16:47:35.546Z",
+    "updatedAt": "2026-09-12T16:59:49.548Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 36,
+    "totalAnalyzed": 34,
     "withMarketData": 7,
-    "safeTokensCount": 5,
-    "highRiskCount": 2,
-    "totalWhaleAlerts": 5
+    "safeTokensCount": 6,
+    "highRiskCount": 1,
+    "totalWhaleAlerts": 6
   },
   "tokens": [
     {
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "4.8930e-7",
-      "priceChange24h": 215,
-      "volume24h": 203389.96,
-      "volume1h": 203389.96,
-      "liquidityUsd": 42486.32,
-      "fdv": 48935,
+      "priceUsd": "5.3160e-7",
+      "priceChange24h": 243,
+      "volume24h": 211178.25,
+      "volume1h": 211178.25,
+      "liquidityUsd": 45101.39,
+      "fdv": 53168,
       "txns24h": {
-        "buys": 963,
-        "sells": 1511
+        "buys": 1016,
+        "sells": 1597
       },
       "safety": {
         "safetyScore": 100,
@@ -84,6 +84,40 @@
     },
     {
       "rank": 3,
+      "name": "21MetGala",
+      "symbol": "GALA",
+      "address": "0x1cdd160f186197e36f95f321afd0913538f98ba3",
+      "pairAddress": "0x2be8019b9966d1c285605d5b9580c56d0f85679980df11f76fdb0cd3eb2a5ecc",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.7460e-7",
+      "priceChange24h": 15.22,
+      "volume24h": 2836.38,
+      "volume1h": 2836.38,
+      "liquidityUsd": 14812.67,
+      "fdv": 17467,
+      "txns24h": {
+        "buys": 17,
+        "sells": 11
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x2be8019b9966d1c285605d5b9580c56d0f85679980df11f76fdb0cd3eb2a5ecc",
+      "poolId": "0x2be8019b9966d1c285605d5b9580c56d0f85679980df11f76fdb0cd3eb2a5ecc",
+      "deployer": "0x6eeefbcf95f8229f66e727b84ef6ce6a7f969212",
+      "feeRecipient": "0x6eeefbcf95f8229f66e727b84ef6ce6a7f969212",
+      "launchTimestamp": 1789232202985,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
       "name": "Anthropic",
       "symbol": "ANTHROPIC",
       "address": "0xefa8e5453c38100b1305180597dad11873801ba3",
@@ -117,7 +151,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "ANSEM BASE",
       "symbol": "ANSEM",
       "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
@@ -152,7 +186,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "imjpmorgan",
       "symbol": "IMJPMORGAN",
       "address": "0xd2350568a01df4c2a0993f5261890bcf8a09dba3",
@@ -183,41 +217,6 @@
       "deployer": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
       "feeRecipient": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
       "launchTimestamp": 1789190012195,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 6,
-      "name": "Sanjam",
-      "symbol": "Sanjam",
-      "address": "0xf7f679d83d9e0a3adafba209c22368f338314ba3",
-      "pairAddress": "0xe5394527acf917688e70b982c7aa9722a79248bb67f3e0e086438ec46a599a8c",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0080e-7",
-      "priceChange24h": 0,
-      "volume24h": 0.02,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10082,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
-        "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xe5394527acf917688e70b982c7aa9722a79248bb67f3e0e086438ec46a599a8c",
-      "poolId": "0xe5394527acf917688e70b982c7aa9722a79248bb67f3e0e086438ec46a599a8c",
-      "deployer": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
-      "feeRecipient": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
-      "launchTimestamp": 1789184833135,
       "isNew": false,
       "hasMarketData": true
     },
@@ -258,6 +257,41 @@
     },
     {
       "rank": 8,
+      "name": "Daybreak Circles",
+      "symbol": "DAYC",
+      "address": "0xcabab50f9562f3b35b91a68bdc11ffe5f93fbba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xcabab50f9562f3b35b91a68bdc11ffe5f93fbba3&chain=base",
+      "poolId": "0xbf9cb3001c84fd20582693ac13380bd055bb1e62f2e84cdd05e032ff14d48aea",
+      "deployer": "0xd38016245420705219b379b5e0a02c2bcb190352",
+      "feeRecipient": "0xd38016245420705219b379b5e0a02c2bcb190352",
+      "launchTimestamp": 1789231664175,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "DINO",
       "symbol": "DINO",
       "address": "0x4bf4df9dc84df5b91073eed1152f71099bae4ba3",
@@ -292,7 +326,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Anthropic",
       "symbol": "ANTHROPIC",
       "address": "0x0b7c0157f1405537fbab5023a64f6c93f3dedba3",
@@ -327,7 +361,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "DARIO",
       "symbol": "DARIO",
       "address": "0x854c95a0ef47034d015d66751852d87e11c77ba3",
@@ -362,7 +396,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Stampede",
       "symbol": "STAMPEDE",
       "address": "0x0062c18912fc5a34810306fd74cd0cf7c0fe2ba3",
@@ -397,7 +431,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "FLYBRAIN",
       "symbol": "FLYBRAIN",
       "address": "0x15ce546d740c004e29e9e8117477ec19bbd57ba3",
@@ -432,7 +466,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "DRBmarch",
       "symbol": "DRB",
       "address": "0xa6b5b7753b2dcb097ae0d59ec070e06cb1d0dba3",
@@ -467,7 +501,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "based",
       "symbol": "BASED",
       "address": "0xbd800f781af394e2b4b8c69630faa74254788ba3",
@@ -502,7 +536,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "supercycle",
       "symbol": "SUPERCYCLE",
       "address": "0x7b359e01168149bddd65af4c36c1a4176498eba3",
@@ -537,7 +571,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Elon Magic",
       "symbol": "ELONMAGIC",
       "address": "0x797f734a51012b7462cc80a9404aae228fee3ba3",
@@ -572,7 +606,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "0xDeployer",
       "symbol": "DEPLOYER",
       "address": "0xdb1eefd8976fc08f6502c9f74f2c1a3000d48ba3",
@@ -607,7 +641,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "STONK",
       "symbol": "STONK",
       "address": "0xf010b5c258658a994db3b469fe59cc8b39864ba3",
@@ -642,7 +676,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "FLY",
       "symbol": "FLY",
       "address": "0x5a39badd3d21d6990fd146116e196f81febdbba3",
@@ -677,7 +711,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "GOOFLY",
       "symbol": "GOOFLY",
       "address": "0xe04090cda4f0d9e620d3bf5e3aff647c0c8faba3",
@@ -712,7 +746,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "BOTFLY",
       "symbol": "BOTFLY",
       "address": "0xe9a26db1f34b3ede6670df0a667cc3bb0c380ba3",
@@ -747,7 +781,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "Degenfly",
       "symbol": "DEGENFLY",
       "address": "0x5a6499f35210ad93381497c03304b70b27226ba3",
@@ -782,7 +816,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "VibeCode",
       "symbol": "VIBE",
       "address": "0xaf3884edd1efbd99e64904ae4c41d525ee025ba3",
@@ -817,7 +851,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "cobie",
       "symbol": "COBIE",
       "address": "0x84002ff8ecd879a4feca47f86f7092807e4aeba3",
@@ -852,7 +886,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "OpenAI",
       "symbol": "OPENAI",
       "address": "0xd95a121a5d5389e31dc11dae52f9f265ed5c3ba3",
@@ -887,7 +921,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "Eggbase",
       "symbol": "EGG",
       "address": "0x5e5f73892e1a5d0a417523d3bf79e87cdffafba3",
@@ -922,7 +956,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "Fist Token Pair Tao",
       "symbol": "TAO",
       "address": "0x9d60ac8b744132eb6e23bc267df2d45be9b8eba3",
@@ -957,7 +991,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "Flyguana",
       "symbol": "Flyguana",
       "address": "0xd0c098986cfef059a5a44aa43c12bee159f30ba3",
@@ -992,7 +1026,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "Flyguana",
       "symbol": "Flyguana",
       "address": "0x1572478d2bab8e49b23a66af17897cafa0bb3ba3",
@@ -1027,7 +1061,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "Bankr Assistant Maid Dragon",
       "symbol": "BAMD",
       "address": "0xc5e1a07b49104cb5dfff8a777eb24f5cd591fba3",
@@ -1062,7 +1096,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 32,
       "name": "Flybot",
       "symbol": "Flybot",
       "address": "0x5585479996de88e76a60423bff8681e68d575ba3",
@@ -1097,7 +1131,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "BASE MEMECOINS",
       "symbol": "BASE",
       "address": "0xa96938305dbb8efaf664fa60fe042028be546ba3",
@@ -1132,7 +1166,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "Millennium Base",
       "symbol": "MILLENNIUM",
       "address": "0x69453d4ba135cbc1a8d1fde3ded483d250ee7ba3",
@@ -1165,130 +1199,25 @@
       "launchTimestamp": 1789193419819,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 34,
-      "name": "microfly simulator",
-      "symbol": "MICROFLY",
-      "address": "0xe46139d8cccac5cf96155bffef8f496a08a1eba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe46139d8cccac5cf96155bffef8f496a08a1eba3&chain=base",
-      "poolId": "0x86c2cae27e686f13510bbc7ed9ce6b4fcf1442c9677a647d8af009f2def07512",
-      "deployer": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "feeRecipient": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "launchTimestamp": 1789184672710,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 35,
-      "name": "First FlyBrainBot Operations System of Brain",
-      "symbol": "FFOSOB",
-      "address": "0x48e8292775bebdae9f359b579e113914fde63ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x48e8292775bebdae9f359b579e113914fde63ba3&chain=base",
-      "poolId": "0x3706d399034a7722f5f33514b11df28112debd8b179d1251628b1de07cecadf8",
-      "deployer": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "feeRecipient": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "launchTimestamp": 1789184541520,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 36,
-      "name": "Fly Language Model",
-      "symbol": "FLM",
-      "address": "0x2c910241f2f2488cd764d2a7b0a2ee6aa7166ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2c910241f2f2488cd764d2a7b0a2ee6aa7166ba3&chain=base",
-      "poolId": "0xcc80d0d0668a528e3989a8ef28cbf86daf3a73400a98f4a599576c9b4e36aa25",
-      "deployer": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "feeRecipient": "0x7a67697927f2405448c39e9dc5cae58cf9ab6413",
-      "launchTimestamp": 1789184334270,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-DAYC-VOL",
-      "timestamp": "2026-09-12T16:47:35.546Z",
+      "timestamp": "2026-09-12T16:59:49.548Z",
       "token": "DAYC",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "203389.96",
+      "amountUsd": "211178.25",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $203390 · Liq $42486",
+      "detail": "Vol $211178 · Liq $45101",
       "address": "0x2542042deb8578452c26b092f916cf7da81bdba3"
     },
     {
       "id": "ACT-DEGENFLY-SELL",
-      "timestamp": "2026-09-12T16:47:35.546Z",
+      "timestamp": "2026-09-12T16:59:49.548Z",
       "token": "DEGENFLY",
       "chain": "BASE",
       "type": "SELL",
@@ -1301,7 +1230,7 @@
     },
     {
       "id": "ACT-DEGENFLY-VOL",
-      "timestamp": "2026-09-12T16:47:35.546Z",
+      "timestamp": "2026-09-12T16:59:49.548Z",
       "token": "DEGENFLY",
       "chain": "BASE",
       "type": "BUY",
@@ -1313,8 +1242,21 @@
       "address": "0x90efca879e81054cdabd593ad8debe98943fdba3"
     },
     {
+      "id": "ACT-GALA-AVG",
+      "timestamp": "2026-09-12T16:59:49.548Z",
+      "token": "GALA",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "101.30",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $101 / tx · 28 txns",
+      "address": "0x1cdd160f186197e36f95f321afd0913538f98ba3"
+    },
+    {
       "id": "ACT-DEGENFLY-AVG",
-      "timestamp": "2026-09-12T16:47:35.546Z",
+      "timestamp": "2026-09-12T16:59:49.548Z",
       "token": "DEGENFLY",
       "chain": "BASE",
       "type": "SELL",
@@ -1327,15 +1269,15 @@
     },
     {
       "id": "ACT-DAYC-AVG",
-      "timestamp": "2026-09-12T16:47:35.546Z",
+      "timestamp": "2026-09-12T16:59:49.547Z",
       "token": "DAYC",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "82.21",
+      "amountUsd": "80.82",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $82 / tx · 2474 txns",
+      "detail": "Avg $81 / tx · 2613 txns",
       "address": "0x2542042deb8578452c26b092f916cf7da81bdba3"
     }
   ]
