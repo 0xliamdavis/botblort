@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-12T06:23:45.715Z",
+    "updatedAt": "2026-09-12T06:44:17.289Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,10 +10,10 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 10,
-    "safeTokensCount": 9,
-    "highRiskCount": 1,
-    "totalWhaleAlerts": 6
+    "withMarketData": 9,
+    "safeTokensCount": 7,
+    "highRiskCount": 2,
+    "totalWhaleAlerts": 5
   },
   "tokens": [
     {
@@ -52,40 +52,6 @@
     },
     {
       "rank": 2,
-      "name": "Flycoin",
-      "symbol": "FLY",
-      "address": "0xa670fc1fbddc00c6c3fbf7dc0ce11a5b813b2ba3",
-      "pairAddress": "0xa3941b67997ad5848d174e75c6c716f004d6b55724eb43c0eedaf70e974677f9",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0840e-7",
-      "priceChange24h": -25.17,
-      "volume24h": 5140.37,
-      "volume1h": 0,
-      "liquidityUsd": 9252.03,
-      "fdv": 10842,
-      "txns24h": {
-        "buys": 29,
-        "sells": 33
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xa3941b67997ad5848d174e75c6c716f004d6b55724eb43c0eedaf70e974677f9",
-      "poolId": "0xa3941b67997ad5848d174e75c6c716f004d6b55724eb43c0eedaf70e974677f9",
-      "deployer": "0x2f86f9429469f8dd8c5f0558dcafd5058951a691",
-      "feeRecipient": "0x0b7c0beadc6310b15b5b70346cb5f8c9fdca0632",
-      "launchTimestamp": 1789167244708,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
       "name": "Mark Zuckerberg-META",
       "symbol": "Mark Zuckerberg",
       "address": "0x107bad7276cfcb3fddbe86e02ea882181a0d0ba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "JENSEN",
       "symbol": "JENSEN",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "ZUCKBUCK",
       "symbol": "ZUCKBUCK",
       "address": "0xdf689e05c0810bf2923c61b0f8a9ba37d4324ba3",
@@ -187,7 +153,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "amc",
       "symbol": "AMC",
       "address": "0x6f780a63befc8d7c0386414962e9a8c4a9225ba3",
@@ -221,7 +187,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "COBIE",
       "symbol": "COBIE",
       "address": "0x4afe3a738ba55aa58f2cd21d80e091b3cf3d6ba3",
@@ -255,42 +221,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
-      "name": "Flycoin",
-      "symbol": "FLY",
-      "address": "0x1539692077f029803f36205ffb05f32a7ac70ba3",
-      "pairAddress": "0x228d5788bc25958d576a574b3d9169a6416e0e0371fab3331da6e6f2e6abd1c8",
+      "rank": 7,
+      "name": "ANSEM BASE",
+      "symbol": "ANSEM",
+      "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
+      "pairAddress": "0x7d12acd785d3569622da42653a8fe2c238696596a43f4edaaf64f634157bfcc5",
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0160e-7",
-      "priceChange24h": -26.72,
-      "volume24h": 297.15,
-      "volume1h": 0,
-      "liquidityUsd": 8665.43,
-      "fdv": 10170,
+      "priceUsd": "1.0120e-7",
+      "priceChange24h": 0,
+      "volume24h": 2.03,
+      "volume1h": 2.03,
+      "liquidityUsd": 0,
+      "fdv": 10128,
       "txns24h": {
         "buys": 1,
-        "sells": 3
+        "sells": 2
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "MEDIUM_LIQUIDITY",
+          "CRITICAL_LOW_LIQUIDITY",
           "LOW_TRANSACTION_COUNT"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x228d5788bc25958d576a574b3d9169a6416e0e0371fab3331da6e6f2e6abd1c8",
-      "poolId": "0x228d5788bc25958d576a574b3d9169a6416e0e0371fab3331da6e6f2e6abd1c8",
-      "deployer": "0x2f86f9429469f8dd8c5f0558dcafd5058951a691",
-      "feeRecipient": "0x0b7c0beadc6310b15b5b70346cb5f8c9fdca0632",
-      "launchTimestamp": 1789167332803,
-      "isNew": false,
+      "dexUrl": "https://dexscreener.com/base/0x7d12acd785d3569622da42653a8fe2c238696596a43f4edaaf64f634157bfcc5",
+      "poolId": "0x7d12acd785d3569622da42653a8fe2c238696596a43f4edaaf64f634157bfcc5",
+      "deployer": "0x1bf84d0b75095c55960c7f74731fc5e2c051b3e4",
+      "feeRecipient": "0x1bf84d0b75095c55960c7f74731fc5e2c051b3e4",
+      "launchTimestamp": 1789194012188,
+      "isNew": true,
       "hasMarketData": true
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "imjpmorgan",
       "symbol": "IMJPMORGAN",
       "address": "0xd2350568a01df4c2a0993f5261890bcf8a09dba3",
@@ -325,7 +291,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "Sanjam",
       "symbol": "Sanjam",
       "address": "0xf7f679d83d9e0a3adafba209c22368f338314ba3",
@@ -360,10 +326,10 @@
       "hasMarketData": true
     },
     {
-      "rank": 11,
-      "name": "ANSEM BASE",
-      "symbol": "ANSEM",
-      "address": "0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3",
+      "rank": 10,
+      "name": "Bankr Assistant Maid Dragon",
+      "symbol": "BAMD",
+      "address": "0xc5e1a07b49104cb5dfff8a777eb24f5cd591fba3",
       "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
@@ -386,11 +352,46 @@
           "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x7d793f21a5fdf91fa39e7031ab0c0fb1a46a2ba3&chain=base",
-      "poolId": "0x7d12acd785d3569622da42653a8fe2c238696596a43f4edaaf64f634157bfcc5",
-      "deployer": "0x1bf84d0b75095c55960c7f74731fc5e2c051b3e4",
-      "feeRecipient": "0x1bf84d0b75095c55960c7f74731fc5e2c051b3e4",
-      "launchTimestamp": 1789194012188,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc5e1a07b49104cb5dfff8a777eb24f5cd591fba3&chain=base",
+      "poolId": "0x6f257f596dcafc55118bfdadac88fc8b7246d1d392bbb20c4938e02247bee918",
+      "deployer": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
+      "feeRecipient": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
+      "launchTimestamp": 1789195214724,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 11,
+      "name": "Flybot",
+      "symbol": "Flybot",
+      "address": "0x5585479996de88e76a60423bff8681e68d575ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x5585479996de88e76a60423bff8681e68d575ba3&chain=base",
+      "poolId": "0x9dc5f339013939f6ce5df303abab990db1762ec537ee2b221476c7a7c861981d",
+      "deployer": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
+      "feeRecipient": "0x0a7d148619147da60de2ee8bf7027cbc678e438e",
+      "launchTimestamp": 1789194343460,
       "isNew": true,
       "hasMarketData": false
     },
@@ -1413,7 +1414,7 @@
   "whaleRadar": [
     {
       "id": "ACT-COOK-SELL",
-      "timestamp": "2026-09-12T06:23:45.715Z",
+      "timestamp": "2026-09-12T06:44:17.288Z",
       "token": "COOK",
       "chain": "BASE",
       "type": "SELL",
@@ -1426,7 +1427,7 @@
     },
     {
       "id": "ACT-Mark Zuckerberg-SELL",
-      "timestamp": "2026-09-12T06:23:45.715Z",
+      "timestamp": "2026-09-12T06:44:17.289Z",
       "token": "Mark Zuckerberg",
       "chain": "BASE",
       "type": "SELL",
@@ -1439,7 +1440,7 @@
     },
     {
       "id": "ACT-ZUCKBUCK-SELL",
-      "timestamp": "2026-09-12T06:23:45.715Z",
+      "timestamp": "2026-09-12T06:44:17.289Z",
       "token": "ZUCKBUCK",
       "chain": "BASE",
       "type": "SELL",
@@ -1452,7 +1453,7 @@
     },
     {
       "id": "ACT-COBIE-SELL",
-      "timestamp": "2026-09-12T06:23:45.715Z",
+      "timestamp": "2026-09-12T06:44:17.289Z",
       "token": "COBIE",
       "chain": "BASE",
       "type": "SELL",
@@ -1465,7 +1466,7 @@
     },
     {
       "id": "ACT-JENSEN-AVG",
-      "timestamp": "2026-09-12T06:23:45.715Z",
+      "timestamp": "2026-09-12T06:44:17.289Z",
       "token": "JENSEN",
       "chain": "BASE",
       "type": "MIXED",
@@ -1475,19 +1476,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $148 / tx · 26 txns",
       "address": "0x752853e72d3ba5ec53f3205c2c2c86bea09feba3"
-    },
-    {
-      "id": "ACT-FLY-AVG",
-      "timestamp": "2026-09-12T06:23:45.715Z",
-      "token": "FLY",
-      "chain": "BASE",
-      "type": "MIXED",
-      "amountUsd": "82.91",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $83 / tx · 62 txns",
-      "address": "0xa670fc1fbddc00c6c3fbf7dc0ce11a5b813b2ba3"
     }
   ]
 }
