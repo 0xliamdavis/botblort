@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-13T08:34:01.162Z",
+    "updatedAt": "2026-09-13T09:02:59.486Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,7 +13,7 @@
     "withMarketData": 7,
     "safeTokensCount": 6,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
@@ -52,6 +52,40 @@
     },
     {
       "rank": 2,
+      "name": "paperroute",
+      "symbol": "paperroute",
+      "address": "0x3543ea30a57ed96f17e4318f2e1a018d50b68ba3",
+      "pairAddress": "0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.0470e-7",
+      "priceChange24h": 0.28,
+      "volume24h": 4108.24,
+      "volume1h": 4108.24,
+      "liquidityUsd": 17258.38,
+      "fdv": 20479,
+      "txns24h": {
+        "buys": 26,
+        "sells": 25
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
+      "poolId": "0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
+      "deployer": "0x5110a78ba1e55cb5f7e147e969213c34fa6d369c",
+      "feeRecipient": "0xfaeff365652fcf7cf5a8d65314a4837a5fc3efb3",
+      "launchTimestamp": 1789288324231,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
       "name": "UCOIN Official",
       "symbol": "UCOIN",
       "address": "0x91c92989e1495759b56f22189fe115d457873ba3",
@@ -85,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Voltage Cloude",
       "symbol": "VOLT",
       "address": "0xdaed399510719fe3065690fc42020c458e542ba3",
@@ -116,40 +150,6 @@
       "feeRecipient": "0xf68f6b18c1a309bbcc230031215275da3cc1fce3",
       "launchTimestamp": 1789259793607,
       "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
-      "name": "paperroute",
-      "symbol": "paperroute",
-      "address": "0x3543ea30a57ed96f17e4318f2e1a018d50b68ba3",
-      "pairAddress": "0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.3090e-7",
-      "priceChange24h": 13.08,
-      "volume24h": 2138.29,
-      "volume1h": 2138.29,
-      "liquidityUsd": 19339.96,
-      "fdv": 23093,
-      "txns24h": {
-        "buys": 11,
-        "sells": 4
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
-      "poolId": "0x2e46e88132db4e7012aeeebe1e8c814b300b7f34adf98e4a53886e9a1a821400",
-      "deployer": "0x5110a78ba1e55cb5f7e147e969213c34fa6d369c",
-      "feeRecipient": "0xfaeff365652fcf7cf5a8d65314a4837a5fc3efb3",
-      "launchTimestamp": 1789288324231,
-      "isNew": true,
       "hasMarketData": true
     },
     {
@@ -960,34 +960,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-paperroute-BUY",
-      "timestamp": "2026-09-13T08:34:01.162Z",
-      "token": "paperroute",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "2138.29",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "BUY PRESSURE",
-      "detail": "11 buys / 4 sells · 73% buy",
-      "address": "0x3543ea30a57ed96f17e4318f2e1a018d50b68ba3"
-    },
-    {
-      "id": "ACT-paperroute-AVG",
-      "timestamp": "2026-09-13T08:34:01.162Z",
-      "token": "paperroute",
-      "chain": "BASE",
-      "type": "BUY",
-      "amountUsd": "142.55",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $143 / tx · 15 txns",
-      "address": "0x3543ea30a57ed96f17e4318f2e1a018d50b68ba3"
-    },
-    {
       "id": "ACT-UCOIN-AVG",
-      "timestamp": "2026-09-13T08:34:01.162Z",
+      "timestamp": "2026-09-13T09:02:59.486Z",
       "token": "UCOIN",
       "chain": "BASE",
       "type": "BUY",
@@ -1000,7 +974,7 @@
     },
     {
       "id": "ACT-NTDOY-AVG",
-      "timestamp": "2026-09-13T08:34:01.162Z",
+      "timestamp": "2026-09-13T09:02:59.486Z",
       "token": "NTDOY",
       "chain": "BASE",
       "type": "MIXED",
@@ -1010,6 +984,19 @@
       "label": "AVG TRADE",
       "detail": "Avg $107 / tx · 72 txns",
       "address": "0x57f854a98542aa503473739732503298a570cba3"
+    },
+    {
+      "id": "ACT-paperroute-AVG",
+      "timestamp": "2026-09-13T09:02:59.486Z",
+      "token": "paperroute",
+      "chain": "BASE",
+      "type": "MIXED",
+      "amountUsd": "80.55",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $81 / tx · 51 txns",
+      "address": "0x3543ea30a57ed96f17e4318f2e1a018d50b68ba3"
     }
   ]
 }
