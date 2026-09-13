@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-13T06:28:06.881Z",
+    "updatedAt": "2026-09-13T06:48:38.957Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 27,
-    "withMarketData": 6,
+    "totalAnalyzed": 28,
+    "withMarketData": 7,
     "safeTokensCount": 6,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -115,7 +115,7 @@
       "deployer": "0xf68f6b18c1a309bbcc230031215275da3cc1fce3",
       "feeRecipient": "0xf68f6b18c1a309bbcc230031215275da3cc1fce3",
       "launchTimestamp": 1789259793607,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": true
     },
     {
@@ -189,6 +189,41 @@
     },
     {
       "rank": 6,
+      "name": "Gravatar Toplica Milosevic",
+      "symbol": "GRAVARTM",
+      "address": "0xe598e096f8b6562c6f9e0f6410bc35da0215eba3",
+      "pairAddress": "0x277be65dedf98e947ea1fa722eb8243bfb22503762ef90abd0f1b41c1914e14a",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0100e-7",
+      "priceChange24h": -0.09,
+      "volume24h": 0.02,
+      "volume1h": 0.02,
+      "liquidityUsd": 0,
+      "fdv": 10109,
+      "txns24h": {
+        "buys": 3,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x277be65dedf98e947ea1fa722eb8243bfb22503762ef90abd0f1b41c1914e14a",
+      "poolId": "0x277be65dedf98e947ea1fa722eb8243bfb22503762ef90abd0f1b41c1914e14a",
+      "deployer": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
+      "feeRecipient": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
+      "launchTimestamp": 1789281438795,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 7,
       "name": "underdog",
       "symbol": "underdog",
       "address": "0xc927fa9121ba7da47f196e100f9a43a405ed2ba3",
@@ -223,7 +258,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "name": "6ft+",
+      "symbol": "6ft",
+      "address": "0xb0fa1461fe629eb67aa45baa5cb3d25952c58ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb0fa1461fe629eb67aa45baa5cb3d25952c58ba3&chain=base",
+      "poolId": "0xb01b2fca3cd3e9b8fe918b47fc1176526aab6bc61c987c09a81315eb25ddd508",
+      "deployer": "0x7cd5098e5157c615541af1f68f2703278884801d",
+      "feeRecipient": "0x7cd5098e5157c615541af1f68f2703278884801d",
+      "launchTimestamp": 1789281783371,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "Tesla Slug",
       "symbol": "TESLUG",
       "address": "0x7552c0d1476c914de688b4556db86ad976ed0ba3",
@@ -258,7 +328,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "PokeBeach",
       "symbol": "POKEMON",
       "address": "0x9269c35269b25129d243cb288b6bedc9c95c7ba3",
@@ -293,7 +363,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "CORNING",
       "symbol": "GLW",
       "address": "0xf771fb1fa8caf6687f05070da0b1e8a5ab48cba3",
@@ -328,7 +398,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "pickleball",
       "symbol": "PICKLE",
       "address": "0x52485e93e8f215c3beed3c70bd71530a87d60ba3",
@@ -363,7 +433,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "UPDOG",
       "symbol": "UPDOG",
       "address": "0xc918d3bff6dec2e3f90ea814977e06a1316efba3",
@@ -398,7 +468,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "Stonkfly",
       "symbol": "stonkfly",
       "address": "0x4ac078e3522ee8165c495e9ced0e9f663e9eeba3",
@@ -433,7 +503,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "STONKIT",
       "symbol": "STONKIT",
       "address": "0xf4f984fca57e6622e1dd3fbe16fdfc27573d8ba3",
@@ -468,7 +538,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "Oracle",
       "symbol": "ORCL",
       "address": "0xeb6a75ffa17de524d537d254091285b6ebf77ba3",
@@ -503,7 +573,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "Elon's First Coin",
       "symbol": "ELON",
       "address": "0x008390e8c455f6ecabde1ed820809ef197d9aba3",
@@ -538,7 +608,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "Underdog AI",
       "symbol": "underdog",
       "address": "0x51906175ce1556091348a3b8b768697331215ba3",
@@ -573,7 +643,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "Only Memes Over Finance",
       "symbol": "OMOF",
       "address": "0xafdca63ae1aa800b350ec60a4e4f08326a4f1ba3",
@@ -608,7 +678,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "Ratspeak",
       "symbol": "Ratspeak",
       "address": "0x13a33a19bf0406265faa92e0d79b147c6c12dba3",
@@ -643,7 +713,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "kekiusbot",
       "symbol": "KEK",
       "address": "0x6449838aaf544f369d169a6fb55c5d88808e4ba3",
@@ -678,7 +748,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "The Influencer Circle",
       "symbol": "INC",
       "address": "0x1de5ec7901f2668f4b167a4593dde630f0959ba3",
@@ -713,7 +783,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "stocklana",
       "symbol": "solana",
       "address": "0xcc6dfddf15fa729cf2020f256cbd51edbe23dba3",
@@ -748,7 +818,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "TAO",
       "symbol": "BITTENSOR",
       "address": "0xd986b2e8977a3d37827be1da072b3b267bec8ba3",
@@ -783,7 +853,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "TheNativeToken",
       "symbol": "TheNativeToken",
       "address": "0x9ffa3bf786c5dcbd38a642d52c5afcaa2eb8bba3",
@@ -818,7 +888,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "Take a chance",
       "symbol": "CHANCE",
       "address": "0xc22e086e6cdcdfad5545c368c9f3c2c8a9504ba3",
@@ -853,7 +923,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "underdog",
       "symbol": "DOG",
       "address": "0x5f4a3135b1d40114c1e51be2ebc1139efb33bba3",
@@ -888,7 +958,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "Underduck",
       "symbol": "UNDERDUCK",
       "address": "0x075ca3c4bdbd91f694eb73077e1135a41bac1ba3",
@@ -921,47 +991,12 @@
       "launchTimestamp": 1789254804527,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 27,
-      "name": "Stocklana",
-      "symbol": "STL",
-      "address": "0xbe3346c161d3b031cd614a62a15965189ca22ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xbe3346c161d3b031cd614a62a15965189ca22ba3&chain=base",
-      "poolId": "0xef2e27b643d877a730f03dea4bf8fda74743bf3d86403d671601cfbb00d31fd6",
-      "deployer": "0x485b3dda7288042e26d3f2fa4586d2f55259a4bc",
-      "feeRecipient": "0x485b3dda7288042e26d3f2fa4586d2f55259a4bc",
-      "launchTimestamp": 1789254122928,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-UCOIN-AVG",
-      "timestamp": "2026-09-13T06:28:06.880Z",
+      "timestamp": "2026-09-13T06:48:38.957Z",
       "token": "UCOIN",
       "chain": "BASE",
       "type": "BUY",
@@ -974,7 +1009,7 @@
     },
     {
       "id": "ACT-NTDOY-AVG",
-      "timestamp": "2026-09-13T06:28:06.880Z",
+      "timestamp": "2026-09-13T06:48:38.957Z",
       "token": "NTDOY",
       "chain": "BASE",
       "type": "MIXED",
