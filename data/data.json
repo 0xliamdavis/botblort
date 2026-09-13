@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-13T00:59:24.097Z",
+    "updatedAt": "2026-09-13T01:17:15.984Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -11,8 +11,8 @@
   "summary": {
     "totalAnalyzed": 29,
     "withMarketData": 11,
-    "safeTokensCount": 10,
-    "highRiskCount": 1,
+    "safeTokensCount": 11,
+    "highRiskCount": 0,
     "totalWhaleAlerts": 8
   },
   "tokens": [
@@ -127,15 +127,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.1170e-7",
-      "priceChange24h": -37.89,
-      "volume24h": 7499.41,
-      "volume1h": 7499.41,
-      "liquidityUsd": 9518.21,
-      "fdv": 11172,
+      "priceUsd": "1.1640e-7",
+      "priceChange24h": -35.29,
+      "volume24h": 7676.6,
+      "volume1h": 7676.6,
+      "liquidityUsd": 9915.4,
+      "fdv": 11641,
       "txns24h": {
-        "buys": 25,
-        "sells": 21
+        "buys": 35,
+        "sells": 37
       },
       "safety": {
         "safetyScore": 90,
@@ -161,15 +161,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0360e-7",
-      "priceChange24h": -48.61,
-      "volume24h": 3470.02,
-      "volume1h": 3470.02,
-      "liquidityUsd": 8817.01,
-      "fdv": 10364,
+      "priceUsd": "1.0730e-7",
+      "priceChange24h": -46.79,
+      "volume24h": 3486.42,
+      "volume1h": 3486.42,
+      "liquidityUsd": 9128.92,
+      "fdv": 10732,
       "txns24h": {
-        "buys": 17,
-        "sells": 10
+        "buys": 18,
+        "sells": 12
       },
       "safety": {
         "safetyScore": 90,
@@ -359,36 +359,36 @@
     },
     {
       "rank": 11,
-      "name": "flipt",
-      "symbol": "FLIPT",
-      "address": "0xd295a7564cc106a46a246aa20b4c1b37adbf1ba3",
-      "pairAddress": "0xbb64bbb1c8a3e57a0b57345a2a87322a87f6c0e0603ac8ac462661cc61d1b1d2",
+      "name": "underdog",
+      "symbol": "underdog",
+      "address": "0xc927fa9121ba7da47f196e100f9a43a405ed2ba3",
+      "pairAddress": "0xdc6d5f4f1d7f760efbd43e978ecdcf6827b12f0d0f22c6244fc8fd0d8ee91871",
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0450e-7",
+      "priceUsd": "1.0130e-7",
       "priceChange24h": 0,
-      "volume24h": 0.26,
+      "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10459,
+      "liquidityUsd": 8610.84,
+      "fdv": 10130,
       "txns24h": {
         "buys": 1,
         "sells": 2
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 75,
+        "status": "SAFE",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
+          "MEDIUM_LIQUIDITY",
           "LOW_TRANSACTION_COUNT"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xbb64bbb1c8a3e57a0b57345a2a87322a87f6c0e0603ac8ac462661cc61d1b1d2",
-      "poolId": "0xbb64bbb1c8a3e57a0b57345a2a87322a87f6c0e0603ac8ac462661cc61d1b1d2",
-      "deployer": "0x975a082baab5d2684f217bd7be5cc7721ba7825f",
-      "feeRecipient": "0x975a082baab5d2684f217bd7be5cc7721ba7825f",
-      "launchTimestamp": 1789248943900,
+      "dexUrl": "https://dexscreener.com/base/0xdc6d5f4f1d7f760efbd43e978ecdcf6827b12f0d0f22c6244fc8fd0d8ee91871",
+      "poolId": "0xdc6d5f4f1d7f760efbd43e978ecdcf6827b12f0d0f22c6244fc8fd0d8ee91871",
+      "deployer": "0x2bbf4ffaf4a2c46d5b2908ae2209a93a4a051121",
+      "feeRecipient": "0x2bbf4ffaf4a2c46d5b2908ae2209a93a4a051121",
+      "launchTimestamp": 1789262177033,
       "isNew": true,
       "hasMarketData": true
     },
@@ -1026,7 +1026,7 @@
   "whaleRadar": [
     {
       "id": "ACT-UNDERDOG-VOL",
-      "timestamp": "2026-09-13T00:59:24.096Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "UNDERDOG",
       "chain": "BASE",
       "type": "BUY",
@@ -1039,7 +1039,7 @@
     },
     {
       "id": "ACT-STL-SELL",
-      "timestamp": "2026-09-13T00:59:24.096Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "STL",
       "chain": "BASE",
       "type": "SELL",
@@ -1052,7 +1052,7 @@
     },
     {
       "id": "ACT-STL-VOL",
-      "timestamp": "2026-09-13T00:59:24.096Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "STL",
       "chain": "BASE",
       "type": "SELL",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": "ACT-FLREDDIT-VOL",
-      "timestamp": "2026-09-13T00:59:24.097Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "FLREDDIT",
       "chain": "BASE",
       "type": "SELL",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": "ACT-Jeff Bezos-SELL",
-      "timestamp": "2026-09-13T00:59:24.097Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "Jeff Bezos",
       "chain": "BASE",
       "type": "SELL",
@@ -1090,34 +1090,34 @@
       "address": "0x1daf1ea05bfb4fb5c036571cdf4962d47af41ba3"
     },
     {
-      "id": "ACT-NTDOY-AVG",
-      "timestamp": "2026-09-13T00:59:24.097Z",
-      "token": "NTDOY",
-      "chain": "BASE",
-      "type": "MIXED",
-      "amountUsd": "163.03",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $163 / tx · 46 txns",
-      "address": "0x57f854a98542aa503473739732503298a570cba3"
-    },
-    {
       "id": "ACT-UCOIN-AVG",
-      "timestamp": "2026-09-13T00:59:24.097Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "UCOIN",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "128.52",
+      "amountUsd": "116.21",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $129 / tx · 27 txns",
+      "detail": "Avg $116 / tx · 30 txns",
       "address": "0x91c92989e1495759b56f22189fe115d457873ba3"
     },
     {
+      "id": "ACT-NTDOY-AVG",
+      "timestamp": "2026-09-13T01:17:15.984Z",
+      "token": "NTDOY",
+      "chain": "BASE",
+      "type": "MIXED",
+      "amountUsd": "106.62",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $107 / tx · 72 txns",
+      "address": "0x57f854a98542aa503473739732503298a570cba3"
+    },
+    {
       "id": "ACT-STL-AVG",
-      "timestamp": "2026-09-13T00:59:24.096Z",
+      "timestamp": "2026-09-13T01:17:15.984Z",
       "token": "STL",
       "chain": "BASE",
       "type": "SELL",
