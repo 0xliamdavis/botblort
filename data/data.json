@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-14T15:27:14.483Z",
+    "updatedAt": "2026-09-14T15:47:12.324Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 33,
-    "withMarketData": 4,
-    "safeTokensCount": 4,
+    "withMarketData": 3,
+    "safeTokensCount": 3,
     "highRiskCount": 0,
     "totalWhaleAlerts": 1
   },
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "4.9610e-7",
-      "priceChange24h": 178,
-      "volume24h": 63282.08,
-      "volume1h": 4707.39,
-      "liquidityUsd": 36443.92,
-      "fdv": 49611,
+      "priceUsd": "5.1240e-7",
+      "priceChange24h": 187,
+      "volume24h": 65211.22,
+      "volume1h": 6536.19,
+      "liquidityUsd": 37336.73,
+      "fdv": 51244,
       "txns24h": {
-        "buys": 405,
-        "sells": 653
+        "buys": 432,
+        "sells": 703
       },
       "safety": {
         "safetyScore": 100,
@@ -60,7 +60,7 @@
       "priceUsd": "1.0110e-7",
       "priceChange24h": -39.3,
       "volume24h": 2629.62,
-      "volume1h": 2629.62,
+      "volume1h": 0,
       "liquidityUsd": 8601.66,
       "fdv": 10113,
       "txns24h": {
@@ -119,38 +119,38 @@
     },
     {
       "rank": 4,
-      "name": "OpenCycle",
-      "symbol": "OPENCYCLE",
-      "address": "0xd307269bccc148ee4b07e0ec5054c9bc2d279ba3",
-      "pairAddress": "0x66e2b35f682242088cbb6f0a13192b1c6fdfe525e7284462187ea6685ca4fbb8",
+      "name": "FlySwarm",
+      "symbol": "SWARM",
+      "address": "0x72f482f7dd53d7a00239df9f65130d15a2ff8ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0180e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8656.6,
-      "fdv": 10184,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x66e2b35f682242088cbb6f0a13192b1c6fdfe525e7284462187ea6685ca4fbb8",
-      "poolId": "0x66e2b35f682242088cbb6f0a13192b1c6fdfe525e7284462187ea6685ca4fbb8",
-      "deployer": "0xd210b44377c25cd8cc7b286f6009cecd49e28891",
-      "feeRecipient": "0xd210b44377c25cd8cc7b286f6009cecd49e28891",
-      "launchTimestamp": 1789348282202,
-      "isNew": false,
-      "hasMarketData": true
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x72f482f7dd53d7a00239df9f65130d15a2ff8ba3&chain=base",
+      "poolId": "0x706db25739fd2705cd641cc430d0d86e20d8bfe0bcef8b180d86cfcc4b5a38a8",
+      "deployer": "0x0b8e69d780116be43135a9433e32cb20dc770052",
+      "feeRecipient": "0x5d1230b51ba60aad7851526bd3f8070536defc27",
+      "launchTimestamp": 1789400039575,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -1171,15 +1171,15 @@
   "whaleRadar": [
     {
       "id": "ACT-Jesski-VOL",
-      "timestamp": "2026-09-14T15:27:14.483Z",
+      "timestamp": "2026-09-14T15:47:12.323Z",
       "token": "Jesski",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "63282.08",
+      "amountUsd": "65211.22",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $63282 · Liq $36444",
+      "detail": "Vol $65211 · Liq $37337",
       "address": "0x416a846cdf5811a71e289e15e87180a4afa2fba3"
     }
   ]
