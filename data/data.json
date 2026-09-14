@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-14T10:58:01.770Z",
+    "updatedAt": "2026-09-14T11:19:25.291Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 24,
-    "withMarketData": 6,
-    "safeTokensCount": 6,
+    "withMarketData": 5,
+    "safeTokensCount": 5,
     "highRiskCount": 0,
     "totalWhaleAlerts": 2
   },
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.7640e-7",
-      "priceChange24h": 54.67,
-      "volume24h": 48810.8,
-      "volume1h": 250.58,
-      "liquidityUsd": 22993.69,
-      "fdv": 27640,
+      "priceUsd": "3.4040e-7",
+      "priceChange24h": 90.53,
+      "volume24h": 51322.39,
+      "volume1h": 2762.17,
+      "liquidityUsd": 27332.26,
+      "fdv": 34048,
       "txns24h": {
-        "buys": 311,
-        "sells": 484
+        "buys": 321,
+        "sells": 503
       },
       "safety": {
         "safetyScore": 100,
@@ -152,41 +152,6 @@
     },
     {
       "rank": 5,
-      "name": "Self-Preservation",
-      "symbol": "SELF",
-      "address": "0x601287348c702418fca89226e8d76f76f5500ba3",
-      "pairAddress": "0x81a57407cd205b5474ebc43c18c8c87c2b92b3ec8ea6376fb2a0dcf770098677",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0320e-7",
-      "priceChange24h": 1.01,
-      "volume24h": 9.93,
-      "volume1h": 0,
-      "liquidityUsd": 8778.92,
-      "fdv": 10328,
-      "txns24h": {
-        "buys": 2,
-        "sells": 4
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x81a57407cd205b5474ebc43c18c8c87c2b92b3ec8ea6376fb2a0dcf770098677",
-      "poolId": "0x81a57407cd205b5474ebc43c18c8c87c2b92b3ec8ea6376fb2a0dcf770098677",
-      "deployer": "0x2ddde10cf212f13f64cfacf1e664ba98cf4ec637",
-      "feeRecipient": "0x2ddde10cf212f13f64cfacf1e664ba98cf4ec637",
-      "launchTimestamp": 1789336496956,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 6,
       "name": "OpenCycle",
       "symbol": "OPENCYCLE",
       "address": "0xd307269bccc148ee4b07e0ec5054c9bc2d279ba3",
@@ -221,7 +186,77 @@
       "hasMarketData": true
     },
     {
+      "rank": 6,
+      "name": "Every",
+      "symbol": "EVERY",
+      "address": "0x88afda4949d04d8af3d454919f3186dadc449ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x88afda4949d04d8af3d454919f3186dadc449ba3&chain=base",
+      "poolId": "0xef358e60899ed9da0d89a9c7ea21e719d50ca5e94f7002c02136fe4ceb6a50e0",
+      "deployer": "0x6c78ed46febee817660c9da311ca3995f40fc0e9",
+      "feeRecipient": "0x9a8bfabd413e18901a1d78971364d9be794cff02",
+      "launchTimestamp": 1789384696378,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
       "rank": 7,
+      "name": "Muse",
+      "symbol": "MUSE",
+      "address": "0xc48976c3ca71c9fea67ada8151d8882c3c879ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc48976c3ca71c9fea67ada8151d8882c3c879ba3&chain=base",
+      "poolId": "0xcb4f269e67fd25cf59304c218e42a79e72bd38baa45529ffd782c44acdc10e48",
+      "deployer": "0xb1155fa47a29ef645fd87bd3501e15e6de37ac40",
+      "feeRecipient": "0xb1155fa47a29ef645fd87bd3501e15e6de37ac40",
+      "launchTimestamp": 1789384487440,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 8,
       "name": "Underdog AI",
       "symbol": "Underdog",
       "address": "0x984226b70705bbefd9b7562f97b6974f4d441ba3",
@@ -256,7 +291,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Launchpad for Launchpad",
       "symbol": "LAUNCHPAD",
       "address": "0x8ab660f9517a7c640c29e8df80d6342cf0f48ba3",
@@ -291,7 +326,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "TAO PAIRED",
       "symbol": "TAO",
       "address": "0x5d19a8b57eff12f5fcaf07c010b18dbebb1beba3",
@@ -326,7 +361,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "0xDeployer",
       "symbol": "0xDeployer",
       "address": "0xaa4c7b2afb48527024571013d6c1a25757f30ba3",
@@ -361,7 +396,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Jesski",
       "symbol": "Jesski",
       "address": "0x1c7640b76e4213b6544d672c92680cbd0dc22ba3",
@@ -396,7 +431,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Mega Jackpot",
       "symbol": "MEGAPOT",
       "address": "0x1d7c0b3bd77f0c4cb760fb9afb79e209bbdb7ba3",
@@ -431,7 +466,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Jessboard",
       "symbol": "Jessboard",
       "address": "0x68d27ef438b539e4c5ac7cd34d0b5a61434f6ba3",
@@ -466,7 +501,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "MuseBot",
       "symbol": "MuseBot",
       "address": "0x14a615ab74ac35c860ccf1482f9590b15cf5aba3",
@@ -501,7 +536,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "CLARITY",
       "symbol": "CLARITY",
       "address": "0x2a20f66d8f0a7d2ddc1a131a2ba5accdfd81bba3",
@@ -536,7 +571,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "AI computers",
       "symbol": "NLV72",
       "address": "0x787c4a872b0a4513323c17ed687a08b9c069aba3",
@@ -571,7 +606,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "SAGE Cash",
       "symbol": "SAGE",
       "address": "0x947d71f43eb621ac2ba0b2feca970da62f914ba3",
@@ -606,7 +641,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Underdog",
       "symbol": "UNDERDOG",
       "address": "0xb8467cc44b79d7ab438010eccfd0ed84162b0ba3",
@@ -641,7 +676,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "gemini",
       "symbol": "GEMINI",
       "address": "0xf940e5636fe301a224bad002d2a1e33a3e71cba3",
@@ -676,7 +711,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "iPod",
       "symbol": "iPod",
       "address": "0xbbdccfdf9c690a104f4f7b7a32070109a0aafba3",
@@ -711,7 +746,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "Skills",
       "symbol": "SKILLS",
       "address": "0x972f1ae7e72ef6afea31270f5929af6d1bdbcba3",
@@ -746,7 +781,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "freebots",
       "symbol": "BOT",
       "address": "0x85246b32a11182dd97b00f6b24cbfa170c0c7ba3",
@@ -781,7 +816,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "TradingView",
       "symbol": "TV",
       "address": "0xc3dd40f6bf7519d22fd0a306882091abdb84bba3",
@@ -814,60 +849,25 @@
       "launchTimestamp": 1789340182453,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 24,
-      "name": "degen fly cloud",
-      "symbol": "DEGENFLY",
-      "address": "0x58b2995dc5a6aa17299328b59cc6cb656f40cba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x58b2995dc5a6aa17299328b59cc6cb656f40cba3&chain=base",
-      "poolId": "0x396591912b6cb012a38f2274a32c3c294faf8e862f40810fa41b3507bc27ea48",
-      "deployer": "0x65a7edac87db497f18708fbf08a5daf32433bcad",
-      "feeRecipient": "0x65a7edac87db497f18708fbf08a5daf32433bcad",
-      "launchTimestamp": 1789336868013,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-Jesski-VOL",
-      "timestamp": "2026-09-14T10:58:01.770Z",
+      "timestamp": "2026-09-14T11:19:25.290Z",
       "token": "Jesski",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "48810.80",
+      "amountUsd": "51322.39",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $48811 · Liq $22994",
+      "detail": "Vol $51322 · Liq $27332",
       "address": "0x416a846cdf5811a71e289e15e87180a4afa2fba3"
     },
     {
       "id": "ACT-opencycle-AVG",
-      "timestamp": "2026-09-14T10:58:01.770Z",
+      "timestamp": "2026-09-14T11:19:25.291Z",
       "token": "opencycle",
       "chain": "BASE",
       "type": "MIXED",
