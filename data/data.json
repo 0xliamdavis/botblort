@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-15T22:22:34.756Z",
+    "updatedAt": "2026-09-15T22:40:24.598Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 13,
-    "withMarketData": 4,
-    "safeTokensCount": 4,
+    "withMarketData": 3,
+    "safeTokensCount": 3,
     "highRiskCount": 0,
     "totalWhaleAlerts": 2
   },
@@ -28,7 +28,7 @@
       "priceUsd": "1.6170e-7",
       "priceChange24h": 3.79,
       "volume24h": 22186.85,
-      "volume1h": 243.01,
+      "volume1h": 3.4,
       "liquidityUsd": 16137.31,
       "fdv": 16174,
       "txns24h": {
@@ -120,38 +120,38 @@
     },
     {
       "rank": 4,
-      "name": "CLOTURE",
-      "symbol": "CLOT",
-      "address": "0x9bb0150240b70cb40b86d0491e39251ca523fba3",
-      "pairAddress": "0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
+      "name": "SHRIMP",
+      "symbol": "SHRIMP",
+      "address": "0x2a582896929e6806cf75b916d0e4362bb7e49ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0130e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8610.57,
-      "fdv": 10130,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
-      "poolId": "0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
-      "deployer": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
-      "feeRecipient": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
-      "launchTimestamp": 1789492418078,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2a582896929e6806cf75b916d0e4362bb7e49ba3&chain=base",
+      "poolId": "0x1a2d29a6ee497cdc2cc7a9c4dc3752ae54a2dc89cf387b2d52b7a945105ab78f",
+      "deployer": "0x8f55b4d15b8b8990f45e1e9a8030a5e796134bb8",
+      "feeRecipient": "0x8f55b4d15b8b8990f45e1e9a8030a5e796134bb8",
+      "launchTimestamp": 1789511800560,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -472,7 +472,7 @@
   "whaleRadar": [
     {
       "id": "ACT-PIRATEFACE-SELL",
-      "timestamp": "2026-09-15T22:22:34.756Z",
+      "timestamp": "2026-09-15T22:40:24.598Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
@@ -485,7 +485,7 @@
     },
     {
       "id": "ACT-PIRATEFACE-AVG",
-      "timestamp": "2026-09-15T22:22:34.755Z",
+      "timestamp": "2026-09-15T22:40:24.597Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
