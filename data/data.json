@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-15T06:26:17.751Z",
+    "updatedAt": "2026-09-15T06:49:19.625Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 25,
-    "withMarketData": 8,
-    "safeTokensCount": 7,
+    "totalAnalyzed": 23,
+    "withMarketData": 7,
+    "safeTokensCount": 6,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -200,7 +200,7 @@
       "priceUsd": "1.0360e-7",
       "priceChange24h": 1.71,
       "volume24h": 7.57,
-      "volume1h": 7.57,
+      "volume1h": 0,
       "liquidityUsd": 8813.34,
       "fdv": 10369,
       "txns24h": {
@@ -260,38 +260,38 @@
     },
     {
       "rank": 8,
-      "name": "Jesse Raptor",
-      "symbol": "Jessrap",
-      "address": "0x5ca78a470aa7546834e4db420d412a4ed2905ba3",
-      "pairAddress": "0x1eba5a43f0f9f84692f11fc81325954b3b79c5b96aaf3cb752a989fa3b6e4139",
+      "name": "MINISTER",
+      "symbol": "MINISTER",
+      "address": "0xb272eec8356d1f63cdb317762582c2cdde2caba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0000e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8504.59,
-      "fdv": 10005,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x1eba5a43f0f9f84692f11fc81325954b3b79c5b96aaf3cb752a989fa3b6e4139",
-      "poolId": "0x1eba5a43f0f9f84692f11fc81325954b3b79c5b96aaf3cb752a989fa3b6e4139",
-      "deployer": "0x5918b823ee30040911823774a4c1de72cd2607d2",
-      "feeRecipient": "0x5918b823ee30040911823774a4c1de72cd2607d2",
-      "launchTimestamp": 1789418554721,
-      "isNew": false,
-      "hasMarketData": true
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb272eec8356d1f63cdb317762582c2cdde2caba3&chain=base",
+      "poolId": "0x72857f21eee696a6bc123f2f759bba487a441761763901a0e7b5e20a21d7f95a",
+      "deployer": "0x27ffb1fdca1b3ab87e067407756f81637100c761",
+      "feeRecipient": "0x27ffb1fdca1b3ab87e067407756f81637100c761",
+      "launchTimestamp": 1789453871980,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 9,
@@ -817,82 +817,12 @@
       "launchTimestamp": 1789420400713,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 24,
-      "name": "TaoBase",
-      "symbol": "TAO",
-      "address": "0x160627ec69e9ec6b003f484256fa8fb24d4f1ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x160627ec69e9ec6b003f484256fa8fb24d4f1ba3&chain=base",
-      "poolId": "0x848e3a483bdf6c6f75e534b34d4c49d4fc0eeb2cfb0a95ebf34abe881714353a",
-      "deployer": "0x790e3cf88feeb5c71ed24b605fa647863f72806c",
-      "feeRecipient": "0x790e3cf88feeb5c71ed24b605fa647863f72806c",
-      "launchTimestamp": 1789416526045,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 25,
-      "name": "Happy Meal Era",
-      "symbol": "HAPPY",
-      "address": "0xe339afcef5071e3e181949312a9ace7a9db66ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe339afcef5071e3e181949312a9ace7a9db66ba3&chain=base",
-      "poolId": "0x68c374d3c9e42cafb0393ef495e8bbb964c6be9e874369ebeb55488bd2bb4965",
-      "deployer": "0x661d38e6aa4d7c5dd68edef3bc1a80096e294703",
-      "feeRecipient": "0x661d38e6aa4d7c5dd68edef3bc1a80096e294703",
-      "launchTimestamp": 1789416076673,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-MUSE-SELL",
-      "timestamp": "2026-09-15T06:26:17.750Z",
+      "timestamp": "2026-09-15T06:49:19.625Z",
       "token": "MUSE",
       "chain": "BASE",
       "type": "SELL",
