@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-15T17:30:17.567Z",
+    "updatedAt": "2026-09-15T17:49:12.225Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 22,
-    "withMarketData": 5,
-    "safeTokensCount": 4,
+    "totalAnalyzed": 20,
+    "withMarketData": 6,
+    "safeTokensCount": 5,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -157,6 +157,41 @@
     },
     {
       "rank": 5,
+      "name": "CLOTURE",
+      "symbol": "CLOT",
+      "address": "0x9bb0150240b70cb40b86d0491e39251ca523fba3",
+      "pairAddress": "0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0130e-7",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 8610.57,
+      "fdv": 10130,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
+      "poolId": "0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
+      "deployer": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
+      "feeRecipient": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
+      "launchTimestamp": 1789492418078,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 6,
       "name": "FLYTRAP",
       "symbol": "FLYTRAP",
       "address": "0x38599b71ef54245a68267e59b43bd89fc31b2ba3",
@@ -191,7 +226,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Royal Mechanica",
       "symbol": "MECHANICA",
       "address": "0x2e33a61bf16a883b816dbc613891c531f7814ba3",
@@ -222,41 +257,6 @@
       "deployer": "0x6c78ed46febee817660c9da311ca3995f40fc0e9",
       "feeRecipient": "0x6c78ed46febee817660c9da311ca3995f40fc0e9",
       "launchTimestamp": 1789492990649,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 7,
-      "name": "CLOTURE",
-      "symbol": "CLOT",
-      "address": "0x9bb0150240b70cb40b86d0491e39251ca523fba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9bb0150240b70cb40b86d0491e39251ca523fba3&chain=base",
-      "poolId": "0xf2321f2dc2ccfcd2841685f712ba06472589b0de54395d8cd7e3df8bc4686b98",
-      "deployer": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
-      "feeRecipient": "0x327e4d4126ce723f145c54348dc9135bf162ed2d",
-      "launchTimestamp": 1789492418078,
       "isNew": true,
       "hasMarketData": false
     },
@@ -714,82 +714,12 @@
       "launchTimestamp": 1789452809951,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 21,
-      "name": "ChipWorks",
-      "symbol": "CHIP",
-      "address": "0xbd43a2aa6ab89e286ac41d78307cbac2b9507ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xbd43a2aa6ab89e286ac41d78307cbac2b9507ba3&chain=base",
-      "poolId": "0x1bfa1d051dc805ebf6690861bbe8ebd1c8fc50d1c648c3b0de67dffbc700021a",
-      "deployer": "0xac8a9cd98eab0f9fbceb1f96462e4337d438303d",
-      "feeRecipient": "0xac8a9cd98eab0f9fbceb1f96462e4337d438303d",
-      "launchTimestamp": 1789444790022,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 22,
-      "name": "CHIP COIN",
-      "symbol": "CHIP",
-      "address": "0x3aa75507b9dcab9fe9580bd31e4fff58b813eba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x3aa75507b9dcab9fe9580bd31e4fff58b813eba3&chain=base",
-      "poolId": "0x37c7ec7e27a609a5fd7ee0293f29a2005e95ff19e22c89243197994d7992d144",
-      "deployer": "0xac8a9cd98eab0f9fbceb1f96462e4337d438303d",
-      "feeRecipient": "0xac8a9cd98eab0f9fbceb1f96462e4337d438303d",
-      "launchTimestamp": 1789444644851,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-MUSE-SELL",
-      "timestamp": "2026-09-15T17:30:17.567Z",
+      "timestamp": "2026-09-15T17:49:12.225Z",
       "token": "MUSE",
       "chain": "BASE",
       "type": "SELL",
