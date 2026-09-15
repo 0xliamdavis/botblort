@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-15T20:57:03.589Z",
+    "updatedAt": "2026-09-15T21:16:36.389Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 15,
+    "totalAnalyzed": 14,
     "withMarketData": 5,
     "safeTokensCount": 5,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.6820e-7",
-      "priceChange24h": 7.97,
-      "volume24h": 21682.72,
-      "volume1h": 21682.72,
-      "liquidityUsd": 16774.2,
-      "fdv": 16826,
+      "priceUsd": "1.0970e-7",
+      "priceChange24h": -29.6,
+      "volume24h": 21941.45,
+      "volume1h": 21941.45,
+      "liquidityUsd": 11049.01,
+      "fdv": 10971,
       "txns24h": {
         "buys": 57,
-        "sells": 144
+        "sells": 147
       },
       "safety": {
         "safetyScore": 90,
@@ -502,68 +502,46 @@
       "launchTimestamp": 1789492990649,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 15,
-      "name": "Mechanica",
-      "symbol": "MECHANICA",
-      "address": "0xd0d1e08dd6018f53709d6eeeb2b86244a94e9ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd0d1e08dd6018f53709d6eeeb2b86244a94e9ba3&chain=base",
-      "poolId": "0x566cd81f897404df04bead87cd73f09e3df4908a5f05e306f30d3f29d8b1ebd3",
-      "deployer": "0x8dbab6c8a4a60b59a3393b40573c809d3ccbff16",
-      "feeRecipient": "0x8dbab6c8a4a60b59a3393b40573c809d3ccbff16",
-      "launchTimestamp": 1789488111958,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-PIRATEFACE-SELL",
-      "timestamp": "2026-09-15T20:57:03.589Z",
+      "timestamp": "2026-09-15T21:16:36.389Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "21682.72",
+      "amountUsd": "21941.45",
       "priceImpact": null,
       "txHash": null,
       "label": "SELL PRESSURE",
-      "detail": "57 buys / 144 sells · 72% sell",
+      "detail": "57 buys / 147 sells · 72% sell",
+      "address": "0x249261f6f7fb866598ae37faed9905cb7f8a6ba3"
+    },
+    {
+      "id": "ACT-PIRATEFACE-VOL",
+      "timestamp": "2026-09-15T21:16:36.389Z",
+      "token": "PIRATEFACE",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "21941.45",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $21941 · Liq $11049",
       "address": "0x249261f6f7fb866598ae37faed9905cb7f8a6ba3"
     },
     {
       "id": "ACT-PIRATEFACE-AVG",
-      "timestamp": "2026-09-15T20:57:03.588Z",
+      "timestamp": "2026-09-15T21:16:36.389Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
-      "amountUsd": "107.87",
+      "amountUsd": "107.56",
       "priceImpact": null,
       "txHash": null,
       "label": "AVG TRADE",
-      "detail": "Avg $108 / tx · 201 txns",
+      "detail": "Avg $108 / tx · 204 txns",
       "address": "0x249261f6f7fb866598ae37faed9905cb7f8a6ba3"
     }
   ]
