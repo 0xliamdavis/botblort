@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-15T02:00:01.155Z",
+    "updatedAt": "2026-09-15T02:22:08.975Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 28,
-    "withMarketData": 3,
-    "safeTokensCount": 2,
+    "totalAnalyzed": 27,
+    "withMarketData": 4,
+    "safeTokensCount": 3,
     "highRiskCount": 2,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.6510e-7",
-      "priceChange24h": -0.47,
-      "volume24h": 253.78,
-      "volume1h": 0,
+      "priceUsd": "1.0150e-7",
+      "priceChange24h": -38.8,
+      "volume24h": 497.34,
+      "volume1h": 243.55,
       "liquidityUsd": 0,
-      "fdv": 16518,
+      "fdv": 10157,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 2,
+        "sells": 3
       },
       "safety": {
         "safetyScore": 40,
@@ -87,6 +87,41 @@
     },
     {
       "rank": 3,
+      "name": "Helios",
+      "symbol": "HLS",
+      "address": "0xfeadc55b89feeefd8fe043d207a9151c8cd4bba3",
+      "pairAddress": "0x5ec40ba5903cefb08b5c472e54c8393f0305bbc94ba9b77f5ccbf5436191fc13",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0200e-7",
+      "priceChange24h": -0.02,
+      "volume24h": 5.07,
+      "volume1h": 5.07,
+      "liquidityUsd": 8676.85,
+      "fdv": 10208,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x5ec40ba5903cefb08b5c472e54c8393f0305bbc94ba9b77f5ccbf5436191fc13",
+      "poolId": "0x5ec40ba5903cefb08b5c472e54c8393f0305bbc94ba9b77f5ccbf5436191fc13",
+      "deployer": "0xab47e2fa66da5c6f679e2d8b20b06b90870a6b06",
+      "feeRecipient": "0xab47e2fa66da5c6f679e2d8b20b06b90870a6b06",
+      "launchTimestamp": 1789436569453,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
       "name": "Jesse Raptor",
       "symbol": "Jessrap",
       "address": "0x5ca78a470aa7546834e4db420d412a4ed2905ba3",
@@ -119,41 +154,6 @@
       "launchTimestamp": 1789418554721,
       "isNew": true,
       "hasMarketData": true
-    },
-    {
-      "rank": 4,
-      "name": "Helios",
-      "symbol": "HLS",
-      "address": "0xfeadc55b89feeefd8fe043d207a9151c8cd4bba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xfeadc55b89feeefd8fe043d207a9151c8cd4bba3&chain=base",
-      "poolId": "0x5ec40ba5903cefb08b5c472e54c8393f0305bbc94ba9b77f5ccbf5436191fc13",
-      "deployer": "0xab47e2fa66da5c6f679e2d8b20b06b90870a6b06",
-      "feeRecipient": "0xab47e2fa66da5c6f679e2d8b20b06b90870a6b06",
-      "launchTimestamp": 1789436569453,
-      "isNew": true,
-      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -959,42 +959,21 @@
       "launchTimestamp": 1789408697432,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "COGNITIVE",
-      "symbol": "COGNITIVE",
-      "address": "0x1076f08c96a7dd148c272b197aee565450941ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1076f08c96a7dd148c272b197aee565450941ba3&chain=base",
-      "poolId": "0x8fee59dd88874b7000599f50d04e8e462ab8a7fb2a091062238f549165645d16",
-      "deployer": "0xb6d9d7fbdca474e3def8e560b4a6e59fbfd4f42c",
-      "feeRecipient": "0xcf7ceb6025687d19835c688b7bb63b9aca85c39a",
-      "launchTimestamp": 1789408474031,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": []
+  "whaleRadar": [
+    {
+      "id": "ACT-VERSE-AVG",
+      "timestamp": "2026-09-15T02:22:08.974Z",
+      "token": "VERSE",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "99.47",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $99 / tx · 5 txns",
+      "address": "0x22bb877969c3773932dd19a933d962ec2e591ba3"
+    }
+  ]
 }
