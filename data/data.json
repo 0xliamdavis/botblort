@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-16T01:22:26.087Z",
+    "updatedAt": "2026-09-16T01:41:20.722Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 22,
-    "withMarketData": 3,
-    "safeTokensCount": 2,
+    "totalAnalyzed": 25,
+    "withMarketData": 4,
+    "safeTokensCount": 3,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
@@ -52,6 +52,38 @@
     },
     {
       "rank": 2,
+      "name": "Shekel",
+      "symbol": "Shekel",
+      "address": "0x35de7be341ba02f22a55b53d8c67ca51b5f82ba3",
+      "pairAddress": "0xd84c25dee0940ada3229f617f0ccacac4459008feff277cbaa7c7811cbbf7fe5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "4.0850e-7",
+      "priceChange24h": 132,
+      "volume24h": 17510.02,
+      "volume1h": 17510.02,
+      "liquidityUsd": 31356.28,
+      "fdv": 40860,
+      "txns24h": {
+        "buys": 81,
+        "sells": 120
+      },
+      "safety": {
+        "safetyScore": 100,
+        "status": "SAFE",
+        "flags": []
+      },
+      "dexUrl": "https://dexscreener.com/base/0xd84c25dee0940ada3229f617f0ccacac4459008feff277cbaa7c7811cbbf7fe5",
+      "poolId": "0xd84c25dee0940ada3229f617f0ccacac4459008feff277cbaa7c7811cbbf7fe5",
+      "deployer": "0xff428724ff6e9971d11eed940a25824bb3aad55b",
+      "feeRecipient": "0x4d695b16c4fef487046cf1d23eb7759ea08d45cb",
+      "launchTimestamp": 1789522806087,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
       "name": "Pi Fire Science",
       "symbol": "PiFire",
       "address": "0x3d44e71c839da9fa7fc1d5b3c199fbcdde04fba3",
@@ -59,15 +91,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.1180e-7",
-      "priceChange24h": -0.14,
-      "volume24h": 794.24,
-      "volume1h": 0,
-      "liquidityUsd": 9511.43,
-      "fdv": 11190,
+      "priceUsd": "1.2400e-7",
+      "priceChange24h": 10.72,
+      "volume24h": 844.52,
+      "volume1h": 50.28,
+      "liquidityUsd": 10543.06,
+      "fdv": 12407,
       "txns24h": {
-        "buys": 12,
-        "sells": 21
+        "buys": 13,
+        "sells": 23
       },
       "safety": {
         "safetyScore": 90,
@@ -85,7 +117,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "PuckFokohontasWarren",
       "symbol": "$PFW",
       "address": "0x7d3325130b1f76c0617ab19c80f2cd23169b7ba3",
@@ -120,7 +152,112 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "name": "Laminar",
+      "symbol": "LAMINAR",
+      "address": "0xebda5f5607e8665b9acbd2c6e213faaf7ba26ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xebda5f5607e8665b9acbd2c6e213faaf7ba26ba3&chain=base",
+      "poolId": "0xb2ebe56894baf684e868ddcfc27675db64048a905b354fb7789194d4eb52421b",
+      "deployer": "0xbd101d0f80a0e413717122245c64898042193d43",
+      "feeRecipient": "0x4e47f6dd427a81237f3c26e72a89ca70722f21bf",
+      "launchTimestamp": 1789522716201,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
+      "name": "Byte AI",
+      "symbol": "BYTE",
+      "address": "0xc53d885ac5c883104309645dde53969fe7e60ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc53d885ac5c883104309645dde53969fe7e60ba3&chain=base",
+      "poolId": "0x26c95db04e5a278469490b7cc542a8f686b7469b224b10fd29a1609b0ea2baa6",
+      "deployer": "0xbd101d0f80a0e413717122245c64898042193d43",
+      "feeRecipient": "0xbd101d0f80a0e413717122245c64898042193d43",
+      "launchTimestamp": 1789522630040,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 7,
+      "name": "Elizabeth Wurren",
+      "symbol": "WURREN",
+      "address": "0x62fcd7b09dabd1c252d6d5143d21c89ae83fcba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x62fcd7b09dabd1c252d6d5143d21c89ae83fcba3&chain=base",
+      "poolId": "0xc4fd118c62c210c1b479d058b74da83ee60f334a9f371b087704d5419d5d1440",
+      "deployer": "0xb1cffb455101f55f04349cb5ede90cbe13df1432",
+      "feeRecipient": "0xb1cffb455101f55f04349cb5ede90cbe13df1432",
+      "launchTimestamp": 1789522613609,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 8,
       "name": "degenfly",
       "symbol": "FLY",
       "address": "0x805bbb0fcdecc9d6cd993aebcba725902ceb6ba3",
@@ -155,7 +292,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 9,
       "name": "Gifted stock",
       "symbol": "gSTOCK",
       "address": "0x36b3a285831a36a9f899f9698c2034556aa11ba3",
@@ -190,7 +327,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 10,
       "name": "Sock&Pussy",
       "symbol": "SNP",
       "address": "0x9e1a47132e459da8ca7766f16187223430ad2ba3",
@@ -225,7 +362,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 11,
       "name": "Candles",
       "symbol": "CANDLES",
       "address": "0x728eb304381a850c8ef3bec4c96bf4f09ec1cba3",
@@ -260,7 +397,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 12,
       "name": "unc duck",
       "symbol": "UNCDUCK",
       "address": "0xeede9cebb68033a88022b58d36ef80c2dc1acba3",
@@ -295,7 +432,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 13,
       "name": "CLARITY",
       "symbol": "CLARITY",
       "address": "0x220063cdcf03bb47d6c535392b943949f6747ba3",
@@ -330,7 +467,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 14,
       "name": "JOYSTICK",
       "symbol": "JOYSTICK",
       "address": "0xc0b491ddb857c89443c16b3757a8845416113ba3",
@@ -365,7 +502,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 15,
       "name": "Gifted Stock",
       "symbol": "GIFT",
       "address": "0xfac8256adc7735d156e5b0d2b4beabbffe7ccba3",
@@ -400,7 +537,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 16,
       "name": "based camp",
       "symbol": "CAMP",
       "address": "0x6b0004939779aa86b63b760b8709c942d6902ba3",
@@ -435,7 +572,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 17,
       "name": "memetrenches",
       "symbol": "memetrenches",
       "address": "0x223c11797b5abff894a4bf5a48670ecb1a121ba3",
@@ -470,7 +607,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 18,
       "name": "Base meme trenches",
       "symbol": "trenches",
       "address": "0xc507eb622f4c935a8b9f88daeabc42f50721aba3",
@@ -505,7 +642,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 19,
       "name": "Muse",
       "symbol": "MUSE",
       "address": "0x3b9e9c0e886b518eadbecaf5c6fbf89f666b3ba3",
@@ -540,7 +677,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 20,
       "name": "Wall Street Slot",
       "symbol": "WSS",
       "address": "0x3610792c62874bfe0eae7d1cdff91244fa5c1ba3",
@@ -575,7 +712,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 21,
       "name": "SerusAI",
       "symbol": "SERUS",
       "address": "0x0768271691cb02325090c520f22733a6f6833ba3",
@@ -610,7 +747,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 22,
       "name": "Token Harbor AI",
       "symbol": "HARBOR",
       "address": "0xfbb132b2fb04f1e10e884c3cfbb639897c322ba3",
@@ -645,7 +782,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 23,
       "name": "foci",
       "symbol": "FOCI",
       "address": "0x6581268585c067119247ce27f8051064b3588ba3",
@@ -680,7 +817,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 24,
       "name": "ThePirateFace",
       "symbol": "PIRATEFACE",
       "address": "0xac74cb6041a60debd00c27db46d1c413f1008ba3",
@@ -715,7 +852,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 25,
       "name": "SHRIMP",
       "symbol": "SHRIMP",
       "address": "0x2a582896929e6806cf75b916d0e4362bb7e49ba3",
@@ -748,47 +885,12 @@
       "launchTimestamp": 1789511800560,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 22,
-      "name": "FLYBORG",
-      "symbol": "FLYBORG",
-      "address": "0xd3729e53adbf2e555d9e311949b4815f458c8ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd3729e53adbf2e555d9e311949b4815f458c8ba3&chain=base",
-      "poolId": "0x004abc0ff0b883a5b3d546ef99fa50a6ecadc5d6f8d3e5fdfd80618b1993184c",
-      "deployer": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "feeRecipient": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "launchTimestamp": 1789502749330,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-PIRATEFACE-SELL",
-      "timestamp": "2026-09-16T01:22:26.087Z",
+      "timestamp": "2026-09-16T01:41:20.721Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
@@ -801,7 +903,7 @@
     },
     {
       "id": "ACT-PIRATEFACE-AVG",
-      "timestamp": "2026-09-16T01:22:26.087Z",
+      "timestamp": "2026-09-16T01:41:20.721Z",
       "token": "PIRATEFACE",
       "chain": "BASE",
       "type": "SELL",
@@ -811,6 +913,19 @@
       "label": "AVG TRADE",
       "detail": "Avg $105 / tx · 211 txns",
       "address": "0x249261f6f7fb866598ae37faed9905cb7f8a6ba3"
+    },
+    {
+      "id": "ACT-Shekel-AVG",
+      "timestamp": "2026-09-16T01:41:20.721Z",
+      "token": "Shekel",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "87.11",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $87 / tx · 201 txns",
+      "address": "0x35de7be341ba02f22a55b53d8c67ca51b5f82ba3"
     }
   ]
 }
