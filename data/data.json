@@ -2,22 +2,57 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-16T14:20:50.432Z",
+    "updatedAt": "2026-09-16T14:43:09.066Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 28,
-    "withMarketData": 2,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 27,
+    "withMarketData": 3,
+    "safeTokensCount": 2,
     "highRiskCount": 1,
     "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "musecook",
+      "symbol": "MUSECOOK",
+      "address": "0x076df924e76cabbfdfa83f5fa48bf3fae4179ba3",
+      "pairAddress": "0x44d1db4b42b57c817aa9527bfcf98b87e29ddae4a22cc4d9f4968350bb7c44c5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.1610e-7",
+      "priceChange24h": -0.15,
+      "volume24h": 71.05,
+      "volume1h": 71.05,
+      "liquidityUsd": 9864.63,
+      "fdv": 11612,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x44d1db4b42b57c817aa9527bfcf98b87e29ddae4a22cc4d9f4968350bb7c44c5",
+      "poolId": "0x44d1db4b42b57c817aa9527bfcf98b87e29ddae4a22cc4d9f4968350bb7c44c5",
+      "deployer": "0xedb1b7196e3e0d8b0b2ea047d52e9c8f8a44b605",
+      "feeRecipient": "0xedb1b7196e3e0d8b0b2ea047d52e9c8f8a44b605",
+      "launchTimestamp": 1789568064154,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "musebookdotlol",
       "symbol": "musebookdotlol",
       "address": "0x1eb572f69a2d333d91667a11c5494ea7a2a06ba3",
@@ -52,7 +87,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "musebook",
       "symbol": "MUSEBOOK",
       "address": "0xb36afb264318fb835280d204b9b3c08dcefb7ba3",
@@ -63,7 +98,7 @@
       "priceUsd": "1.0250e-7",
       "priceChange24h": -0.01,
       "volume24h": 4.99,
-      "volume1h": 4.99,
+      "volume1h": 0,
       "liquidityUsd": 8717.96,
       "fdv": 10256,
       "txns24h": {
@@ -85,41 +120,6 @@
       "launchTimestamp": 1789553949693,
       "isNew": true,
       "hasMarketData": true
-    },
-    {
-      "rank": 3,
-      "name": "musecook",
-      "symbol": "MUSECOOK",
-      "address": "0x076df924e76cabbfdfa83f5fa48bf3fae4179ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x076df924e76cabbfdfa83f5fa48bf3fae4179ba3&chain=base",
-      "poolId": "0x44d1db4b42b57c817aa9527bfcf98b87e29ddae4a22cc4d9f4968350bb7c44c5",
-      "deployer": "0xedb1b7196e3e0d8b0b2ea047d52e9c8f8a44b605",
-      "feeRecipient": "0xedb1b7196e3e0d8b0b2ea047d52e9c8f8a44b605",
-      "launchTimestamp": 1789568064154,
-      "isNew": true,
-      "hasMarketData": false
     },
     {
       "rank": 4,
@@ -958,41 +958,6 @@
       "deployer": "0xbf417ced963f3db606b68d861ebf7ea16d305ca2",
       "feeRecipient": "0xbf417ced963f3db606b68d861ebf7ea16d305ca2",
       "launchTimestamp": 1789538264477,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "jollybot",
-      "symbol": "jollybot",
-      "address": "0x6537394d57cdb96282e7b25a6559194dd9e91ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x6537394d57cdb96282e7b25a6559194dd9e91ba3&chain=base",
-      "poolId": "0xbc34b969ee8503f91053ee1a4f6b90a6d7a662ee54620498fb062a3072555a9d",
-      "deployer": "0x3c5337e318258497efe9a63c406da8f9a41c285a",
-      "feeRecipient": "0x3c5337e318258497efe9a63c406da8f9a41c285a",
-      "launchTimestamp": 1789537490352,
       "isNew": true,
       "hasMarketData": false
     }
