@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-16T12:19:05.693Z",
+    "updatedAt": "2026-09-16T12:40:19.564Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 29,
-    "withMarketData": 3,
-    "safeTokensCount": 2,
+    "withMarketData": 2,
+    "safeTokensCount": 1,
     "highRiskCount": 1,
     "totalWhaleAlerts": 2
   },
@@ -52,40 +52,6 @@
     },
     {
       "rank": 2,
-      "name": "musebook",
-      "symbol": "MUSEBOOK",
-      "address": "0x6f111e554ef74455da492cdfd016c3e44c1b6ba3",
-      "pairAddress": "0x0038bc1142753d503e6105acc230c2e1f3264e9b6a8c07eda295dbd3ed8e5029",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0200e-7",
-      "priceChange24h": -39.83,
-      "volume24h": 2275.88,
-      "volume1h": 0,
-      "liquidityUsd": 8681.12,
-      "fdv": 10207,
-      "txns24h": {
-        "buys": 12,
-        "sells": 18
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x0038bc1142753d503e6105acc230c2e1f3264e9b6a8c07eda295dbd3ed8e5029",
-      "poolId": "0x0038bc1142753d503e6105acc230c2e1f3264e9b6a8c07eda295dbd3ed8e5029",
-      "deployer": "0xe7093f49ae0df32687df78bf58dd69ecc8306f54",
-      "feeRecipient": "0x6f67520b15648da852fa40db167d0826d8efa414",
-      "launchTimestamp": 1789536813445,
-      "isNew": false,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
       "name": "musebookdotlol",
       "symbol": "musebookdotlol",
       "address": "0x1eb572f69a2d333d91667a11c5494ea7a2a06ba3",
@@ -118,6 +84,41 @@
       "launchTimestamp": 1789545204330,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 3,
+      "name": "Arrow",
+      "symbol": "ARROW",
+      "address": "0xaf1700a1cfe40a35de63ec974b8ae9161758aba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xaf1700a1cfe40a35de63ec974b8ae9161758aba3&chain=base",
+      "poolId": "0x29d7d4769293a87be29f876fcacb80b958190c4fece3ec0bb874d82724e6a683",
+      "deployer": "0x2be5bfb23d0ab5760f96e71075e7425b4988d920",
+      "feeRecipient": "0x2be5bfb23d0ab5760f96e71075e7425b4988d920",
+      "launchTimestamp": 1789561848451,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 4,
@@ -1033,7 +1034,7 @@
   "whaleRadar": [
     {
       "id": "ACT-MUSEBOOK-SELL",
-      "timestamp": "2026-09-16T12:19:05.693Z",
+      "timestamp": "2026-09-16T12:40:19.564Z",
       "token": "MUSEBOOK",
       "chain": "BASE",
       "type": "SELL",
@@ -1046,7 +1047,7 @@
     },
     {
       "id": "ACT-MUSEBOOK-AVG",
-      "timestamp": "2026-09-16T12:19:05.692Z",
+      "timestamp": "2026-09-16T12:40:19.564Z",
       "token": "MUSEBOOK",
       "chain": "BASE",
       "type": "SELL",
