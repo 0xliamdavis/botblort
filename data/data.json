@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T19:00:05.757Z",
+    "updatedAt": "2026-09-17T19:18:27.096Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 8,
-    "withMarketData": 6,
-    "safeTokensCount": 6,
+    "totalAnalyzed": 10,
+    "withMarketData": 7,
+    "safeTokensCount": 7,
     "highRiskCount": 0,
     "totalWhaleAlerts": 6
   },
@@ -188,6 +188,41 @@
     },
     {
       "rank": 6,
+      "name": "P(Doom) Perp",
+      "symbol": "PDOOM",
+      "address": "0xc004cabc64df4b732899f445e3ca1fbf9c38bba3",
+      "pairAddress": "0x702bab665ace0476fb7441d4e58da7ffea7e5a925d567e352c9864c07dedc7a2",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0170e-7",
+      "priceChange24h": -32.24,
+      "volume24h": 383.09,
+      "volume1h": 383.09,
+      "liquidityUsd": 8683.58,
+      "fdv": 10178,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x702bab665ace0476fb7441d4e58da7ffea7e5a925d567e352c9864c07dedc7a2",
+      "poolId": "0x702bab665ace0476fb7441d4e58da7ffea7e5a925d567e352c9864c07dedc7a2",
+      "deployer": "0x50c8c6278901b157e278628f85a01a2a6ccc56d5",
+      "feeRecipient": "0xb1d8ef2e164b3be5be84e997a62e64824585ac0f",
+      "launchTimestamp": 1789671791344,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 7,
       "name": "skelly",
       "symbol": "SKELLY",
       "address": "0xf8d1df581890560847a1438b3f7367411bfdeba3",
@@ -222,7 +257,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "name": "Arc Bank",
+      "symbol": "Arcbank",
+      "address": "0x4e1be38dea008d228d95f41e44fde96294801ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x4e1be38dea008d228d95f41e44fde96294801ba3&chain=base",
+      "poolId": "0x412fa742bb5699be83d8ed3931fa9cdb35fa14df581e22269389829f2bc0b6bf",
+      "deployer": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
+      "feeRecipient": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
+      "launchTimestamp": 1789671669152,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
       "name": "Megapot",
       "symbol": "MEGAPOT",
       "address": "0x79cbc4faba4eb73f2f2975c769e8d45ff437bba3",
@@ -257,7 +327,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "eip5792",
       "symbol": "EIP5792",
       "address": "0x6f35c0bb75332dcdb50fc7ee0d21148bd91ffba3",
@@ -295,7 +365,7 @@
   "whaleRadar": [
     {
       "id": "ACT-NYC-VOL",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "NYC",
       "chain": "BASE",
       "type": "SELL",
@@ -308,7 +378,7 @@
     },
     {
       "id": "ACT-THURSDAY-SELL",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -321,7 +391,7 @@
     },
     {
       "id": "ACT-THURSDAY-AVG",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -334,7 +404,7 @@
     },
     {
       "id": "ACT-FEED-AVG",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "FEED",
       "chain": "BASE",
       "type": "BUY",
@@ -347,7 +417,7 @@
     },
     {
       "id": "ACT-Snapshot-AVG",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "Snapshot",
       "chain": "BASE",
       "type": "SELL",
@@ -360,7 +430,7 @@
     },
     {
       "id": "ACT-NYC-AVG",
-      "timestamp": "2026-09-17T19:00:05.757Z",
+      "timestamp": "2026-09-17T19:18:27.096Z",
       "token": "NYC",
       "chain": "BASE",
       "type": "SELL",
