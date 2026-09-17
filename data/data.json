@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T19:32:29.238Z",
+    "updatedAt": "2026-09-17T19:47:45.354Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 10,
-    "withMarketData": 6,
-    "safeTokensCount": 6,
+    "withMarketData": 5,
+    "safeTokensCount": 5,
     "highRiskCount": 0,
     "totalWhaleAlerts": 4
   },
@@ -189,38 +189,38 @@
     },
     {
       "rank": 6,
-      "name": "skelly",
-      "symbol": "SKELLY",
-      "address": "0xf8d1df581890560847a1438b3f7367411bfdeba3",
-      "pairAddress": "0x0e83d9ea276cca06953ccbd552b29b2e13811baea381d8886198118c6648804a",
+      "name": "Robinhood Dogs",
+      "symbol": "RobinhoodDogs",
+      "address": "0x11a1280d460c5293a23e295a7b552b7dff49fba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0110e-7",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8599.63,
-      "fdv": 10117,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x0e83d9ea276cca06953ccbd552b29b2e13811baea381d8886198118c6648804a",
-      "poolId": "0x0e83d9ea276cca06953ccbd552b29b2e13811baea381d8886198118c6648804a",
-      "deployer": "0xb093a1278c55b3baf6bd3485f67f71e6b077acaf",
-      "feeRecipient": "0xb093a1278c55b3baf6bd3485f67f71e6b077acaf",
-      "launchTimestamp": 1789665598085,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x11a1280d460c5293a23e295a7b552b7dff49fba3&chain=base",
+      "poolId": "0x0e917affc43b308f3ae524582dec0b2afc7fb8533fe308f8cbad7e3ca5de3b69",
+      "deployer": "0x203a16691c974181369dbbf275eeb54592577369",
+      "feeRecipient": "0x203a16691c974181369dbbf275eeb54592577369",
+      "launchTimestamp": 1789673741204,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 7,
@@ -366,7 +366,7 @@
   "whaleRadar": [
     {
       "id": "ACT-THURSDAY-SELL",
-      "timestamp": "2026-09-17T19:32:29.238Z",
+      "timestamp": "2026-09-17T19:47:45.353Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -379,7 +379,7 @@
     },
     {
       "id": "ACT-THURSDAY-AVG",
-      "timestamp": "2026-09-17T19:32:29.238Z",
+      "timestamp": "2026-09-17T19:47:45.353Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -392,7 +392,7 @@
     },
     {
       "id": "ACT-FEED-AVG",
-      "timestamp": "2026-09-17T19:32:29.238Z",
+      "timestamp": "2026-09-17T19:47:45.353Z",
       "token": "FEED",
       "chain": "BASE",
       "type": "BUY",
@@ -405,7 +405,7 @@
     },
     {
       "id": "ACT-Snapshot-AVG",
-      "timestamp": "2026-09-17T19:32:29.238Z",
+      "timestamp": "2026-09-17T19:47:45.353Z",
       "token": "Snapshot",
       "chain": "BASE",
       "type": "SELL",
