@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T19:47:45.354Z",
+    "updatedAt": "2026-09-17T19:59:40.046Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 10,
-    "withMarketData": 5,
-    "safeTokensCount": 5,
+    "totalAnalyzed": 8,
+    "withMarketData": 3,
+    "safeTokensCount": 3,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
@@ -52,40 +52,6 @@
     },
     {
       "rank": 2,
-      "name": "Thursday Arena",
-      "symbol": "THURSDAY",
-      "address": "0x7eea5bdf2f886ce6609e353ae686c87e5cbe2ba3",
-      "pairAddress": "0xd97b930d7fd775b64b658c3bd29ea2a12b907c9b2f90cf200d923db796175892",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "9.7440e-8",
-      "priceChange24h": -34.23,
-      "volume24h": 4755.19,
-      "volume1h": 0,
-      "liquidityUsd": 9744.17,
-      "fdv": 9744,
-      "txns24h": {
-        "buys": 9,
-        "sells": 22
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xd97b930d7fd775b64b658c3bd29ea2a12b907c9b2f90cf200d923db796175892",
-      "poolId": "0xd97b930d7fd775b64b658c3bd29ea2a12b907c9b2f90cf200d923db796175892",
-      "deployer": "0x99d22e9570b13881fe81f39df2d678ec603007d2",
-      "feeRecipient": "0x7b1396d1cbfd11d5c8b1abf9540ba6bf74a76274",
-      "launchTimestamp": 1789665900385,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
       "name": "FEED",
       "symbol": "FEED",
       "address": "0xd39aece709501c7f3eaa7e8cfa397112447f0ba3",
@@ -119,41 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
-      "name": "Thursday Arena",
-      "symbol": "THURSDAY",
-      "address": "0x9f48a915db18df075d404adca210a7b50b647ba3",
-      "pairAddress": "0x6f74d1a013231ea9be21e143a7575d9a7e6c879047c3bdf9b8808b63be8343d7",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0410e-7",
-      "priceChange24h": -37.02,
-      "volume24h": 2975.84,
-      "volume1h": 0,
-      "liquidityUsd": 8855.38,
-      "fdv": 10411,
-      "txns24h": {
-        "buys": 36,
-        "sells": 60
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x6f74d1a013231ea9be21e143a7575d9a7e6c879047c3bdf9b8808b63be8343d7",
-      "poolId": "0x6f74d1a013231ea9be21e143a7575d9a7e6c879047c3bdf9b8808b63be8343d7",
-      "deployer": "0x2c1ddb4e44d9c940462c1ae93840868d2ea9e502",
-      "feeRecipient": "0x7b1396d1cbfd11d5c8b1abf9540ba6bf74a76274",
-      "launchTimestamp": 1789665677175,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 5,
+      "rank": 3,
       "name": "P(Doom) Perp",
       "symbol": "PDOOM",
       "address": "0xc004cabc64df4b732899f445e3ca1fbf9c38bba3",
@@ -188,7 +120,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "name": "Nautilo",
+      "symbol": "NAUTILO",
+      "address": "0xdb910d4650808a903cbb6663a1829638744dbba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xdb910d4650808a903cbb6663a1829638744dbba3&chain=base",
+      "poolId": "0x2162eeb2b9d775302cbdaf0b4512e96aaf9822ef06b9995d5de62340cadc0f71",
+      "deployer": "0xecf21fcca60aafe9ec29292aee4adfe02c282ae0",
+      "feeRecipient": "0xecf21fcca60aafe9ec29292aee4adfe02c282ae0",
+      "launchTimestamp": 1789674581773,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 5,
       "name": "Robinhood Dogs",
       "symbol": "RobinhoodDogs",
       "address": "0x11a1280d460c5293a23e295a7b552b7dff49fba3",
@@ -223,7 +190,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "The OG Moonkey",
       "symbol": "MOONKEY",
       "address": "0xc359576efd25bda57b2379be00555222d3eecba3",
@@ -258,7 +225,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "Arc Bank",
       "symbol": "Arcbank",
       "address": "0x4e1be38dea008d228d95f41e44fde96294801ba3",
@@ -293,7 +260,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Megapot",
       "symbol": "MEGAPOT",
       "address": "0x79cbc4faba4eb73f2f2975c769e8d45ff437bba3",
@@ -326,73 +293,12 @@
       "launchTimestamp": 1789666098826,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 10,
-      "name": "eip5792",
-      "symbol": "EIP5792",
-      "address": "0x6f35c0bb75332dcdb50fc7ee0d21148bd91ffba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x6f35c0bb75332dcdb50fc7ee0d21148bd91ffba3&chain=base",
-      "poolId": "0xe371d160011c2e00097381c575be74390554f1824bf5d6111a10aee4a5994384",
-      "deployer": "0x44eb009f4c9b8b9c22fe9aa10daae99af433099a",
-      "feeRecipient": "0x44eb009f4c9b8b9c22fe9aa10daae99af433099a",
-      "launchTimestamp": 1789665950801,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
-      "id": "ACT-THURSDAY-SELL",
-      "timestamp": "2026-09-17T19:47:45.353Z",
-      "token": "THURSDAY",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "4755.19",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "9 buys / 22 sells · 71% sell",
-      "address": "0x7eea5bdf2f886ce6609e353ae686c87e5cbe2ba3"
-    },
-    {
-      "id": "ACT-THURSDAY-AVG",
-      "timestamp": "2026-09-17T19:47:45.353Z",
-      "token": "THURSDAY",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "153.39",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $153 / tx · 31 txns",
-      "address": "0x7eea5bdf2f886ce6609e353ae686c87e5cbe2ba3"
-    },
-    {
       "id": "ACT-FEED-AVG",
-      "timestamp": "2026-09-17T19:47:45.353Z",
+      "timestamp": "2026-09-17T19:59:40.046Z",
       "token": "FEED",
       "chain": "BASE",
       "type": "BUY",
@@ -405,7 +311,7 @@
     },
     {
       "id": "ACT-Snapshot-AVG",
-      "timestamp": "2026-09-17T19:47:45.353Z",
+      "timestamp": "2026-09-17T19:59:40.046Z",
       "token": "Snapshot",
       "chain": "BASE",
       "type": "SELL",
