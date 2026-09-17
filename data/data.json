@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T19:18:27.096Z",
+    "updatedAt": "2026-09-17T19:32:29.238Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 10,
-    "withMarketData": 7,
-    "safeTokensCount": 7,
+    "withMarketData": 6,
+    "safeTokensCount": 6,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 6
+    "totalWhaleAlerts": 4
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "NYCBABY",
-      "symbol": "NYC",
-      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3",
-      "pairAddress": "0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.1600e-7",
-      "priceChange24h": -38.17,
-      "volume24h": 15196.75,
-      "volume1h": 0,
-      "liquidityUsd": 9935.68,
-      "fdv": 11608,
-      "txns24h": {
-        "buys": 73,
-        "sells": 98
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
-      "poolId": "0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
-      "deployer": "0xcaa70f3d9c745b55b34a4bcb354a5699f5f561f4",
-      "feeRecipient": "0xcaa70f3d9c745b55b34a4bcb354a5699f5f561f4",
-      "launchTimestamp": 1789664677456,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "Exa Snapshot",
       "symbol": "Snapshot",
       "address": "0x57818f59abe46f8920b9bf49a0a72614c463dba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Thursday Arena",
       "symbol": "THURSDAY",
       "address": "0x7eea5bdf2f886ce6609e353ae686c87e5cbe2ba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "FEED",
       "symbol": "FEED",
       "address": "0xd39aece709501c7f3eaa7e8cfa397112447f0ba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "Thursday Arena",
       "symbol": "THURSDAY",
       "address": "0x9f48a915db18df075d404adca210a7b50b647ba3",
@@ -187,7 +153,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "P(Doom) Perp",
       "symbol": "PDOOM",
       "address": "0xc004cabc64df4b732899f445e3ca1fbf9c38bba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "skelly",
       "symbol": "SKELLY",
       "address": "0xf8d1df581890560847a1438b3f7367411bfdeba3",
@@ -255,6 +221,41 @@
       "launchTimestamp": 1789665598085,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 7,
+      "name": "The OG Moonkey",
+      "symbol": "MOONKEY",
+      "address": "0xc359576efd25bda57b2379be00555222d3eecba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc359576efd25bda57b2379be00555222d3eecba3&chain=base",
+      "poolId": "0x1029b016d20d195e967314be48f52511b3132800a32d0e27b705fc25d57d6ba2",
+      "deployer": "0x591da91ebfd491ff67829e5370925f9287835414",
+      "feeRecipient": "0xe1fdf5067e03f0106079aafc04133fbe4d8f529c",
+      "launchTimestamp": 1789672885744,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 8,
@@ -364,21 +365,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-NYC-VOL",
-      "timestamp": "2026-09-17T19:18:27.096Z",
-      "token": "NYC",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "15196.75",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "HIGH VOLUME",
-      "detail": "Vol $15197 · Liq $9936",
-      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3"
-    },
-    {
       "id": "ACT-THURSDAY-SELL",
-      "timestamp": "2026-09-17T19:18:27.096Z",
+      "timestamp": "2026-09-17T19:32:29.238Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -391,7 +379,7 @@
     },
     {
       "id": "ACT-THURSDAY-AVG",
-      "timestamp": "2026-09-17T19:18:27.096Z",
+      "timestamp": "2026-09-17T19:32:29.238Z",
       "token": "THURSDAY",
       "chain": "BASE",
       "type": "SELL",
@@ -404,7 +392,7 @@
     },
     {
       "id": "ACT-FEED-AVG",
-      "timestamp": "2026-09-17T19:18:27.096Z",
+      "timestamp": "2026-09-17T19:32:29.238Z",
       "token": "FEED",
       "chain": "BASE",
       "type": "BUY",
@@ -417,7 +405,7 @@
     },
     {
       "id": "ACT-Snapshot-AVG",
-      "timestamp": "2026-09-17T19:18:27.096Z",
+      "timestamp": "2026-09-17T19:32:29.238Z",
       "token": "Snapshot",
       "chain": "BASE",
       "type": "SELL",
@@ -427,19 +415,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $99 / tx · 50 txns",
       "address": "0x57818f59abe46f8920b9bf49a0a72614c463dba3"
-    },
-    {
-      "id": "ACT-NYC-AVG",
-      "timestamp": "2026-09-17T19:18:27.096Z",
-      "token": "NYC",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "88.87",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $89 / tx · 171 txns",
-      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3"
     }
   ]
 }
