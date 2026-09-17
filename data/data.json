@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T12:29:01.985Z",
+    "updatedAt": "2026-09-17T12:50:03.897Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,14 +10,48 @@
   },
   "summary": {
     "totalAnalyzed": 7,
-    "withMarketData": 0,
-    "safeTokensCount": 0,
+    "withMarketData": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "dead",
+      "symbol": "DEAD",
+      "address": "0x6666dd8d0a8889e41418141760753b69ab319ba3",
+      "pairAddress": "0x1f601b26422ccad68cd4d0f0c9de8bed20914a5bc752325b9714583d0eeb9db5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.1210e-7",
+      "priceChange24h": 88.69,
+      "volume24h": 55404.66,
+      "volume1h": 55404.66,
+      "liquidityUsd": 17962.64,
+      "fdv": 21210,
+      "txns24h": {
+        "buys": 276,
+        "sells": 423
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x1f601b26422ccad68cd4d0f0c9de8bed20914a5bc752325b9714583d0eeb9db5",
+      "poolId": "0x1f601b26422ccad68cd4d0f0c9de8bed20914a5bc752325b9714583d0eeb9db5",
+      "deployer": "0xf87f9329452b830d168fac1ca901aa7f377fe69b",
+      "feeRecipient": "0xf87f9329452b830d168fac1ca901aa7f377fe69b",
+      "launchTimestamp": 1789649114510,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "Toast",
       "symbol": "TST",
       "address": "0xa3e6643a7dab8a3100920ba32cfc78b6bd1ccba3",
@@ -52,7 +86,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Muse X",
       "symbol": "MUSEX",
       "address": "0xab57d2aaa9f6567ed0432d1f89bac8af42839ba3",
@@ -87,7 +121,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Cab Bots",
       "symbol": "CABOT",
       "address": "0x8dd8a8d65633fc45e44ba89e3e01e8e33b4cdba3",
@@ -122,7 +156,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "musefan",
       "symbol": "MUSEFAN",
       "address": "0x1eb7cfdfd96e8785fd3693d0be20490a18b4eba3",
@@ -157,7 +191,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "musenger",
       "symbol": "musenger",
       "address": "0x4dc0bf60a2f4eda0baa86f9c1d0e38f4f326dba3",
@@ -192,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Agent Desktop",
       "symbol": "ADESK",
       "address": "0xbc475e64e14c2052aaecd10f5fc966e97e15cba3",
@@ -225,42 +259,21 @@
       "launchTimestamp": 1789634395424,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 7,
-      "name": "muse fluffy",
-      "symbol": "EULER",
-      "address": "0xb1c9a9f7b2b50bcd72e32a0da16a84030c7a9ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb1c9a9f7b2b50bcd72e32a0da16a84030c7a9ba3&chain=base",
-      "poolId": "0x5d7a789af34ae3397a2874223a52ed652e67111a6e0d85dd4c08fcac0748ee4f",
-      "deployer": "0x2558cd2d415536a48af2c71c1c40c2211cde53cd",
-      "feeRecipient": "0x2558cd2d415536a48af2c71c1c40c2211cde53cd",
-      "launchTimestamp": 1789628618064,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": []
+  "whaleRadar": [
+    {
+      "id": "ACT-DEAD-VOL",
+      "timestamp": "2026-09-17T12:50:03.897Z",
+      "token": "DEAD",
+      "chain": "BASE",
+      "type": "BUY",
+      "amountUsd": "55404.66",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $55405 · Liq $17963",
+      "address": "0x6666dd8d0a8889e41418141760753b69ab319ba3"
+    }
+  ]
 }
