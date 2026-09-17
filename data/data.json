@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T01:58:43.634Z",
+    "updatedAt": "2026-09-17T02:18:54.778Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,49 +10,84 @@
   },
   "summary": {
     "totalAnalyzed": 14,
-    "withMarketData": 1,
-    "safeTokensCount": 1,
+    "withMarketData": 0,
+    "safeTokensCount": 0,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 1
+    "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "spiderbrain",
-      "symbol": "SPIDERBRAIN",
-      "address": "0x9881d8cbee9f287df5fd6e697f334329a1994ba3",
-      "pairAddress": "0x884a65743bb344837d17b00bfdbd07f73ffbda8f125389ed954b37303dae6690",
+      "name": "Mom's book",
+      "symbol": "TIMELESS",
+      "address": "0x2172fa6ba11a541c33f7c2772be1be0d47160ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0050e-7",
-      "priceChange24h": -37.96,
-      "volume24h": 470.23,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8598.72,
-      "fdv": 10058,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 4
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x884a65743bb344837d17b00bfdbd07f73ffbda8f125389ed954b37303dae6690",
-      "poolId": "0x884a65743bb344837d17b00bfdbd07f73ffbda8f125389ed954b37303dae6690",
-      "deployer": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "feeRecipient": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "launchTimestamp": 1789597581733,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2172fa6ba11a541c33f7c2772be1be0d47160ba3&chain=base",
+      "poolId": "0x63438f17592ae890983ab5cd4a54d75f2a6df7182f5405d0c5f541cd65145fc7",
+      "deployer": "0xaf353e5e18072fbc06ca9a8826db92df03c3826b",
+      "feeRecipient": "0xaf353e5e18072fbc06ca9a8826db92df03c3826b",
+      "launchTimestamp": 1789610495653,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 2,
+      "name": "Mom's book",
+      "symbol": "MAYEMUSK",
+      "address": "0xe3a2dcea24befce50388ed28c2eef46380eedba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe3a2dcea24befce50388ed28c2eef46380eedba3&chain=base",
+      "poolId": "0x9e8f29b419491e56143474d47eeb3e4baf25bdf038e162c67cbb61330d936413",
+      "deployer": "0xaf353e5e18072fbc06ca9a8826db92df03c3826b",
+      "feeRecipient": "0xaf353e5e18072fbc06ca9a8826db92df03c3826b",
+      "launchTimestamp": 1789610372387,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 3,
       "name": "museclaw",
       "symbol": "MUSECLAW",
       "address": "0x2965836ab9786cdbc8fe3e139f906df64c96bba3",
@@ -87,7 +122,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "lightspark",
       "symbol": "LIGHTSPARK",
       "address": "0x5104139f9bb484a095bf9299a0659b16fab4cba3",
@@ -122,7 +157,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "musebase",
       "symbol": "MUSEBASE",
       "address": "0xf73958a408b19a286a5fe0e651ac82d1d68fbba3",
@@ -157,7 +192,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Rene",
       "symbol": "RENE",
       "address": "0xfa166a632745e7727478609b865ac9cf31601ba3",
@@ -192,7 +227,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Jev",
       "symbol": "JEV",
       "address": "0x0523c778babd94372ff4133e002e2e0d90a1eba3",
@@ -227,7 +262,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Monid",
       "symbol": "MONID",
       "address": "0x0674eb4260da53ac6567517493c643d55d13bba3",
@@ -262,7 +297,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "spider",
       "symbol": "SPIDER",
       "address": "0x0bd0525b577395f74b0e4782c70d885f4270aba3",
@@ -297,7 +332,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Muse Code from Meta",
       "symbol": "MUSECODE",
       "address": "0x5d7824a0fee695f016638837b52d426d63ad6ba3",
@@ -332,7 +367,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "SPIDERBRAIN",
       "symbol": "SPIDERBRAIN",
       "address": "0xae5bbced08fa36f2ad7cf6a9bc00b5e89cf48ba3",
@@ -367,7 +402,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Carson",
       "symbol": "CRM",
       "address": "0x711cefde84476682d3c525e4ef6eba81da751ba3",
@@ -402,7 +437,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Spiderbrain",
       "symbol": "SPIDERBRAIN",
       "address": "0xa01a4b9a95ab32bcec8e2c819b4bdbfd5fce4ba3",
@@ -437,7 +472,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "SPIDERBRAIN",
       "symbol": "SPIDERBRAIN",
       "address": "0xe8c61aa78f505bc805dcdb6a04e6406dc8659ba3",
@@ -470,56 +505,7 @@
       "launchTimestamp": 1789597999771,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 14,
-      "name": "musenimbus",
-      "symbol": "musenimbus",
-      "address": "0xd32fb09a8cf20da947d2b7e31136c329dab76ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd32fb09a8cf20da947d2b7e31136c329dab76ba3&chain=base",
-      "poolId": "0x7ab3bd61e0fac48dfd22bf80ede022a675da637fba0f82e404640218c6740353",
-      "deployer": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "feeRecipient": "0x6408872ac02e35d39d8d3990d2d13ab5eff16805",
-      "launchTimestamp": 1789597687893,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": [
-    {
-      "id": "ACT-SPIDERBRAIN-AVG",
-      "timestamp": "2026-09-17T01:58:43.634Z",
-      "token": "SPIDERBRAIN",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "94.05",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $94 / tx · 5 txns",
-      "address": "0x9881d8cbee9f287df5fd6e697f334329a1994ba3"
-    }
-  ]
+  "whaleRadar": []
 }
