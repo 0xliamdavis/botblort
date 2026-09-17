@@ -2,60 +2,59 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T16:50:55.070Z",
+    "updatedAt": "2026-09-17T17:12:25.582Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 4,
+    "totalAnalyzed": 3,
     "withMarketData": 1,
-    "safeTokensCount": 0,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "MiniPlay",
-      "symbol": "SKILLX",
-      "address": "0xd8a227dad1381b4633c721834ee8e006469b2ba3",
-      "pairAddress": "0xfa458d4df0996f0f179da585df6c2b5de38564e5132a5eacfd934855cbacc25b",
+      "name": "NYCBABY",
+      "symbol": "NYC",
+      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3",
+      "pairAddress": "0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.5640e-8",
-      "priceChange24h": -54.22,
-      "volume24h": 97.26,
-      "volume1h": 97.26,
-      "liquidityUsd": 2180.2,
-      "fdv": 2565,
+      "priceUsd": "1.1570e-7",
+      "priceChange24h": -38.34,
+      "volume24h": 15194.26,
+      "volume1h": 15194.26,
+      "liquidityUsd": 9908.82,
+      "fdv": 11575,
       "txns24h": {
-        "buys": 2,
-        "sells": 3
+        "buys": 72,
+        "sells": 96
       },
       "safety": {
-        "safetyScore": 60,
-        "status": "CAUTION",
+        "safetyScore": 90,
+        "status": "SAFE",
         "flags": [
-          "LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "MEDIUM_LIQUIDITY"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xfa458d4df0996f0f179da585df6c2b5de38564e5132a5eacfd934855cbacc25b",
-      "poolId": "0xfa458d4df0996f0f179da585df6c2b5de38564e5132a5eacfd934855cbacc25b",
-      "deployer": "0x244b1a28eca0513dcb61d6af8699f48861335609",
-      "feeRecipient": "0x244b1a28eca0513dcb61d6af8699f48861335609",
-      "launchTimestamp": 1789661365130,
+      "dexUrl": "https://dexscreener.com/base/0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
+      "poolId": "0x38afdd0ce8de9a68a7a898947ea55696e578d1c914eb84d71b230ddfff6dc8d4",
+      "deployer": "0xcaa70f3d9c745b55b34a4bcb354a5699f5f561f4",
+      "feeRecipient": "0xcaa70f3d9c745b55b34a4bcb354a5699f5f561f4",
+      "launchTimestamp": 1789664677456,
       "isNew": true,
       "hasMarketData": true
     },
     {
       "rank": 2,
-      "name": "NOTMUSE",
-      "symbol": "NOTMUSE",
-      "address": "0xfe99e1321e025338ce78f74bed4efe53e2f89ba3",
+      "name": "Veranta",
+      "symbol": "VERANTA",
+      "address": "0x3cad06e2af1f3f124583da0b2c0ae96b08168ba3",
       "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
@@ -78,19 +77,19 @@
           "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xfe99e1321e025338ce78f74bed4efe53e2f89ba3&chain=base",
-      "poolId": "0x1eadc670be68260ac3f932baf9db3a6db71b7027001a440e2f9e3f974bfe2711",
-      "deployer": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "feeRecipient": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "launchTimestamp": 1789661888878,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x3cad06e2af1f3f124583da0b2c0ae96b08168ba3&chain=base",
+      "poolId": "0xda4bd59efb8037b7128506f56ee9cc5569cc759b6502d6180debeea15c5bf467",
+      "deployer": "0x44eb009f4c9b8b9c22fe9aa10daae99af433099a",
+      "feeRecipient": "0x44eb009f4c9b8b9c22fe9aa10daae99af433099a",
+      "launchTimestamp": 1789664170593,
       "isNew": true,
       "hasMarketData": false
     },
     {
       "rank": 3,
-      "name": "musebots",
-      "symbol": "musebots",
-      "address": "0x73bf3f21ac78127966fea0cea175b4c70bc8aba3",
+      "name": "token2049",
+      "symbol": "TOKEN2049",
+      "address": "0xed9540569d6593e2c31ed3af0492b13f134a9ba3",
       "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
@@ -113,49 +112,41 @@
           "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x73bf3f21ac78127966fea0cea175b4c70bc8aba3&chain=base",
-      "poolId": "0xaad91312a67f23b1766f0aec13a3773d14bf08ff472af7b73dbf502d045f139e",
-      "deployer": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "feeRecipient": "0xbc2c1bd4ce5a8fa34a880ef3fcbed2daff3ad0c1",
-      "launchTimestamp": 1789661782543,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 4,
-      "name": "Muse Bank",
-      "symbol": "MUSEBANK",
-      "address": "0x653bb817b85537cbdfb7d2187b8dd1faab4e2ba3",
-      "pairAddress": "0xd51ddd52f2abd697412037377f196b901a38b3ef89dd5077ad91cb48a3520e3f",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0110e-7",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10112,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xd51ddd52f2abd697412037377f196b901a38b3ef89dd5077ad91cb48a3520e3f",
-      "poolId": "0xd51ddd52f2abd697412037377f196b901a38b3ef89dd5077ad91cb48a3520e3f",
-      "deployer": "0xaa5df6c6f22966638db6c4807345c9a490ff0bb6",
-      "feeRecipient": "0xaa5df6c6f22966638db6c4807345c9a490ff0bb6",
-      "launchTimestamp": 1789661362576,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xed9540569d6593e2c31ed3af0492b13f134a9ba3&chain=base",
+      "poolId": "0xe53dc1ff863fc4be8124b4e3091deadacf0763e2805701e0384106589f919e3f",
+      "deployer": "0x89578c873f1a3101f6f31d6a45cc7a915dea315b",
+      "feeRecipient": "0x89578c873f1a3101f6f31d6a45cc7a915dea315b",
+      "launchTimestamp": 1789663959648,
       "isNew": true,
       "hasMarketData": false
     }
   ],
-  "whaleRadar": []
+  "whaleRadar": [
+    {
+      "id": "ACT-NYC-VOL",
+      "timestamp": "2026-09-17T17:12:25.582Z",
+      "token": "NYC",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "15194.26",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "HIGH VOLUME",
+      "detail": "Vol $15194 · Liq $9909",
+      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3"
+    },
+    {
+      "id": "ACT-NYC-AVG",
+      "timestamp": "2026-09-17T17:12:25.581Z",
+      "token": "NYC",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "90.44",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $90 / tx · 168 txns",
+      "address": "0x9d5152ccf5fdea22cdf1ee5e9c45f93227dd1ba3"
+    }
+  ]
 }
