@@ -2,18 +2,18 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-17T22:47:20.198Z",
+    "updatedAt": "2026-09-17T22:59:17.669Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 20,
+    "totalAnalyzed": 17,
     "withMarketData": 4,
     "safeTokensCount": 3,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 4
+    "totalWhaleAlerts": 5
   },
   "tokens": [
     {
@@ -86,6 +86,40 @@
     },
     {
       "rank": 3,
+      "name": "Grok Bot",
+      "symbol": "GROK",
+      "address": "0x37c3d1ed396461ec684b94be492205cd909adba3",
+      "pairAddress": "0xb333610f1bc4898274ab380d7daca4d52c2bea5ca6ce892c754993ad1fc4dd32",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0140e-7",
+      "priceChange24h": -29.3,
+      "volume24h": 2008.24,
+      "volume1h": 2008.24,
+      "liquidityUsd": 0,
+      "fdv": 10147,
+      "txns24h": {
+        "buys": 10,
+        "sells": 15
+      },
+      "safety": {
+        "safetyScore": 55,
+        "status": "CAUTION",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xb333610f1bc4898274ab380d7daca4d52c2bea5ca6ce892c754993ad1fc4dd32",
+      "poolId": "0xb333610f1bc4898274ab380d7daca4d52c2bea5ca6ce892c754993ad1fc4dd32",
+      "deployer": "0x5513a83fda04ae7d0bfdc1eb6d37aeb16455ca55",
+      "feeRecipient": "0xd4fd8d6f0f64f3d0ba015b645ca8f8c13355c24a",
+      "launchTimestamp": 1789685358386,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
       "name": "MOZI",
       "symbol": "MOZI",
       "address": "0x82caa290c374d1be441936f2aea2d4bc4fb05ba3",
@@ -96,7 +130,7 @@
       "priceUsd": "2.5480e-8",
       "priceChange24h": -34.62,
       "volume24h": 154.56,
-      "volume1h": 3.95,
+      "volume1h": 0,
       "liquidityUsd": 2166.66,
       "fdv": 2549,
       "txns24h": {
@@ -119,42 +153,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
-      "name": "ASSANGE",
-      "symbol": "ASSANGE",
-      "address": "0x9755e42abf8cf8d59b6ff60ba8c00c257d387ba3",
-      "pairAddress": "0x30734d1fe373344afac12e2fa564fa174e6792e6ec314b2635be1bbe3d5850a8",
+      "rank": 5,
+      "name": "Grok Bot",
+      "symbol": "BOT",
+      "address": "0xbc57e6b1b27756be59c99da2d936d0987eb9eba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.5270e-8",
+      "dexId": "doppler",
+      "priceUsd": "0",
       "priceChange24h": 0,
       "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 2148.01,
-      "fdv": 2527,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 60,
+        "safetyScore": 35,
         "status": "CAUTION",
         "flags": [
-          "LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x30734d1fe373344afac12e2fa564fa174e6792e6ec314b2635be1bbe3d5850a8",
-      "poolId": "0x30734d1fe373344afac12e2fa564fa174e6792e6ec314b2635be1bbe3d5850a8",
-      "deployer": "0xc83448878ce5c3448296e9566fc0e009c770c5dd",
-      "feeRecipient": "0xc83448878ce5c3448296e9566fc0e009c770c5dd",
-      "launchTimestamp": 1789677598764,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xbc57e6b1b27756be59c99da2d936d0987eb9eba3&chain=base",
+      "poolId": "0x5b5803386f2a46648dbc24cdbd2618ce79ef89449004afb09118850e58c2d974",
+      "deployer": "0x28b6306bb41da3960aeb9c338d224579ad9a1b18",
+      "feeRecipient": "0xfb2cdd3abd47af7e90a77ec948711f0b90c0cb29",
+      "launchTimestamp": 1789685504918,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "musebear",
       "symbol": "BEAR",
       "address": "0x2da0c9673698943b933e9726e87bb9d3ce58eba3",
@@ -189,7 +223,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "BEH",
       "symbol": "BEH",
       "address": "0x51b9d2bb9f9586efe18b1f96c90d045b9e843ba3",
@@ -224,7 +258,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Bankr Muse",
       "symbol": "BM",
       "address": "0xb7a40299c349d139b887fbb0df5354d887cdfba3",
@@ -259,7 +293,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "arctum",
       "symbol": "ARCTUM",
       "address": "0xb1e7f0ec032221fff140f9aba534d9a39927fba3",
@@ -294,7 +328,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Pimsy LLM",
       "symbol": "PIMSY",
       "address": "0xaae8ae37e7185037a4653d027182b2334b72bba3",
@@ -329,7 +363,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "nautilo",
       "symbol": "nautilo",
       "address": "0xdebe949ced173e493953a797f8ade8b370b88ba3",
@@ -364,7 +398,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "MOZI",
       "symbol": "MOZI",
       "address": "0xe00bb8c6276a310fc35a97a3e55a96aba1914ba3",
@@ -399,7 +433,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "All Of Stock",
       "symbol": "STOCK",
       "address": "0xcae1c33c0d116653204083bcde9a8addb007aba3",
@@ -434,7 +468,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "BOSSMAN",
       "symbol": "BOSSMAN",
       "address": "0xd77baf4f55128a23b9df390167ec04bbc30a2ba3",
@@ -469,7 +503,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "nautilo",
       "symbol": "nautilo",
       "address": "0x15e79f37afdaa3672ac96b28bffd79bc82cedba3",
@@ -504,7 +538,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "Tachikoma",
       "symbol": "Tachikoma",
       "address": "0x34ea7e9073f606e98627ba2c0e30da5c9ec47ba3",
@@ -539,7 +573,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "dead",
       "symbol": "DEAD",
       "address": "0x9ddb92c9c1769c7e51acfe2fbe598c4fa3810ba3",
@@ -572,152 +606,12 @@
       "launchTimestamp": 1789679022367,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 17,
-      "name": "musegram",
-      "symbol": "MUSEGRAM",
-      "address": "0xf0a5fd23f3ac0e310395af58648d08fab5e10ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xf0a5fd23f3ac0e310395af58648d08fab5e10ba3&chain=base",
-      "poolId": "0x03c9af11a25adf76068a84f674657b9b84ec1423c4240b2de699840b9c5db8aa",
-      "deployer": "0xbb8330d6bd0ad73742713c9184fed61640d8b184",
-      "feeRecipient": "0xbb8330d6bd0ad73742713c9184fed61640d8b184",
-      "launchTimestamp": 1789678940447,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 18,
-      "name": "Cali The Terrier",
-      "symbol": "CALI",
-      "address": "0x17a85ff08fdc6471e08bc448d239557307dcdba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x17a85ff08fdc6471e08bc448d239557307dcdba3&chain=base",
-      "poolId": "0xf191874ea8aca7e29eb3108766c220c6213f4c2609d6410e8dd19d64e67df0e3",
-      "deployer": "0x59e31442a4632f8d82a64d5f06f2e6166c0866f0",
-      "feeRecipient": "0x59e31442a4632f8d82a64d5f06f2e6166c0866f0",
-      "launchTimestamp": 1789678562662,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 19,
-      "name": "Leopardus tilcayo",
-      "symbol": "LEO",
-      "address": "0xfc1bd31aa5411632fa31f1eb2c3a70df6f8d0ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xfc1bd31aa5411632fa31f1eb2c3a70df6f8d0ba3&chain=base",
-      "poolId": "0x18262d89f45f2a7322c0173c92187af5b36fb13a2bf7195af07f66e85c71e65f",
-      "deployer": "0xc83448878ce5c3448296e9566fc0e009c770c5dd",
-      "feeRecipient": "0xc83448878ce5c3448296e9566fc0e009c770c5dd",
-      "launchTimestamp": 1789677959429,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 20,
-      "name": "Amuse",
-      "symbol": "AMUSE",
-      "address": "0x7467f7d72e1cb96ce8514f893ddf18434a5eeba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x7467f7d72e1cb96ce8514f893ddf18434a5eeba3&chain=base",
-      "poolId": "0xe6ffdbd584dae894ae15d8074c54bb710118e95449c22f09c749a722441143be",
-      "deployer": "0x83ed4436eda0adc3cee8517a664fdf7cebe377ef",
-      "feeRecipient": "0x83ed4436eda0adc3cee8517a664fdf7cebe377ef",
-      "launchTimestamp": 1789677412704,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-MOZI-VOL",
-      "timestamp": "2026-09-17T22:47:20.198Z",
+      "timestamp": "2026-09-17T22:59:17.669Z",
       "token": "MOZI",
       "chain": "BASE",
       "type": "SELL",
@@ -730,7 +624,7 @@
     },
     {
       "id": "ACT-BOT-SELL",
-      "timestamp": "2026-09-17T22:47:20.198Z",
+      "timestamp": "2026-09-17T22:59:17.669Z",
       "token": "BOT",
       "chain": "BASE",
       "type": "SELL",
@@ -743,7 +637,7 @@
     },
     {
       "id": "ACT-BOT-AVG",
-      "timestamp": "2026-09-17T22:47:20.198Z",
+      "timestamp": "2026-09-17T22:59:17.669Z",
       "token": "BOT",
       "chain": "BASE",
       "type": "SELL",
@@ -756,7 +650,7 @@
     },
     {
       "id": "ACT-MOZI-AVG",
-      "timestamp": "2026-09-17T22:47:20.198Z",
+      "timestamp": "2026-09-17T22:59:17.669Z",
       "token": "MOZI",
       "chain": "BASE",
       "type": "SELL",
@@ -766,6 +660,19 @@
       "label": "AVG TRADE",
       "detail": "Avg $88 / tx · 369 txns",
       "address": "0x7e298d798656c03ec80f2a7843d0805103749ba3"
+    },
+    {
+      "id": "ACT-GROK-AVG",
+      "timestamp": "2026-09-17T22:59:17.669Z",
+      "token": "GROK",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "80.33",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $80 / tx · 25 txns",
+      "address": "0x37c3d1ed396461ec684b94be492205cd909adba3"
     }
   ]
 }
