@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-18T07:41:40.848Z",
+    "updatedAt": "2026-09-18T07:57:32.596Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 12,
-    "withMarketData": 3,
-    "safeTokensCount": 2,
+    "withMarketData": 4,
+    "safeTokensCount": 3,
     "highRiskCount": 1,
     "totalWhaleAlerts": 0
   },
@@ -126,6 +126,40 @@
       "name": "Aura",
       "symbol": "AURA",
       "address": "0x7c515e11ddc2180c64d09201a62c701be8b9aba3",
+      "pairAddress": "0x0c27d216fbd143b34b18898020e61d9bcb6f294993215f4db348bc512a509cea",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0190e-7",
+      "priceChange24h": 0.03,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 8668.03,
+      "fdv": 10198,
+      "txns24h": {
+        "buys": 4,
+        "sells": 7
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x0c27d216fbd143b34b18898020e61d9bcb6f294993215f4db348bc512a509cea",
+      "poolId": "0x0c27d216fbd143b34b18898020e61d9bcb6f294993215f4db348bc512a509cea",
+      "deployer": "0x774802bb5f76f55c123c48a0bbf92ae15fa1fcc6",
+      "feeRecipient": "0x774802bb5f76f55c123c48a0bbf92ae15fa1fcc6",
+      "launchTimestamp": 1789716999296,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 5,
+      "name": "JERRY META",
+      "symbol": "JERRYM",
+      "address": "0x1fc553520a445b3533fdb3f2ab6d55983ad89ba3",
       "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
@@ -148,16 +182,16 @@
           "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x7c515e11ddc2180c64d09201a62c701be8b9aba3&chain=base",
-      "poolId": "0x0c27d216fbd143b34b18898020e61d9bcb6f294993215f4db348bc512a509cea",
-      "deployer": "0x774802bb5f76f55c123c48a0bbf92ae15fa1fcc6",
-      "feeRecipient": "0x774802bb5f76f55c123c48a0bbf92ae15fa1fcc6",
-      "launchTimestamp": 1789716999296,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1fc553520a445b3533fdb3f2ab6d55983ad89ba3&chain=base",
+      "poolId": "0xa0a97afe827d9d1e2994622310a08fca9ea94e16cfdbde762f4e4b4b91abb2ab",
+      "deployer": "0x4326a9a07de08b26713125aaf73a603d3ded80dc",
+      "feeRecipient": "0x4326a9a07de08b26713125aaf73a603d3ded80dc",
+      "launchTimestamp": 1789717575715,
       "isNew": true,
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "anyflonet",
       "symbol": "Anyflo",
       "address": "0x888fd898f331c8adc2d457bb97ec7d7c10611ba3",
@@ -192,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "MusePay",
       "symbol": "MUSEPAY",
       "address": "0xfa04cecaa04b616bdef51935e3204ff51960bba3",
@@ -227,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "MusePay",
       "symbol": "musepay",
       "address": "0x41cce5464887b8c043bfc02fe1b1e80a39f2dba3",
@@ -262,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "musebase",
       "symbol": "MUSEBASE",
       "address": "0x4b4e97560e8257d451a6d3e5143c02595d361ba3",
@@ -297,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "musers",
       "symbol": "musers",
       "address": "0x38b204fd3217ee86bb77b802fac8509af0c78ba3",
@@ -332,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "basemuse",
       "symbol": "basemuse",
       "address": "0x81f6eebe2fd85b77502b18976a87f1ad7dcc0ba3",
@@ -367,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Musebase",
       "symbol": "MUSEBASE",
       "address": "0x1c8b242589445db0577db6f274ce28eb28016ba3",
@@ -398,41 +432,6 @@
       "deployer": "0x9d95bf5a2ebcb09aee09ce6739c2a7e34e13010f",
       "feeRecipient": "0x9d95bf5a2ebcb09aee09ce6739c2a7e34e13010f",
       "launchTimestamp": 1789711883913,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 12,
-      "name": "Jerry muse",
-      "symbol": "Jerrymuse",
-      "address": "0x263a2e3429f7cadefb33814320924273d6fcbba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x263a2e3429f7cadefb33814320924273d6fcbba3&chain=base",
-      "poolId": "0x66a70c9a4c4e2e2c870dd7e451a13be62e44f33b1eb1a725a598d1a77ea891c6",
-      "deployer": "0x9b3fe1dfab82eeba95cc02790cc6d26a6aad17dc",
-      "feeRecipient": "0x9b3fe1dfab82eeba95cc02790cc6d26a6aad17dc",
-      "launchTimestamp": 1789710909658,
       "isNew": true,
       "hasMarketData": false
     }
