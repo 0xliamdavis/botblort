@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-18T21:39:57.208Z",
+    "updatedAt": "2026-09-18T21:51:48.788Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 22,
-    "withMarketData": 8,
-    "safeTokensCount": 7,
+    "withMarketData": 7,
+    "safeTokensCount": 6,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "MUSEBOT",
-      "symbol": "MUSEBOT",
-      "address": "0x9b6495d0a2aff7ddf362ad9a643bfdaf242a5ba3",
-      "pairAddress": "0xe55b5fab71ca090c8e259341cfc915e6e4d234e5d12819fb609412e6acc9ce82",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.1640e-7",
-      "priceChange24h": -12.34,
-      "volume24h": 38761.79,
-      "volume1h": 122.46,
-      "liquidityUsd": 9991.81,
-      "fdv": 11646,
-      "txns24h": {
-        "buys": 223,
-        "sells": 336
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xe55b5fab71ca090c8e259341cfc915e6e4d234e5d12819fb609412e6acc9ce82",
-      "poolId": "0xe55b5fab71ca090c8e259341cfc915e6e4d234e5d12819fb609412e6acc9ce82",
-      "deployer": "0x96d4102de83922aa4f80588e140ffc360f8a27d2",
-      "feeRecipient": "0x96d4102de83922aa4f80588e140ffc360f8a27d2",
-      "launchTimestamp": 1789760095457,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "DUELDUES",
       "symbol": "DUELDUOS",
       "address": "0x2291b44353d1e625316bf49d83673075c3d8fba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "MUSEAI",
       "symbol": "MUSEAI",
       "address": "0xcbce19fba884646578cd85e1b2a66b0d3210fba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "musehome",
       "symbol": "MUSEHOME",
       "address": "0x8d3459e08c50998b02dee728899db255f2565ba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "MUSEBOT",
       "symbol": "MUSEBOT",
       "address": "0x430d8a8c1b244aa116ac5cd89357575c7211cba3",
@@ -187,7 +153,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "1Trump Coin",
       "symbol": "1TRUMP",
       "address": "0x000806b3597d14f00d015f71aa52cf866c0ffba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "RND",
       "symbol": "RND",
       "address": "0x6eb0483f529f5b543d0d7f33c6799556399d1ba3",
@@ -257,7 +223,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "Going Deploy",
       "symbol": "GOINGDEPLOY",
       "address": "0x259ad3d1365fafa68b51f4370b7b17ef98eecba3",
@@ -290,6 +256,41 @@
       "launchTimestamp": 1789765278320,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 8,
+      "name": "musecore",
+      "symbol": "MUSEC",
+      "address": "0x047b48d0e8704192e5537e0eb97db64c07ad5ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x047b48d0e8704192e5537e0eb97db64c07ad5ba3&chain=base",
+      "poolId": "0xf9ed02c8bd236f69ffe43e81533aeab4d2b562f2029e687001a497804567a862",
+      "deployer": "0x954ef147b5408c1e05a07889da92cc4959021b63",
+      "feeRecipient": "0x954ef147b5408c1e05a07889da92cc4959021b63",
+      "launchTimestamp": 1789767938711,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 9,
@@ -784,21 +785,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-MUSEBOT-VOL",
-      "timestamp": "2026-09-18T21:39:57.208Z",
-      "token": "MUSEBOT",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "38761.79",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "HIGH VOLUME",
-      "detail": "Vol $38762 · Liq $9992",
-      "address": "0x9b6495d0a2aff7ddf362ad9a643bfdaf242a5ba3"
-    },
-    {
       "id": "ACT-DUELDUOS-AVG",
-      "timestamp": "2026-09-18T21:39:57.208Z",
+      "timestamp": "2026-09-18T21:51:48.788Z",
       "token": "DUELDUOS",
       "chain": "BASE",
       "type": "MIXED",
