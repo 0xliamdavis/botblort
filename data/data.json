@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-18T05:49:12.645Z",
+    "updatedAt": "2026-09-18T06:02:10.915Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -13,45 +13,11 @@
     "withMarketData": 2,
     "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 3
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "musesnap",
-      "symbol": "musesnap",
-      "address": "0x240dc476c9ebcebea8059096aceb867991896ba3",
-      "pairAddress": "0x0ddfd4cad14b6283433d8a6a42fc4479c7279295ccc611f21e255e8c2191cb2a",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "9.9100e-8",
-      "priceChange24h": -38.16,
-      "volume24h": 5134.54,
-      "volume1h": 0,
-      "liquidityUsd": 8482.98,
-      "fdv": 9910,
-      "txns24h": {
-        "buys": 12,
-        "sells": 33
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x0ddfd4cad14b6283433d8a6a42fc4479c7279295ccc611f21e255e8c2191cb2a",
-      "poolId": "0x0ddfd4cad14b6283433d8a6a42fc4479c7279295ccc611f21e255e8c2191cb2a",
-      "deployer": "0xc6de18d477eef6e3e2961d73832e46d070f2f3ce",
-      "feeRecipient": "0xc6de18d477eef6e3e2961d73832e46d070f2f3ce",
-      "launchTimestamp": 1789699720798,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "ASSANGE",
       "symbol": "ASSANGE",
       "address": "0xa7235d56626aea1407498cd838fdc8eecd580ba3",
@@ -85,10 +51,45 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "loltodesum",
       "symbol": "desum",
       "address": "0x76e60b82d3811ddb2a418a464ec1a01cdd929ba3",
+      "pairAddress": "0xafd7434acec10fcae1f1cba0198d0d17f824ccc96ca6181c262ab885d961caf5",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0150e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.08,
+      "volume1h": 0.08,
+      "liquidityUsd": 8630.84,
+      "fdv": 10154,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xafd7434acec10fcae1f1cba0198d0d17f824ccc96ca6181c262ab885d961caf5",
+      "poolId": "0xafd7434acec10fcae1f1cba0198d0d17f824ccc96ca6181c262ab885d961caf5",
+      "deployer": "0x7b22b78baea0914522f269d0fc264bc68af90585",
+      "feeRecipient": "0x7b22b78baea0914522f269d0fc264bc68af90585",
+      "launchTimestamp": 1789709027369,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
+      "name": "Jerry muse",
+      "symbol": "Jerrymuse",
+      "address": "0x263a2e3429f7cadefb33814320924273d6fcbba3",
       "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
@@ -111,11 +112,11 @@
           "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x76e60b82d3811ddb2a418a464ec1a01cdd929ba3&chain=base",
-      "poolId": "0xafd7434acec10fcae1f1cba0198d0d17f824ccc96ca6181c262ab885d961caf5",
-      "deployer": "0x7b22b78baea0914522f269d0fc264bc68af90585",
-      "feeRecipient": "0x7b22b78baea0914522f269d0fc264bc68af90585",
-      "launchTimestamp": 1789709027369,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x263a2e3429f7cadefb33814320924273d6fcbba3&chain=base",
+      "poolId": "0x66a70c9a4c4e2e2c870dd7e451a13be62e44f33b1eb1a725a598d1a77ea891c6",
+      "deployer": "0x9b3fe1dfab82eeba95cc02790cc6d26a6aad17dc",
+      "feeRecipient": "0x9b3fe1dfab82eeba95cc02790cc6d26a6aad17dc",
+      "launchTimestamp": 1789710909658,
       "isNew": true,
       "hasMarketData": false
     },
@@ -437,34 +438,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-musesnap-SELL",
-      "timestamp": "2026-09-18T05:49:12.645Z",
-      "token": "musesnap",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "5134.54",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "12 buys / 33 sells · 73% sell",
-      "address": "0x240dc476c9ebcebea8059096aceb867991896ba3"
-    },
-    {
-      "id": "ACT-musesnap-AVG",
-      "timestamp": "2026-09-18T05:49:12.644Z",
-      "token": "musesnap",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "114.10",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $114 / tx · 45 txns",
-      "address": "0x240dc476c9ebcebea8059096aceb867991896ba3"
-    },
-    {
       "id": "ACT-ASSANGE-AVG",
-      "timestamp": "2026-09-18T05:49:12.645Z",
+      "timestamp": "2026-09-18T06:02:10.914Z",
       "token": "ASSANGE",
       "chain": "BASE",
       "type": "BUY",
