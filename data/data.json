@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-18T04:42:05.361Z",
+    "updatedAt": "2026-09-18T04:57:06.103Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,48 +10,14 @@
   },
   "summary": {
     "totalAnalyzed": 12,
-    "withMarketData": 3,
-    "safeTokensCount": 3,
+    "withMarketData": 2,
+    "safeTokensCount": 2,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 5
+    "totalWhaleAlerts": 3
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "Grok Coin",
-      "symbol": "GROK",
-      "address": "0x11733ec4afcc73d57b4ba98fb012ab4a3788bba3",
-      "pairAddress": "0xbe22f19445f8a48d625d674c597b69287931eefdac5d3be4aba063603ec92c0c",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0920e-7",
-      "priceChange24h": -29.89,
-      "volume24h": 17866.06,
-      "volume1h": 0,
-      "liquidityUsd": 9303.58,
-      "fdv": 10928,
-      "txns24h": {
-        "buys": 64,
-        "sells": 168
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xbe22f19445f8a48d625d674c597b69287931eefdac5d3be4aba063603ec92c0c",
-      "poolId": "0xbe22f19445f8a48d625d674c597b69287931eefdac5d3be4aba063603ec92c0c",
-      "deployer": "0x353efcc9eeb3d0dff8280f44ed3ccdc53ceef92b",
-      "feeRecipient": "0x353efcc9eeb3d0dff8280f44ed3ccdc53ceef92b",
-      "launchTimestamp": 1789693800811,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "musesnap",
       "symbol": "musesnap",
       "address": "0x240dc476c9ebcebea8059096aceb867991896ba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "ASSANGE",
       "symbol": "ASSANGE",
       "address": "0xa7235d56626aea1407498cd838fdc8eecd580ba3",
@@ -119,7 +85,77 @@
       "hasMarketData": true
     },
     {
+      "rank": 3,
+      "name": "HANGOVER",
+      "symbol": "HANGOVER",
+      "address": "0xaa0cd5400cae30bc4e4213d4132e266af097fba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xaa0cd5400cae30bc4e4213d4132e266af097fba3&chain=base",
+      "poolId": "0x1feddd29b819b68525a16044d073fa0ff1253960feb45f0e217e01c1fc4a344d",
+      "deployer": "0x37d43ccf861caa54760f0d776f3ad0bee2126c0b",
+      "feeRecipient": "0x37d43ccf861caa54760f0d776f3ad0bee2126c0b",
+      "launchTimestamp": 1789707022199,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
       "rank": 4,
+      "name": "MJHCOIN",
+      "symbol": "$MJH",
+      "address": "0xcf795fe4bbc683175c5cbaf0370c66b7a7c55ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xcf795fe4bbc683175c5cbaf0370c66b7a7c55ba3&chain=base",
+      "poolId": "0xcc46d2b164b25e989e6e4aef156de1ecc76875cf5a30dbbde798cc5691659bea",
+      "deployer": "0xfdc3c857bd3d44405ab7bf9662b1d9d38b56b741",
+      "feeRecipient": "0xfdc3c857bd3d44405ab7bf9662b1d9d38b56b741",
+      "launchTimestamp": 1789706972856,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 5,
       "name": "mwa muse",
       "symbol": "MWAMUSE",
       "address": "0x986b4329755e030f031d388ce948aaa61f774ba3",
@@ -154,7 +190,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Turbo",
       "symbol": "TURBO",
       "address": "0x671bdd57c360246fd49f53447a7191c55a736ba3",
@@ -189,7 +225,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Pencil",
       "symbol": "Pencil",
       "address": "0x029d8884e53aad54fe83033ddab89046e1ea8ba3",
@@ -224,7 +260,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Clever Muse",
       "symbol": "CLEVER",
       "address": "0x44e4cebe876a6ae371c4353b0cae6a7df36f6ba3",
@@ -259,7 +295,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Optimus",
       "symbol": "OPTIMUS",
       "address": "0xe84c069e9893204573882213982fc86f058bcba3",
@@ -294,7 +330,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Saylor",
       "symbol": "SAYLOR",
       "address": "0xe57816d9815d448a447ef0b08b4b44e7b1b8cba3",
@@ -329,7 +365,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Jensen",
       "symbol": "JENSEN",
       "address": "0xd2759570e53581b2bf13463005c186d576126ba3",
@@ -364,7 +400,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Scavvers",
       "symbol": "$cavvers",
       "address": "0x32372ae8cc426c0b36385fd28b67e4ceca596ba3",
@@ -397,73 +433,12 @@
       "launchTimestamp": 1789695721744,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 12,
-      "name": "ELONS PET",
-      "symbol": "ELP",
-      "address": "0xdd4eb75f2f0259c8ce25b66aebac12d61b098ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xdd4eb75f2f0259c8ce25b66aebac12d61b098ba3&chain=base",
-      "poolId": "0x2decb504e4d5a62e6e0490bf5eb4e1ef4d4e77bf503f72f008be9c120f68b717",
-      "deployer": "0x0dbf19b581c60da3ed76d7ff0aa4d83c86c80d54",
-      "feeRecipient": "0x0dbf19b581c60da3ed76d7ff0aa4d83c86c80d54",
-      "launchTimestamp": 1789693069769,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
-      "id": "ACT-GROK-SELL",
-      "timestamp": "2026-09-18T04:42:05.361Z",
-      "token": "GROK",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "17866.06",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "64 buys / 168 sells · 72% sell",
-      "address": "0x11733ec4afcc73d57b4ba98fb012ab4a3788bba3"
-    },
-    {
-      "id": "ACT-GROK-VOL",
-      "timestamp": "2026-09-18T04:42:05.361Z",
-      "token": "GROK",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "17866.06",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "HIGH VOLUME",
-      "detail": "Vol $17866 · Liq $9304",
-      "address": "0x11733ec4afcc73d57b4ba98fb012ab4a3788bba3"
-    },
-    {
       "id": "ACT-musesnap-SELL",
-      "timestamp": "2026-09-18T04:42:05.361Z",
+      "timestamp": "2026-09-18T04:57:06.103Z",
       "token": "musesnap",
       "chain": "BASE",
       "type": "SELL",
@@ -476,7 +451,7 @@
     },
     {
       "id": "ACT-musesnap-AVG",
-      "timestamp": "2026-09-18T04:42:05.361Z",
+      "timestamp": "2026-09-18T04:57:06.103Z",
       "token": "musesnap",
       "chain": "BASE",
       "type": "SELL",
@@ -489,7 +464,7 @@
     },
     {
       "id": "ACT-ASSANGE-AVG",
-      "timestamp": "2026-09-18T04:42:05.361Z",
+      "timestamp": "2026-09-18T04:57:06.103Z",
       "token": "ASSANGE",
       "chain": "BASE",
       "type": "BUY",
