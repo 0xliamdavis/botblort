@@ -2,15 +2,15 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-19T20:18:27.948Z",
+    "updatedAt": "2026-09-19T20:33:13.056Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 39,
-    "withMarketData": 5,
+    "totalAnalyzed": 37,
+    "withMarketData": 6,
     "safeTokensCount": 5,
     "highRiskCount": 0,
     "totalWhaleAlerts": 1
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.3070e-7",
-      "priceChange24h": 22.64,
-      "volume24h": 21752.13,
-      "volume1h": 10862.78,
-      "liquidityUsd": 19506.04,
-      "fdv": 23073,
+      "priceUsd": "2.3080e-7",
+      "priceChange24h": 22.71,
+      "volume24h": 21754.75,
+      "volume1h": 122.08,
+      "liquidityUsd": 19518.03,
+      "fdv": 23087,
       "txns24h": {
-        "buys": 122,
-        "sells": 170
+        "buys": 123,
+        "sells": 171
       },
       "safety": {
         "safetyScore": 90,
@@ -62,7 +62,7 @@
       "priceUsd": "1.0410e-7",
       "priceChange24h": -44.17,
       "volume24h": 3339.83,
-      "volume1h": 778.78,
+      "volume1h": 0,
       "liquidityUsd": 8904.06,
       "fdv": 10414,
       "txns24h": {
@@ -129,14 +129,14 @@
       "protocol": "DOPPLER",
       "dexId": "uniswap",
       "priceUsd": "1.0180e-7",
-      "priceChange24h": -0.05,
+      "priceChange24h": -0.06,
       "volume24h": 1.17,
       "volume1h": 1.17,
-      "liquidityUsd": 8654.94,
-      "fdv": 10182,
+      "liquidityUsd": 8654.15,
+      "fdv": 10181,
       "txns24h": {
-        "buys": 5,
-        "sells": 10
+        "buys": 6,
+        "sells": 12
       },
       "safety": {
         "safetyScore": 90,
@@ -155,6 +155,41 @@
     },
     {
       "rank": 5,
+      "name": "TIMMYSLEEP",
+      "symbol": "TIMSLP",
+      "address": "0xfb4b966560dfb03bb4e90f12bc141d08631f8ba3",
+      "pairAddress": "0xb90f7eedf1eaebb1f587661fca49fed531086f4feb29b547bb69ddbc65b23635",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "2.5150e-8",
+      "priceChange24h": 0,
+      "volume24h": 0.17,
+      "volume1h": 0.17,
+      "liquidityUsd": 2515.6,
+      "fdv": 2516,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 60,
+        "status": "CAUTION",
+        "flags": [
+          "LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xb90f7eedf1eaebb1f587661fca49fed531086f4feb29b547bb69ddbc65b23635",
+      "poolId": "0xb90f7eedf1eaebb1f587661fca49fed531086f4feb29b547bb69ddbc65b23635",
+      "deployer": "0x9b443bf7bae6e0eceae39ae28599cddc9eb25f54",
+      "feeRecipient": "0x9b443bf7bae6e0eceae39ae28599cddc9eb25f54",
+      "launchTimestamp": 1789849430436,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 6,
       "name": "FreeBots",
       "symbol": "FREEBOTS",
       "address": "0x74cc190bb6097c439118a5dcfd82205ab9388ba3",
@@ -189,7 +224,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "name": "Pump Hill Runner",
+      "symbol": "PUMPRUN",
+      "address": "0x0a99f4251a461e8abc693a56bb837fd815d51ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x0a99f4251a461e8abc693a56bb837fd815d51ba3&chain=base",
+      "poolId": "0x645d579d8002a6ac09d67c59526d065321b07570b1d9f359a70346c072ca7584",
+      "deployer": "0x1e130ec63174d4258473366b762f197560942760",
+      "feeRecipient": "0xf39db763634f84379df969a734d85c19f16b4ab0",
+      "launchTimestamp": 1789849881441,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 8,
       "name": "freebotslol",
       "symbol": "FREEBOTSLOL",
       "address": "0x7c2f18f37207d942a92f8ebf2a807975248baba3",
@@ -224,7 +294,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "bankrverse",
       "symbol": "BANKRVERSE",
       "address": "0xde6ac7cda9068c9c222cd7dcf1ce306cce055ba3",
@@ -259,7 +329,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "liquidlootgg",
       "symbol": "Loot",
       "address": "0x30529383e6d640cc484dee377206d58e45b03ba3",
@@ -294,7 +364,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "FreeBots",
       "symbol": "FREEBOTS",
       "address": "0xd4abd790c2fce6b3c7ff17fdf8d73f38f1cd0ba3",
@@ -329,7 +399,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "Pons Island",
       "symbol": "PONSI",
       "address": "0x591d59c3163b13a6b183cb704bab5dd7b6ab5ba3",
@@ -364,7 +434,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "NYXAN ( The Martian Cat )",
       "symbol": "NYXAN",
       "address": "0x47e667611908a2c8a1e348665ddd0343c00d2ba3",
@@ -399,7 +469,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "gib.work",
       "symbol": "GBW",
       "address": "0x7233135fa4396678ad041ecd98b6f457c36e6ba3",
@@ -434,7 +504,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Fatgirl",
       "symbol": "FATGIRL",
       "address": "0x0367e1bc67d23e0ba619f8c98d4d515ede700ba3",
@@ -469,7 +539,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "The WSJ",
       "symbol": "WSJ",
       "address": "0xc7703da21fe724aed4fa42f896e9e1929fc27ba3",
@@ -504,7 +574,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "Melon Musked",
       "symbol": "URANUS",
       "address": "0x36b5396cdf7e7975c8884f889b6f58a908d8fba3",
@@ -539,7 +609,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "来福",
       "symbol": "来福",
       "address": "0xe735be04782f062f3cd5e27cb8aba4209a69aba3",
@@ -574,7 +644,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "Dogebot",
       "symbol": "DOGEBOT",
       "address": "0xb66b23bb27d9953a6e07c93c3ad0df4c5a51cba3",
@@ -609,7 +679,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "MUSEBOTS",
       "symbol": "MUSEBOTS",
       "address": "0x95531c7e7ddb1b19abe635bef3aaaeb654ef0ba3",
@@ -644,7 +714,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "bot402",
       "symbol": "BOT4",
       "address": "0x7b225e8c3e2542781b1b5fdd53915b9350c81ba3",
@@ -679,7 +749,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "👀",
       "symbol": "👀",
       "address": "0xd480e137051ee80724f89f733a2204b26ce8dba3",
@@ -714,7 +784,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "MUSEBOT",
       "symbol": "MUSEBOT",
       "address": "0x1ca8077f4b1beae9ad7c003a20c2ddb2f70c0ba3",
@@ -749,7 +819,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "muserawr",
       "symbol": "muserawr",
       "address": "0x4eab611750c5c052e8da902f0d1a80880dfe0ba3",
@@ -784,7 +854,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "Extreme Intelligence",
       "symbol": "EXTREMEINTELLIGENCE",
       "address": "0x5cc3b05e1e4ebae902d3a114b787c495eac82ba3",
@@ -819,7 +889,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "SOLEBASE",
       "symbol": "SOLE",
       "address": "0x4082b4eef310e31374dd16be6b88d41e8860dba3",
@@ -854,7 +924,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "Higher",
       "symbol": "HIGHER",
       "address": "0xdc6a9ccf33dfff94a1ac6126b19202eade71eba3",
@@ -889,7 +959,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "CARDS",
       "symbol": "CARDS",
       "address": "0x2806298a9579b8c811f30f68c428e3ef303acba3",
@@ -924,7 +994,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 29,
       "name": "Coinbase Tokenized Stock",
       "symbol": "CTSTOCKS",
       "address": "0xb92099474a83e354bad353778e8a43b6f8e48ba3",
@@ -959,7 +1029,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 30,
       "name": "muse with hat",
       "symbol": "musehat",
       "address": "0xa8bf17bca78c105b7384d6c998c978e657e1eba3",
@@ -994,7 +1064,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 31,
       "name": "Riva",
       "symbol": "RIVA",
       "address": "0x1e78b4b3bef5918a084d0ce3f499bb4cbf2a5ba3",
@@ -1029,7 +1099,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 32,
       "name": "musecard",
       "symbol": "musecard",
       "address": "0xc196e8efc9e26d55c669cd4595a14ee678a9fba3",
@@ -1064,7 +1134,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 33,
       "name": "musebrowser",
       "symbol": "MUSEBROWSER",
       "address": "0x4a41115d446659520c8c058fd3bdb38a6ed22ba3",
@@ -1099,7 +1169,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 34,
       "name": "Muse Thor",
       "symbol": "MUSETHOR",
       "address": "0xf3a634759c7e3da28d525230a8fe616c1b972ba3",
@@ -1134,7 +1204,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 35,
       "name": "Muse Agentic Operating System",
       "symbol": "MUSEOS",
       "address": "0x58e4540e5aae54ad79f7be0694883126f9838ba3",
@@ -1169,7 +1239,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 34,
+      "rank": 36,
       "name": "musecases",
       "symbol": "MUSECASES",
       "address": "0x9648f9874c2beca33eeaa9b4247a1317665ebba3",
@@ -1204,7 +1274,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 35,
+      "rank": 37,
       "name": "Musemaxxing",
       "symbol": "MUSEMAXXING",
       "address": "0xa3582a68e4594800de456f4641b03c7efc066ba3",
@@ -1237,152 +1307,12 @@
       "launchTimestamp": 1789842730624,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 36,
-      "name": "MuseCanibal",
-      "symbol": "MSCNBL",
-      "address": "0x6e964308dd572e7dd519105d4bdacb7352290ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x6e964308dd572e7dd519105d4bdacb7352290ba3&chain=base",
-      "poolId": "0x34f830341d6427effdd92c4b1f8b5c9f8dd11aea5024f7a919dbab10bbae2953",
-      "deployer": "0x7b27d02857c9c2a6c4d55dbf9d696451584f6dcf",
-      "feeRecipient": "0x7b27d02857c9c2a6c4d55dbf9d696451584f6dcf",
-      "launchTimestamp": 1789842685645,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 37,
-      "name": "musemark",
-      "symbol": "MUSEMARK",
-      "address": "0x4a73d521d39455395fb94ae8ad16cbec048e9ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x4a73d521d39455395fb94ae8ad16cbec048e9ba3&chain=base",
-      "poolId": "0x97c3eaed0ef62669cb97e4f8977489b1f4ce804bcc85f1b004285901595f946c",
-      "deployer": "0xaa3120d817fac0c72cc9e22fa2a3d402ca969785",
-      "feeRecipient": "0xaa3120d817fac0c72cc9e22fa2a3d402ca969785",
-      "launchTimestamp": 1789842660534,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 38,
-      "name": "museHunter",
-      "symbol": "MSHUNTRB",
-      "address": "0xc598ab08fae1d10d05c1380ee4eb19e461010ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc598ab08fae1d10d05c1380ee4eb19e461010ba3&chain=base",
-      "poolId": "0x2639aea9e0da62c2315ef973cdff0f3e8954b03676dcb291e37e3217caf43331",
-      "deployer": "0x131987d3357f1b435193bdebba446ed996adbe8f",
-      "feeRecipient": "0x131987d3357f1b435193bdebba446ed996adbe8f",
-      "launchTimestamp": 1789842544646,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 39,
-      "name": "Grow Company Founding Table",
-      "symbol": "GROCTABLE",
-      "address": "0x8c8a384660c29bb472de8fb2f63dd656fb597ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x8c8a384660c29bb472de8fb2f63dd656fb597ba3&chain=base",
-      "poolId": "0xc571fc29ba2d7dae99b7f47c3db3e32987d095b4c09236304767d30047b12e56",
-      "deployer": "0x6f504d478a5c7ec0012dad5606fea9e63c362f28",
-      "feeRecipient": "0xe792e6855998a7b0bafb3a0a77beac486f5e8a67",
-      "launchTimestamp": 1789842204353,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-FREEBOTS-AVG",
-      "timestamp": "2026-09-19T20:18:27.947Z",
+      "timestamp": "2026-09-19T20:33:13.056Z",
       "token": "FREEBOTS",
       "chain": "BASE",
       "type": "BUY",
