@@ -2,56 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-19T21:17:21.829Z",
+    "updatedAt": "2026-09-19T21:31:36.720Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 36,
+    "totalAnalyzed": 33,
     "withMarketData": 8,
-    "safeTokensCount": 7,
-    "highRiskCount": 0,
+    "safeTokensCount": 6,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "FreeBots",
-      "symbol": "FREEBOTS",
-      "address": "0x22ff60cde59273f6e373586d1c5168d464e39ba3",
-      "pairAddress": "0xa5f2820601fa87d4f925eaf37acbe1e48d580eb462c263dcf722a24d6bf6eb3f",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.3060e-7",
-      "priceChange24h": 22.59,
-      "volume24h": 21757.49,
-      "volume1h": 5.36,
-      "liquidityUsd": 19490.43,
-      "fdv": 23064,
-      "txns24h": {
-        "buys": 124,
-        "sells": 172
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xa5f2820601fa87d4f925eaf37acbe1e48d580eb462c263dcf722a24d6bf6eb3f",
-      "poolId": "0xa5f2820601fa87d4f925eaf37acbe1e48d580eb462c263dcf722a24d6bf6eb3f",
-      "deployer": "0x6605e7311eefbd413ccd71ab814dbf3b354e3536",
-      "feeRecipient": "0x7b46e4776878517bafab532b8b7d974b27b09bc3",
-      "launchTimestamp": 1789844097001,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "FREEBOTS",
       "symbol": "FREEBOTS",
       "address": "0x4cc78d627f5c79191d1577d13cb0f1a861678ba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Bankr Has Money",
       "symbol": "BHM",
       "address": "0x786ccfc078b1058f6db3bec6e3b96ae0a0181ba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "Banger",
       "symbol": "BANGER",
       "address": "0xf4dac02d95850330cbd539fe288a2c99ff57bba3",
@@ -154,7 +120,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "MASTERSAFE",
       "symbol": "MSTSFE",
       "address": "0xf7349aff46f6fd4c09d1b975c430e254a80fbba3",
@@ -188,7 +154,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "TIMMYSLEEP",
       "symbol": "TIMSLP",
       "address": "0xfb4b966560dfb03bb4e90f12bc141d08631f8ba3",
@@ -199,7 +165,7 @@
       "priceUsd": "2.5150e-8",
       "priceChange24h": 0,
       "volume24h": 0.17,
-      "volume1h": 0.17,
+      "volume1h": 0,
       "liquidityUsd": 2515.6,
       "fdv": 2516,
       "txns24h": {
@@ -219,6 +185,41 @@
       "deployer": "0x9b443bf7bae6e0eceae39ae28599cddc9eb25f54",
       "feeRecipient": "0x9b443bf7bae6e0eceae39ae28599cddc9eb25f54",
       "launchTimestamp": 1789849430436,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 6,
+      "name": "Pump Hill Runner",
+      "symbol": "PUMPRUN",
+      "address": "0x0a99f4251a461e8abc693a56bb837fd815d51ba3",
+      "pairAddress": "0x645d579d8002a6ac09d67c59526d065321b07570b1d9f359a70346c072ca7584",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0130e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.1,
+      "volume1h": 0.1,
+      "liquidityUsd": 0,
+      "fdv": 10135,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x645d579d8002a6ac09d67c59526d065321b07570b1d9f359a70346c072ca7584",
+      "poolId": "0x645d579d8002a6ac09d67c59526d065321b07570b1d9f359a70346c072ca7584",
+      "deployer": "0x1e130ec63174d4258473366b762f197560942760",
+      "feeRecipient": "0xf39db763634f84379df969a734d85c19f16b4ab0",
+      "launchTimestamp": 1789849881441,
       "isNew": true,
       "hasMarketData": true
     },
@@ -294,6 +295,41 @@
     },
     {
       "rank": 9,
+      "name": "Down Bad Department",
+      "symbol": "DBD",
+      "address": "0xaf3ca9a4c61239204ce58b54f998d0163175eba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xaf3ca9a4c61239204ce58b54f998d0163175eba3&chain=base",
+      "poolId": "0x95574c6ce79aa4f0dd0b149f192182139174d7345c32f59d905ae8851e186219",
+      "deployer": "0xd54f7c39b2af62698fb1038fddeec4fbdbcdfcd0",
+      "feeRecipient": "0xd54f7c39b2af62698fb1038fddeec4fbdbcdfcd0",
+      "launchTimestamp": 1789853243852,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 10,
       "name": "Puppeteer",
       "symbol": "Puppeteer",
       "address": "0xf693ccedcffb21de5837f88a4544ff1caca1aba3",
@@ -328,7 +364,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "MUSEVOLT",
       "symbol": "MUSEVOLT",
       "address": "0x05ed310a47df89d02b8c61912d49774870987ba3",
@@ -363,7 +399,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Wrenbird",
       "symbol": "WREN",
       "address": "0x5d30a53b60c359a47446fd8aca220d2d52f36ba3",
@@ -398,7 +434,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Galaxy Brain Resistance",
       "symbol": "GALAXY",
       "address": "0x37e4bfe0b95904e58dc71020ba134d4db355eba3",
@@ -429,41 +465,6 @@
       "deployer": "0xa66771fdffe091c534e759c534b894e9d26b30cf",
       "feeRecipient": "0xa66771fdffe091c534e759c534b894e9d26b30cf",
       "launchTimestamp": 1789851038757,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 13,
-      "name": "Pump Hill Runner",
-      "symbol": "PUMPRUN",
-      "address": "0x0a99f4251a461e8abc693a56bb837fd815d51ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x0a99f4251a461e8abc693a56bb837fd815d51ba3&chain=base",
-      "poolId": "0x645d579d8002a6ac09d67c59526d065321b07570b1d9f359a70346c072ca7584",
-      "deployer": "0x1e130ec63174d4258473366b762f197560942760",
-      "feeRecipient": "0xf39db763634f84379df969a734d85c19f16b4ab0",
-      "launchTimestamp": 1789849881441,
       "isNew": true,
       "hasMarketData": false
     },
@@ -1166,117 +1167,12 @@
       "launchTimestamp": 1789844443305,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 34,
-      "name": "CARDS",
-      "symbol": "CARDS",
-      "address": "0x2806298a9579b8c811f30f68c428e3ef303acba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2806298a9579b8c811f30f68c428e3ef303acba3&chain=base",
-      "poolId": "0x1f9872eb401590fb25ea6342c10fee8078298eca2c4754cc9e0f0ed174b97657",
-      "deployer": "0x99a1917648329bd43c4c471a2460b548117b9842",
-      "feeRecipient": "0x99a1917648329bd43c4c471a2460b548117b9842",
-      "launchTimestamp": 1789844141997,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 35,
-      "name": "Coinbase Tokenized Stock",
-      "symbol": "CTSTOCKS",
-      "address": "0xb92099474a83e354bad353778e8a43b6f8e48ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb92099474a83e354bad353778e8a43b6f8e48ba3&chain=base",
-      "poolId": "0x26bbf8be974e309c38b7719daf178b0c15b050a660dacfaa37aa5a77a64c01d0",
-      "deployer": "0x0a19493f0d41cce15d3ea1e74ccf0c1ab041b37e",
-      "feeRecipient": "0x0a19493f0d41cce15d3ea1e74ccf0c1ab041b37e",
-      "launchTimestamp": 1789844132118,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 36,
-      "name": "muse with hat",
-      "symbol": "musehat",
-      "address": "0xa8bf17bca78c105b7384d6c998c978e657e1eba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa8bf17bca78c105b7384d6c998c978e657e1eba3&chain=base",
-      "poolId": "0x7efb13c9ee8e9fdad618ecc592ef72f557d802cdceda07b8aec183b1edab0744",
-      "deployer": "0x53a40debe59a54addb9efd6237d3e20734ab8eaa",
-      "feeRecipient": "0x53a40debe59a54addb9efd6237d3e20734ab8eaa",
-      "launchTimestamp": 1789843913684,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-FREEBOTS-AVG",
-      "timestamp": "2026-09-19T21:17:21.828Z",
+      "timestamp": "2026-09-19T21:31:36.720Z",
       "token": "FREEBOTS",
       "chain": "BASE",
       "type": "BUY",
