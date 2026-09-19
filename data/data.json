@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-19T23:16:15.845Z",
+    "updatedAt": "2026-09-19T23:29:38.115Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 8,
-    "safeTokensCount": 8,
+    "withMarketData": 7,
+    "safeTokensCount": 7,
     "highRiskCount": 0,
     "totalWhaleAlerts": 3
   },
@@ -28,7 +28,7 @@
       "priceUsd": "2.0720e-7",
       "priceChange24h": 9.95,
       "volume24h": 3082.28,
-      "volume1h": 5.99,
+      "volume1h": 0,
       "liquidityUsd": 17459.31,
       "fdv": 20722,
       "txns24h": {
@@ -62,7 +62,7 @@
       "priceUsd": "1.0270e-7",
       "priceChange24h": -22.77,
       "volume24h": 2462.1,
-      "volume1h": 2462.1,
+      "volume1h": 0,
       "liquidityUsd": 8865.1,
       "fdv": 10280,
       "txns24h": {
@@ -96,7 +96,7 @@
       "priceUsd": "1.0040e-7",
       "priceChange24h": -35.78,
       "volume24h": 1120.78,
-      "volume1h": 1120.78,
+      "volume1h": 0,
       "liquidityUsd": 8538.58,
       "fdv": 10044,
       "txns24h": {
@@ -120,40 +120,6 @@
     },
     {
       "rank": 4,
-      "name": "bankr money",
-      "symbol": "BANKR MONEY",
-      "address": "0x0ee1aebbec491309bb943f7352cee219dbc75ba3",
-      "pairAddress": "0x061d57de4875a78ccf40a0706f2f278f39436c457695f68759cc7d3381ae7bbd",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0150e-7",
-      "priceChange24h": -40.64,
-      "volume24h": 1062.64,
-      "volume1h": 2.26,
-      "liquidityUsd": 8634.31,
-      "fdv": 10155,
-      "txns24h": {
-        "buys": 9,
-        "sells": 14
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x061d57de4875a78ccf40a0706f2f278f39436c457695f68759cc7d3381ae7bbd",
-      "poolId": "0x061d57de4875a78ccf40a0706f2f278f39436c457695f68759cc7d3381ae7bbd",
-      "deployer": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
-      "feeRecipient": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
-      "launchTimestamp": 1789854737539,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 5,
       "name": "Runtime",
       "symbol": "RUN",
       "address": "0xb4e8169d4911e13845000432627886a9dd8d8ba3",
@@ -188,7 +154,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "ConductorOSS",
       "symbol": "COS",
       "address": "0xafdc7682257a79babba5665767ad3a1414fe9ba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Uranium in Uranus",
       "symbol": "UIN",
       "address": "0xcb8913898d04e852c59ae0271cb637855aeabba3",
@@ -257,7 +223,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "BUSTED",
       "symbol": "BUSTED",
       "address": "0x7f17136f8a601a15fb6ae4ac972272bbf71d1ba3",
@@ -290,6 +256,41 @@
       "launchTimestamp": 1789857253770,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 8,
+      "name": "Gas Money",
+      "symbol": "GASDC",
+      "address": "0x24912167971dc79ac63df56c19e17aacd574cba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x24912167971dc79ac63df56c19e17aacd574cba3&chain=base",
+      "poolId": "0x7270a2d38e36c3e0c125b8bba4e263fe38abef1acadbabfcda82c4411a29320f",
+      "deployer": "0x3e95c3328c4a5370433126817800787c64663a93",
+      "feeRecipient": "0x3e95c3328c4a5370433126817800787c64663a93",
+      "launchTimestamp": 1789860199653,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 9,
@@ -1415,7 +1416,7 @@
   "whaleRadar": [
     {
       "id": "ACT-TEST-SELL",
-      "timestamp": "2026-09-19T23:16:15.845Z",
+      "timestamp": "2026-09-19T23:29:38.115Z",
       "token": "TEST",
       "chain": "BASE",
       "type": "SELL",
@@ -1428,7 +1429,7 @@
     },
     {
       "id": "ACT-RUN-AVG",
-      "timestamp": "2026-09-19T23:16:15.845Z",
+      "timestamp": "2026-09-19T23:29:38.115Z",
       "token": "RUN",
       "chain": "BASE",
       "type": "SELL",
@@ -1441,7 +1442,7 @@
     },
     {
       "id": "ACT-CASH-AVG",
-      "timestamp": "2026-09-19T23:16:15.844Z",
+      "timestamp": "2026-09-19T23:29:38.115Z",
       "token": "CASH",
       "chain": "BASE",
       "type": "BUY",
