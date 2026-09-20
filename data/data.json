@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T13:48:46.741Z",
+    "updatedAt": "2026-09-20T14:00:51.717Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 31,
-    "withMarketData": 6,
+    "totalAnalyzed": 30,
+    "withMarketData": 5,
     "safeTokensCount": 3,
-    "highRiskCount": 2,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -122,41 +122,6 @@
     },
     {
       "rank": 4,
-      "name": "Cronos",
-      "symbol": "cronos",
-      "address": "0xbe29a6125cf4a35b8fe89818bd7ef099cc75cba3",
-      "pairAddress": "0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0140e-7",
-      "priceChange24h": 0,
-      "volume24h": 0.02,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10142,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
-        "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
-      "poolId": "0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
-      "deployer": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
-      "feeRecipient": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
-      "launchTimestamp": 1789893217103,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 5,
       "name": "Doogle",
       "symbol": "DOOGLE",
       "address": "0x2f158ea09752864df5a824861d5077785d113ba3",
@@ -191,7 +156,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "JACKET",
       "symbol": "JACKET",
       "address": "0xbf29f60b840714e27514e9011639e2150dd34ba3",
@@ -224,6 +189,41 @@
       "launchTimestamp": 1789906532424,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 6,
+      "name": "hackathon",
+      "symbol": "HACKATHON",
+      "address": "0xf5d7e2e7f1a32de8ac883dac8c59f0050e0aaba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xf5d7e2e7f1a32de8ac883dac8c59f0050e0aaba3&chain=base",
+      "poolId": "0xedfbae3e1efce7ecbcf2a67acc94b63928faabc2ccf17bb8ca114282a065068f",
+      "deployer": "0x64686b9c972787b7ebbec66f6008901b5fea3ff5",
+      "feeRecipient": "0x64686b9c972787b7ebbec66f6008901b5fea3ff5",
+      "launchTimestamp": 1789912145370,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 7,
@@ -1064,47 +1064,12 @@
       "launchTimestamp": 1789896177822,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 31,
-      "name": "build up you house",
-      "symbol": "BUIL",
-      "address": "0x2ad6a7fe0a40501151a9b8db70c5e00f92a86ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2ad6a7fe0a40501151a9b8db70c5e00f92a86ba3&chain=base",
-      "poolId": "0xe9b8b0e116340520489c10352482c52aeb246e4edf52398452383f57391b8834",
-      "deployer": "0x8a5c31ce9debe16f0319d13d8ee7cb7c2c3bb893",
-      "feeRecipient": "0x8a5c31ce9debe16f0319d13d8ee7cb7c2c3bb893",
-      "launchTimestamp": 1789895123996,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-MUSEWORLD-SELL",
-      "timestamp": "2026-09-20T13:48:46.741Z",
+      "timestamp": "2026-09-20T14:00:51.717Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
@@ -1117,7 +1082,7 @@
     },
     {
       "id": "ACT-MUSEWORLD-AVG",
-      "timestamp": "2026-09-20T13:48:46.740Z",
+      "timestamp": "2026-09-20T14:00:51.717Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
