@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T00:46:24.318Z",
+    "updatedAt": "2026-09-20T00:59:41.320Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,10 +10,10 @@
   },
   "summary": {
     "totalAnalyzed": 35,
-    "withMarketData": 7,
-    "safeTokensCount": 7,
+    "withMarketData": 6,
+    "safeTokensCount": 6,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
@@ -86,40 +86,6 @@
     },
     {
       "rank": 3,
-      "name": "Test New Paired",
-      "symbol": "TEST",
-      "address": "0xbd3448b6b5287f950422add0c1651d43836cfba3",
-      "pairAddress": "0xbd561cfb922f0618b7b921cc8f5c2c9fdbab5100c3a17f5de8f53bd831b38a0c",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0040e-7",
-      "priceChange24h": -35.78,
-      "volume24h": 1120.78,
-      "volume1h": 0,
-      "liquidityUsd": 8538.58,
-      "fdv": 10044,
-      "txns24h": {
-        "buys": 4,
-        "sells": 12
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xbd561cfb922f0618b7b921cc8f5c2c9fdbab5100c3a17f5de8f53bd831b38a0c",
-      "poolId": "0xbd561cfb922f0618b7b921cc8f5c2c9fdbab5100c3a17f5de8f53bd831b38a0c",
-      "deployer": "0x71d83dd2f6a08471b7b1bc2646a60988c8904f10",
-      "feeRecipient": "0x71d83dd2f6a08471b7b1bc2646a60988c8904f10",
-      "launchTimestamp": 1789856350545,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 4,
       "name": "ConductorOSS",
       "symbol": "COS",
       "address": "0xafdc7682257a79babba5665767ad3a1414fe9ba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "Bankr Hackathon",
       "symbol": "Bankr Hackathon",
       "address": "0xeedf0eb3fc6ea89a6bd0a68b4404ec549cc13ba3",
@@ -188,7 +154,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Uranium in Uranus",
       "symbol": "UIN",
       "address": "0xcb8913898d04e852c59ae0271cb637855aeabba3",
@@ -223,7 +189,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "BUSTED",
       "symbol": "BUSTED",
       "address": "0x7f17136f8a601a15fb6ae4ac972272bbf71d1ba3",
@@ -256,6 +222,41 @@
       "launchTimestamp": 1789857253770,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 7,
+      "name": "Uranium In Uranus",
+      "symbol": "URANIUM",
+      "address": "0xa154b27ca21a6209f4d4a380bbacd5e924ecbba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa154b27ca21a6209f4d4a380bbacd5e924ecbba3&chain=base",
+      "poolId": "0x7b967ddaf3198e42d86b59a97882323a75a51a30082e37b16c4fa6580d51a333",
+      "deployer": "0x24f360f7f2dc4cc7aa24b3615e34795d7f27ddf6",
+      "feeRecipient": "0x24f360f7f2dc4cc7aa24b3615e34795d7f27ddf6",
+      "launchTimestamp": 1789865646728,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 8,
@@ -1240,21 +1241,8 @@
   ],
   "whaleRadar": [
     {
-      "id": "ACT-TEST-SELL",
-      "timestamp": "2026-09-20T00:46:24.318Z",
-      "token": "TEST",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "1120.78",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "4 buys / 12 sells · 75% sell",
-      "address": "0xbd3448b6b5287f950422add0c1651d43836cfba3"
-    },
-    {
       "id": "ACT-BROKE-AVG",
-      "timestamp": "2026-09-20T00:46:24.318Z",
+      "timestamp": "2026-09-20T00:59:41.320Z",
       "token": "BROKE",
       "chain": "BASE",
       "type": "BUY",
