@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T02:40:51.809Z",
+    "updatedAt": "2026-09-20T02:57:13.702Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 30,
-    "withMarketData": 4,
-    "safeTokensCount": 3,
-    "highRiskCount": 1,
+    "totalAnalyzed": 28,
+    "withMarketData": 2,
+    "safeTokensCount": 2,
+    "highRiskCount": 0,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -52,40 +52,6 @@
     },
     {
       "rank": 2,
-      "name": "Broke",
-      "symbol": "BROKE",
-      "address": "0xa6fa530e1fdd7c3b16f42d355ecb438561a8aba3",
-      "pairAddress": "0x18b7ba4b5d00fc4bb17341d91044c82ea6dacdad9f27b7edd65cd71186f65574",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0440e-7",
-      "priceChange24h": -24.05,
-      "volume24h": 3748.85,
-      "volume1h": 900.23,
-      "liquidityUsd": 9026.29,
-      "fdv": 10441,
-      "txns24h": {
-        "buys": 22,
-        "sells": 19
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x18b7ba4b5d00fc4bb17341d91044c82ea6dacdad9f27b7edd65cd71186f65574",
-      "poolId": "0x18b7ba4b5d00fc4bb17341d91044c82ea6dacdad9f27b7edd65cd71186f65574",
-      "deployer": "0xb75b541a8102499e360cb13c7d237171b631f1fb",
-      "feeRecipient": "0xb75b541a8102499e360cb13c7d237171b631f1fb",
-      "launchTimestamp": 1789863385041,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 3,
       "name": "museworld",
       "symbol": "MUSEWORLD",
       "address": "0x9d9b1846202943577cde7f6f1f5aa946a8d18ba3",
@@ -93,22 +59,21 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.1850e-7",
-      "priceChange24h": -0.11,
-      "volume24h": 56.73,
-      "volume1h": 56.73,
-      "liquidityUsd": 0,
-      "fdv": 11855,
+      "priceUsd": "1.0550e-7",
+      "priceChange24h": -11.04,
+      "volume24h": 751.15,
+      "volume1h": 751.15,
+      "liquidityUsd": 8975.57,
+      "fdv": 10559,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 4,
+        "sells": 11
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 90,
+        "status": "SAFE",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "MEDIUM_LIQUIDITY"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0x09f59380143f691610011d7195f95fe9e62bca979a966cc412b4af7c83996879",
@@ -120,39 +85,74 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
-      "name": "Bankr Hackathon",
-      "symbol": "Bankr Hackathon",
-      "address": "0xeedf0eb3fc6ea89a6bd0a68b4404ec549cc13ba3",
-      "pairAddress": "0x687ba21116fbfb7e75f6c00316d375b97ef53bd850d98c9128a3ac307f4b0c98",
+      "rank": 3,
+      "name": "NATIONWIDE",
+      "symbol": "NWIDE",
+      "address": "0xc3f7ed419cf7fa427bbe45e608e60f29e1ac3ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0130e-7",
-      "priceChange24h": -1.06,
-      "volume24h": 10.33,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
       "volume1h": 0,
-      "liquidityUsd": 8617.86,
-      "fdv": 10139,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 2,
-        "sells": 3
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x687ba21116fbfb7e75f6c00316d375b97ef53bd850d98c9128a3ac307f4b0c98",
-      "poolId": "0x687ba21116fbfb7e75f6c00316d375b97ef53bd850d98c9128a3ac307f4b0c98",
-      "deployer": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
-      "feeRecipient": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
-      "launchTimestamp": 1789862838069,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc3f7ed419cf7fa427bbe45e608e60f29e1ac3ba3&chain=base",
+      "poolId": "0xd7de37adda3270c3a9c5623f72dad63856a2b3eb4a9f5270d42aa0a047ac038d",
+      "deployer": "0xcc8cbad8fa5d45befc6f9b73d7035131dcf4802a",
+      "feeRecipient": "0xcc8cbad8fa5d45befc6f9b73d7035131dcf4802a",
+      "launchTimestamp": 1789872798303,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
+    },
+    {
+      "rank": 4,
+      "name": "BREADDOG",
+      "symbol": "BREAD",
+      "address": "0x2f9b1c99cb46f849b746219049ac1f00742beba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2f9b1c99cb46f849b746219049ac1f00742beba3&chain=base",
+      "poolId": "0xdbee93adc8c9bc9047706785eeaa92254a326a2ea6d959a0e0d7b652fd6b70a3",
+      "deployer": "0xcc8cbad8fa5d45befc6f9b73d7035131dcf4802a",
+      "feeRecipient": "0xcc8cbad8fa5d45befc6f9b73d7035131dcf4802a",
+      "launchTimestamp": 1789872179858,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -993,82 +993,25 @@
       "launchTimestamp": 1789863594331,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 29,
-      "name": "South East Blockchain and Games Week",
-      "symbol": "SEBGW",
-      "address": "0xce73806db1d751ecc6d52c6dc7535451b6fe3ba3",
-      "pairAddress": "0x2ba4054aa916eb29256099fb6cf6cd735bc5808b5e11ba33cb113518cf193ee4",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0130e-7",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10134,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x2ba4054aa916eb29256099fb6cf6cd735bc5808b5e11ba33cb113518cf193ee4",
-      "poolId": "0x2ba4054aa916eb29256099fb6cf6cd735bc5808b5e11ba33cb113518cf193ee4",
-      "deployer": "0x89568861fcbaf5e91a413526f27691b72e887414",
-      "feeRecipient": "0x89568861fcbaf5e91a413526f27691b72e887414",
-      "launchTimestamp": 1789863200326,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 30,
-      "name": "HOLM",
-      "symbol": "HOLM",
-      "address": "0x4975707546a24462e623960d8737ef07f5180ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x4975707546a24462e623960d8737ef07f5180ba3&chain=base",
-      "poolId": "0x9044c24ce127c6b6ce9eaef5924e1dbb07286acc61add78316cd54b51f78067c",
-      "deployer": "0xa13341ba44bc89658bfba1558f39530a4e909d6f",
-      "feeRecipient": "0xa13341ba44bc89658bfba1558f39530a4e909d6f",
-      "launchTimestamp": 1789862754796,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
+      "id": "ACT-MUSEWORLD-SELL",
+      "timestamp": "2026-09-20T02:57:13.702Z",
+      "token": "MUSEWORLD",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "751.15",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "SELL PRESSURE",
+      "detail": "4 buys / 11 sells · 73% sell",
+      "address": "0x9d9b1846202943577cde7f6f1f5aa946a8d18ba3"
+    },
+    {
       "id": "ACT-MUSEWORLD-AVG",
-      "timestamp": "2026-09-20T02:40:51.809Z",
+      "timestamp": "2026-09-20T02:57:13.702Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
@@ -1078,19 +1021,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $115 / tx · 240 txns",
       "address": "0x9f2803b8f0b72e26c9345483ecb1f36798ceaba3"
-    },
-    {
-      "id": "ACT-BROKE-AVG",
-      "timestamp": "2026-09-20T02:40:51.809Z",
-      "token": "BROKE",
-      "chain": "BASE",
-      "type": "MIXED",
-      "amountUsd": "91.44",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $91 / tx · 41 txns",
-      "address": "0xa6fa530e1fdd7c3b16f42d355ecb438561a8aba3"
     }
   ]
 }
