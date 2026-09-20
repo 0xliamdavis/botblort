@@ -2,54 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T19:32:10.958Z",
+    "updatedAt": "2026-09-20T19:47:14.379Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 36,
-    "withMarketData": 5,
-    "safeTokensCount": 4,
+    "totalAnalyzed": 34,
+    "withMarketData": 1,
+    "safeTokensCount": 1,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 3
+    "totalWhaleAlerts": 2
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "GrapheneOS",
-      "symbol": "GrapheneOS",
-      "address": "0x00086ebe8d832b89b25c02c7148d164beec08ba3",
-      "pairAddress": "0x235d7cb70e7e846344a256e7eba48ec2ec24147c9a8a65c1b0f9c9d20ca5365a",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.0850e-7",
-      "priceChange24h": 1.45,
-      "volume24h": 8374.35,
-      "volume1h": 8374.35,
-      "liquidityUsd": 20452.34,
-      "fdv": 20853,
-      "txns24h": {
-        "buys": 42,
-        "sells": 48
-      },
-      "safety": {
-        "safetyScore": 100,
-        "status": "SAFE",
-        "flags": []
-      },
-      "dexUrl": "https://dexscreener.com/base/0x235d7cb70e7e846344a256e7eba48ec2ec24147c9a8a65c1b0f9c9d20ca5365a",
-      "poolId": "0x235d7cb70e7e846344a256e7eba48ec2ec24147c9a8a65c1b0f9c9d20ca5365a",
-      "deployer": "0x99d22e9570b13881fe81f39df2d678ec603007d2",
-      "feeRecipient": "0xc822a62e5ab443e0001f30ceb9b2336d0524fc61",
-      "launchTimestamp": 1789929292659,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "musekiller",
       "symbol": "MUSEKILLER",
       "address": "0x8d6b2d84b729607f703d42c4e47dc4cac64b7ba3",
@@ -83,110 +51,112 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
-      "name": "GrapheneOS",
-      "symbol": "GrapheneOS",
-      "address": "0x87bc3bd3fcb42d098aa598d744930d06c7c83ba3",
-      "pairAddress": "0x993500f30d73207bdf07f0574a1fd89d8ec99bf029677812ec58a2fc2dc2742d",
+      "rank": 2,
+      "name": "Bot Coin",
+      "symbol": "BOT",
+      "address": "0xa76a9f05f9cf2b886533c933cf55622fc1217ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.1160e-7",
-      "priceChange24h": 46.68,
-      "volume24h": 2280.82,
-      "volume1h": 2106.22,
-      "liquidityUsd": 17803.28,
-      "fdv": 21161,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
       "txns24h": {
-        "buys": 26,
-        "sells": 43
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
+        "safetyScore": 35,
+        "status": "CAUTION",
         "flags": [
-          "MEDIUM_LIQUIDITY"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0x993500f30d73207bdf07f0574a1fd89d8ec99bf029677812ec58a2fc2dc2742d",
-      "poolId": "0x993500f30d73207bdf07f0574a1fd89d8ec99bf029677812ec58a2fc2dc2742d",
-      "deployer": "0xb1d8ef2e164b3be5be84e997a62e64824585ac0f",
-      "feeRecipient": "0x5bf32a39d9bf668f3ff63d21713d862ee8496f2d",
-      "launchTimestamp": 1789929078658,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xa76a9f05f9cf2b886533c933cf55622fc1217ba3&chain=base",
+      "poolId": "0xd84562389d487e1d2e3c9476652828b4d67a1226abf66a412a861eae580ca123",
+      "deployer": "0xa4e05124c4235eba098072b671872a5d4225d72c",
+      "feeRecipient": "0xa4e05124c4235eba098072b671872a5d4225d72c",
+      "launchTimestamp": 1789932871419,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
+    },
+    {
+      "rank": 3,
+      "name": "musekiller",
+      "symbol": "MUSEKILLER",
+      "address": "0x315524c4df8ac2aeb069c553b7e56943de44cba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x315524c4df8ac2aeb069c553b7e56943de44cba3&chain=base",
+      "poolId": "0x3db1923a83f128e40a9949aa0bff1eee4755230e3a3f2f4b17fc4802526d7d25",
+      "deployer": "0x0a19493f0d41cce15d3ea1e74ccf0c1ab041b37e",
+      "feeRecipient": "0xd1b390f00d9027554255f329eca8bc7f4e48c138",
+      "launchTimestamp": 1789932826147,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 4,
-      "name": "GrapheneOS",
-      "symbol": "GrapheneOS",
-      "address": "0xee6a3a87232a9a5b9fa80d20e7094404d9464ba3",
-      "pairAddress": "0xe1c2bb6e9696b98bd02f4765c26ff9f7b325d2ddb0dd9a6f73bf4a694f5102fd",
+      "name": "Liquidity Test",
+      "symbol": "Test",
+      "address": "0xd41740a806b3e2e412826f571cdcf98669cf6ba3",
+      "pairAddress": null,
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0290e-7",
-      "priceChange24h": -33.09,
-      "volume24h": 415.04,
-      "volume1h": 415.04,
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
       "liquidityUsd": 0,
-      "fdv": 10298,
+      "fdv": 0,
       "txns24h": {
-        "buys": 4,
-        "sells": 6
+        "buys": 0,
+        "sells": 0
       },
       "safety": {
-        "safetyScore": 55,
+        "safetyScore": 35,
         "status": "CAUTION",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY"
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
         ]
       },
-      "dexUrl": "https://dexscreener.com/base/0xe1c2bb6e9696b98bd02f4765c26ff9f7b325d2ddb0dd9a6f73bf4a694f5102fd",
-      "poolId": "0xe1c2bb6e9696b98bd02f4765c26ff9f7b325d2ddb0dd9a6f73bf4a694f5102fd",
-      "deployer": "0x48f377138b8b92a6f1b76e9fbe7f86d1ca395f9a",
-      "feeRecipient": "0xc822a62e5ab443e0001f30ceb9b2336d0524fc61",
-      "launchTimestamp": 1789929295605,
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd41740a806b3e2e412826f571cdcf98669cf6ba3&chain=base",
+      "poolId": "0xcb8fa5832bbe491f3b80a3dfab1c8bc49bbee23ba2695d474989ade42a694dd5",
+      "deployer": "0xa4e05124c4235eba098072b671872a5d4225d72c",
+      "feeRecipient": "0xa4e05124c4235eba098072b671872a5d4225d72c",
+      "launchTimestamp": 1789932744242,
       "isNew": true,
-      "hasMarketData": true
+      "hasMarketData": false
     },
     {
       "rank": 5,
-      "name": "Gimlet",
-      "symbol": "GIMLET",
-      "address": "0xb9321e5cfd4930fb1ed4669112b068c3f023fba3",
-      "pairAddress": "0x03ed812e99c07ffc4ea31973a86331bddf6f77b1e55c28d3f24e2e6425b9dfaa",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0170e-7",
-      "priceChange24h": -26.76,
-      "volume24h": 296.93,
-      "volume1h": 0,
-      "liquidityUsd": 8650.43,
-      "fdv": 10176,
-      "txns24h": {
-        "buys": 2,
-        "sells": 3
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x03ed812e99c07ffc4ea31973a86331bddf6f77b1e55c28d3f24e2e6425b9dfaa",
-      "poolId": "0x03ed812e99c07ffc4ea31973a86331bddf6f77b1e55c28d3f24e2e6425b9dfaa",
-      "deployer": "0x48f377138b8b92a6f1b76e9fbe7f86d1ca395f9a",
-      "feeRecipient": "0x4c1fe8a95d159667fc6b4b8c4092a237fa2894ac",
-      "launchTimestamp": 1789928826423,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 6,
       "name": "GPU",
       "symbol": "GPU",
       "address": "0xcb4079ea216c94d13e80b36e975c8b310dd55ba3",
@@ -221,7 +191,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Azzle",
       "symbol": "AZL",
       "address": "0xbdde90bf9b6f79a1c764e3423fa6631158370ba3",
@@ -256,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "Flybook",
       "symbol": "Flybook",
       "address": "0xaf6b68fe9a29b377c2d8a9c7ccd17e53fad3bba3",
@@ -291,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "ThakrowOS",
       "symbol": "TakrowOS",
       "address": "0x3faac1b6307e5a73c107b9e01ca1494590e3eba3",
@@ -326,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "COPPERHEAD",
       "symbol": "COPPERHEAD",
       "address": "0x61f7eb503d81fcaa1d38fc40b68fa2a596436ba3",
@@ -361,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "GrapheneOS",
       "symbol": "GrapheneOS",
       "address": "0xee698f81e1314a00a7113a56b0ef4a4c3f26bba3",
@@ -396,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 11,
       "name": "GrapheneOS Fund",
       "symbol": "copperhead",
       "address": "0x157c2bef52173188b42e19bf6ced0aa225283ba3",
@@ -431,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 12,
       "name": "Chubby Vagina",
       "symbol": "CHUBBYVAGINA",
       "address": "0x6ee70e47cef13103fca0c6716f56e75fb45fcba3",
@@ -466,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "Muse Killer",
       "symbol": "KILLER",
       "address": "0xa8ec792c6cfdfe29c7378bc2866b458d3e5d5ba3",
@@ -501,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 14,
       "name": "DeadOS",
       "symbol": "DeadOS",
       "address": "0xec793ae220cdbe1640e2f10d5db5b38eb7aecba3",
@@ -536,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 15,
       "name": "Gwei",
       "symbol": "GWEI",
       "address": "0xf3e9ed9a3b217d5a3e00ddc350a93cc38bc0dba3",
@@ -571,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 16,
       "name": "BLUECHIP",
       "symbol": "BLUECHIP",
       "address": "0xc2d8b51fbfb2e180fcb693c3b1552b45e28d3ba3",
@@ -606,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 17,
       "name": "ORACLE",
       "symbol": "ORACLE",
       "address": "0x9beab4bbce706f26ba52ea1a195cfc3ac96b8ba3",
@@ -641,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 18,
       "name": "harness Token",
       "symbol": "harness token",
       "address": "0x54c513d800096f556aba4d5a8a02e46e87b54ba3",
@@ -676,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 19,
       "name": "Bleuphill",
       "symbol": "BLEUPHILL",
       "address": "0x878097f5f4172bc9aa4b2a13c994fcae35a92ba3",
@@ -711,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 20,
       "name": "Founding Collective",
       "symbol": "Founding",
       "address": "0x9edf23f16283d2c76b5bc02b59435f5d8e8c9ba3",
@@ -746,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 21,
       "name": "finishHim",
       "symbol": "finishHim",
       "address": "0xfd3ea0065a8b1d4b11a2e885faa8f1ff7b992ba3",
@@ -781,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 22,
       "name": "GrapheneOSdonation",
       "symbol": "GrapheneOS",
       "address": "0x07989f98e5fcecdb752f3c226aebc1d0b917dba3",
@@ -816,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 23,
       "name": "Graphene",
       "symbol": "GRAPHENE",
       "address": "0x281e477ba56c300fbbae63a209ee5fe7c0188ba3",
@@ -851,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 24,
       "name": "Moonwake",
       "symbol": "Moonwake",
       "address": "0x6131cfa26d5e9fb23a615c670e635c992676fba3",
@@ -886,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 25,
       "name": "FreeBotslol",
       "symbol": "FreeBots",
       "address": "0x02d313e7fde5421201191767fcdb17a255ba0ba3",
@@ -921,7 +891,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 26,
       "name": "GrokOS",
       "symbol": "GrokOS",
       "address": "0x120cc90e19bde99bbbfce89f151f1e42f7848ba3",
@@ -956,7 +926,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 27,
       "name": "PerkOS",
       "symbol": "PerkOS",
       "address": "0x34650eb83e9a850452a68041991c1c9a51434ba3",
@@ -991,7 +961,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 28,
       "name": "GraphenaOS",
       "symbol": "GraphenaOS",
       "address": "0xa341e14c1b2717cf524280cb0ab17d9d74e9eba3",
@@ -1026,7 +996,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 29,
       "name": "Graphene",
       "symbol": "GrapheneOS",
       "address": "0x44c33c108104eb26199018a4046250ef4294fba3",
@@ -1061,7 +1031,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 30,
       "name": "GraphOS",
       "symbol": "GraphOS",
       "address": "0x22cc570a3b7eed6dde39377a37d2798b21502ba3",
@@ -1096,7 +1066,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 31,
       "name": "GrapheneOS",
       "symbol": "GrapheneOS",
       "address": "0x8066caffed43ad1bb90ef79a57b6b6ef9daa0ba3",
@@ -1131,7 +1101,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 32,
       "name": "GrapheneOS",
       "symbol": "GrapheneOS",
       "address": "0x039472f230e7a215437b9eb172bd891492bf0ba3",
@@ -1166,7 +1136,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 34,
+      "rank": 33,
       "name": "basket Base",
       "symbol": "BASEKET",
       "address": "0x2afca6f2a20b001f57c903dc2c6c7c3419001ba3",
@@ -1201,7 +1171,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 35,
+      "rank": 34,
       "name": "GrapheneOS",
       "symbol": "GrapheneOS",
       "address": "0xfab1cacb502cea30c83e9acfc4f3ddec47730ba3",
@@ -1234,47 +1204,12 @@
       "launchTimestamp": 1789929397851,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 36,
-      "name": "JEANPHIL",
-      "symbol": "JEANPHIL",
-      "address": "0x9088c400791e7c6147464128849876b14142dba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9088c400791e7c6147464128849876b14142dba3&chain=base",
-      "poolId": "0x82df8229ac85d01937363141cd83137fdc8c39a3aeb46bde4eca81c6fec59ae5",
-      "deployer": "0xa7dbe50ecdb0c9304ef80aae1998efe40e3925db",
-      "feeRecipient": "0xa7dbe50ecdb0c9304ef80aae1998efe40e3925db",
-      "launchTimestamp": 1789928448131,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-MUSEKILLER-SELL",
-      "timestamp": "2026-09-20T19:32:10.958Z",
+      "timestamp": "2026-09-20T19:47:14.379Z",
       "token": "MUSEKILLER",
       "chain": "BASE",
       "type": "SELL",
@@ -1287,7 +1222,7 @@
     },
     {
       "id": "ACT-MUSEKILLER-AVG",
-      "timestamp": "2026-09-20T19:32:10.958Z",
+      "timestamp": "2026-09-20T19:47:14.379Z",
       "token": "MUSEKILLER",
       "chain": "BASE",
       "type": "SELL",
@@ -1297,19 +1232,6 @@
       "label": "AVG TRADE",
       "detail": "Avg $189 / tx · 17 txns",
       "address": "0x8d6b2d84b729607f703d42c4e47dc4cac64b7ba3"
-    },
-    {
-      "id": "ACT-GrapheneOS-AVG",
-      "timestamp": "2026-09-20T19:32:10.958Z",
-      "token": "GrapheneOS",
-      "chain": "BASE",
-      "type": "MIXED",
-      "amountUsd": "93.05",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $93 / tx · 90 txns",
-      "address": "0x00086ebe8d832b89b25c02c7148d164beec08ba3"
     }
   ]
 }
