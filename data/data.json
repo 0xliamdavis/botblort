@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T11:21:18.323Z",
+    "updatedAt": "2026-09-20T11:39:44.279Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -12,7 +12,7 @@
     "totalAnalyzed": 29,
     "withMarketData": 8,
     "safeTokensCount": 2,
-    "highRiskCount": 5,
+    "highRiskCount": 6,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -840,11 +840,11 @@
         "sells": 2
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
       "dexUrl": "https://dexscreener.com/base/0x22f10b7b872ad14fc4ac495134405f58714f8716f1ec4a3a795148eb0dcabebe",
@@ -852,7 +852,7 @@
       "deployer": "0x30da268f7d1c0afcba700ed7050f154e91d8ed18",
       "feeRecipient": "0x30da268f7d1c0afcba700ed7050f154e91d8ed18",
       "launchTimestamp": 1789882519501,
-      "isNew": true,
+      "isNew": false,
       "hasMarketData": false
     },
     {
@@ -1034,7 +1034,7 @@
   "whaleRadar": [
     {
       "id": "ACT-MUSEWORLD-SELL",
-      "timestamp": "2026-09-20T11:21:18.322Z",
+      "timestamp": "2026-09-20T11:39:44.279Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
@@ -1047,7 +1047,7 @@
     },
     {
       "id": "ACT-MUSEWORLD-AVG",
-      "timestamp": "2026-09-20T11:21:18.322Z",
+      "timestamp": "2026-09-20T11:39:44.279Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
