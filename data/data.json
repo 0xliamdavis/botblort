@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T08:35:53.724Z",
+    "updatedAt": "2026-09-20T08:49:33.558Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 22,
-    "withMarketData": 8,
+    "withMarketData": 9,
     "safeTokensCount": 2,
-    "highRiskCount": 4,
+    "highRiskCount": 5,
     "totalWhaleAlerts": 1
   },
   "tokens": [
@@ -300,35 +300,35 @@
       "name": "Cronos",
       "symbol": "cronos",
       "address": "0xbe29a6125cf4a35b8fe89818bd7ef099cc75cba3",
-      "pairAddress": null,
+      "pairAddress": "0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
       "chain": "BASE",
       "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
+      "dexId": "uniswap",
+      "priceUsd": "1.0140e-7",
       "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
+      "volume24h": 0.02,
+      "volume1h": 0.02,
       "liquidityUsd": 0,
-      "fdv": 0,
+      "fdv": 10142,
       "txns24h": {
-        "buys": 0,
-        "sells": 0
+        "buys": 1,
+        "sells": 2
       },
       "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
         "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
         ]
       },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xbe29a6125cf4a35b8fe89818bd7ef099cc75cba3&chain=base",
+      "dexUrl": "https://dexscreener.com/base/0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
       "poolId": "0x68201b663c115671d5fc055574411391487f65cd32cbfc10e4cfdcd916be1d46",
       "deployer": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
       "feeRecipient": "0x866b8369b4b8f28b37f1d0c8a3eb3c07e41c07d2",
       "launchTimestamp": 1789893217103,
       "isNew": true,
-      "hasMarketData": false
+      "hasMarketData": true
     },
     {
       "rank": 10,
@@ -789,7 +789,7 @@
   "whaleRadar": [
     {
       "id": "ACT-MUSEWORLD-SELL",
-      "timestamp": "2026-09-20T08:35:53.724Z",
+      "timestamp": "2026-09-20T08:49:33.558Z",
       "token": "MUSEWORLD",
       "chain": "BASE",
       "type": "SELL",
