@@ -2,56 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-20T14:40:05.119Z",
+    "updatedAt": "2026-09-20T14:52:07.134Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 27,
-    "withMarketData": 4,
-    "safeTokensCount": 2,
+    "totalAnalyzed": 25,
+    "withMarketData": 3,
+    "safeTokensCount": 1,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 2
+    "totalWhaleAlerts": 0
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "museworld",
-      "symbol": "MUSEWORLD",
-      "address": "0xd0f68955b7e37335b673d5191d9dac37fce00ba3",
-      "pairAddress": "0x1ea29b3cfc9daa1e4baa4314f3857a949a18a62bc57c7e0306a78889b88385e5",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0400e-7",
-      "priceChange24h": -45.05,
-      "volume24h": 2538.62,
-      "volume1h": 0,
-      "liquidityUsd": 8848.28,
-      "fdv": 10410,
-      "txns24h": {
-        "buys": 4,
-        "sells": 9
-      },
-      "safety": {
-        "safetyScore": 90,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x1ea29b3cfc9daa1e4baa4314f3857a949a18a62bc57c7e0306a78889b88385e5",
-      "poolId": "0x1ea29b3cfc9daa1e4baa4314f3857a949a18a62bc57c7e0306a78889b88385e5",
-      "deployer": "0xc8ae23bf9a15d031629f6a49f9ede2f5f7ffd339",
-      "feeRecipient": "0xfdb6430011f6e4796ca380cb39e47975b1f876bf",
-      "launchTimestamp": 1789901011742,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "musesessions",
       "symbol": "musessions",
       "address": "0x81afb09c709e5c127a0f576c764363c3aa8d0ba3",
@@ -86,7 +52,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Doogle",
       "symbol": "DOOGLE",
       "address": "0x2f158ea09752864df5a824861d5077785d113ba3",
@@ -121,7 +87,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "JACKET",
       "symbol": "JACKET",
       "address": "0xbf29f60b840714e27514e9011639e2150dd34ba3",
@@ -154,6 +120,41 @@
       "launchTimestamp": 1789906532424,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 4,
+      "name": "Return Of The King",
+      "symbol": "KING",
+      "address": "0xc85dc3d5ffd92f990f0241e58b2f0e7bdf7dbba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc85dc3d5ffd92f990f0241e58b2f0e7bdf7dbba3&chain=base",
+      "poolId": "0xeb6b07e6fcb332ffc6bbf77a7453b11992b20c5ce678131d1e73bcfb3ef1bd32",
+      "deployer": "0x033aa0d6cec19b9cfdb24055b3ec570579f2a3f9",
+      "feeRecipient": "0x033aa0d6cec19b9cfdb24055b3ec570579f2a3f9",
+      "launchTimestamp": 1789915312825,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 5,
@@ -889,104 +890,7 @@
       "launchTimestamp": 1789901475592,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 26,
-      "name": "OwnPay",
-      "symbol": "OwnPay",
-      "address": "0x223f7d91db0dc0cb0854af54669ebf0d8b881ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x223f7d91db0dc0cb0854af54669ebf0d8b881ba3&chain=base",
-      "poolId": "0x069c219b761922c42a080f174a6287e4996c9ae8e16538318dc18b819ce31a83",
-      "deployer": "0xb49b48c52c25d372e0bf632efef50e255d038a49",
-      "feeRecipient": "0x823a1735ac0a7c7c8eeff6aca1538b5338f59aa6",
-      "launchTimestamp": 1789901201468,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 27,
-      "name": "PactSwap",
-      "symbol": "pactswap",
-      "address": "0x9ddd6a6cb529d286d3ed39379447d56364719ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9ddd6a6cb529d286d3ed39379447d56364719ba3&chain=base",
-      "poolId": "0x4fdf97fefcf00e9128ad6f27cb31396dc72a8056e504a4e80c43780912e7c0a8",
-      "deployer": "0xa04294e1b338666975896f048db8e75dbc5ff3ba",
-      "feeRecipient": "0x63626d8786a7f627a2bfa222fbcea78620e085b9",
-      "launchTimestamp": 1789901005359,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": [
-    {
-      "id": "ACT-MUSEWORLD-SELL",
-      "timestamp": "2026-09-20T14:40:05.118Z",
-      "token": "MUSEWORLD",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "2538.62",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "4 buys / 9 sells · 69% sell",
-      "address": "0xd0f68955b7e37335b673d5191d9dac37fce00ba3"
-    },
-    {
-      "id": "ACT-MUSEWORLD-AVG",
-      "timestamp": "2026-09-20T14:40:05.118Z",
-      "token": "MUSEWORLD",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "195.28",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $195 / tx · 13 txns",
-      "address": "0xd0f68955b7e37335b673d5191d9dac37fce00ba3"
-    }
-  ]
+  "whaleRadar": []
 }
