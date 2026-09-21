@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-21T04:34:06.219Z",
+    "updatedAt": "2026-09-21T04:51:28.184Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 6,
-    "safeTokensCount": 5,
+    "withMarketData": 5,
+    "safeTokensCount": 4,
     "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
@@ -28,7 +28,7 @@
       "priceUsd": "1.0730e-7",
       "priceChange24h": -51.96,
       "volume24h": 4086.79,
-      "volume1h": 4086.79,
+      "volume1h": 232.31,
       "liquidityUsd": 9162.86,
       "fdv": 10736,
       "txns24h": {
@@ -62,7 +62,7 @@
       "priceUsd": "1.0100e-7",
       "priceChange24h": -5.37,
       "volume24h": 66.27,
-      "volume1h": 1.37,
+      "volume1h": 0,
       "liquidityUsd": 8591.02,
       "fdv": 10107,
       "txns24h": {
@@ -156,41 +156,6 @@
     },
     {
       "rank": 5,
-      "name": "Base Emperor",
-      "symbol": "₿EMP",
-      "address": "0xa48e052ce38e015d29e835543708068d9b16dba3",
-      "pairAddress": "0xdf264dc9e3dfa2437cd83ca35443752539e6f9150080bd1ddb23068591be19f3",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0180e-7",
-      "priceChange24h": 0.11,
-      "volume24h": 2.18,
-      "volume1h": 0,
-      "liquidityUsd": 8661.07,
-      "fdv": 10189,
-      "txns24h": {
-        "buys": 2,
-        "sells": 3
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "MEDIUM_LIQUIDITY",
-          "LOW_TRANSACTION_COUNT"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xdf264dc9e3dfa2437cd83ca35443752539e6f9150080bd1ddb23068591be19f3",
-      "poolId": "0xdf264dc9e3dfa2437cd83ca35443752539e6f9150080bd1ddb23068591be19f3",
-      "deployer": "0x8492990f1bbc115d6d819514afbfafdd82db54d5",
-      "feeRecipient": "0x8492990f1bbc115d6d819514afbfafdd82db54d5",
-      "launchTimestamp": 1789949219577,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 6,
       "name": "Base Meme",
       "symbol": "Base Meme",
       "address": "0x7eebd93741884040487d0ce92dc34e0d73c23ba3",
@@ -223,6 +188,41 @@
       "launchTimestamp": 1789955012344,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 6,
+      "name": "PUMPDOG",
+      "symbol": "PUMPDOG",
+      "address": "0xfbce4ae12861c91617382853b5ed5a71b13fcba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xfbce4ae12861c91617382853b5ed5a71b13fcba3&chain=base",
+      "poolId": "0x3b4aaca22fa9240babe7dfb1805bc8a499cb66dacce1c7ad97f671fc6245c99c",
+      "deployer": "0x5918b823ee30040911823774a4c1de72cd2607d2",
+      "feeRecipient": "0x5918b823ee30040911823774a4c1de72cd2607d2",
+      "launchTimestamp": 1789965894108,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 7,
@@ -1418,7 +1418,7 @@
   "whaleRadar": [
     {
       "id": "ACT-TEST-AVG",
-      "timestamp": "2026-09-21T04:34:06.219Z",
+      "timestamp": "2026-09-21T04:51:28.184Z",
       "token": "TEST",
       "chain": "BASE",
       "type": "MIXED",
