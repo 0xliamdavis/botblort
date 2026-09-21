@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-21T00:20:30.779Z",
+    "updatedAt": "2026-09-21T00:46:16.830Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 35,
+    "totalAnalyzed": 34,
     "withMarketData": 4,
-    "safeTokensCount": 2,
-    "highRiskCount": 1,
+    "safeTokensCount": 3,
+    "highRiskCount": 0,
     "totalWhaleAlerts": 0
   },
   "tokens": [
@@ -59,21 +59,21 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "1.0170e-7",
-      "priceChange24h": 0,
-      "volume24h": 1.1,
-      "volume1h": 1.1,
-      "liquidityUsd": 0,
-      "fdv": 10178,
+      "priceUsd": "1.0180e-7",
+      "priceChange24h": 0.11,
+      "volume24h": 2.18,
+      "volume1h": 2.18,
+      "liquidityUsd": 8661.07,
+      "fdv": 10189,
       "txns24h": {
-        "buys": 1,
-        "sells": 2
+        "buys": 2,
+        "sells": 3
       },
       "safety": {
-        "safetyScore": 40,
-        "status": "HIGH_RISK",
+        "safetyScore": 75,
+        "status": "SAFE",
         "flags": [
-          "CRITICAL_LOW_LIQUIDITY",
+          "MEDIUM_LIQUIDITY",
           "LOW_TRANSACTION_COUNT"
         ]
       },
@@ -157,6 +157,41 @@
     },
     {
       "rank": 5,
+      "name": "Trade the real world",
+      "symbol": "Trade",
+      "address": "0x60668dea63413659524ccd30d9bd2c5d56c70ba3",
+      "pairAddress": "0xcc80134202e8696288f492d2caaf04ee2c7391c9fc0f24a9b99ffc88c1eed17c",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0140e-7",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 10147,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xcc80134202e8696288f492d2caaf04ee2c7391c9fc0f24a9b99ffc88c1eed17c",
+      "poolId": "0xcc80134202e8696288f492d2caaf04ee2c7391c9fc0f24a9b99ffc88c1eed17c",
+      "deployer": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
+      "feeRecipient": "0x5f2c60322867b3f9f2a25ea3c248896b8787b654",
+      "launchTimestamp": 1789950756090,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
       "name": "TAO",
       "symbol": "TAO",
       "address": "0xd905f26e4fd127d6bdef46efeb0c9bb1c9eadba3",
@@ -191,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "AGI",
       "symbol": "AGI",
       "address": "0x9080d230baef3fd05d1abc8473aadcd199c82ba3",
@@ -226,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "GrapheneOS",
       "symbol": "GrapheneOS",
       "address": "0xca45e2f4f8eaf5a385186c5d41b27fd695955ba3",
@@ -261,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "WOON",
       "symbol": "WOON",
       "address": "0x85b3c2d46a2f5f6f050b7311342e3d4de815cba3",
@@ -296,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Parallel",
       "symbol": "Parallel",
       "address": "0xc5b97a3ba301724818200d9c92252a77bbe85ba3",
@@ -331,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "COBIE",
       "symbol": "COBIE",
       "address": "0xda354db2d8dbae1936ba0052988f6666431e2ba3",
@@ -366,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "musebook",
       "symbol": "musebook",
       "address": "0x2d55a9baf4c55c227682f837a5accfdb4cbffba3",
@@ -401,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "LAPTOP",
       "symbol": "Laptop",
       "address": "0xcc0adb046b24417f098fa24c2d5b6777b8f28ba3",
@@ -436,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "NA",
       "symbol": "NA",
       "address": "0xa74ff9851d3cd55fa53110b281391fc0e2e7fba3",
@@ -471,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "EveryoneBased",
       "symbol": "E",
       "address": "0xd124d999b75c27e52475b594dfcab9990f922ba3",
@@ -506,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "EveryoneBased",
       "symbol": "E",
       "address": "0x678dafcf611fafe0b42daa2c8745047039f90ba3",
@@ -541,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "E2V",
       "symbol": "E2V",
       "address": "0x33248f1158e8e0d4bdede35a5bd3789574210ba3",
@@ -576,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "LUSTROUS",
       "symbol": "LUSTROUS",
       "address": "0x128c054c6e8dc13a27f5fd1380d5b961090d1ba3",
@@ -611,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "PROTOCOIN",
       "symbol": "PRC",
       "address": "0xcf6281f38610ca5a88ab4ebcdef9d5011b01bba3",
@@ -646,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "DaGama",
       "symbol": "DGMA",
       "address": "0xd6ee401a478cb5a73412cd3b2b9cf0a7a5832ba3",
@@ -681,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 21,
       "name": "GOOD COMPANY",
       "symbol": "GC",
       "address": "0xd67fe513ed65f23b19eba8901f5bcbedd8be8ba3",
@@ -716,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "name": "callit",
       "symbol": "CALL",
       "address": "0x246c796364c466b4ce267090eed8984a12770ba3",
@@ -751,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "Callit",
       "symbol": "CALL",
       "address": "0xa5d9f48a489578f06b5ae607df03aa5513643ba3",
@@ -786,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "name": "ClawRoutter",
       "symbol": "CLAWR",
       "address": "0x3b6e3650eac866921380108bab4a30137df6bba3",
@@ -821,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 25,
       "name": "Volterminal",
       "symbol": "VOLT",
       "address": "0x224e88404f6f045bb9f7abf933aef89579dfeba3",
@@ -856,7 +891,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 26,
       "name": "Wren Test",
       "symbol": "WTEST26",
       "address": "0xc8bb85bc9a7d76f265bddf52aeec8861a6cbaba3",
@@ -891,7 +926,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "MuseStar",
       "symbol": "MUSESTAR",
       "address": "0xf36dc1b81341c8eff51898a31c135b04e9d24ba3",
@@ -926,7 +961,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "MetrPay",
       "symbol": "METR",
       "address": "0x83457cc3c4bfd93ab5c6ecabda6a3651c5c79ba3",
@@ -961,7 +996,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 29,
       "name": "brainarmmaxxing",
       "symbol": "brainarmmaxxing",
       "address": "0x43cff60415e48c22fa0e476dc3ee52a6244e5ba3",
@@ -996,7 +1031,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "stock1",
       "symbol": "stock1",
       "address": "0xab6b5f9f2950eb6841556cec8242c8a30ef9bba3",
@@ -1031,7 +1066,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 31,
       "name": "Privacy is Guaranteed",
       "symbol": "PRIVACY",
       "address": "0xe961617d253c01544ee32aa37d3aba9163197ba3",
@@ -1066,7 +1101,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 31,
+      "rank": 32,
       "name": "bankr runtime",
       "symbol": "RUNTIME",
       "address": "0xe5d69cff74f6daeda8a8c400d4b19756ea1a0ba3",
@@ -1101,7 +1136,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 32,
+      "rank": 33,
       "name": "Trobiterminal",
       "symbol": "TROBI",
       "address": "0x056c7fa723a4a07e304e4eeb86c621943bd6dba3",
@@ -1136,7 +1171,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "ClawOS",
       "symbol": "ClawOS",
       "address": "0x8bf4622fd08021f9a34dacfc683af9d526141ba3",
@@ -1167,76 +1202,6 @@
       "deployer": "0x56e50f9929134b00079bc599b2ebdec4406d3e69",
       "feeRecipient": "0x56e50f9929134b00079bc599b2ebdec4406d3e69",
       "launchTimestamp": 1789940625723,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 34,
-      "name": "Jensen",
-      "symbol": "Jensen",
-      "address": "0xbf444146b361e7173b788b78593d406fd986bba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xbf444146b361e7173b788b78593d406fd986bba3&chain=base",
-      "poolId": "0xfa89a4a0296d691bb44714f512263439e9287e7e2085ec30d616a45d2faef90e",
-      "deployer": "0x4ee285ffe7bccc9ff223aa5e2001a60da430d7b7",
-      "feeRecipient": "0x4ee285ffe7bccc9ff223aa5e2001a60da430d7b7",
-      "launchTimestamp": 1789940576680,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 35,
-      "name": "New Paired",
-      "symbol": "FIRST",
-      "address": "0x6d92f20bdab5db0736ff569392368cb11913fba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x6d92f20bdab5db0736ff569392368cb11913fba3&chain=base",
-      "poolId": "0x7699b482da9e5e2d559c2fe83d118b24d746527146daa826dfdb334e36e09c96",
-      "deployer": "0x4ee285ffe7bccc9ff223aa5e2001a60da430d7b7",
-      "feeRecipient": "0x4ee285ffe7bccc9ff223aa5e2001a60da430d7b7",
-      "launchTimestamp": 1789940458918,
       "isNew": true,
       "hasMarketData": false
     }
