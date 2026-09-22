@@ -2,17 +2,17 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-22T07:23:44.627Z",
+    "updatedAt": "2026-09-22T07:41:54.938Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 31,
-    "withMarketData": 3,
+    "totalAnalyzed": 32,
+    "withMarketData": 4,
     "safeTokensCount": 3,
-    "highRiskCount": 0,
+    "highRiskCount": 1,
     "totalWhaleAlerts": 1
   },
   "tokens": [
@@ -25,15 +25,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "0.0000016600",
-      "priceChange24h": 1511,
-      "volume24h": 551274.5,
-      "volume1h": 28226.19,
-      "liquidityUsd": 81402.17,
-      "fdv": 166018,
+      "priceUsd": "0.0000014860",
+      "priceChange24h": 1342,
+      "volume24h": 554796.44,
+      "volume1h": 26987.39,
+      "liquidityUsd": 76070.15,
+      "fdv": 148641,
       "txns24h": {
-        "buys": 3157,
-        "sells": 4903
+        "buys": 3178,
+        "sells": 4932
       },
       "safety": {
         "safetyScore": 100,
@@ -50,6 +50,41 @@
     },
     {
       "rank": 2,
+      "name": "AnimalsCoin",
+      "symbol": "ANIMALS",
+      "address": "0xd3bfd19c02188bc66da11671b4a528cedf24fba3",
+      "pairAddress": "0xd7e4fa19454271de416035963e4b7ad83b8698f9766bd74d7bd5694e5cc00021",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.3400e-7",
+      "priceChange24h": 32.74,
+      "volume24h": 136.19,
+      "volume1h": 136.19,
+      "liquidityUsd": 0,
+      "fdv": 13401,
+      "txns24h": {
+        "buys": 2,
+        "sells": 4
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xd7e4fa19454271de416035963e4b7ad83b8698f9766bd74d7bd5694e5cc00021",
+      "poolId": "0xd7e4fa19454271de416035963e4b7ad83b8698f9766bd74d7bd5694e5cc00021",
+      "deployer": "0xe3cd17be3ad11ac6261a7ef43518359b04374cd8",
+      "feeRecipient": "0xe3cd17be3ad11ac6261a7ef43518359b04374cd8",
+      "launchTimestamp": 1790062382260,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
       "name": "LARP",
       "symbol": "LARP",
       "address": "0x94395fdb285d4c5756019fea840b3c738e708ba3",
@@ -84,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Gitlawb Bot",
       "symbol": "GITBOT",
       "address": "0x8e98ad902f2c4db3af2af4e677edd1273ad6dba3",
@@ -119,7 +154,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "name": "Arena Media",
+      "symbol": "ARENA",
+      "address": "0x9a12db8f65ae0288dacf0f4a5274349faf1a7ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x9a12db8f65ae0288dacf0f4a5274349faf1a7ba3&chain=base",
+      "poolId": "0xc05169d8a06908587a0461fa41b7525219e6c68dcf425c5e4d721e9ef971533f",
+      "deployer": "0xcd227ace20fe06a528701aa256f28dd64e3a4704",
+      "feeRecipient": "0xcd227ace20fe06a528701aa256f28dd64e3a4704",
+      "launchTimestamp": 1790062720978,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
       "name": "Nasdaq",
       "symbol": "Nasdaq",
       "address": "0xde9b2654a14b873df6213ba15f5cc6aff7c9bba3",
@@ -154,7 +224,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 7,
       "name": "MuseBankr",
       "symbol": "MuseBankr",
       "address": "0x3fab958c586212d2fb62bf2bf8bade61bb133ba3",
@@ -189,7 +259,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "Gitlawbot",
       "symbol": "Gitlawbot",
       "address": "0xe12e6e07f46931da07c69583a9e9e9307464aba3",
@@ -224,7 +294,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "Gitlawb",
       "symbol": "GITLAWB",
       "address": "0x0c2de608568f70744c880f85e98f61eee219eba3",
@@ -259,7 +329,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "MuseStocx",
       "symbol": "MuseStocx",
       "address": "0x1117afa8dcb363ae8c7b0da0067c014962ce9ba3",
@@ -294,7 +364,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Musemeta LOL",
       "symbol": "MUSELOL",
       "address": "0x8d0ee290ac7cabbe758876719ddcb4ada37aeba3",
@@ -329,7 +399,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "LOOONG CAT",
       "symbol": "LOOONGCAT",
       "address": "0xb3d7044d5f7b14e8b040d2accb539c484e39eba3",
@@ -364,7 +434,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "Quiet And Dead",
       "symbol": "DEAD",
       "address": "0x1560c89de821b3b7ace36d3f4ea3d139f8f91ba3",
@@ -399,7 +469,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "FAST",
       "symbol": "FAST",
       "address": "0x748c2d45bb141c01d6a866ad5c5405d1e95e4ba3",
@@ -434,7 +504,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Non Fungible Bankr",
       "symbol": "NFB",
       "address": "0x955db8e2c3d6daa4cc9726b9660ca92165628ba3",
@@ -469,7 +539,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "Artificial Inu",
       "symbol": "AI",
       "address": "0xeaaf020a56a362ce2437889b578b0ed106f9dba3",
@@ -504,7 +574,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "Stonkfly",
       "symbol": "STONKFLY",
       "address": "0xfa7e2962f99c02eb2e2f114933f3147ceccfcba3",
@@ -539,7 +609,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "MICRODUCK",
       "symbol": "MICRODUCK",
       "address": "0x3d2ce7bf99dab15420bad3b9abd1845c05037ba3",
@@ -574,7 +644,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "musebook",
       "symbol": "musebook",
       "address": "0x972a0f065c0c7379aaa72eb7be45b6e247983ba3",
@@ -609,7 +679,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "Laya",
       "symbol": "LAYA",
       "address": "0xeb984a09f58fa726b02ad1a63bc7f34a81d81ba3",
@@ -644,7 +714,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "LAYA",
       "symbol": "LAYA",
       "address": "0x74f6455b1bd08ceb68de40549b82433cc7c8fba3",
@@ -679,7 +749,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "Grok Bot",
       "symbol": "BOT",
       "address": "0x4e873e37d8910a64e1e6270afd0ba48f1a5e0ba3",
@@ -714,7 +784,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "JEV",
       "symbol": "JEV",
       "address": "0xc725e4fe2a4a173387b53455a829da907e7deba3",
@@ -749,7 +819,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "Base chain",
       "symbol": "Base chain",
       "address": "0x63bd857404c7d4421700e4ca53b6a7b2073f7ba3",
@@ -784,7 +854,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "LAYA",
       "symbol": "LAYA",
       "address": "0xe165432fcdfd99b8ebac04998f201d02df412ba3",
@@ -819,7 +889,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "BOTCOIN",
       "symbol": "BOTCOIN",
       "address": "0x14baa2b312aa076c6659dc7d846f4a790e554ba3",
@@ -854,7 +924,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "Laya",
       "symbol": "LAYA",
       "address": "0xd11bbe11f79a9f8dc02f3e10ef62ddf59a49cba3",
@@ -889,7 +959,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 26,
+      "rank": 28,
       "name": "NOTION",
       "symbol": "NOTION",
       "address": "0x8ba32b07592798a7ccb89615bef02f1d877abba3",
@@ -924,7 +994,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 27,
+      "rank": 29,
       "name": "LAYA",
       "symbol": "LAYA",
       "address": "0x32710b5952911a7e70a953f57787dbd49a6d9ba3",
@@ -959,7 +1029,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 28,
+      "rank": 30,
       "name": "LAYA",
       "symbol": "LAYA",
       "address": "0x4ab66ac4b56a9deab1e3f393633af585ebdc2ba3",
@@ -994,7 +1064,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 29,
+      "rank": 31,
       "name": "Update",
       "symbol": "UPDATE",
       "address": "0xbb1a3273d9d5e39e9426b6b488647fec4b009ba3",
@@ -1029,7 +1099,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 30,
+      "rank": 32,
       "name": "Bootleg",
       "symbol": "Bootleg",
       "address": "0xa39574d30d0af026cbefa89187c0faa34766dba3",
@@ -1062,55 +1132,20 @@
       "launchTimestamp": 1790049686553,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 31,
-      "name": "FryBag",
-      "symbol": "FRYBAG",
-      "address": "0xd2f32ff681dc3f55fabba005a7c53a231844cba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xd2f32ff681dc3f55fabba005a7c53a231844cba3&chain=base",
-      "poolId": "0xa6b2cb5050d9558baa75a1fd10a6aa03aae52e154b82f3cd197f88f88e029228",
-      "deployer": "0x7b07862f22ea3e1c197c33a175ac5ba0e1d7ce48",
-      "feeRecipient": "0x7b07862f22ea3e1c197c33a175ac5ba0e1d7ce48",
-      "launchTimestamp": 1790049457280,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
       "id": "ACT-LAYA-VOL",
-      "timestamp": "2026-09-22T07:23:44.626Z",
+      "timestamp": "2026-09-22T07:41:54.937Z",
       "token": "LAYA",
       "chain": "BASE",
       "type": "BUY",
-      "amountUsd": "551274.50",
+      "amountUsd": "554796.44",
       "priceImpact": null,
       "txHash": null,
       "label": "HIGH VOLUME",
-      "detail": "Vol $551275 · Liq $81402",
+      "detail": "Vol $554796 · Liq $76070",
       "address": "0xe3f4b833512f0bcb1467ee55e25804bbb8304ba3"
     }
   ]
