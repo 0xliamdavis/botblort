@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-24T03:32:56.805Z",
+    "updatedAt": "2026-09-24T03:50:27.393Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 25,
-    "withMarketData": 4,
-    "safeTokensCount": 2,
-    "highRiskCount": 2,
+    "withMarketData": 6,
+    "safeTokensCount": 3,
+    "highRiskCount": 3,
     "totalWhaleAlerts": 0
   },
   "tokens": [
@@ -28,7 +28,7 @@
       "priceUsd": "1.0130e-7",
       "priceChange24h": -0.05,
       "volume24h": 0.52,
-      "volume1h": 0.52,
+      "volume1h": 0,
       "liquidityUsd": 10131.03,
       "fdv": 10131,
       "txns24h": {
@@ -87,6 +87,41 @@
     },
     {
       "rank": 3,
+      "name": "Terafab AI",
+      "symbol": "Terafab",
+      "address": "0x159aec3de9fbca14a9c71195cc8665b5f30d8ba3",
+      "pairAddress": "0xef6601d0ee21280261fbe86be259f41a2ede256a8ca8c722920a282916a47d2d",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0110e-7",
+      "priceChange24h": -0.02,
+      "volume24h": 0.52,
+      "volume1h": 0.52,
+      "liquidityUsd": 8596.61,
+      "fdv": 10114,
+      "txns24h": {
+        "buys": 3,
+        "sells": 5
+      },
+      "safety": {
+        "safetyScore": 75,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xef6601d0ee21280261fbe86be259f41a2ede256a8ca8c722920a282916a47d2d",
+      "poolId": "0xef6601d0ee21280261fbe86be259f41a2ede256a8ca8c722920a282916a47d2d",
+      "deployer": "0x13411db5c99ae4513937540ef544d00f7e084888",
+      "feeRecipient": "0x13411db5c99ae4513937540ef544d00f7e084888",
+      "launchTimestamp": 1790221488114,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 4,
       "name": "UDR",
       "symbol": "UDR",
       "address": "0xa45d10cc7a8763cc9f47e075566634f3bab0eba3",
@@ -121,7 +156,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "whuffie",
       "symbol": "whuff",
       "address": "0xc9a76a99cfb8b7b2f924d775ad43223ebdabdba3",
@@ -156,7 +191,42 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "name": "Crypto_King",
+      "symbol": "Crypto_King",
+      "address": "0xc916616ae996be6a67dc9dd0172d97650093dba3",
+      "pairAddress": "0x0a7f7ca3d6dce38f3728281df83e080dfe186c9db1ba77e4d42560edef214d2e",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0110e-7",
+      "priceChange24h": 0,
+      "volume24h": 0.05,
+      "volume1h": 0.05,
+      "liquidityUsd": 0,
+      "fdv": 10118,
+      "txns24h": {
+        "buys": 1,
+        "sells": 2
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x0a7f7ca3d6dce38f3728281df83e080dfe186c9db1ba77e4d42560edef214d2e",
+      "poolId": "0x0a7f7ca3d6dce38f3728281df83e080dfe186c9db1ba77e4d42560edef214d2e",
+      "deployer": "0x262fb2d70cec0bc60a7f93a97dc2b20b3b11af51",
+      "feeRecipient": "0x262fb2d70cec0bc60a7f93a97dc2b20b3b11af51",
+      "launchTimestamp": 1790221193647,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 7,
       "name": "Hack",
       "symbol": "HACK",
       "address": "0xdc24c3740e0b6d58736806c867dc989f8abb4ba3",
@@ -191,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "STONKFLY",
       "symbol": "STONKFLY",
       "address": "0xf8ff03be939735ddb5f039e84e49f24afa070ba3",
@@ -226,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "First Deploy Paired Bittensor Tao",
       "symbol": "FIRST",
       "address": "0x6ccd1bae17153e64430b552838f0868352944ba3",
@@ -261,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Grok Coin",
       "symbol": "Grok",
       "address": "0xbcaa30fd800143b2eb4c05f15521fb7097ff4ba3",
@@ -296,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Grok Bot",
       "symbol": "BOT",
       "address": "0x6d5a3cef6377e5ce0f02ad7e88747baf83d1dba3",
@@ -331,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "GrapheneOS",
       "symbol": "GRAP",
       "address": "0xd6e3e5cb7d84270f9ce953195612e1ba5ff5aba3",
@@ -366,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "LAYA",
       "symbol": "LAYA",
       "address": "0x4b5b18aa248efd79031df677983102cef540aba3",
@@ -401,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "Nautilo",
       "symbol": "NAUT",
       "address": "0xfff4112f9a55ced412a385be7b77f6747dff6ba3",
@@ -436,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Sidehoe",
       "symbol": "SIDEHOE",
       "address": "0x573d6924299971df534857339a5a23fa424f7ba3",
@@ -471,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "Sidehoe",
       "symbol": "SIDEHOE",
       "address": "0x6dffdb38ff921a2c85237f6ebf0435e8a2c22ba3",
@@ -506,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "charmed muse",
       "symbol": "CHARMED",
       "address": "0xbb88a6be4458b77759df6db7bad2e57c6dafdba3",
@@ -541,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "Charmed",
       "symbol": "CHARMED",
       "address": "0x2503d509a3b82674c1e5541780fd74d644410ba3",
@@ -576,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "Yaya",
       "symbol": "Yaya",
       "address": "0x72ac6b05cceb65e185958352d669df7bb7108ba3",
@@ -611,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "Imagine",
       "symbol": "IMAGINE",
       "address": "0x3988cc9e4f7b968e4215acee73a4bcc61965eba3",
@@ -646,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "Chipi Chipi Chapa Chapa",
       "symbol": "CHIP",
       "address": "0xcd39b7b3d26dd8efbba56c25788be6eeeab7dba3",
@@ -681,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 22,
       "name": "anttrademark",
       "symbol": "ANT",
       "address": "0x43332411a50b3457783c0bd56985a572b06b0ba3",
@@ -716,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 23,
       "name": "BASELINE",
       "symbol": "BASELINE",
       "address": "0x44a05b70108a4029941ed3cd9b251caa41082ba3",
@@ -751,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 24,
       "name": "bluf",
       "symbol": "BLUF",
       "address": "0xb315ddead82e50935e7efa8a14d7e6dda1b14ba3",
@@ -786,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 25,
       "name": "FAP",
       "symbol": "FAP",
       "address": "0xdd468c228753c4aa1237bd6035f52c3c330cfba3",
@@ -817,76 +887,6 @@
       "deployer": "0x10f91735efd65f40fffbec4e5ad86cb40efe07cd",
       "feeRecipient": "0x10f91735efd65f40fffbec4e5ad86cb40efe07cd",
       "launchTimestamp": 1790214292911,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 24,
-      "name": "SWAPPY",
-      "symbol": "SWAPPY",
-      "address": "0xc92ec658f699f8f77bcccc617398e6689c79fba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc92ec658f699f8f77bcccc617398e6689c79fba3&chain=base",
-      "poolId": "0xc1b7b0034ec37a4370e87f0609e64e9dd2b5fbd5cc2b4349c239914010bdf651",
-      "deployer": "0xcecc346c581be81467bc4f3d87f646c221cf9fa6",
-      "feeRecipient": "0xcecc346c581be81467bc4f3d87f646c221cf9fa6",
-      "launchTimestamp": 1790213783816,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 25,
-      "name": "Snipper weeps",
-      "symbol": "SW",
-      "address": "0x585d3c0b4b68828223f3bff1015e507599bfdba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x585d3c0b4b68828223f3bff1015e507599bfdba3&chain=base",
-      "poolId": "0xdd71cccb9e32688a9af9d89e5688daf8d35d602e2cf852e3903fd7fe8834faff",
-      "deployer": "0xd2fb2c83683ed76deff08f4e94eb446406e9f3da",
-      "feeRecipient": "0xd2fb2c83683ed76deff08f4e94eb446406e9f3da",
-      "launchTimestamp": 1790213571269,
       "isNew": true,
       "hasMarketData": false
     }
