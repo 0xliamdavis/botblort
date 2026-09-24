@@ -2,16 +2,16 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-24T00:46:39.636Z",
+    "updatedAt": "2026-09-24T00:59:57.730Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 22,
-    "withMarketData": 2,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 25,
+    "withMarketData": 3,
+    "safeTokensCount": 2,
     "highRiskCount": 1,
     "totalWhaleAlerts": 0
   },
@@ -53,6 +53,40 @@
     },
     {
       "rank": 2,
+      "name": "Ticker",
+      "symbol": "TICKER",
+      "address": "0x2c2271d4fe1c099bfa5a4f79e36cac2751960ba3",
+      "pairAddress": "0x20ccfeaef05f8b371347a695c0123356fa9028e182ec121c563224191ad1484e",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0130e-7",
+      "priceChange24h": -0.05,
+      "volume24h": 0.52,
+      "volume1h": 0.52,
+      "liquidityUsd": 10135.79,
+      "fdv": 10136,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x20ccfeaef05f8b371347a695c0123356fa9028e182ec121c563224191ad1484e",
+      "poolId": "0x20ccfeaef05f8b371347a695c0123356fa9028e182ec121c563224191ad1484e",
+      "deployer": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "feeRecipient": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "launchTimestamp": 1790211432287,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 3,
       "name": "DOK",
       "symbol": "DOK",
       "address": "0x565307df321c34ca08718fe7befbc29131f2cba3",
@@ -87,7 +121,77 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "name": "Audit",
+      "symbol": "AUDIT",
+      "address": "0x7dbf79091f52c0486aa4c1b59467dd862233fba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x7dbf79091f52c0486aa4c1b59467dd862233fba3&chain=base",
+      "poolId": "0xe64af228b12b196d690d627ff8e27d58bb0a2181e646d3fbe15f523d4fc64c3a",
+      "deployer": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "feeRecipient": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "launchTimestamp": 1790211532399,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 5,
+      "name": "Bessent AI Czar",
+      "symbol": "BESSENT",
+      "address": "0xc205eb0bdeba4d64558bd4756ea98118404aaba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xc205eb0bdeba4d64558bd4756ea98118404aaba3&chain=base",
+      "poolId": "0x794db7eb7e6697d586d90bdae113e4bf34e90b18cbc108f334209a09859a15be",
+      "deployer": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "feeRecipient": "0x111dcc5ef7c83e3475cc4e3eeb1537aed3844289",
+      "launchTimestamp": 1790211322518,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
       "name": "HAPPYCAT",
       "symbol": "HAPPYCAT",
       "address": "0xbd2c86aa33bab0f8289ea6af3b24a4c4d0976ba3",
@@ -122,7 +226,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 4,
+      "rank": 7,
       "name": "Pixels",
       "symbol": "PIXELS",
       "address": "0xcb63519f8ab7a9b3cc739285bafbf37690a15ba3",
@@ -157,7 +261,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 8,
       "name": "moggy",
       "symbol": "MOGGY",
       "address": "0x871035461ee9b659e677f1e180aba0b5b7bfaba3",
@@ -192,7 +296,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 9,
       "name": "BLAF",
       "symbol": "BLAF",
       "address": "0x93747c299f9976141bbadbc79e1745261c3d1ba3",
@@ -227,7 +331,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 10,
       "name": "MET",
       "symbol": "MET",
       "address": "0x364fd6ce95a9f57c362777b61605220e20c84ba3",
@@ -262,7 +366,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 11,
       "name": "dreamtokenz",
       "symbol": "dtokenz",
       "address": "0xf2858a47af4efec28056ef08c44233d8cb631ba3",
@@ -297,7 +401,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 12,
       "name": "Muse Charm",
       "symbol": "MUSECHARM",
       "address": "0x4ff3c8affb8cc2b2aa7aebf347a7e7da6b1b0ba3",
@@ -332,7 +436,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 13,
       "name": "DART",
       "symbol": "DART",
       "address": "0xa82dddc641f95efe6571229818186e986550fba3",
@@ -367,7 +471,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 14,
       "name": "Stupidinu",
       "symbol": "stupidinu",
       "address": "0x51f2b94042e49887c1b8819b678c66b85773dba3",
@@ -402,7 +506,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "INTERNETMONEY",
       "symbol": "IM",
       "address": "0x81abc21bb15aeaf4aa455a434ae5797ed1129ba3",
@@ -437,7 +541,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 16,
       "name": "bankrstaking",
       "symbol": "bankrstaking",
       "address": "0x50dbc9a029010b0a4d9d92e697f28abb727c6ba3",
@@ -472,7 +576,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 17,
       "name": "BTS",
       "symbol": "BTS",
       "address": "0x51a76deb3436a26c48644c1925c150810ff1dba3",
@@ -507,7 +611,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 18,
       "name": "Kaito AI",
       "symbol": "KaitoAI",
       "address": "0xff10c296a42588bb4529fdf3fec7ecd093a32ba3",
@@ -542,7 +646,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 19,
       "name": "Surplus Intelligence",
       "symbol": "SI",
       "address": "0xd86ced567f20365a3cb0157245435d1591c3cba3",
@@ -577,7 +681,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 20,
       "name": "Terra the Muse",
       "symbol": "TERRA",
       "address": "0x6583df321073e66ce070b5fdc116aafcfc273ba3",
@@ -612,7 +716,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 21,
       "name": "runs on base",
       "symbol": "ROB",
       "address": "0xcbf02458acedab9833045bbeb72a49556c746ba3",
@@ -647,7 +751,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 22,
       "name": "Rusty",
       "symbol": "RUSTY",
       "address": "0xe88f92790b39b20da1505a422089d7349ce06ba3",
@@ -682,7 +786,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 23,
       "name": "LLM TONKENS",
       "symbol": "LLM ",
       "address": "0x843b66137831f8dcf18f576f5eda8b6e3ebc3ba3",
@@ -717,7 +821,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 24,
       "name": "Terra the Muse",
       "symbol": "TERRA",
       "address": "0xe607b4e13f92cfc610f23387d2089c476f09fba3",
@@ -752,7 +856,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 25,
       "name": "Terra the Muse",
       "symbol": "TERRA",
       "address": "0x6a093c29c3eb08ad2d3e3ce1c88d6fe53f530ba3",
