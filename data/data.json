@@ -2,56 +2,22 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-25T04:53:31.195Z",
+    "updatedAt": "2026-09-25T05:13:35.135Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 26,
-    "withMarketData": 7,
-    "safeTokensCount": 6,
+    "totalAnalyzed": 25,
+    "withMarketData": 6,
+    "safeTokensCount": 5,
     "highRiskCount": 0,
-    "totalWhaleAlerts": 3
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
-      "name": "HERMEX",
-      "symbol": "HMEX",
-      "address": "0xa9f1c3209e3ab91c96d864a3ecbaea1e21645ba3",
-      "pairAddress": "0xceb4cfaf14335083dc936c3d120ec73d928a4836c49efabca1a078093b9e3cd9",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "2.6900e-8",
-      "priceChange24h": -29.47,
-      "volume24h": 3718.56,
-      "volume1h": 0,
-      "liquidityUsd": 2692.54,
-      "fdv": 2690,
-      "txns24h": {
-        "buys": 4,
-        "sells": 15
-      },
-      "safety": {
-        "safetyScore": 75,
-        "status": "SAFE",
-        "flags": [
-          "LOW_LIQUIDITY"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0xceb4cfaf14335083dc936c3d120ec73d928a4836c49efabca1a078093b9e3cd9",
-      "poolId": "0xceb4cfaf14335083dc936c3d120ec73d928a4836c49efabca1a078093b9e3cd9",
-      "deployer": "0x99d22e9570b13881fe81f39df2d678ec603007d2",
-      "feeRecipient": "0xfe1779c681526e3079962cf66509738ad939fa89",
-      "launchTimestamp": 1790293662115,
-      "isNew": true,
-      "hasMarketData": true
-    },
-    {
-      "rank": 2,
       "name": "codemarkets",
       "symbol": "codemarkets",
       "address": "0xb58f39f0238d338b9412741d4ce1d1a0dc137ba3",
@@ -85,7 +51,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Bot Chain",
       "symbol": "BOTCHAIN",
       "address": "0x81e4b87ecaf8bdcc0d9728f3343459ecae68eba3",
@@ -119,7 +85,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "AIONBASE",
       "symbol": "AIONBASE",
       "address": "0xd31c6b9834f396e32aa82b9e115157627762aba3",
@@ -153,7 +119,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "HERMEX",
       "symbol": "HMEX",
       "address": "0x011892a510990bd26685f67ffe800cf52cb5eba3",
@@ -188,7 +154,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "DEV",
       "symbol": "DEV",
       "address": "0x41434e41e2278bb8595d4cc81fb30d4670d59ba3",
@@ -222,7 +188,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Bank Hackathon",
       "symbol": "HACK",
       "address": "0x800eb0e8e1c058f72f864349849746738cd56ba3",
@@ -255,6 +221,41 @@
       "launchTimestamp": 1790302089105,
       "isNew": true,
       "hasMarketData": true
+    },
+    {
+      "rank": 7,
+      "name": "Artificial Superintelligence Alliance",
+      "symbol": "FET",
+      "address": "0x3eb5f55d0fbe36aa85ef536bd7dea594cb579ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x3eb5f55d0fbe36aa85ef536bd7dea594cb579ba3&chain=base",
+      "poolId": "0x647054a8aac7513357850681d67591a04ab3d1a5c5b210809d3f15f0f5094686",
+      "deployer": "0x3a9eff1236626a0694a94c95d292415fffd84aa7",
+      "feeRecipient": "0x3a9eff1236626a0694a94c95d292415fffd84aa7",
+      "launchTimestamp": 1790312520890,
+      "isNew": true,
+      "hasMarketData": false
     },
     {
       "rank": 8,
@@ -885,73 +886,12 @@
       "launchTimestamp": 1790294679370,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 26,
-      "name": "Harvey",
-      "symbol": "HRVY",
-      "address": "0x2d20dd8fe7d8d41c3c4d06845c8ee792746b5ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2d20dd8fe7d8d41c3c4d06845c8ee792746b5ba3&chain=base",
-      "poolId": "0xa446b93672bd1e4218a09589c1894cfbc42cf99851ed7f9f346cdcd11cc1bee6",
-      "deployer": "0x5ca63d901240241b0cc582abdefa79e14e93354b",
-      "feeRecipient": "0x5ca63d901240241b0cc582abdefa79e14e93354b",
-      "launchTimestamp": 1790293727252,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
   "whaleRadar": [
     {
-      "id": "ACT-HMEX-SELL",
-      "timestamp": "2026-09-25T04:53:31.195Z",
-      "token": "HMEX",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "3718.56",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "SELL PRESSURE",
-      "detail": "4 buys / 15 sells · 79% sell",
-      "address": "0xa9f1c3209e3ab91c96d864a3ecbaea1e21645ba3"
-    },
-    {
-      "id": "ACT-HMEX-AVG",
-      "timestamp": "2026-09-25T04:53:31.195Z",
-      "token": "HMEX",
-      "chain": "BASE",
-      "type": "SELL",
-      "amountUsd": "195.71",
-      "priceImpact": null,
-      "txHash": null,
-      "label": "AVG TRADE",
-      "detail": "Avg $196 / tx · 19 txns",
-      "address": "0xa9f1c3209e3ab91c96d864a3ecbaea1e21645ba3"
-    },
-    {
       "id": "ACT-BOTCHAIN-AVG",
-      "timestamp": "2026-09-25T04:53:31.195Z",
+      "timestamp": "2026-09-25T05:13:35.135Z",
       "token": "BOTCHAIN",
       "chain": "BASE",
       "type": "SELL",
