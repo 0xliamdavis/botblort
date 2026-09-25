@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-25T12:58:26.089Z",
+    "updatedAt": "2026-09-25T13:21:01.433Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 31,
-    "withMarketData": 6,
+    "withMarketData": 7,
     "safeTokensCount": 4,
-    "highRiskCount": 2,
+    "highRiskCount": 3,
     "totalWhaleAlerts": 0
   },
   "tokens": [
@@ -130,7 +130,7 @@
       "priceUsd": "1.1120e-7",
       "priceChange24h": -0.1,
       "volume24h": 58.98,
-      "volume1h": 58.98,
+      "volume1h": 0,
       "liquidityUsd": 0,
       "fdv": 11123,
       "txns24h": {
@@ -155,6 +155,41 @@
     },
     {
       "rank": 5,
+      "name": "Bankr Good",
+      "symbol": "BankrGood",
+      "address": "0x15e6ba26365b73068af1e57bcc5cfb3177034ba3",
+      "pairAddress": "0xfc09002cc8152e0fbff2734ee2edee01b6eb426681dde479ab68b46a3004b2f2",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0110e-7",
+      "priceChange24h": 0,
+      "volume24h": 2.18,
+      "volume1h": 2.18,
+      "liquidityUsd": 0,
+      "fdv": 10115,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xfc09002cc8152e0fbff2734ee2edee01b6eb426681dde479ab68b46a3004b2f2",
+      "poolId": "0xfc09002cc8152e0fbff2734ee2edee01b6eb426681dde479ab68b46a3004b2f2",
+      "deployer": "0x203a16691c974181369dbbf275eeb54592577369",
+      "feeRecipient": "0x203a16691c974181369dbbf275eeb54592577369",
+      "launchTimestamp": 1790338574763,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 6,
       "name": "Project Swap",
       "symbol": "SWAP",
       "address": "0xa00ab1fe0187b05aea31e6d7eb3c596a09c1eba3",
@@ -188,7 +223,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Self",
       "symbol": "SELF",
       "address": "0x17c416d12f814c02a7a01189aee4f4e1ca128ba3",
@@ -223,7 +258,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "musegod",
       "symbol": "MUSEGOD",
       "address": "0x1d6e110e2ed1dd9616f5a1310bc5225618b22ba3",
@@ -258,7 +293,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "AiraOS",
       "symbol": "AIRA",
       "address": "0x0ba51f4bbd316e418ae0ba877d171ef11dd88ba3",
@@ -293,7 +328,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Zcash is Scam",
       "symbol": "ZIS",
       "address": "0x0d06e7d15e79c4db2373366aa887f8d88aa82ba3",
@@ -324,41 +359,6 @@
       "deployer": "0x1ed7113f9d36a793b3db806670cbf37986bf09d9",
       "feeRecipient": "0xb9251d094354c6d5acca29b5caf9812a8a39cbf6",
       "launchTimestamp": 1790339839907,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 10,
-      "name": "Bankr Good",
-      "symbol": "BankrGood",
-      "address": "0x15e6ba26365b73068af1e57bcc5cfb3177034ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x15e6ba26365b73068af1e57bcc5cfb3177034ba3&chain=base",
-      "poolId": "0xfc09002cc8152e0fbff2734ee2edee01b6eb426681dde479ab68b46a3004b2f2",
-      "deployer": "0x203a16691c974181369dbbf275eeb54592577369",
-      "feeRecipient": "0x203a16691c974181369dbbf275eeb54592577369",
-      "launchTimestamp": 1790338574763,
       "isNew": true,
       "hasMarketData": false
     },
