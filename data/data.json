@@ -2,22 +2,56 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-25T16:38:23.656Z",
+    "updatedAt": "2026-09-25T16:53:44.841Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
     "logoUrl": "https://iili.io/CpjSv8x.md.jpg"
   },
   "summary": {
-    "totalAnalyzed": 29,
-    "withMarketData": 3,
-    "safeTokensCount": 1,
+    "totalAnalyzed": 32,
+    "withMarketData": 4,
+    "safeTokensCount": 2,
     "highRiskCount": 1,
-    "totalWhaleAlerts": 0
+    "totalWhaleAlerts": 1
   },
   "tokens": [
     {
       "rank": 1,
+      "name": "Hermes",
+      "symbol": "Hermes One",
+      "address": "0x5048079f7af59ddeb683a3861e13149e73d9cba3",
+      "pairAddress": "0xa08a030538b8b859bd6aa6d00d63795ba259e97a4843c06e03d5ff4b679ef4e6",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0870e-7",
+      "priceChange24h": -49.23,
+      "volume24h": 12727.73,
+      "volume1h": 12727.73,
+      "liquidityUsd": 9270.21,
+      "fdv": 10880,
+      "txns24h": {
+        "buys": 54,
+        "sells": 70
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xa08a030538b8b859bd6aa6d00d63795ba259e97a4843c06e03d5ff4b679ef4e6",
+      "poolId": "0xa08a030538b8b859bd6aa6d00d63795ba259e97a4843c06e03d5ff4b679ef4e6",
+      "deployer": "0xeea8a1a504583e7ed37e1479ddf8df011ed4beda",
+      "feeRecipient": "0x82ae7e48a5c645672c1ad5677bb0c639ffbf446a",
+      "launchTimestamp": 1790354371524,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 2,
       "name": "DebtReliefBot Grokified",
       "symbol": "DRBGRK",
       "address": "0x983f0f381fb31e3dd5d3b2466327830e20bc9ba3",
@@ -52,7 +86,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "POCKETMIND",
       "symbol": "PKAI",
       "address": "0x9b5cf529b9feba16b396a642249225e853b5cba3",
@@ -60,15 +94,15 @@
       "chain": "BASE",
       "protocol": "DOPPLER",
       "dexId": "uniswap",
-      "priceUsd": "2.7660e-8",
-      "priceChange24h": 10.34,
-      "volume24h": 5.07,
-      "volume1h": 5.07,
-      "liquidityUsd": 2351.69,
-      "fdv": 2767,
+      "priceUsd": "2.7630e-8",
+      "priceChange24h": 10.19,
+      "volume24h": 5.1,
+      "volume1h": 5.1,
+      "liquidityUsd": 2348.54,
+      "fdv": 2763,
       "txns24h": {
-        "buys": 4,
-        "sells": 8
+        "buys": 12,
+        "sells": 24
       },
       "safety": {
         "safetyScore": 75,
@@ -86,7 +120,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "patron the muses",
       "symbol": "MAECENATIS",
       "address": "0x316e5a260342e8e34f6285af8b2b050107880ba3",
@@ -121,7 +155,217 @@
       "hasMarketData": true
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "name": "HarmesID",
+      "symbol": "HARMES",
+      "address": "0xe076891186b88da20cfb53fe95eb211ffb245ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xe076891186b88da20cfb53fe95eb211ffb245ba3&chain=base",
+      "poolId": "0x5257aae085636ee552f24441328ff1b786b26d6c14a48857450a4ba053211a95",
+      "deployer": "0x8e0d152af36e9a72dc33b13a22b794595072f459",
+      "feeRecipient": "0x8e0d152af36e9a72dc33b13a22b794595072f459",
+      "launchTimestamp": 1790355117493,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 6,
+      "name": "GrokFan",
+      "symbol": "GROKFAN",
+      "address": "0xef47350eac74e18230341f463fe427342a771ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xef47350eac74e18230341f463fe427342a771ba3&chain=base",
+      "poolId": "0xa3759f8490ebe0e965bf83eea6620c65d718ccf41460487e77648a305e371172",
+      "deployer": "0x5ab489568f79708adca8e56ac05cb8e58fc2bab6",
+      "feeRecipient": "0x5ab489568f79708adca8e56ac05cb8e58fc2bab6",
+      "launchTimestamp": 1790354968959,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 7,
+      "name": "MUSEBANKR",
+      "symbol": "MUSEKR",
+      "address": "0x44b21d3bec7eafd04e343fd5cd37e13327797ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x44b21d3bec7eafd04e343fd5cd37e13327797ba3&chain=base",
+      "poolId": "0xab7e42cec893b842c7b02db5b4c5d1a0dad5c8399503784c9ccb4a07e6300cb2",
+      "deployer": "0x7b667e18350887a68694886d292dbeb7881b5304",
+      "feeRecipient": "0x7b667e18350887a68694886d292dbeb7881b5304",
+      "launchTimestamp": 1790354839306,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 8,
+      "name": "musecrypto",
+      "symbol": "MUSECRYPTO",
+      "address": "0x8fc0b9314783c6f41ae0830044849cbcd0367ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0x8fc0b9314783c6f41ae0830044849cbcd0367ba3&chain=base",
+      "poolId": "0x246bab94f8e58cdeaeee0e278d1be5bc409f91ef763478a83e0968b18585cf45",
+      "deployer": "0x2d186141ecd3fbc966ffbe27e3f8243c95f03029",
+      "feeRecipient": "0x2d186141ecd3fbc966ffbe27e3f8243c95f03029",
+      "launchTimestamp": 1790354607736,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 9,
+      "name": "Hermes One",
+      "symbol": "HERMES",
+      "address": "0xece26e15a13ec8bdfec68218720d7a2c03026ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xece26e15a13ec8bdfec68218720d7a2c03026ba3&chain=base",
+      "poolId": "0xf82497a8ef02399016fa3a10a8908b02a6fc6cbb9d64872c24b9f6687fbbe8a2",
+      "deployer": "0x131987d3357f1b435193bdebba446ed996adbe8f",
+      "feeRecipient": "0x131987d3357f1b435193bdebba446ed996adbe8f",
+      "launchTimestamp": 1790354499420,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 10,
+      "name": "Hermes one",
+      "symbol": "HERMES",
+      "address": "0xb19ea7939ac4f8cdb971c3040cce39fb92650ba3",
+      "pairAddress": null,
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "doppler",
+      "priceUsd": "0",
+      "priceChange24h": 0,
+      "volume24h": 0,
+      "volume1h": 0,
+      "liquidityUsd": 0,
+      "fdv": 0,
+      "txns24h": {
+        "buys": 0,
+        "sells": 0
+      },
+      "safety": {
+        "safetyScore": 35,
+        "status": "CAUTION",
+        "flags": [
+          "NEW_LAUNCH",
+          "NO_MARKET_DATA_YET"
+        ]
+      },
+      "dexUrl": "https://bankr.bot/terminal/trade?out=0xb19ea7939ac4f8cdb971c3040cce39fb92650ba3&chain=base",
+      "poolId": "0xe007c5c6ae09c279bbadf82f05b0a313cb4873777d3b87fe29871f6cac08c380",
+      "deployer": "0xf7b289f3dd7b2ebdc7f1b6e579d36cb0d1412a9e",
+      "feeRecipient": "0xf7b289f3dd7b2ebdc7f1b6e579d36cb0d1412a9e",
+      "launchTimestamp": 1790354438229,
+      "isNew": true,
+      "hasMarketData": false
+    },
+    {
+      "rank": 11,
       "name": "Hylo Leverage",
       "symbol": "xSOL",
       "address": "0xcd8ddf27129eab1b664c8d481bc187fe89a27ba3",
@@ -156,7 +400,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 5,
+      "rank": 12,
       "name": "GrubDepth",
       "symbol": "GRUB",
       "address": "0x6923db18a69256b69c3af9be506a2be405bd7ba3",
@@ -191,7 +435,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 6,
+      "rank": 13,
       "name": "Send",
       "symbol": "SEND",
       "address": "0xb38cf68f8145d7b41aaab49ef6068d6d2eb9aba3",
@@ -226,7 +470,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 14,
       "name": "TAU GAMMA PHI",
       "symbol": "ΤΓΦ",
       "address": "0x5e6170bd1ebb0b852d61bbd3a5d7340c4ec14ba3",
@@ -261,7 +505,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 15,
       "name": "BagwoRK",
       "symbol": "BAGWORK",
       "address": "0xbe90d7e666e1223e1b86679bdbd32db101694ba3",
@@ -296,7 +540,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 9,
+      "rank": 16,
       "name": "Door Snail",
       "symbol": "SNAIL",
       "address": "0xbd3175fdd047c0195c092d8748f0ff5b1d32eba3",
@@ -331,7 +575,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 10,
+      "rank": 17,
       "name": "Musebank",
       "symbol": "Musebank",
       "address": "0x575cd58c629020f2ba6b33b9f07e89fa7f4edba3",
@@ -366,7 +610,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 11,
+      "rank": 18,
       "name": "Coinbase Muse",
       "symbol": "Coinbase Muse",
       "address": "0xf1c62b792c614a7015db5d621b338f06be51bba3",
@@ -401,7 +645,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 12,
+      "rank": 19,
       "name": "Grok full intelegent",
       "symbol": "GROKFI",
       "address": "0x25badb797756a0808a796a4b3ab9340d6c24fba3",
@@ -436,7 +680,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 13,
+      "rank": 20,
       "name": "Rocky",
       "symbol": "Rocky",
       "address": "0x6e684c0c182770a59fb8b709b48b2779ece99ba3",
@@ -471,7 +715,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 14,
+      "rank": 21,
       "name": "Flap",
       "symbol": "FLAP",
       "address": "0x58fa8eab68fad66ad5facd37f39ee0ac31899ba3",
@@ -506,7 +750,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 15,
+      "rank": 22,
       "name": "haraheta",
       "symbol": "HARAHETA",
       "address": "0x64b2f29c042dfb8de7fcfe865b68094a142f3ba3",
@@ -541,7 +785,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 16,
+      "rank": 23,
       "name": "AgenTrox",
       "symbol": "AGX",
       "address": "0x31ed2dab06ede341ff7316caa50d4fa8b533eba3",
@@ -576,7 +820,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 17,
+      "rank": 24,
       "name": "muse",
       "symbol": "MUSE",
       "address": "0x118382358f3c20340fb62c488203241b0197fba3",
@@ -611,7 +855,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 18,
+      "rank": 25,
       "name": "Flap",
       "symbol": "FLAP",
       "address": "0xb55af130ef9f498fcdbb4e93a8b637fb8d78aba3",
@@ -646,7 +890,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 19,
+      "rank": 26,
       "name": "AEVA",
       "symbol": "AEVA",
       "address": "0x627e3b3db63843062ae38c74d738cf506e580ba3",
@@ -681,7 +925,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 20,
+      "rank": 27,
       "name": "Trump31",
       "symbol": "Tr",
       "address": "0x473e5b9b2d3a196198267ceb8917abf51787dba3",
@@ -716,7 +960,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 21,
+      "rank": 28,
       "name": "Good Company Founding Table",
       "symbol": "GCTABLE",
       "address": "0x2e514b87971ee9a1b3ac4b705751e88a7a600ba3",
@@ -751,7 +995,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 22,
+      "rank": 29,
       "name": "coinfoin",
       "symbol": "COINFOIN",
       "address": "0x6ae443a20ff3a5433cdac437fed92007c05acba3",
@@ -786,7 +1030,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 23,
+      "rank": 30,
       "name": "cute",
       "symbol": "CUTE",
       "address": "0xd2d46d686006007d82eb68879e2b1f24fa485ba3",
@@ -821,7 +1065,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 24,
+      "rank": 31,
       "name": "XRPArmy",
       "symbol": "XRPARMY",
       "address": "0x525d7bf07ea32be320556328bbadffae4a47dba3",
@@ -856,7 +1100,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 25,
+      "rank": 32,
       "name": "qpuki",
       "symbol": "QPUKI",
       "address": "0xcb46bb5f7cde1c31c61240dd8bff067c59f8cba3",
@@ -889,147 +1133,21 @@
       "launchTimestamp": 1790347924369,
       "isNew": true,
       "hasMarketData": false
-    },
-    {
-      "rank": 26,
-      "name": "Lumbung",
-      "symbol": "LUMBUNG",
-      "address": "0x1b41e3b8a7bdaf472162436497cc8a8d9c61dba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x1b41e3b8a7bdaf472162436497cc8a8d9c61dba3&chain=base",
-      "poolId": "0xd39aedc2ae0e04390a87cbb459266a0201320f85d0198fa37a01245fd6c386d2",
-      "deployer": "0xf0725a1db263393d8b293b9f14dc2e907005df9c",
-      "feeRecipient": "0xf0725a1db263393d8b293b9f14dc2e907005df9c",
-      "launchTimestamp": 1790347227075,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 27,
-      "name": "PunkCat",
-      "symbol": "PCAT",
-      "address": "0x49c343cc674f831d8083f871be24a107a8223ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x49c343cc674f831d8083f871be24a107a8223ba3&chain=base",
-      "poolId": "0x7b887300a1f1b586618945154d35af53ec04ade138f8e08d29b394ac716f33f2",
-      "deployer": "0x0c64274e4085eb761b1fa11bbf7e76f9218fb34c",
-      "feeRecipient": "0x0c64274e4085eb761b1fa11bbf7e76f9218fb34c",
-      "launchTimestamp": 1790347029147,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 28,
-      "name": "MUSEUM",
-      "symbol": "MUSEUM",
-      "address": "0x2fb4355719fbc59d5ac4f49817dad8c07f1b7ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x2fb4355719fbc59d5ac4f49817dad8c07f1b7ba3&chain=base",
-      "poolId": "0x8e15907ab1a7592a5b87bb5c58054af8f626b4e1663887053bad0d6f37380c86",
-      "deployer": "0x20d3afb62cc8c7ae1f3b6c075e80fca13434852f",
-      "feeRecipient": "0x20d3afb62cc8c7ae1f3b6c075e80fca13434852f",
-      "launchTimestamp": 1790346929688,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 29,
-      "name": "MUSEBEAR",
-      "symbol": "MUSEBEAR",
-      "address": "0xd92bc8f64859f5bd369f8e916ec05d6365294ba3",
-      "pairAddress": "0x6fb0b59006a7c26b9e2b7236560836c9339609b9ed25b021533e732aa5d694c9",
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "uniswap",
-      "priceUsd": "1.0160e-7",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 10167,
-      "txns24h": {
-        "buys": 1,
-        "sells": 2
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://dexscreener.com/base/0x6fb0b59006a7c26b9e2b7236560836c9339609b9ed25b021533e732aa5d694c9",
-      "poolId": "0x6fb0b59006a7c26b9e2b7236560836c9339609b9ed25b021533e732aa5d694c9",
-      "deployer": "0xa13341ba44bc89658bfba1558f39530a4e909d6f",
-      "feeRecipient": "0xa13341ba44bc89658bfba1558f39530a4e909d6f",
-      "launchTimestamp": 1790346648367,
-      "isNew": true,
-      "hasMarketData": false
     }
   ],
-  "whaleRadar": []
+  "whaleRadar": [
+    {
+      "id": "ACT-Hermes One-AVG",
+      "timestamp": "2026-09-25T16:53:44.841Z",
+      "token": "Hermes One",
+      "chain": "BASE",
+      "type": "SELL",
+      "amountUsd": "102.64",
+      "priceImpact": null,
+      "txHash": null,
+      "label": "AVG TRADE",
+      "detail": "Avg $103 / tx · 124 txns",
+      "address": "0x5048079f7af59ddeb683a3861e13149e73d9cba3"
+    }
+  ]
 }
