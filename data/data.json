@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-26T03:22:47.449Z",
+    "updatedAt": "2026-09-26T03:42:04.263Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 5,
+    "withMarketData": 6,
     "safeTokensCount": 4,
-    "highRiskCount": 1,
+    "highRiskCount": 2,
     "totalWhaleAlerts": 2
   },
   "tokens": [
@@ -189,6 +189,41 @@
     },
     {
       "rank": 6,
+      "name": "Bankr stakers",
+      "symbol": "Bankr Stakers",
+      "address": "0x405ef190b7f6ee993fde2994382ad1a228770ba3",
+      "pairAddress": "0xb3a9066c3825d6e490df7256f39e08c1a3a6cbda38423a114bc4d8007fe2bf80",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0190e-7",
+      "priceChange24h": 0,
+      "volume24h": 1.08,
+      "volume1h": 1.08,
+      "liquidityUsd": 0,
+      "fdv": 10191,
+      "txns24h": {
+        "buys": 2,
+        "sells": 3
+      },
+      "safety": {
+        "safetyScore": 40,
+        "status": "HIGH_RISK",
+        "flags": [
+          "CRITICAL_LOW_LIQUIDITY",
+          "LOW_TRANSACTION_COUNT"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0xb3a9066c3825d6e490df7256f39e08c1a3a6cbda38423a114bc4d8007fe2bf80",
+      "poolId": "0xb3a9066c3825d6e490df7256f39e08c1a3a6cbda38423a114bc4d8007fe2bf80",
+      "deployer": "0x0c34b82df49aa892db22e8822547fe1b88455172",
+      "feeRecipient": "0x0c34b82df49aa892db22e8822547fe1b88455172",
+      "launchTimestamp": 1790390645338,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 7,
       "name": "SYNC",
       "symbol": "SYNC",
       "address": "0xeb67592ade0fea7da1e46a9c4e7318f7d9de7ba3",
@@ -223,7 +258,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "pqcvisualizer",
       "symbol": "PQC",
       "address": "0xa5f293da64beaae14621d9216310245ef684cba3",
@@ -258,7 +293,7 @@
       "hasMarketData": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "pqcvisualizer",
       "symbol": "PQC",
       "address": "0x1c2f7fa2fce4d998536ceff9ccd869b000fb1ba3",
@@ -289,41 +324,6 @@
       "deployer": "0x1ed7113f9d36a793b3db806670cbf37986bf09d9",
       "feeRecipient": "0x1ed7113f9d36a793b3db806670cbf37986bf09d9",
       "launchTimestamp": 1790390833615,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 9,
-      "name": "Bankr stakers",
-      "symbol": "Bankr Stakers",
-      "address": "0x405ef190b7f6ee993fde2994382ad1a228770ba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x405ef190b7f6ee993fde2994382ad1a228770ba3&chain=base",
-      "poolId": "0xb3a9066c3825d6e490df7256f39e08c1a3a6cbda38423a114bc4d8007fe2bf80",
-      "deployer": "0x0c34b82df49aa892db22e8822547fe1b88455172",
-      "feeRecipient": "0x0c34b82df49aa892db22e8822547fe1b88455172",
-      "launchTimestamp": 1790390645338,
       "isNew": true,
       "hasMarketData": false
     },
@@ -1416,7 +1416,7 @@
   "whaleRadar": [
     {
       "id": "ACT-MUSELI-AVG",
-      "timestamp": "2026-09-26T03:22:47.449Z",
+      "timestamp": "2026-09-26T03:42:04.263Z",
       "token": "MUSELI",
       "chain": "BASE",
       "type": "MIXED",
@@ -1429,7 +1429,7 @@
     },
     {
       "id": "ACT-KOHAKU-AVG",
-      "timestamp": "2026-09-26T03:22:47.449Z",
+      "timestamp": "2026-09-26T03:42:04.263Z",
       "token": "KOHAKU",
       "chain": "BASE",
       "type": "SELL",
