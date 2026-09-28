@@ -2,7 +2,7 @@
   "meta": {
     "engine": "BlortBot Bankr Telemetry Terminal v2.6",
     "targetOrigin": "Bankr API + DexScreener",
-    "updatedAt": "2026-09-28T11:45:46.362Z",
+    "updatedAt": "2026-09-28T11:59:20.707Z",
     "builder": "@0xliamdavis",
     "botAccount": "@BotBlort",
     "targetChain": "BASE",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "totalAnalyzed": 40,
-    "withMarketData": 5,
-    "safeTokensCount": 5,
+    "withMarketData": 6,
+    "safeTokensCount": 6,
     "highRiskCount": 0,
     "totalWhaleAlerts": 1
   },
@@ -28,7 +28,7 @@
       "priceUsd": "1.0310e-7",
       "priceChange24h": -35.93,
       "volume24h": 11632.39,
-      "volume1h": 18.51,
+      "volume1h": 7.07,
       "liquidityUsd": 8790.21,
       "fdv": 10317,
       "txns24h": {
@@ -121,6 +121,40 @@
     },
     {
       "rank": 4,
+      "name": "Raid Shooter",
+      "symbol": "$Raidshooter",
+      "address": "0x0af55bfd094090f787a82666ac6496f66e95cba3",
+      "pairAddress": "0x468367b957fd983ab3c7308fd74ef94d057a6f4ec73062afa8362fc690ccdb34",
+      "chain": "BASE",
+      "protocol": "DOPPLER",
+      "dexId": "uniswap",
+      "priceUsd": "1.0510e-7",
+      "priceChange24h": 3.82,
+      "volume24h": 22.9,
+      "volume1h": 22.9,
+      "liquidityUsd": 10515.9,
+      "fdv": 10516,
+      "txns24h": {
+        "buys": 5,
+        "sells": 10
+      },
+      "safety": {
+        "safetyScore": 90,
+        "status": "SAFE",
+        "flags": [
+          "MEDIUM_LIQUIDITY"
+        ]
+      },
+      "dexUrl": "https://dexscreener.com/base/0x468367b957fd983ab3c7308fd74ef94d057a6f4ec73062afa8362fc690ccdb34",
+      "poolId": "0x468367b957fd983ab3c7308fd74ef94d057a6f4ec73062afa8362fc690ccdb34",
+      "deployer": "0xd065b22c4d4bc28e51219645f7289e1240a16ebc",
+      "feeRecipient": "0xd065b22c4d4bc28e51219645f7289e1240a16ebc",
+      "launchTimestamp": 1790595459706,
+      "isNew": true,
+      "hasMarketData": true
+    },
+    {
+      "rank": 5,
       "name": "Zorast",
       "symbol": "ZORA",
       "address": "0x5e91490b3c1fb18f6150ef106890b82d7edc3ba3",
@@ -155,7 +189,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "SUPERBANKR",
       "symbol": "SUPBANKR",
       "address": "0x633cc873b3e64ce64b83c670306480c8535a2ba3",
@@ -190,7 +224,7 @@
       "hasMarketData": true
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Pulse",
       "symbol": "PULSEMAC",
       "address": "0x35894adbca3ecc91848cebbdd553be5889084ba3",
@@ -221,41 +255,6 @@
       "deployer": "0x7b7e356160a41f87b75b1219aa4d2c2aa09924f0",
       "feeRecipient": "0x7b7e356160a41f87b75b1219aa4d2c2aa09924f0",
       "launchTimestamp": 1790595869850,
-      "isNew": true,
-      "hasMarketData": false
-    },
-    {
-      "rank": 7,
-      "name": "Raid Shooter",
-      "symbol": "$Raidshooter",
-      "address": "0x0af55bfd094090f787a82666ac6496f66e95cba3",
-      "pairAddress": null,
-      "chain": "BASE",
-      "protocol": "DOPPLER",
-      "dexId": "doppler",
-      "priceUsd": "0",
-      "priceChange24h": 0,
-      "volume24h": 0,
-      "volume1h": 0,
-      "liquidityUsd": 0,
-      "fdv": 0,
-      "txns24h": {
-        "buys": 0,
-        "sells": 0
-      },
-      "safety": {
-        "safetyScore": 35,
-        "status": "CAUTION",
-        "flags": [
-          "NEW_LAUNCH",
-          "NO_MARKET_DATA_YET"
-        ]
-      },
-      "dexUrl": "https://bankr.bot/terminal/trade?out=0x0af55bfd094090f787a82666ac6496f66e95cba3&chain=base",
-      "poolId": "0x468367b957fd983ab3c7308fd74ef94d057a6f4ec73062afa8362fc690ccdb34",
-      "deployer": "0xd065b22c4d4bc28e51219645f7289e1240a16ebc",
-      "feeRecipient": "0xd065b22c4d4bc28e51219645f7289e1240a16ebc",
-      "launchTimestamp": 1790595459706,
       "isNew": true,
       "hasMarketData": false
     },
@@ -1418,7 +1417,7 @@
   "whaleRadar": [
     {
       "id": "ACT-$RAI-AVG",
-      "timestamp": "2026-09-28T11:45:46.361Z",
+      "timestamp": "2026-09-28T11:59:20.707Z",
       "token": "$RAI",
       "chain": "BASE",
       "type": "BUY",
